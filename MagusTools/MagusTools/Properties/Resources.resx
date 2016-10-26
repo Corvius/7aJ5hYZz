@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ATTR_Agility" xml:space="preserve">
+    <value>Agility</value>
+    <comment>Text for Label - Attribute - Agility</comment>
+  </data>
+  <data name="ATTR_Astral" xml:space="preserve">
+    <value>Astral</value>
+    <comment>Text for Label - Attribute - Astral</comment>
+  </data>
+  <data name="ATTR_Charisma" xml:space="preserve">
+    <value>Charisma</value>
+    <comment>Text for Label - Attribute - Charisma</comment>
+  </data>
+  <data name="ATTR_Endurance" xml:space="preserve">
+    <value>Endurance</value>
+    <comment>Text for Label - Attribute - Endurance</comment>
+  </data>
+  <data name="ATTR_Health" xml:space="preserve">
+    <value>Health</value>
+    <comment>Text for Label - Attribute - Health</comment>
+  </data>
+  <data name="ATTR_Intelligence" xml:space="preserve">
+    <value>Intelligence</value>
+    <comment>Text for Label - Attribute - Intelligence</comment>
+  </data>
+  <data name="ATTR_Perception" xml:space="preserve">
+    <value>Perception</value>
+    <comment>Text for Label - Attribute - Perception</comment>
+  </data>
+  <data name="ATTR_Speed" xml:space="preserve">
+    <value>Speed</value>
+    <comment>Text for Label - Attribute - Speed</comment>
+  </data>
+  <data name="ATTR_Strength" xml:space="preserve">
+    <value>Strength</value>
+    <comment>Text for Label - Attribute - Strength</comment>
+  </data>
+  <data name="ATTR_Willpower" xml:space="preserve">
+    <value>Willpower</value>
+    <comment>Text for Label - Attribute - Willpower</comment>
+  </data>
+  <data name="CHAR_Characteristic_Chaos" xml:space="preserve">
+    <value>Chaos</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Chaos</comment>
+  </data>
+  <data name="CHAR_Characteristic_ChaosDeath" xml:space="preserve">
+    <value>Chaos - Death</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Chaos &amp; Death</comment>
+  </data>
+  <data name="CHAR_Characteristic_ChaosLife" xml:space="preserve">
+    <value>Chaos - Life</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Chaos &amp; Life</comment>
+  </data>
+  <data name="CHAR_Characteristic_Death" xml:space="preserve">
+    <value>Death</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Death</comment>
+  </data>
+  <data name="CHAR_Characteristic_DeathChaos" xml:space="preserve">
+    <value>Death - Chaos</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Death &amp; Chaos</comment>
+  </data>
+  <data name="CHAR_Characteristic_DeathOrder" xml:space="preserve">
+    <value>Death - Order</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Death &amp; Order</comment>
+  </data>
+  <data name="CHAR_Characteristic_Life" xml:space="preserve">
+    <value>Life</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Life</comment>
+  </data>
+  <data name="CHAR_Characteristic_LifeChaos" xml:space="preserve">
+    <value>Life - Chaos</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Life &amp; Chaos</comment>
+  </data>
+  <data name="CHAR_Characteristic_LifeOrder" xml:space="preserve">
+    <value>Life - Order</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Life &amp; Order</comment>
+  </data>
+  <data name="CHAR_Characteristic_Order" xml:space="preserve">
+    <value>Order</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Order</comment>
+  </data>
+  <data name="CHAR_Characteristic_OrderDeath" xml:space="preserve">
+    <value>Order - Death</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Order &amp; Death</comment>
+  </data>
+  <data name="CHAR_Characteristic_OrderLife" xml:space="preserve">
+    <value>Order - Life</value>
+    <comment>Text for Character's Characteristic-Selection Combobox Item - Order &amp; Life</comment>
+  </data>
+  <data name="CHAR_Gender_Female" xml:space="preserve">
+    <value>Female</value>
+    <comment>Text for Character's Gender-Selection Combobox Item - Female</comment>
+  </data>
+  <data name="CHAR_Gender_Male" xml:space="preserve">
+    <value>Male</value>
+    <comment>Text for Character's Gender-Selection Combobox Item - Male</comment>
+  </data>
+  <data name="CHAR_Gender_Other" xml:space="preserve">
+    <value>Other</value>
+    <comment>Text for Character's Gender-Selection Combobox Item - Other</comment>
+  </data>
+  <data name="CHAR_Race_Dwarf" xml:space="preserve">
+    <value>Dwarf</value>
+    <comment>Text for Character's Race-Selection Combobox Item - Dwarf</comment>
+  </data>
+  <data name="CHAR_Race_Elf" xml:space="preserve">
+    <value>Elf</value>
+    <comment>Text for Character's Race-Selection Combobox Item - Elf</comment>
+  </data>
+  <data name="CHAR_Race_HalfElf" xml:space="preserve">
+    <value>Half-Elf</value>
+    <comment>Text for Character's Race-Selection Combobox Item - Half-Elf</comment>
+  </data>
+  <data name="CHAR_Race_Human" xml:space="preserve">
+    <value>Human</value>
+    <comment>Text for Character's Race-Selection Combobox Item - Human</comment>
+  </data>
+  <data name="CHAR_Race_SublimatedOrc" xml:space="preserve">
+    <value>Sublimated Orc</value>
+    <comment>Text for Character's Race-Selection Combobox Item - Sublimated Orc</comment>
+  </data>
+  <data name="CHAT_Race_Gnome" xml:space="preserve">
+    <value>Gnome</value>
+    <comment>Text for Character's Race-Selection Combobox Item - Gnome</comment>
+  </data>
+  <data name="CHAT_Race_Goblin" xml:space="preserve">
+    <value>Goblin</value>
+    <comment>Text for Character's Race-Selection Combobox Item - Goblin</comment>
+  </data>
+  <data name="MISC_Text_AbilityAverage" xml:space="preserve">
+    <value>Ability average</value>
+    <comment>Text for Label - Ability average</comment>
+  </data>
+  <data name="MISC_Text_Actual" xml:space="preserve">
+    <value>Actual</value>
+    <comment>Text for Labels - Actual</comment>
+  </data>
+  <data name="MISC_Text_Base" xml:space="preserve">
+    <value>Base</value>
+    <comment>Text for Labels - Base</comment>
+  </data>
+  <data name="MISC_Text_CCP" xml:space="preserve">
+    <value>CCP</value>
+    <comment>Text for Labels - Character Creation Points</comment>
+  </data>
+  <data name="MM_Character" xml:space="preserve">
+    <value>Character</value>
+    <comment>Text for Main menu - Character</comment>
+  </data>
+  <data name="MM_Character_ExportAsText" xml:space="preserve">
+    <value>Export As Text</value>
+    <comment>Text for Main menu - Character - Export As Text</comment>
+  </data>
+  <data name="MM_Character_Generate" xml:space="preserve">
+    <value>Generate</value>
+    <comment>Text for Main menu - Character - Generate</comment>
+  </data>
+  <data name="MM_File" xml:space="preserve">
+    <value>File</value>
+    <comment>Text for Main menu - File</comment>
+  </data>
+  <data name="MM_File_New" xml:space="preserve">
+    <value>New</value>
+    <comment>Text for Main menu - File - New</comment>
+  </data>
+  <data name="MM_File_New_NPC" xml:space="preserve">
+    <value>Non-Playable Character (NPC)</value>
+    <comment>Text for Main menu - File - New - Non-Playable Character</comment>
+  </data>
+  <data name="MM_File_New_PC" xml:space="preserve">
+    <value>Playable Character (PC)</value>
+    <comment>Text for Main menu - File - New - Playable Character</comment>
+  </data>
+  <data name="MM_File_Open" xml:space="preserve">
+    <value>Open</value>
+    <comment>Text for Main menu - File - Open</comment>
+  </data>
+  <data name="MM_File_Quit" xml:space="preserve">
+    <value>Quit</value>
+    <comment>Text for Main menu - File - Quit</comment>
+  </data>
+  <data name="MM_File_Save" xml:space="preserve">
+    <value>Save</value>
+    <comment>Text for Main menu - File - Save</comment>
+  </data>
+  <data name="MM_File_SaveAs" xml:space="preserve">
+    <value>Save As...</value>
+    <comment>Text for Main menu - File - Save As</comment>
+  </data>
+  <data name="MM_Help" xml:space="preserve">
+    <value>Help</value>
+    <comment>Text for Main menu - Help</comment>
+  </data>
+  <data name="MM_Help_About" xml:space="preserve">
+    <value>About MagusTools</value>
+    <comment>Text for Main menu - Help - About</comment>
+  </data>
+  <data name="MM_Help_ViewHelp" xml:space="preserve">
+    <value>View Help</value>
+    <comment>Text for Main menu - Help - ViewHelp</comment>
+  </data>
+  <data name="MM_Options" xml:space="preserve">
+    <value>Options</value>
+    <comment>Text for Main menu - Options</comment>
+  </data>
+  <data name="MM_Options_Language" xml:space="preserve">
+    <value>Language</value>
+    <comment>Text for Main menu - Options - Language</comment>
+  </data>
+  <data name="MM_Options_Settings" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Text for Main menu - Options - Settings</comment>
+  </data>
+  <data name="MM_Options_Tools" xml:space="preserve">
+    <value>Tools</value>
+    <comment>Text for Main menu - Options - Tools</comment>
+  </data>
+  <data name="MM_Options_Tools_Diceroller" xml:space="preserve">
+    <value>Diceroller</value>
+    <comment>Text for Main menu - Options - Tools - Diceroller</comment>
+  </data>
+  <data name="TAB_Armory" xml:space="preserve">
+    <value>Armory</value>
+    <comment>Text for Stat-tab Armory</comment>
+  </data>
+  <data name="TAB_BasicInfo" xml:space="preserve">
+    <value>Basic Information</value>
+    <comment>Text for Stat-tab Basic Information</comment>
+  </data>
+  <data name="TAB_Equipment" xml:space="preserve">
+    <value>Equipment</value>
+    <comment>Text for Stat-tab Equipment</comment>
+  </data>
+  <data name="TAB_PrimaryAttributes" xml:space="preserve">
+    <value>Primary Attributes</value>
+    <comment>Text for Stat-tab PrimaryAttributes</comment>
+  </data>
+  <data name="TAB_SecondaryAttributes" xml:space="preserve">
+    <value>Secondary Attributes</value>
+    <comment>Text for Stat-tab SecondaryAttributes</comment>
+  </data>
+  <data name="TAB_Skills" xml:space="preserve">
+    <value>Skills</value>
+    <comment>Text for Stat-tab Skills</comment>
+  </data>
+  <data name="TAB_Summary" xml:space="preserve">
+    <value>Summary</value>
+    <comment>Text for Stat-tab Summary</comment>
+  </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>MagusTools Character Editor</value>
+    <comment>Text for Main Window Title</comment>
+  </data>
+</root>

@@ -1,0 +1,13 @@
+F:\Projects\MagusTools\MagusTools\bin\Release\MagusTools.exe.config
+F:\Projects\MagusTools\MagusTools\bin\Release\MagusTools.exe
+F:\Projects\MagusTools\MagusTools\bin\Release\MagusTools.pdb
+F:\Projects\MagusTools\MagusTools\obj\Release\MagusTools.MainForm.resources
+F:\Projects\MagusTools\MagusTools\obj\Release\MagusTools.csproj.GenerateResource.Cache
+F:\Projects\MagusTools\MagusTools\obj\Release\MagusTools.exe
+F:\Projects\MagusTools\MagusTools\obj\Release\MagusTools.pdb
+F:\Projects\MagusTools\MagusTools\bin\Release\Properties\Skilldata.xml
+F:\Projects\MagusTools\MagusTools\bin\Release\hu-HU\MagusTools.resources.dll
+F:\Projects\MagusTools\MagusTools\obj\Release\MagusTools.csprojResolveAssemblyReference.cache
+F:\Projects\MagusTools\MagusTools\obj\Release\MagusTools.Properties.Resources.en-EN.resources
+F:\Projects\MagusTools\MagusTools\obj\Release\MagusTools.Properties.Resources.hu-HU.resources
+F:\Projects\MagusTools\MagusTools\obj\Release\hu-HU\MagusTools.resources.dll

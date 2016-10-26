@@ -1,0 +1,17 @@
+//  TBaseArmor = record
+//    ID: Integer;
+//    Name: String;
+//    SFE: Integer;
+//    MGT: Integer;
+//    ArmorType: set of TArmorType;
+//  end;
+//
+//  TArmorType = (atHelmet, atVest, atGreaves, atGauntlets, atBoots);
+//	1 -  ha igaz, 0 ha nem
+//
+// {Páncélnév} (SFÉ, MGT, (Helmet, Vest, Greaves, Gauntlets, Boots))
+//
+{Posztóvért}(1,0,Vest)
+{Keményített bõr}(2,1,Vest)
+{Fémsisak}(1,0,Helmet)
+{Fémes kezes}(2,0,Gauntlets)
