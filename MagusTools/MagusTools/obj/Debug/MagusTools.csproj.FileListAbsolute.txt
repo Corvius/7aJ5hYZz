@@ -26,3 +26,6 @@ D:\Projects\MagusTools\MagusTools\obj\Debug\MagusTools.Properties.Resources.hu-H
 D:\Projects\MagusTools\MagusTools\obj\Debug\MagusTools.csproj.GenerateResource.Cache
 D:\Projects\MagusTools\MagusTools\obj\Debug\hu-HU\MagusTools.resources.dll
 D:\Projects\MagusTools\MagusTools\bin\Debug\SkillData.xml
+D:\GameProjects\GitHub\7aJ5hYZz\MagusTools\MagusTools\bin\Debug\MagusTools.exe.config
+D:\GameProjects\GitHub\7aJ5hYZz\MagusTools\MagusTools\obj\Debug\MagusTools.exe
+D:\GameProjects\GitHub\7aJ5hYZz\MagusTools\MagusTools\obj\Debug\MagusTools.pdb

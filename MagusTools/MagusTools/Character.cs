@@ -16,21 +16,10 @@ namespace MagusTools
         }
     }
 
-//    /// <summary>
-//    /// Contains all fixed data entries, that a class in this namespace may use. 
-//    /// </summary>
-//    internal static class Repository
-//    {
-//        // The list of primary stats.
-//        internal enum PrimaryStats { Strength, Speed, Agility, Endurance, Health, Charisma, Intelligence, Willpower, Astral, Perception }
-
-
-
-
-//    }
-
     internal static class Stats
     {
+        // TODO: Change this to be loaded from an XML datafile and be localizable!
+
         // The list of primary stats.
         internal enum PrimaryStats { Strength, Speed, Agility, Endurance, Health, Charisma, Intelligence, Willpower, Astral, Perception }
 
@@ -295,25 +284,3 @@ namespace MagusTools
 
     }
 }
-// Jelölések:
-//
-// # 		Főcímsor
-// #-		Alcímsor 
-// =		Követelménysor szintenként	
-// {}		Képzettség neve
-// [x|y]	Képzettség-követelmény (x = képesség azonosító vagy
-//		    képzettség listaszáma; y = szükséges érték) 
-// !x		A képzettségnek altípusa is van (x = ha van értéke,
-//		    akkor ehhez a listaszámú képzettséghez van
-//	  	    csatolva az altípus. Ha nincs értéke, akkor ki
-//		    kell választani egy listából a felhasználónak)
-//
-//
-//#{Harci képzettségek}
-//#-{Közkeletű harci képzettségek}
-//002 {Öklözés}
-//=01[Erő|012][Gyorsaság|010][Ügyesség|011]<01>
-//=02[Erő|013][Gyorsaság|011][Ügyesség|012]<05>
-//=03[Erő|014][Gyorsaság|013][Ügyesség|014]<08>
-//=04[Erő|015][Gyorsaság|014][Ügyesség|016]<15>
-//=05[Erő|016][Gyorsaság|015][Ügyesség|017]<25> 
