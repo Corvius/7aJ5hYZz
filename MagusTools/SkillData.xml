@@ -88,7 +88,7 @@
         <cost value="30" />
       </level>
       <level value="5">
-        <bonus name="Túlütés" value="-10" />
+        <bonus name="Túlütési küszöb" value="-10" />
         <cost value="40" />
       </level>
     </skill>
@@ -119,18 +119,16 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill name="Lefegyverzés" type="levels" difficulty="3">
+    <skill name="Lefegyverzés" type="levels" difficulty="3" inheritsSubtype="true">
       <level value="1">
         <condition type="and">
           <requirement type="stat" name="Gyorsaság" value="12" />
           <requirement type="stat" name="Ügyesség" value="12" />
-          <requirement type="skill" name="Fegyverhasználat" value="4" isdependency="true">
-            <condition type="or">
-              <category state="true" name="sidearm" />
-              <category state="true" name="blunt" />
-              <category state="true" name="polearm" />
-            </condition>
-          </requirement>
+          <condition type="or">
+            <requirement type="skill" name="Fegyverhasználat" value="4" subtype="sidearm" />
+            <requirement type="skill" name="Fegyverhasználat" value="4" subtype="blunt" />
+            <requirement type="skill" name="Fegyverhasználat" value="4" subtype="polearm" />
+          </condition>
           <cost value="1" />
         </condition>
       </level>
@@ -3942,5 +3940,88 @@ ITT TARTOK
         <cost value="45" />
       </level>
 -->
+    <skill name="NO SUBTYPE" type="levels" difficulty="1">
+      <level value="1">
+        <condition type="and">
+          <requirement type="stat" name="Gyorsaság" value="12" />
+          <requirement type="stat" name="Ügyesség" value="12" />
+          <requirement type="skill" name="Something" value="1" />
+        </condition>
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="7" />
+      </level>
+    </skill>
+
+    <skill name="SELECTABLE SUBTYPE" type="levels" difficulty="1" inheritSubtype="false" selectTag="Élő nyelv">
+      <level value="1">
+        <condition type="and">
+          <requirement type="stat" name="Gyorsaság" value="12" />
+          <requirement type="stat" name="Ügyesség" value="12" />
+          <requirement type="skill" name="Something Else" value="1" />
+        </condition>
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="7" />
+      </level>
+    </skill>
+
+    <skill name="INHERITED SUBTYPE" type="levels" difficulty="1" inheritSubtype="true">
+      <level value="1">
+        <condition type="and">
+          <requirement type="stat" name="Gyorsaság" value="12" />
+          <requirement type="stat" name="Ügyesség" value="12" />
+          <requirement tag="Élő nyelv" value="3"/>
+        </condition>
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="7" />
+      </level>
+    </skill>    
+    
+    
+ <items>
+   <item name="kard" type="fegyver">
+     <tag value="kozelharci" />
+     <tag value="egykezes" />
+     <tag value="vago" />
+   </item> tag="kozelharci vago egykezes"
+  <item name="dobótőr" type="fegyver">
+     <tag value="dobófegyver" />
+     <tag value="egykezes" />
+     <tag value="szúró" />
+   </item> tag="kozelharci vago egykezes"   
+ </items>
+
+    <languages>
+      <language name="Pyarr">
+        <tag value="élő nyelv"/>
+      </language>
+    </languages>
+    
+    <skill name="MINTA" type="levels" difficulty="3" inheritsSubtype="true">
+      <level value="1">
+        <condition type="and">
+          <requirement type="stat" name="Gyorsaság" value="12" />
+          <requirement type="stat" name="Ügyesség" value="12" />
+          <condition type="or">
+            <requirement type="skill" name="Fegyverhasználat" value="4" subtype="sidearm" />
+            <requirement type="skill" name="Fegyverhasználat" value="4" subtype="blunt" />
+            <requirement type="skill" name="Fegyverhasználat" value="4" subtype="polearm" />
+          </condition>
+          <cost value="1" />
+        </condition>
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="7" />
+      </level>
+    </skill>
   </skills>
 </root>
