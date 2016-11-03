@@ -4,7 +4,7 @@
   <skills>
     <!-- Harci képzettségek -->
     <!--   Közkeletű harci képzettségek -->
-    <skill name="Ökölharc" type="levels" difficulty="1">
+    <skill name="Ökölharc" type="levels" difficulty="1" subtypeTag="none">
       <level value="1">
         <requirement type="stat" name="Erő" value="12" />
         <requirement type="stat" name="Gyorsaság" value="10" />
@@ -27,9 +27,6 @@
         <requirement type="stat" name="Erő" value="15" />
         <requirement type="stat" name="Gyorsaság" value="14" />
         <requirement type="stat" name="Ügyesség" value="16" />
-        <bonus name="KÉ" value="5" />
-        <bonus name="TÉ" value="10" />
-        <bonus name="VÉ" value="10" />
         <cost value="15" />
       </level>
       <level value="5">
@@ -39,7 +36,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill name="Bírkózás" type="levels" difficulty="1">
+    <skill name="Bírkózás" type="levels" difficulty="1" subtypeTag="none">
       <level value="1">
         <requirement type="stat" name="Erő" value="13" />
         <requirement type="stat" name="Ügyesség" value="12" />
@@ -70,7 +67,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill name="Fegyverhasználat" type="levels" difficulty="1" subtype="sidearm blunt polearm throwable other ranged">
+    <skill name="Fegyverhasználat" type="levels" difficulty="1" subtypeTag="fegyverhasználat">
       <level value="1">
         <cost value="1" />
       </level>
@@ -78,21 +75,16 @@
         <cost value="3" />
       </level>
       <level value="3">
-        <bonus name="WeaponStatReq" value="1" />
         <cost value="20" />
       </level>
       <level value="4">
-        <bonus name="KÉ" value="5" />
-        <bonus name="TÉ" value="10" />
-        <bonus name="VÉ" value="10" />
         <cost value="30" />
       </level>
       <level value="5">
-        <bonus name="Túlütési küszöb" value="-10" />
         <cost value="40" />
       </level>
     </skill>
-    <skill name="Pajzskezelés" type="levels" difficulty="1">
+    <skill name="Pajzskezelés" type="levels" difficulty="1" subtypeTag="none">
       <level value="1">
         <requirement type="stat" name="Erő" value="8" />
         <requirement type="stat" name="Ügyesség" value="10" />
@@ -119,18 +111,12 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill name="Lefegyverzés" type="levels" difficulty="3" inheritsSubtype="true">
+    <skill name="Lefegyverzés" type="levels" difficulty="3" subtypeSkill="Fegyverhasználat">
       <level value="1">
-        <condition type="and">
-          <requirement type="stat" name="Gyorsaság" value="12" />
-          <requirement type="stat" name="Ügyesség" value="12" />
-          <condition type="or">
-            <requirement type="skill" name="Fegyverhasználat" value="4" subtype="sidearm" />
-            <requirement type="skill" name="Fegyverhasználat" value="4" subtype="blunt" />
-            <requirement type="skill" name="Fegyverhasználat" value="4" subtype="polearm" />
-          </condition>
-          <cost value="1" />
-        </condition>
+        <requirement type="stat" name="Gyorsaság" value="12" />
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" subtypeTag="közelharci"/>
+        <cost value="1" />
       </level>
       <level value="2">
         <requirement type="stat" name="Ügyesség" value="13" />
@@ -152,11 +138,11 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill name="Lefegyverzés puszta kézzel" type="levels" difficulty="4">
+    <skill name="Lefegyverzés puszta kézzel" type="levels" difficulty="4" subtypeTag="none">
       <level value="1">
         <requirement type="stat" name="Gyorsaság" value="13" />
         <requirement type="stat" name="Ügyesség" value="13" />
-        <requirement type="skill" name="Ökölharc" value="4" isdependency="true" />
+        <requirement type="skill" name="Ökölharc" value="4" />
         <cost value="1" />
       </level>
       <level value="2">
@@ -179,11 +165,11 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill name="Lefegyverzés célzófegyverrel" type="levels" difficulty="4">
+    <skill name="Lefegyverzés célzófegyverrel" type="levels" difficulty="4" subtypeSkill="Fegyverhasználat">
       <level value="1">
         <requirement type="stat" name="Gyorsaság" value="13" />
         <requirement type="stat" name="Ügyesség" value="13" />
-        <requirement type="skill" name="Fegyverhasználat" value="4" subtype="ranged" isdependency="true"/>
+        <requirement type="skill" name="Fegyverhasználat" value="4" subtypeTag="célzófegyver" />
         <cost value="1" />
       </level>
       <level value="2">
@@ -206,7 +192,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill name="Fegyverismeret" type="levels" difficulty="1">
+    <skill name="Fegyverismeret" type="levels" difficulty="1" subtypeTag="none">
       <level value="1">
         <requirement type="stat" name="Intelligencia" value="8" />
         <requirement type="stat" name="Érzékelés" value="11" />
@@ -233,11 +219,17 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill name="Vívócsel" type="levels" difficulty="2">
+    <skill name="Vívócsel" type="levels" difficulty="2" subtypeSkill="Fegyverhasználat">
       <level value="1">
         <requirement type="stat" name="Gyorsaság" value="12" />
         <requirement type="stat" name="Ügyesség" value="12" />
-        <requirement type="skill" name="Fegyverhasználat" value="4" subtype="sidearms blunt polearm fast" isdependency="true"/>
+        <condition type="or">
+          <requirement type="skill" name="Fegyverhasználat" value="4" subtypeTag="közelharci gyors" />
+          <requirement type="skill" name="Ökölharc" value="4" />
+          <requirement type="skill" name="Kocsmai verekedés" value="4" />
+          <requirement type="class" name="Harcművész" />
+          <requirement type="class" name="Kardművész" />
+        </condition>
         <cost value="1" />
       </level>
       <level value="2">
@@ -261,15 +253,15 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill name="Belharc" type="levels" difficulty="3">
+    <skill name="Belharc" type="levels" difficulty="3" subtypeSkill="Fegyverhasználat">
       <level value="1">
         <requirement type="stat" name="Erő" value="11" />
         <requirement type="stat" name="Ügyesség" value="12" />
         <condition type="or">
-          <requirement type="skill" name="Fegyverhasználat" value="3" >
+          <requirement type="skill" name="Fegyverhasználat" value="3">
             <condition type="or">
-              <subtype state="true" name="Tőr" />
-              <subtype state="true" name="Kés" />
+              <subtype tag="tőr" />
+              <subtype tag="kés" />
             </condition>
           </requirement>
           <requirement type="skill" name="Ökölharc" value="3" />
@@ -300,50 +292,38 @@
         <cost value="40" />
       </level>
     </skill>
-    
-    
-<!-- ******** EDDIG VAN KIJAVÍTVA ******** -->      
-    
-    
-    <skill name="Földredöntés">
-      <subytype dependency="Fegyverhasználat" category="Melee" />
+    <skill name="Földredöntés" type="levels" difficulty="1" subtypeSkill="Fegyverhasználat">
       <level value="1">
         <requirement type="stat" name="Erő" value="10" />
         <requirement type="stat" name="Gyorsaság" value="11" />
         <requirement type="stat" name="Ügyesség" value="10" />
-        <requirement type="skill" name="Fegyverhasználat" value="2" />
+        <requirement type="skill" name="Fegyverhasználat" value="2" subtypeTag="közelharci" />
         <cost value="1" />
       </level>
       <level value="2">
-        <requirement type="stat" name="Erő" value="10" />
         <requirement type="stat" name="Gyorsaság" value="12" />
         <requirement type="stat" name="Ügyesség" value="11" />
-        <requirement type="skill" name="Fegyverhasználat" value="2" />
         <cost value="5" />
       </level>
       <level value="3">
-        <requirement type="stat" name="Erő" value="10" />
         <requirement type="stat" name="Gyorsaság" value="13" />
         <requirement type="stat" name="Ügyesség" value="12" />
-        <requirement type="skill" name="Fegyverhasználat" value="2" />
         <cost value="12" />
       </level>
       <level value="4">
         <requirement type="stat" name="Erő" value="11" />
         <requirement type="stat" name="Gyorsaság" value="14" />
         <requirement type="stat" name="Ügyesség" value="14" />
-        <requirement type="skill" name="Fegyverhasználat" value="2" />
         <cost value="20" />
       </level>
       <level value="5">
         <requirement type="stat" name="Erő" value="12" />
         <requirement type="stat" name="Gyorsaság" value="16" />
         <requirement type="stat" name="Ügyesség" value="15" />
-        <requirement type="skill" name="Fegyverhasználat" value="2" />
         <cost value="30" />
       </level>
     </skill>
-    <skill name="Taktika">
+    <skill name="Taktika" type="levels" difficulty="1" subtypeTag="none">
       <level value="1">
         <requirement type="stat" name="Intelligencia" value="8" />
         <requirement type="stat" name="Asztrál" value="10" />
@@ -370,7 +350,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill name="Stratégia">
+    <skill name="Stratégia" type="levels" difficulty="3" subtypeTag="none">
       <level value="1">
         <requirement type="stat" name="Intelligencia" value="12" />
         <cost value="1" />
@@ -394,7 +374,7 @@
         <cost value="50" />
       </level>
     </skill>
-    <skill name="Parancsnoklás">
+    <skill name="Parancsnoklás" type="levels" difficulty="3" subtypeTag="none">
       <level value="1">
         <requirement type="stat" name="Akaraterő" value="12" />
         <requirement type="stat" name="Asztrál" value="13" />
@@ -435,7 +415,7 @@
       </level>
     </skill>
     <!--   Szakértő harci képzettségek -->
-    <skill name="Ostromgép kezelése">
+    <skill name="Ostromgép kezelése" type="levels" difficulty="2" subtypeTag="ostromgép">
       <level value="1">
         <requirement type="stat" name="Ügyesség" value="12" />
         <requirement type="stat" name="Intelligencia" value="10" />
@@ -467,7 +447,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill name="Nehézvértviselet">
+    <skill name="Nehézvértviselet" type="levels" difficulty="2" subtypeTag="none">
       <level value="1">
         <requirement type="stat" name="Erő" value="12" />
         <requirement type="stat" name="Állóképesség" value="12" />
@@ -503,140 +483,116 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill name="Fegyverdobás">
-      <subtype category="Throwable" />
+    <skill name="Fegyverdobás" type="levels" difficulty="1" subtypeTag="dobófegyver">
       <level value="1">
         <requirement type="stat" name="Ügyesség" value="12" />
         <requirement type="stat" name="Érzékelés" value="12" />
         <cost value="1" />
       </level>
       <level value="2">
-        <requirement type="stat" name="Ügyesség" value="12" />
-        <requirement type="stat" name="Érzékelés" value="12" />
         <cost value="3" />
       </level>
       <level value="3">
-        <requirement type="stat" name="Ügyesség" value="12" />
-        <requirement type="stat" name="Érzékelés" value="12" />
         <cost value="20" />
       </level>
       <level value="4">
-        <requirement type="stat" name="Ügyesség" value="12" />
-        <requirement type="stat" name="Érzékelés" value="12" />
         <cost value="30" />
       </level>
       <level value="5">
-        <requirement type="stat" name="Ügyesség" value="12" />
-        <requirement type="stat" name="Érzékelés" value="12" />
         <cost value="40" />
       </level>
     </skill>
-    <skill name="Fegyverdobás idegen fegyverrel">
-      <subytype dependency="Fegyverhasználat" category="Melee"/>
+    <skill name="Fegyverdobás idegen fegyverrel" type="levels" difficulty="4" subtypeSkill="Fegyverhasználat">
       <level value="1">
         <requirement type="stat" name="Érzékelés" value="13" />
-        <requirement type="skill" name="Fegyverhasználat" value="2" />
+        <requirement type="skill" name="Fegyverhasználat" value="2" subtypeTag="közelharci" />
         <cost value="3" />
       </level>
       <level value="2">
-        <requirement type="stat" name="Érzékelés" value="13" />
-        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" subtypeTag="közelharci" />
         <cost value="9" />
       </level>
       <level value="3">
-        <requirement type="stat" name="Érzékelés" value="13" />
-        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" subtypeTag="közelharci" />
         <cost value="40" />
       </level>
       <level value="4">
-        <requirement type="stat" name="Érzékelés" value="13" />
-        <requirement type="skill" name="Fegyverhasználat" value="5" />
+        <requirement type="skill" name="Fegyverhasználat" value="5" subtypeTag="közelharci" />
         <cost value="60" />
       </level>
       <level value="5">
-        <requirement type="stat" name="Érzékelés" value="13" />
-        <requirement type="skill" name="Fegyverhasználat" value="5" />
+        <requirement type="skill" name="Fegyverhasználat" value="6" subtypeTag="közelharci" />
         <cost value="80" />
       </level>
     </skill>
-    <skill name="Mesterlövészet">
-      <subytype dependency="Fegyverhasználat" category="Ranged" />
+    <skill name="Mesterlövészet" type="levels" difficulty="3" subtypeSkill="Fegyverhasználat">
       <level value="1">
         <requirement type="stat" name="Ügyesség" value="12" />
         <requirement type="stat" name="Asztrál" value="11" />
         <requirement type="stat" name="Érzékelés" value="12" />
-        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" subtypeTag="célzófegyver" />
         <cost value="1" />
       </level>
       <level value="2">
         <requirement type="stat" name="Ügyesség" value="13" />
         <requirement type="stat" name="Asztrál" value="12" />
         <requirement type="stat" name="Érzékelés" value="13" />
-        <requirement type="skill" name="Fegyverhasználat" value="3" />
         <cost value="6" />
       </level>
       <level value="3">
         <requirement type="stat" name="Ügyesség" value="14" />
         <requirement type="stat" name="Asztrál" value="13" />
         <requirement type="stat" name="Érzékelés" value="14" />
-        <requirement type="skill" name="Fegyverhasználat" value="3" />
         <cost value="15" />
       </level>
       <level value="4">
         <requirement type="stat" name="Ügyesség" value="16" />
         <requirement type="stat" name="Asztrál" value="14" />
         <requirement type="stat" name="Érzékelés" value="16" />
-        <requirement type="skill" name="Fegyverhasználat" value="3" />
         <cost value="25" />
       </level>
       <level value="5">
         <requirement type="stat" name="Ügyesség" value="17" />
         <requirement type="stat" name="Asztrál" value="16" />
         <requirement type="stat" name="Érzékelés" value="17" />
-        <requirement type="skill" name="Fegyverhasználat" value="3" />
         <cost value="40" />
       </level>
     </skill>
-    <skill name="Lovas ijászat">
-      <subytype dependency="Fegyverhasználat" category="Ranged" />
+    <skill name="Lovas ijászat" type="levels" difficulty="4" subtypeSkill="Fegyverhasználat">
       <level value="1">
         <requirement type="stat" name="Ügyesség" value="13" />
         <requirement type="stat" name="Érzékelés" value="13" />
-        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" subtypeTag="célzófegyver" />
         <requirement type="skill" name="Lovaglás" value="4" />
         <cost value="1" />
       </level>
       <level value="2">
         <requirement type="stat" name="Ügyesség" value="14" />
         <requirement type="stat" name="Érzékelés" value="14" />
-        <requirement type="skill" name="Fegyverhasználat" value="4" />
-        <requirement type="skill" name="Lovaglás" value="4" />
         <cost value="5" />
       </level>
       <level value="3">
         <requirement type="stat" name="Ügyesség" value="15" />
         <requirement type="stat" name="Érzékelés" value="15" />
-        <requirement type="skill" name="Fegyverhasználat" value="4" />
-        <requirement type="skill" name="Lovaglás" value="4" />
         <cost value="15" />
       </level>
       <level value="4">
         <requirement type="stat" name="Ügyesség" value="17" />
         <requirement type="stat" name="Érzékelés" value="17" />
-        <requirement type="skill" name="Fegyverhasználat" value="4" />
-        <requirement type="skill" name="Lovaglás" value="4" />
         <cost value="25" />
       </level>
       <level value="5">
         <requirement type="stat" name="Ügyesség" value="18" />
         <requirement type="stat" name="Érzékelés" value="18" />
-        <requirement type="skill" name="Fegyverhasználat" value="5" />
+        <requirement type="skill" name="Fegyverhasználat" value="5" subtypeTag="célzófegyver" />
         <requirement type="skill" name="Lovaglás" value="5" />
         <cost value="35" />
       </level>
     </skill>
-    <skill name="Fegyverdobás lóhátról">
-      <subytype dependency="Fegyverdobás" category="Throwable" />
+    
+<!-- **** EDDIG VAN KÉSZ **** -->    
+    
+    <skill name="Fegyverdobás lóhátról" type="levels" difficulty="4" subtypeSkill="Fegyverdobás">
       <level value="1">
         <requirement type="stat" name="Ügyesség" value="12" />
         <requirement type="stat" name="Érzékelés" value="12" />
@@ -647,15 +603,11 @@
       <level value="2">
         <requirement type="stat" name="Ügyesség" value="13" />
         <requirement type="stat" name="Érzékelés" value="13" />
-        <requirement type="skill" name="Fegyverhasználat" value="4" />
-        <requirement type="skill" name="Lovaglás" value="4" />
         <cost value="5" />
       </level>
       <level value="3">
         <requirement type="stat" name="Ügyesség" value="14" />
         <requirement type="stat" name="Érzékelés" value="14" />
-        <requirement type="skill" name="Fegyverhasználat" value="4" />
-        <requirement type="skill" name="Lovaglás" value="4" />
         <cost value="15" />
       </level>
       <level value="4">
@@ -668,8 +620,6 @@
       <level value="5">
         <requirement type="stat" name="Ügyesség" value="16" />
         <requirement type="stat" name="Érzékelés" value="16" />
-        <requirement type="skill" name="Fegyverhasználat" value="5" />
-        <requirement type="skill" name="Lovaglás" value="5" />
         <cost value="30" />
       </level>
     </skill>
@@ -3940,68 +3890,92 @@ ITT TARTOK
         <cost value="45" />
       </level>
 -->
-    <skill name="NO SUBTYPE" type="levels" difficulty="1">
-      <level value="1">
-        <condition type="and">
-          <requirement type="stat" name="Gyorsaság" value="12" />
-          <requirement type="stat" name="Ügyesség" value="12" />
-          <requirement type="skill" name="Something" value="1" />
-        </condition>
-        <cost value="1" />
-      </level>
-      <level value="2">
-        <requirement type="stat" name="Ügyesség" value="13" />
-        <cost value="7" />
-      </level>
-    </skill>
+  </skills>
+<!-- TESTING AND DEBUG SECTION -->
+  <testing>
 
-    <skill name="SELECTABLE SUBTYPE" type="levels" difficulty="1" inheritSubtype="false" selectTag="Élő nyelv">
-      <level value="1">
-        <condition type="and">
-          <requirement type="stat" name="Gyorsaság" value="12" />
-          <requirement type="stat" name="Ügyesség" value="12" />
-          <requirement type="skill" name="Something Else" value="1" />
-        </condition>
-        <cost value="1" />
-      </level>
-      <level value="2">
-        <requirement type="stat" name="Ügyesség" value="13" />
-        <cost value="7" />
-      </level>
-    </skill>
+    <skills>
+      <skill name="NO SUBTYPE" type="levels" difficulty="1" subtypeTag="none">
+        <level value="1">
+          <condition type="and">
+            <requirement type="stat" name="Gyorsaság" value="12" />
+            <requirement type="stat" name="Ügyesség" value="12" />
+            <requirement type="skill" name="Tökmindegy az altípusa" value="1" />
+          </condition>
+          <cost value="1" />
+        </level>
+      </skill>
 
-    <skill name="INHERITED SUBTYPE" type="levels" difficulty="1" inheritSubtype="true">
-      <level value="1">
-        <condition type="and">
-          <requirement type="stat" name="Gyorsaság" value="12" />
-          <requirement type="stat" name="Ügyesség" value="12" />
-          <requirement tag="Élő nyelv" value="3"/>
-        </condition>
-        <cost value="1" />
-      </level>
-      <level value="2">
-        <requirement type="stat" name="Ügyesség" value="13" />
-        <cost value="7" />
-      </level>
-    </skill>    
-    
-    
- <items>
-   <item name="kard" type="fegyver">
-     <tag value="kozelharci" />
-     <tag value="egykezes" />
-     <tag value="vago" />
-   </item> tag="kozelharci vago egykezes"
-  <item name="dobótőr" type="fegyver">
-     <tag value="dobófegyver" />
-     <tag value="egykezes" />
-     <tag value="szúró" />
-   </item> tag="kozelharci vago egykezes"   
- </items>
+      <skill name="SELECTABLE SUBTYPE" type="levels" difficulty="1" subtypeTag="fegyverhasználat">
+        <level value="1">
+          <condition type="and">
+            <requirement type="stat" name="Gyorsaság" value="12" />
+            <requirement type="stat" name="Ügyesség" value="12" />
+            <requirement type="skill" name="Tökmindegy az altípusa" value="1" />
+          </condition>
+          <cost value="1" />
+        </level>
+      </skill>
+
+      <skill name="INHERITED SUBTYPE" type="levels" difficulty="1" subtypeTag="inherited" subtypeSkill="ALTÍPUSOS SKILL 2">
+        <level value="1">
+          <condition type="and">
+            <requirement type="stat" name="Gyorsaság" value="12" />
+            <requirement type="stat" name="Ügyesség" value="12" />
+            <requirement type="skill" name="ALTÍPUSOS SKILL" value="3" />
+            <requirement type="skill" name="ALTÍPUSOS SKILL 2" value="4" />
+          </condition>
+          <cost value="1" />
+        </level>
+      </skill>
+    </skills>
+
+    <items>
+      <item name="Pallos" type="fegyver">
+        <tag>fegyverhasználat</tag>
+        <tag>közelharci</tag>
+        <tag>egykezes</tag>
+        <tag>vágó</tag>
+        <tag>szúró</tag>
+        <tag>kard</tag>
+        <statreq type="Erő" value="14"/>
+        <stats>
+          <stat name="KÉ" value="0" />
+          <stat name="TÉ" value="6" />
+          <stat name="VÉ" value="2" />
+          <stat name="Tám/kör" value="0.5" />
+          <stat name="Sebzés" value="2K6+8" />
+          <stat name="Súly" value="7000" /> 
+          <stat name="Ár" value="5000" />
+        </stats>
+      </item>
+      
+      <item name="Dobótőr" type="fegyver">
+        <tag>fegyverhasználat</tag>
+        <tag>dobófegyver</tag>
+        <tag>egykezes</tag>
+        <tag>szúró</tag>
+        <tag>tőr</tag>
+        <statreq type="Ügyesség" value="13"/>
+        <stats>
+          <stat name="KÉ" value="10" />
+          <stat name="TÉ" value="11" />
+          <stat name="VÉ" value="2" />
+          <stat name="Tám/kör" value="2" />
+          <stat name="Sebzés" value="1K6" />
+          <stat name="Súly" value="500" />
+          <stat name="Ár" value="150" />
+        </stats>
+      </item>
+    </items>
 
     <languages>
       <language name="Pyarr">
-        <tag value="élő nyelv"/>
+        <tag>élő nyelv</tag>
+      </language>
+
+      <language name="ÓKyr">
+        <tag>holt nyelv</tag>
       </language>
     </languages>
     
@@ -4023,5 +3997,5 @@ ITT TARTOK
         <cost value="7" />
       </level>
     </skill>
-  </skills>
+  </testing>    
 </root>
