@@ -29,3 +29,6 @@ D:\Projects\MagusTools\MagusTools\bin\Debug\SkillData.xml
 D:\GameProjects\GitHub\7aJ5hYZz\MagusTools\MagusTools\bin\Debug\MagusTools.exe.config
 D:\GameProjects\GitHub\7aJ5hYZz\MagusTools\MagusTools\obj\Debug\MagusTools.exe
 D:\GameProjects\GitHub\7aJ5hYZz\MagusTools\MagusTools\obj\Debug\MagusTools.pdb
+D:\projects\MagusTools\7aJ5hYZz\MagusTools\MagusTools\bin\Debug\MagusTools.exe.config
+D:\projects\MagusTools\7aJ5hYZz\MagusTools\MagusTools\obj\Debug\MagusTools.exe
+D:\projects\MagusTools\7aJ5hYZz\MagusTools\MagusTools\obj\Debug\MagusTools.pdb
