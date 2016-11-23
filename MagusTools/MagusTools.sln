@@ -10,6 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		SkillData.xml = SkillData.xml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{641883B6-0B60-4336-A3C3-95AC59192A3D}"
+	ProjectSection(SolutionItems) = preProject
+		Feature Requirement List.docx = Feature Requirement List.docx
+		MagusTools_FRS.docx = MagusTools_FRS.docx
+		Testcase_list.xlsx = Testcase_list.xlsx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
