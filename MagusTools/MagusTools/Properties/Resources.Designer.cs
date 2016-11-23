@@ -61,7 +61,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Agility.
+        ///   Looks up a localized string similar to Ügyesség.
         /// </summary>
         internal static string ATTR_Agility {
             get {
@@ -70,7 +70,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Astral.
+        ///   Looks up a localized string similar to Asztrál.
         /// </summary>
         internal static string ATTR_Astral {
             get {
@@ -79,7 +79,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Charisma.
+        ///   Looks up a localized string similar to Szépség.
         /// </summary>
         internal static string ATTR_Charisma {
             get {
@@ -88,7 +88,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Endurance.
+        ///   Looks up a localized string similar to Állóképesség.
         /// </summary>
         internal static string ATTR_Endurance {
             get {
@@ -97,7 +97,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Health.
+        ///   Looks up a localized string similar to Életerő.
         /// </summary>
         internal static string ATTR_Health {
             get {
@@ -106,7 +106,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Intelligence.
+        ///   Looks up a localized string similar to Intelligencia.
         /// </summary>
         internal static string ATTR_Intelligence {
             get {
@@ -115,7 +115,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Perception.
+        ///   Looks up a localized string similar to Érzékelés.
         /// </summary>
         internal static string ATTR_Perception {
             get {
@@ -124,7 +124,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Speed.
+        ///   Looks up a localized string similar to Gyorsaság.
         /// </summary>
         internal static string ATTR_Speed {
             get {
@@ -133,7 +133,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Strength.
+        ///   Looks up a localized string similar to Erő.
         /// </summary>
         internal static string ATTR_Strength {
             get {
@@ -142,7 +142,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Willpower.
+        ///   Looks up a localized string similar to Akaraterő.
         /// </summary>
         internal static string ATTR_Willpower {
             get {
@@ -151,205 +151,16 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chaos.
+        ///   Looks up a localized string similar to KAP költség.
         /// </summary>
-        internal static string CHAR_Characteristic_Chaos {
+        internal static string MISC_PrimaryAttributes_SpentCCP {
             get {
-                return ResourceManager.GetString("CHAR_Characteristic_Chaos", resourceCulture);
+                return ResourceManager.GetString("MISC_PrimaryAttributes_SpentCCP", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chaos - Death.
-        /// </summary>
-        internal static string CHAR_Characteristic_ChaosDeath {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_ChaosDeath", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Chaos - Life.
-        /// </summary>
-        internal static string CHAR_Characteristic_ChaosLife {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_ChaosLife", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Death.
-        /// </summary>
-        internal static string CHAR_Characteristic_Death {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_Death", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Death - Chaos.
-        /// </summary>
-        internal static string CHAR_Characteristic_DeathChaos {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_DeathChaos", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Death - Order.
-        /// </summary>
-        internal static string CHAR_Characteristic_DeathOrder {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_DeathOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Life.
-        /// </summary>
-        internal static string CHAR_Characteristic_Life {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_Life", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Life - Chaos.
-        /// </summary>
-        internal static string CHAR_Characteristic_LifeChaos {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_LifeChaos", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Life - Order.
-        /// </summary>
-        internal static string CHAR_Characteristic_LifeOrder {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_LifeOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Order.
-        /// </summary>
-        internal static string CHAR_Characteristic_Order {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_Order", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Order - Death.
-        /// </summary>
-        internal static string CHAR_Characteristic_OrderDeath {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_OrderDeath", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Order - Life.
-        /// </summary>
-        internal static string CHAR_Characteristic_OrderLife {
-            get {
-                return ResourceManager.GetString("CHAR_Characteristic_OrderLife", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Female.
-        /// </summary>
-        internal static string CHAR_Gender_Female {
-            get {
-                return ResourceManager.GetString("CHAR_Gender_Female", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Male.
-        /// </summary>
-        internal static string CHAR_Gender_Male {
-            get {
-                return ResourceManager.GetString("CHAR_Gender_Male", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Other.
-        /// </summary>
-        internal static string CHAR_Gender_Other {
-            get {
-                return ResourceManager.GetString("CHAR_Gender_Other", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Dwarf.
-        /// </summary>
-        internal static string CHAR_Race_Dwarf {
-            get {
-                return ResourceManager.GetString("CHAR_Race_Dwarf", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Elf.
-        /// </summary>
-        internal static string CHAR_Race_Elf {
-            get {
-                return ResourceManager.GetString("CHAR_Race_Elf", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Half-Elf.
-        /// </summary>
-        internal static string CHAR_Race_HalfElf {
-            get {
-                return ResourceManager.GetString("CHAR_Race_HalfElf", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Human.
-        /// </summary>
-        internal static string CHAR_Race_Human {
-            get {
-                return ResourceManager.GetString("CHAR_Race_Human", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sublimated Orc.
-        /// </summary>
-        internal static string CHAR_Race_SublimatedOrc {
-            get {
-                return ResourceManager.GetString("CHAR_Race_SublimatedOrc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Gnome.
-        /// </summary>
-        internal static string CHAT_Race_Gnome {
-            get {
-                return ResourceManager.GetString("CHAT_Race_Gnome", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Goblin.
-        /// </summary>
-        internal static string CHAT_Race_Goblin {
-            get {
-                return ResourceManager.GetString("CHAT_Race_Goblin", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Ability average.
+        ///   Looks up a localized string similar to Átlag.
         /// </summary>
         internal static string MISC_Text_AbilityAverage {
             get {
@@ -358,7 +169,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Actual.
+        ///   Looks up a localized string similar to Aktuális.
         /// </summary>
         internal static string MISC_Text_Actual {
             get {
@@ -367,7 +178,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Base.
+        ///   Looks up a localized string similar to Alap.
         /// </summary>
         internal static string MISC_Text_Base {
             get {
@@ -376,7 +187,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CCP.
+        ///   Looks up a localized string similar to KAP.
         /// </summary>
         internal static string MISC_Text_CCP {
             get {
@@ -385,7 +196,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Character.
+        ///   Looks up a localized string similar to Karakter.
         /// </summary>
         internal static string MM_Character {
             get {
@@ -394,7 +205,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Export As Text.
+        ///   Looks up a localized string similar to Mentés szövegfájlba.
         /// </summary>
         internal static string MM_Character_ExportAsText {
             get {
@@ -403,7 +214,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate.
+        ///   Looks up a localized string similar to Generálás.
         /// </summary>
         internal static string MM_Character_Generate {
             get {
@@ -412,7 +223,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to File.
+        ///   Looks up a localized string similar to Fájl.
         /// </summary>
         internal static string MM_File {
             get {
@@ -421,7 +232,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to New.
+        ///   Looks up a localized string similar to Új.
         /// </summary>
         internal static string MM_File_New {
             get {
@@ -430,7 +241,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Non-Playable Character (NPC).
+        ///   Looks up a localized string similar to Nem-Játékos Karakter (NJK).
         /// </summary>
         internal static string MM_File_New_NPC {
             get {
@@ -439,7 +250,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Playable Character (PC).
+        ///   Looks up a localized string similar to Játékos Karakter (JK).
         /// </summary>
         internal static string MM_File_New_PC {
             get {
@@ -448,7 +259,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open.
+        ///   Looks up a localized string similar to Megnyitás.
         /// </summary>
         internal static string MM_File_Open {
             get {
@@ -457,7 +268,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Quit.
+        ///   Looks up a localized string similar to Kilépés.
         /// </summary>
         internal static string MM_File_Quit {
             get {
@@ -466,7 +277,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Save.
+        ///   Looks up a localized string similar to Mentés.
         /// </summary>
         internal static string MM_File_Save {
             get {
@@ -475,7 +286,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Save As....
+        ///   Looks up a localized string similar to Mentés másként...
         /// </summary>
         internal static string MM_File_SaveAs {
             get {
@@ -484,7 +295,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Help.
+        ///   Looks up a localized string similar to Segítség.
         /// </summary>
         internal static string MM_Help {
             get {
@@ -493,7 +304,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to About MagusTools.
+        ///   Looks up a localized string similar to MagusTools névjegye.
         /// </summary>
         internal static string MM_Help_About {
             get {
@@ -502,7 +313,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to View Help.
+        ///   Looks up a localized string similar to Segítség megtekintése.
         /// </summary>
         internal static string MM_Help_ViewHelp {
             get {
@@ -511,7 +322,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Options.
+        ///   Looks up a localized string similar to Beállítások.
         /// </summary>
         internal static string MM_Options {
             get {
@@ -520,7 +331,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to Nyelvek.
         /// </summary>
         internal static string MM_Options_Language {
             get {
@@ -529,16 +340,16 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Settings.
+        ///   Looks up a localized string similar to Speciális.
         /// </summary>
-        internal static string MM_Options_Settings {
+        internal static string MM_Options_Specials {
             get {
-                return ResourceManager.GetString("MM_Options_Settings", resourceCulture);
+                return ResourceManager.GetString("MM_Options_Specials", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tools.
+        ///   Looks up a localized string similar to Kiegészítők.
         /// </summary>
         internal static string MM_Options_Tools {
             get {
@@ -547,7 +358,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Diceroller.
+        ///   Looks up a localized string similar to Kockadobó.
         /// </summary>
         internal static string MM_Options_Tools_Diceroller {
             get {
@@ -556,7 +367,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Armory.
+        ///   Looks up a localized string similar to Fegyverraktár.
         /// </summary>
         internal static string TAB_Armory {
             get {
@@ -565,7 +376,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Basic Information.
+        ///   Looks up a localized string similar to Alapinformációk.
         /// </summary>
         internal static string TAB_BasicInfo {
             get {
@@ -574,7 +385,106 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Equipment.
+        ///   Looks up a localized string similar to Elosztható KAP.
+        /// </summary>
+        internal static string TAB_BasicInfo_AvailableCCPLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_AvailableCCPLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kor.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharAgeLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharAgeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Szülőföld.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharBirthplaceLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharBirthplaceLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jellem.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharCharacteristicLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharCharacteristicLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kaszt.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharClassLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharClassLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nem.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharGenderLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharGenderLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Szint.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharLevelLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharLevelLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharNameLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharNameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Faj.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharRaceLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharRaceLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Szférák.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharRealmsLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharRealmsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vallás.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharReligionLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharReligionLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Felszerelés.
         /// </summary>
         internal static string TAB_Equipment {
             get {
@@ -583,7 +493,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Primary Attributes.
+        ///   Looks up a localized string similar to Elsődleges Képességek.
         /// </summary>
         internal static string TAB_PrimaryAttributes {
             get {
@@ -592,7 +502,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Secondary Attributes.
+        ///   Looks up a localized string similar to Másodlagos Képességek.
         /// </summary>
         internal static string TAB_SecondaryAttributes {
             get {
@@ -601,7 +511,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Skills.
+        ///   Looks up a localized string similar to Képzettségek.
         /// </summary>
         internal static string TAB_Skills {
             get {
@@ -610,7 +520,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Summary.
+        ///   Looks up a localized string similar to Áttekintés.
         /// </summary>
         internal static string TAB_Summary {
             get {
@@ -619,7 +529,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MagusTools Character Editor.
+        ///   Looks up a localized string similar to MagusTools Karakterszerkesztő.
         /// </summary>
         internal static string TITLE {
             get {

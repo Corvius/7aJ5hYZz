@@ -4608,675 +4608,680 @@
   <!-- -->
   <!-- Listázható altípusok -->
   <!-- -->
-  <collections>
+  <!-- -->
+  <!-- Jellemek -->
+  <!-- -->
+  <characteristics>
+    <entry name="Élet">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Élet - Rend">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Élet - Káosz">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Rend">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Rend - Élet">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Rend - Halál">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Halál">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Halál - Rend">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Halál - Káosz">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Káosz">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Káosz - Élet">
+      <tag>jellem</tag>
+    </entry>
+    <entry name="Káosz - Halál">
+      <tag>jellem</tag>
+    </entry>
+  </characteristics>
+  <!-- -->
+  <!-- Nemek -->
+  <!-- -->
+  <genders>
+    <entry name="Férfi">
+      <tag>nemiség</tag>
+    </entry>
+    <entry name="Nő">
+      <tag>nemiség</tag>
+    </entry>
+    <entry name="Egyéb">
+      <tag>nemiség</tag>
+    </entry>
+  </genders>
+  <!-- -->
+  <!-- Kasztok -->
+  <!-- -->
+  <classes>
+    <entry name="Harcos">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Gladiátor">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Fejvadász">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Lovag">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Tolvaj">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Bárd">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+      <tag>tapasztalati_mágia</tag>
+    </entry>
+    <entry name="Pap">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Paplovag">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Harcművész">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Kardművész">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Boszorkány">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+      <tag>tapasztalati_mágia</tag>
+    </entry>
+    <entry name="Boszorkánymester">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+      <tag>tapasztalati_mágia</tag>
+    </entry>
+    <entry name="Tűzvarázsló">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+      <tag>tapasztalati_mágia</tag>
+    </entry>
+    <entry name="Varázsló">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Illúzionista">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Pszí-mester">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Nomád Sámán">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Barbár">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Amazon">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+    <entry name="Vier">
+      <tag>kaszt</tag>
+      <tag>játszható</tag>
+    </entry>
+  </classes>
+  <!-- -->
+  <!-- Nyelvek -->
+  <!-- -->
+  <languages>
     <!-- -->
-    <!-- Jellemek -->      
+    <!-- Élő Nyelvek -->
     <!-- -->
-    <characteristics>
-      <entry name="Élet">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Élet - Rend">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Élet - Káosz">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Rend">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Rend - Élet">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Rend - Halál">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Halál">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Halál - Rend">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Halál - Káosz">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Káosz">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Káosz - Élet">
-        <tag>jellem</tag>
-      </entry>
-      <entry name="Káosz - Halál">
-        <tag>jellem</tag>
-      </entry>
-    </characteristics>
+    <entry name="Pyarron">
+      <tag>nyelv</tag>
+      <tag>kultúra</tag>
+      <tag>szülőföld</tag>
+      <tag>élő_nyelv</tag>
+    </entry>
+    <entry name="Shadon">
+      <tag>nyelv</tag>
+      <tag>kultúra</tag>
+      <tag>szülőföld</tag>
+      <tag>élő_nyelv</tag>
+    </entry>
+    <entry name="Gorvik">
+      <tag>nyelv</tag>
+      <tag>kultúra</tag>
+      <tag>szülőföld</tag>
+      <tag>élő_nyelv</tag>
+    </entry>
+    <entry name="Yllinor">
+      <tag>nyelv</tag>
+      <tag>kultúra</tag>
+      <tag>szülőföld</tag>
+      <tag>élő_nyelv</tag>
+    </entry>
+    <entry name="Toron">
+      <tag>nyelv</tag>
+      <tag>kultúra</tag>
+      <tag>szülőföld</tag>
+      <tag>élő_nyelv</tag>
+    </entry>
+    <entry name="Niare">
+      <tag>nyelv</tag>
+      <tag>kultúra</tag>
+      <tag>szülőföld</tag>
+      <tag>élő_nyelv</tag>
+    </entry>
     <!-- -->
-    <!-- Nemek -->      
+    <!-- Holt Nyelvek -->
     <!-- -->
-    <genders>
-      <entry name="Férfi">
-        <tag>nemiség</tag>
-      </entry>
-      <entry name="Nő">
-        <tag>nemiség</tag>
-      </entry>
-      <entry name="Egyéb">
-        <tag>nemiség</tag>
-      </entry>
-    </genders>
+    <entry name="Amund">
+      <tag>nyelv</tag>
+      <tag>holt_nyelv</tag>
+    </entry>
+    <entry name="Aquir">
+      <tag>nyelv</tag>
+      <tag>holt_nyelv</tag>
+    </entry>
+    <entry name="Godoni">
+      <tag>nyelv</tag>
+      <tag>holt_nyelv</tag>
+    </entry>
+    <entry name="ÓKyr">
+      <tag>nyelv</tag>
+      <tag>holt_nyelv</tag>
+    </entry>
+    <entry name="ÓElf">
+      <tag>nyelv</tag>
+      <tag>holt_nyelv</tag>
+    </entry>
+  </languages>
+  <!-- -->
+  <!-- Vallások -->
+  <!-- -->
+  <religions>
+    <entry name="Arel">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Adron">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Alborne">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Antoh">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Darton">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Della">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Doldzsah">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Domvik">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Dreina">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Dzsah">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Ellana">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Felice">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Galradzsa">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Gilron">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Kadal">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Kaoraku">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Krad">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Kyel">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Leutaril">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Morgena">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Narmiraen">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Noir">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Orwella">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Ramrik">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Ranagol">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Ranil">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Sogron">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Tharr">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Tomatis">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Tooma">
+      <tag>vallás</tag>
+    </entry>
+    <entry name="Uwel">
+      <tag>vallás</tag>
+    </entry>
+  </religions>
+  <!-- -->
+  <!-- Élőlények -->
+  <!-- -->
+  <creatures>
     <!-- -->
-    <!-- Kasztok -->      
+    <!-- Állatok -->
     <!-- -->
-    <classes>
-      <entry name="Harcos">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Gladiátor">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Fejvadász">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Lovag">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Tolvaj">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Bárd">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-        <tag>tapasztalati_mágia</tag>
-      </entry>
-      <entry name="Pap">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Paplovag">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Harcművész">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Kardművész">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Boszorkány">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Tűzvarázsló">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Varázsló">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Illúzionista">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Pszí-mester">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Nomád Sámán">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Barbár">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Amazon">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-      <entry name="Vier">
-        <tag>kaszt</tag>
-        <tag>játszható</tag>
-      </entry>
-    </classes>
+    <entry name="Ló">
+      <tag>élőlény</tag>
+      <tag>állat</tag>
+      <tag>hátas</tag>
+      <tag>járműhúzó</tag>
+      <tag>tenyésztett</tag>
+      <tag>idomítható</tag>
+    </entry>
+    <entry name="Sólyom">
+      <tag>élőlény</tag>
+      <tag>állat</tag>
+      <tag>sólyom</tag>
+      <tag>idomítható</tag>
+    </entry>
+    <entry name="Véreb">
+      <tag>élőlény</tag>
+      <tag>állat</tag>
+      <tag>tenyésztett</tag>
+      <tag>idomítható</tag>
+    </entry>
     <!-- -->
-    <!-- Nyelvek -->      
+    <!-- Humanoidok -->
     <!-- -->
-    <languages>
-      <!-- -->
-      <!-- Élő Nyelvek -->
-      <!-- -->
-      <entry name="Pyarron">
-        <tag>nyelv</tag>
-        <tag>kultúra</tag>
-        <tag>szülőföld</tag>
-        <tag>aktív</tag>
-      </entry>
-      <entry name="Shadon">
-        <tag>nyelv</tag>
-        <tag>kultúra</tag>
-        <tag>szülőföld</tag>
-        <tag>aktív</tag>
-      </entry>
-      <entry name="Gorvik">
-        <tag>nyelv</tag>
-        <tag>kultúra</tag>
-        <tag>szülőföld</tag>
-        <tag>aktív</tag>
-      </entry>
-      <entry name="Yllinor">
-        <tag>nyelv</tag>
-        <tag>kultúra</tag>
-        <tag>szülőföld</tag>
-        <tag>aktív</tag>
-      </entry>
-      <entry name="Toron">
-        <tag>nyelv</tag>
-        <tag>kultúra</tag>
-        <tag>szülőföld</tag>
-        <tag>aktív</tag>
-      </entry>
-      <entry name="Niare">
-        <tag>nyelv</tag>
-        <tag>kultúra</tag>
-        <tag>szülőföld</tag>
-        <tag>aktív</tag>
-      </entry>
-      <!-- -->
-      <!-- Holt Nyelvek -->
-      <!-- -->
-      <entry name="Amund">
-        <tag>nyelv</tag>
-        <tag>inaktív</tag>
-      </entry>
-      <entry name="Aquir">
-        <tag>nyelv</tag>
-        <tag>inaktív</tag>
-      </entry>
-      <entry name="Godoni">
-        <tag>nyelv</tag>
-        <tag>inaktív</tag>
-      </entry>
-      <entry name="ÓKyr">
-        <tag>nyelv</tag>
-        <tag>inaktív</tag>
-      </entry>
-      <entry name="ÓElf">
-        <tag>nyelv</tag>
-        <tag>inaktív</tag>
-      </entry>
-    </languages>
+    <entry name="Ember">
+      <tag>élőlény</tag>
+      <tag>humanoid</tag>
+      <tag>faj</tag>
+      <tag>játszható</tag>
+      <tag>beszédképes</tag>
+    </entry>
+    <entry name="Elf">
+      <tag>élőlény</tag>
+      <tag>humanoid</tag>
+      <tag>faj</tag>
+      <tag>játszható</tag>
+      <tag>beszédképes</tag>
+    </entry>
+  </creatures>
+  <!-- -->
+  <!-- Foglalkozások -->
+  <!-- -->
+  <occupations>
+    <entry name="Ács">
+      <tag>iparűzés</tag>
+    </entry>
+    <entry name="Fegyverkovács">
+      <tag>iparűzés</tag>
+    </entry>
+    <entry name="Hóhér">
+      <tag>iparűzés</tag>
+    </entry>
+  </occupations>
+  <!-- -->
+  <!-- Mágikus iskolaformák -->
+  <!-- -->
+  <magic_schoolforms>
+    <entry name="Elemi mágia">
+      <tag>mágikus_iskolaforma</tag>
+    </entry>
+    <entry name="Nekromancia">
+      <tag>mágikus_iskolaforma</tag>
+    </entry>
+  </magic_schoolforms>
+  <!-- -->
+  <!-- Tárgyak -->
+  <!-- -->
+  <items>
     <!-- -->
-    <!-- Vallások -->      
+    <!-- Fegyverek -->
     <!-- -->
-    <religions>
-      <entry name="Arel">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Adron">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Alborne">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Antoh">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Darton">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Della">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Doldzsah">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Domvik">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Dreina">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Dzsah">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Ellana">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Felice">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Galradzsa">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Gilron">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Kadal">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Kaoraku">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Krad">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Kyel">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Leutaril">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Morgena">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Narmiraen">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Noir">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Orwella">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Ramrik">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Ranagol">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Ranil">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Sogron">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Tharr">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Tomatis">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Tooma">
-        <tag>vallás</tag>
-      </entry>
-      <entry name="Uwel">
-        <tag>vallás</tag>
-      </entry>
-    </religions>
+    <!--   Közelharci fegyverek-->
     <!-- -->
-    <!-- Élőlények -->
+    <entry name="Pallos">
+      <tag>fegyver</tag>
+      <tag>közelharci</tag>
+      <tag>kétkezes</tag>
+      <tag>vágó</tag>
+      <tag>szúró</tag>
+      <tag>szúró_vágó</tag>
+      <tag>kard</tag>
+      <tag>lassú</tag>
+      <statreq type="Erő" value="14" />
+      <stats>
+        <stat name="KÉ" value="0" />
+        <stat name="TÉ" value="6" />
+        <stat name="VÉ" value="2" />
+        <stat name="Tám/kör" value="0.5" />
+        <stat name="Sebzés" value="2K6+8" />
+        <stat name="Súly" value="7000" />
+        <stat name="Ár" value="5000" />
+      </stats>
+    </entry>
+    <entry name="Rövidkard">
+      <tag>fegyver</tag>
+      <tag>közelharci</tag>
+      <tag>egykezes</tag>
+      <tag>vágó</tag>
+      <tag>szúró</tag>
+      <tag>szúró_vágó</tag>
+      <tag>kard</tag>
+      <tag>gyors</tag>
+      <statreq type="Erő" value="8" />
+      <stats>
+        <stat name="KÉ" value="9" />
+        <stat name="TÉ" value="12" />
+        <stat name="VÉ" value="14" />
+        <stat name="Tám/kör" value="1" />
+        <stat name="Sebzés" value="1K6+1" />
+        <stat name="Súly" value="1000" />
+        <stat name="Ár" value="1000" />
+      </stats>
+    </entry>
+    <entry name="Fogastőr">
+      <tag>fegyver</tag>
+      <tag>közelharci</tag>
+      <tag>egykezes</tag>
+      <tag>vágó</tag>
+      <tag>szúró</tag>
+      <tag>szúró_vágó</tag>
+      <tag>tőr</tag>
+      <tag>gyors</tag>
+      <tag>belharc</tag>
+      <tag>fegyvertörés</tag>
+      <tag>orvtámadás</tag>
+      <statreq type="Ügyesség" value="12" />
+      <stats>
+        <stat name="KÉ" value="8" />
+        <stat name="TÉ" value="3" />
+        <stat name="VÉ" value="21" />
+        <stat name="Tám/kör" value="2" />
+        <stat name="Sebzés" value="1K6" />
+        <stat name="Súly" value="300" />
+        <stat name="Ár" value="3000" />
+      </stats>
+    </entry>
+    <entry name="Béltépő">
+      <tag>fegyver</tag>
+      <tag>közelharci</tag>
+      <tag>egykezes</tag>
+      <tag>vágó</tag>
+      <tag>szúró</tag>
+      <tag>szúró_vágó</tag>
+      <tag>tőr</tag>
+      <tag>gyors</tag>
+      <tag>orvtámadás</tag>
+      <statreq type="Erő" value="12" />
+      <stats>
+        <stat name="KÉ" value="10" />
+        <stat name="TÉ" value="8" />
+        <stat name="VÉ" value="2" />
+        <stat name="Tám/kör" value="2" />
+        <stat name="Sebzés" value="1K6+2" />
+        <stat name="Súly" value="300" />
+        <stat name="Ár" value="500" />
+      </stats>
+    </entry>
     <!-- -->
-    <creatures>
-      <!-- -->
-      <!-- Állatok -->
-      <!-- -->
-      <entry name="Ló">
-        <tag>élőlény</tag>
-        <tag>állat</tag>
-        <tag>hátas</tag>
-        <tag>járműhúzó</tag>
-        <tag>tenyésztett</tag>
-        <tag>idomítható</tag>
-      </entry>
-      <entry name="Sólyom">
-        <tag>élőlény</tag>
-        <tag>állat</tag>
-        <tag>sólyom</tag>
-        <tag>idomítható</tag>
-      </entry>
-      <entry name="Véreb">
-        <tag>élőlény</tag>
-        <tag>állat</tag>
-        <tag>tenyésztett</tag>
-        <tag>idomítható</tag>
-      </entry>
-      <!-- -->
-      <!-- Humanoidok -->
-      <!-- -->
-      <entry name="Ember">
-        <tag>élőlény</tag>
-        <tag>humanoid</tag>
-        <tag>faj</tag>
-        <tag>játszható</tag>
-        <tag>beszédképes</tag>
-      </entry>
-      <entry name="Elf">
-        <tag>élőlény</tag>
-        <tag>humanoid</tag>
-        <tag>faj</tag>
-        <tag>játszható</tag>
-        <tag>beszédképes</tag>
-      </entry>
-    </creatures> 
+    <!--   Dóbófegyverek -->
     <!-- -->
-    <!-- Foglalkozások -->
+    <entry name="Dobótőr">
+      <tag>fegyver</tag>
+      <tag>dobófegyver</tag>
+      <tag>egykezes</tag>
+      <tag>szúró</tag>
+      <tag>vágó</tag>
+      <tag>szúró_vágó</tag>
+      <tag>gyors</tag>
+      <tag>orvtámadás</tag>
+      <statreq type="Ügyesség" value="13" />
+      <stats>
+        <stat name="KÉ" value="10" />
+        <stat name="TÉ" value="11" />
+        <stat name="VÉ" value="2" />
+        <stat name="Tám/kör" value="2" />
+        <stat name="Sebzés" value="1K6" />
+        <stat name="Súly" value="500" />
+        <stat name="Ár" value="150" />
+      </stats>
+    </entry>
+    <entry name="Slan csillag">
+      <tag>fegyver</tag>
+      <tag>dobófegyver</tag>
+      <tag>egykezes</tag>
+      <tag>szúró</tag>
+      <tag>gyors</tag>
+      <tag>orvtámadás</tag>
+      <statreq type="Ügyesség" value="14" />
+      <stats>
+        <stat name="KÉ" value="10" />
+        <stat name="TÉ" value="4" />
+        <stat name="VÉ" value="0" />
+        <stat name="Tám/kör" value="2" />
+        <stat name="Sebzés" value="1K3" />
+        <stat name="Súly" value="100" />
+        <stat name="Ár" value="40" />
+      </stats>
+    </entry>
+    <entry name="Lándzsa">
+      <tag>fegyver</tag>
+      <tag>közelharci</tag>
+      <tag>dobófegyver</tag>
+      <tag>szúró</tag>
+      <tag>egykezes</tag>
+      <tag>gyors</tag>
+      <statreq type="Erő" value="8" />
+      <stats>
+        <stat name="KÉ" value="4" />
+        <stat name="TÉ" value="12" />
+        <stat name="VÉ" value="12" />
+        <stat name="Tám/kör" value="1" />
+        <stat name="Sebzés" value="1K10" />
+        <stat name="Súly" value="2000" />
+        <stat name="Ár" value="800" />
+      </stats>
+    </entry>
+    <entry name="Lasszó">
+      <tag>fegyver</tag>
+      <tag>dobófegyver</tag>
+      <tag>egykezes</tag>
+      <tag>gyors</tag>
+      <tag>lasszó</tag>
+      <statreq type="Ügyesség" value="13" />
+      <stats>
+        <stat name="KÉ" value="0" />
+        <stat name="TÉ" value="1" />
+        <stat name="VÉ" value="0" />
+        <stat name="Tám/kör" value="0.33" />
+        <stat name="Sebzés" value="0" />
+        <stat name="Súly" value="600" />
+        <stat name="Ár" value="80" />
+      </stats>
+    </entry>
+    <entry name="Bóla">
+      <tag>fegyver</tag>
+      <tag>dobófegyver</tag>
+      <tag>egykezes</tag>
+      <tag>gyors</tag>
+      <statreq type="Ügyesség" value="13" />
+      <stats>
+        <stat name="KÉ" value="2" />
+        <stat name="TÉ" value="2" />
+        <stat name="VÉ" value="10" />
+        <stat name="Tám/kör" value="1" />
+        <stat name="Sebzés" value="1K5" />
+        <stat name="Súly" value="800" />
+        <stat name="Ár" value="40" />
+      </stats>
+    </entry>
     <!-- -->
-    <occupations>
-      <entry name="Ács">
-        <tag>iparűzés</tag>
-      </entry>
-      <entry name="Fegyverkovács">
-        <tag>iparűzés</tag>
-      </entry>
-      <entry name="Hóhér">
-        <tag>iparűzés</tag>
-      </entry>
-    </occupations>
+    <!--   Célzófegyverek -->
     <!-- -->
-    <!-- Mágikus iskolaformák -->
+    <entry name="Fúvócső">
+      <tag>fegyver</tag>
+      <tag>célzófegyver</tag>
+      <tag>egykezes</tag>
+      <tag>gyors</tag>
+      <statreq type="Ügyesség" value="12" />
+      <stats>
+        <stat name="KÉ" value="8" />
+        <stat name="CÉ" value="9" />
+        <stat name="Táv" value="30" />
+        <stat name="Tám/kör" value="3" />
+        <stat name="Sebzés" value="1" />
+        <stat name="Súly" value="200" />
+        <stat name="Ár" value="600" />
+      </stats>
+    </entry>
+    <entry name="Visszacsapó íj">
+      <tag>fegyver</tag>
+      <tag>célzófegyver</tag>
+      <tag>kétkezes</tag>
+      <tag>gyors</tag>
+      <statreq type="Erő" value="12" />
+      <stats>
+        <stat name="KÉ" value="3" />
+        <stat name="CÉ" value="13" />
+        <stat name="Táv" value="180" />
+        <stat name="Tám/kör" value="2" />
+        <stat name="Sebzés" value="1K10" />
+        <stat name="Súly" value="800" />
+        <stat name="Ár" value="25000" />
+      </stats>
+    </entry>
+    <entry name="Nyílpuska, nehéz">
+      <tag>fegyver</tag>
+      <tag>célzófegyver</tag>
+      <tag>kétkezes</tag>
+      <tag>lassú</tag>
+      <stats>
+        <stat name="KÉ" value="0" />
+        <stat name="CÉ" value="11" />
+        <stat name="Táv" value="60" />
+        <stat name="Tám/kör" value="0.33" />
+        <stat name="Sebzés" value="1K10+2" />
+        <stat name="Súly" value="6000" />
+        <stat name="Ár" value="12000" />
+      </stats>
+    </entry>
     <!-- -->
-    <magic_schoolforms>
-      <entry name="Elemi mágia">
-        <tag>mágikus_iskolaforma</tag>
-      </entry>
-      <entry name="Nekromancia">
-        <tag>mágikus_iskolaforma</tag>
-      </entry>
-    </magic_schoolforms>
+    <!--   Tűzfegyverek -->
     <!-- -->
-    <!-- Tárgyak -->
+    <entry name="Muskéta">
+      <tag>fegyver</tag>
+      <tag>tűzfegyver</tag>
+      <tag>kétkezes</tag>
+      <tag>lassú</tag>
+      <stats>
+        <stat name="KÉ" value="5" />
+        <stat name="CÉ" value="7" />
+        <stat name="Táv" value="20" />
+        <stat name="Tám/kör" value="0.2" />
+        <stat name="Sebzés" value="2K6+1" />
+        <stat name="Súly" value="10000" />
+        <stat name="Ár" value="180000" />
+      </stats>
+    </entry>
+    <entry name="Arkebuz">
+      <tag>fegyver</tag>
+      <tag>tűzfegyver</tag>
+      <tag>kétkezes</tag>
+      <tag>lassú</tag>
+      <stats>
+        <stat name="KÉ" value="2" />
+        <stat name="CÉ" value="0" />
+        <stat name="Táv" value="10" />
+        <stat name="Tám/kör" value="0.1" />
+        <stat name="Sebzés" value="1K6+1" />
+        <stat name="Súly" value="2000" />
+        <stat name="Ár" value="10000" />
+      </stats>
+    </entry>
     <!-- -->
-    <items>
-      <!-- -->
-      <!-- Fegyverek -->
-      <!-- -->
-      <!--   Közelharci fegyverek-->
-      <!-- -->
-      <entry name="Pallos">
-        <tag>fegyver</tag>
-        <tag>közelharci</tag>
-        <tag>kétkezes</tag>
-        <tag>vágó</tag>
-        <tag>szúró</tag>
-        <tag>szúró_vágó</tag>
-        <tag>kard</tag>
-        <tag>lassú</tag>
-        <statreq type="Erő" value="14" />
-        <stats>
-          <stat name="KÉ" value="0" />
-          <stat name="TÉ" value="6" />
-          <stat name="VÉ" value="2" />
-          <stat name="Tám/kör" value="0.5" />
-          <stat name="Sebzés" value="2K6+8" />
-          <stat name="Súly" value="7000" /> 
-          <stat name="Ár" value="5000" />
-        </stats>
-      </entry>
-      <entry name="Rövidkard">
-        <tag>fegyver</tag>
-        <tag>közelharci</tag>
-        <tag>egykezes</tag>
-        <tag>vágó</tag>
-        <tag>szúró</tag>
-        <tag>szúró_vágó</tag>
-        <tag>kard</tag>
-        <tag>gyors</tag>
-        <statreq type="Erő" value="8" />
-        <stats>
-          <stat name="KÉ" value="9" />
-          <stat name="TÉ" value="12" />
-          <stat name="VÉ" value="14" />
-          <stat name="Tám/kör" value="1" />
-          <stat name="Sebzés" value="1K6+1" />
-          <stat name="Súly" value="1000" /> 
-          <stat name="Ár" value="1000" />
-        </stats>
-      </entry>
-      <entry name="Fogastőr">
-        <tag>fegyver</tag>
-        <tag>közelharci</tag>
-        <tag>egykezes</tag>
-        <tag>vágó</tag>
-        <tag>szúró</tag>
-        <tag>szúró_vágó</tag>
-        <tag>tőr</tag>
-        <tag>gyors</tag>
-        <tag>belharc</tag>
-        <tag>fegyvertörés</tag>
-        <tag>orvtámadás</tag>
-        <statreq type="Ügyesség" value="12" />
-        <stats>
-          <stat name="KÉ" value="8" />
-          <stat name="TÉ" value="3" />
-          <stat name="VÉ" value="21" />
-          <stat name="Tám/kör" value="2" />
-          <stat name="Sebzés" value="1K6" />
-          <stat name="Súly" value="300" /> 
-          <stat name="Ár" value="3000" />
-        </stats>
-      </entry>
-      <entry name="Béltépő">
-        <tag>fegyver</tag>
-        <tag>közelharci</tag>
-        <tag>egykezes</tag>
-        <tag>vágó</tag>
-        <tag>szúró</tag>
-        <tag>szúró_vágó</tag>
-        <tag>tőr</tag>
-        <tag>gyors</tag>
-        <tag>orvtámadás</tag>
-        <statreq type="Erő" value="12" />
-        <stats>
-          <stat name="KÉ" value="10" />
-          <stat name="TÉ" value="8" />
-          <stat name="VÉ" value="2" />
-          <stat name="Tám/kör" value="2" />
-          <stat name="Sebzés" value="1K6+2" />
-          <stat name="Súly" value="300" /> 
-          <stat name="Ár" value="500" />
-        </stats>
-      </entry>
-      <!-- -->
-      <!--   Dóbófegyverek -->
-      <!-- -->
-      <entry name="Dobótőr">
-        <tag>fegyver</tag>
-        <tag>dobófegyver</tag>
-        <tag>egykezes</tag>
-        <tag>szúró</tag>
-        <tag>vágó</tag>
-        <tag>szúró_vágó</tag>
-        <tag>gyors</tag>
-        <tag>orvtámadás</tag>
-        <statreq type="Ügyesség" value="13" />
-        <stats>
-          <stat name="KÉ" value="10" />
-          <stat name="TÉ" value="11" />
-          <stat name="VÉ" value="2" />
-          <stat name="Tám/kör" value="2" />
-          <stat name="Sebzés" value="1K6" />
-          <stat name="Súly" value="500" />
-          <stat name="Ár" value="150" />
-        </stats>
-      </entry>
-      <entry name="Slan csillag">
-        <tag>fegyver</tag>
-        <tag>dobófegyver</tag>
-        <tag>egykezes</tag>
-        <tag>szúró</tag>
-        <tag>gyors</tag>
-        <tag>orvtámadás</tag>
-        <statreq type="Ügyesség" value="14" />
-        <stats>
-          <stat name="KÉ" value="10" />
-          <stat name="TÉ" value="4" />
-          <stat name="VÉ" value="0" />
-          <stat name="Tám/kör" value="2" />
-          <stat name="Sebzés" value="1K3" />
-          <stat name="Súly" value="100" />
-          <stat name="Ár" value="40" />
-        </stats>
-      </entry>
-      <entry name="Lándzsa">
-        <tag>fegyver</tag>
-        <tag>közelharci</tag>
-        <tag>dobófegyver</tag>
-        <tag>szúró</tag>
-        <tag>egykezes</tag>
-        <tag>gyors</tag>
-        <statreq type="Erő" value="8" />
-        <stats>
-          <stat name="KÉ" value="4" />
-          <stat name="TÉ" value="12" />
-          <stat name="VÉ" value="12" />
-          <stat name="Tám/kör" value="1" />
-          <stat name="Sebzés" value="1K10" />
-          <stat name="Súly" value="2000" />
-          <stat name="Ár" value="800" />
-        </stats>
-      </entry>
-      <entry name="Lasszó">
-        <tag>fegyver</tag>
-        <tag>dobófegyver</tag>
-        <tag>egykezes</tag>
-        <tag>gyors</tag>
-        <tag>lasszó</tag>
-        <statreq type="Ügyesség" value="13" />
-        <stats>
-          <stat name="KÉ" value="0" />
-          <stat name="TÉ" value="1" />
-          <stat name="VÉ" value="0" />
-          <stat name="Tám/kör" value="0.33" />
-          <stat name="Sebzés" value="0" />
-          <stat name="Súly" value="600" />
-          <stat name="Ár" value="80" />
-        </stats>
-      </entry>
-      <entry name="Bóla">
-        <tag>fegyver</tag>
-        <tag>dobófegyver</tag>
-        <tag>egykezes</tag>
-        <tag>gyors</tag>
-        <statreq type="Ügyesség" value="13" />
-        <stats>
-          <stat name="KÉ" value="2" />
-          <stat name="TÉ" value="2" />
-          <stat name="VÉ" value="10" />
-          <stat name="Tám/kör" value="1" />
-          <stat name="Sebzés" value="1K5" />
-          <stat name="Súly" value="800" />
-          <stat name="Ár" value="40" />
-        </stats>
-      </entry>
-      <!-- -->
-      <!--   Célzófegyverek -->
-      <!-- -->
-      <entry name="Fúvócső">
-        <tag>fegyver</tag>
-        <tag>célzófegyver</tag>
-        <tag>egykezes</tag>
-        <tag>gyors</tag>
-        <statreq type="Ügyesség" value="12" />
-        <stats>
-          <stat name="KÉ" value="8" />
-          <stat name="CÉ" value="9" />
-          <stat name="Táv" value="30" />
-          <stat name="Tám/kör" value="3" />
-          <stat name="Sebzés" value="1" />
-          <stat name="Súly" value="200" />
-          <stat name="Ár" value="600" />
-        </stats>
-      </entry>
-      <entry name="Visszacsapó íj">
-        <tag>fegyver</tag>
-        <tag>célzófegyver</tag>
-        <tag>kétkezes</tag>
-        <tag>gyors</tag>
-        <statreq type="Erő" value="12" />
-        <stats>
-          <stat name="KÉ" value="3" />
-          <stat name="CÉ" value="13" />
-          <stat name="Táv" value="180" />
-          <stat name="Tám/kör" value="2" />
-          <stat name="Sebzés" value="1K10" />
-          <stat name="Súly" value="800" />
-          <stat name="Ár" value="25000" />
-        </stats>
-      </entry>
-      <entry name="Nyílpuska, nehéz">
-        <tag>fegyver</tag>
-        <tag>célzófegyver</tag>
-        <tag>kétkezes</tag>
-        <tag>lassú</tag>
-        <stats>
-          <stat name="KÉ" value="0" />
-          <stat name="CÉ" value="11" />
-          <stat name="Táv" value="60" />
-          <stat name="Tám/kör" value="0.33" />
-          <stat name="Sebzés" value="1K10+2" />
-          <stat name="Súly" value="6000" />
-          <stat name="Ár" value="12000" />
-        </stats>
-      </entry>
-      <!-- -->
-      <!--   Tűzfegyverek -->
-      <!-- -->
-      <entry name="Muskéta">
-        <tag>fegyver</tag>
-        <tag>tűzfegyver</tag>
-        <tag>kétkezes</tag>
-        <tag>lassú</tag>
-        <stats>
-          <stat name="KÉ" value="5" />
-          <stat name="CÉ" value="7" />
-          <stat name="Táv" value="20" />
-          <stat name="Tám/kör" value="0.2" />
-          <stat name="Sebzés" value="2K6+1" />
-          <stat name="Súly" value="10000" />
-          <stat name="Ár" value="180000" />
-        </stats>
-      </entry>
-      <entry name="Arkebuz">
-        <tag>fegyver</tag>
-        <tag>tűzfegyver</tag>
-        <tag>kétkezes</tag>
-        <tag>lassú</tag>
-        <stats>
-          <stat name="KÉ" value="2" />
-          <stat name="CÉ" value="0" />
-          <stat name="Táv" value="10" />
-          <stat name="Tám/kör" value="0.1" />
-          <stat name="Sebzés" value="1K6+1" />
-          <stat name="Súly" value="2000" />
-          <stat name="Ár" value="10000" />
-        </stats>
-      </entry>
-      <!-- -->
-      <!--   Ostromfegyverek -->
-      <!-- -->
-      <entry name="Katapult">
-        <tag>fegyver</tag>
-        <tag>ostromfegyver</tag>
-      </entry>
-      <entry name="Faltörő Kos">
-        <tag>fegyver</tag>
-        <tag>tűzfegyver</tag>
-      </entry>
-    </items>
+    <!--   Ostromfegyverek -->
     <!-- -->
-    <!-- Piszkos cselek -->
-    <!-- -->
-    <dirty_tricks>
-      <entry name="Porrúgás">
-        <tag>piszkos_csel</tag>
-      </entry>
-      <entry name="Zsibbasztó ütés">
-        <tag>piszkos_csel</tag>
-      </entry>
-      <entry name="Aljas rúgás">
-        <tag>piszkos_csel</tag>
-      </entry>
-      <entry name="Zavaró tárgyak">
-        <tag>piszkos_csel</tag>
-      </entry>
-    </dirty_tricks>
-  </collections>
+    <entry name="Katapult">
+      <tag>fegyver</tag>
+      <tag>ostromfegyver</tag>
+    </entry>
+    <entry name="Faltörő Kos">
+      <tag>fegyver</tag>
+      <tag>tűzfegyver</tag>
+    </entry>
+  </items>
+  <!-- -->
+  <!-- Piszkos cselek -->
+  <!-- -->
+  <dirty_tricks>
+    <entry name="Porrúgás">
+      <tag>piszkos_csel</tag>
+    </entry>
+    <entry name="Zsibbasztó ütés">
+      <tag>piszkos_csel</tag>
+    </entry>
+    <entry name="Aljas rúgás">
+      <tag>piszkos_csel</tag>
+    </entry>
+    <entry name="Zavaró tárgyak">
+      <tag>piszkos_csel</tag>
+    </entry>
+  </dirty_tricks>
 </root>

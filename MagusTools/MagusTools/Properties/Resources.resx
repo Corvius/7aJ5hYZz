@@ -118,255 +118,215 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ATTR_Agility" xml:space="preserve">
-    <value>Agility</value>
+    <value>Ügyesség</value>
     <comment>Text for Label - Attribute - Agility</comment>
   </data>
   <data name="ATTR_Astral" xml:space="preserve">
-    <value>Astral</value>
+    <value>Asztrál</value>
     <comment>Text for Label - Attribute - Astral</comment>
   </data>
   <data name="ATTR_Charisma" xml:space="preserve">
-    <value>Charisma</value>
+    <value>Szépség</value>
     <comment>Text for Label - Attribute - Charisma</comment>
   </data>
   <data name="ATTR_Endurance" xml:space="preserve">
-    <value>Endurance</value>
+    <value>Állóképesség</value>
     <comment>Text for Label - Attribute - Endurance</comment>
   </data>
   <data name="ATTR_Health" xml:space="preserve">
-    <value>Health</value>
+    <value>Életerő</value>
     <comment>Text for Label - Attribute - Health</comment>
   </data>
   <data name="ATTR_Intelligence" xml:space="preserve">
-    <value>Intelligence</value>
+    <value>Intelligencia</value>
     <comment>Text for Label - Attribute - Intelligence</comment>
   </data>
   <data name="ATTR_Perception" xml:space="preserve">
-    <value>Perception</value>
+    <value>Érzékelés</value>
     <comment>Text for Label - Attribute - Perception</comment>
   </data>
   <data name="ATTR_Speed" xml:space="preserve">
-    <value>Speed</value>
+    <value>Gyorsaság</value>
     <comment>Text for Label - Attribute - Speed</comment>
   </data>
   <data name="ATTR_Strength" xml:space="preserve">
-    <value>Strength</value>
+    <value>Erő</value>
     <comment>Text for Label - Attribute - Strength</comment>
   </data>
   <data name="ATTR_Willpower" xml:space="preserve">
-    <value>Willpower</value>
+    <value>Akaraterő</value>
     <comment>Text for Label - Attribute - Willpower</comment>
   </data>
-  <data name="CHAR_Characteristic_Chaos" xml:space="preserve">
-    <value>Chaos</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Chaos</comment>
-  </data>
-  <data name="CHAR_Characteristic_ChaosDeath" xml:space="preserve">
-    <value>Chaos - Death</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Chaos &amp; Death</comment>
-  </data>
-  <data name="CHAR_Characteristic_ChaosLife" xml:space="preserve">
-    <value>Chaos - Life</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Chaos &amp; Life</comment>
-  </data>
-  <data name="CHAR_Characteristic_Death" xml:space="preserve">
-    <value>Death</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Death</comment>
-  </data>
-  <data name="CHAR_Characteristic_DeathChaos" xml:space="preserve">
-    <value>Death - Chaos</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Death &amp; Chaos</comment>
-  </data>
-  <data name="CHAR_Characteristic_DeathOrder" xml:space="preserve">
-    <value>Death - Order</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Death &amp; Order</comment>
-  </data>
-  <data name="CHAR_Characteristic_Life" xml:space="preserve">
-    <value>Life</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Life</comment>
-  </data>
-  <data name="CHAR_Characteristic_LifeChaos" xml:space="preserve">
-    <value>Life - Chaos</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Life &amp; Chaos</comment>
-  </data>
-  <data name="CHAR_Characteristic_LifeOrder" xml:space="preserve">
-    <value>Life - Order</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Life &amp; Order</comment>
-  </data>
-  <data name="CHAR_Characteristic_Order" xml:space="preserve">
-    <value>Order</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Order</comment>
-  </data>
-  <data name="CHAR_Characteristic_OrderDeath" xml:space="preserve">
-    <value>Order - Death</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Order &amp; Death</comment>
-  </data>
-  <data name="CHAR_Characteristic_OrderLife" xml:space="preserve">
-    <value>Order - Life</value>
-    <comment>Text for Character's Characteristic-Selection Combobox Item - Order &amp; Life</comment>
-  </data>
-  <data name="CHAR_Gender_Female" xml:space="preserve">
-    <value>Female</value>
-    <comment>Text for Character's Gender-Selection Combobox Item - Female</comment>
-  </data>
-  <data name="CHAR_Gender_Male" xml:space="preserve">
-    <value>Male</value>
-    <comment>Text for Character's Gender-Selection Combobox Item - Male</comment>
-  </data>
-  <data name="CHAR_Gender_Other" xml:space="preserve">
-    <value>Other</value>
-    <comment>Text for Character's Gender-Selection Combobox Item - Other</comment>
-  </data>
-  <data name="CHAR_Race_Dwarf" xml:space="preserve">
-    <value>Dwarf</value>
-    <comment>Text for Character's Race-Selection Combobox Item - Dwarf</comment>
-  </data>
-  <data name="CHAR_Race_Elf" xml:space="preserve">
-    <value>Elf</value>
-    <comment>Text for Character's Race-Selection Combobox Item - Elf</comment>
-  </data>
-  <data name="CHAR_Race_HalfElf" xml:space="preserve">
-    <value>Half-Elf</value>
-    <comment>Text for Character's Race-Selection Combobox Item - Half-Elf</comment>
-  </data>
-  <data name="CHAR_Race_Human" xml:space="preserve">
-    <value>Human</value>
-    <comment>Text for Character's Race-Selection Combobox Item - Human</comment>
-  </data>
-  <data name="CHAR_Race_SublimatedOrc" xml:space="preserve">
-    <value>Sublimated Orc</value>
-    <comment>Text for Character's Race-Selection Combobox Item - Sublimated Orc</comment>
-  </data>
-  <data name="CHAT_Race_Gnome" xml:space="preserve">
-    <value>Gnome</value>
-    <comment>Text for Character's Race-Selection Combobox Item - Gnome</comment>
-  </data>
-  <data name="CHAT_Race_Goblin" xml:space="preserve">
-    <value>Goblin</value>
-    <comment>Text for Character's Race-Selection Combobox Item - Goblin</comment>
+  <data name="MISC_PrimaryAttributes_SpentCCP" xml:space="preserve">
+    <value>KAP költség</value>
+    <comment>Text for Stat-tab Primary Attributes - Spent CCP label</comment>
   </data>
   <data name="MISC_Text_AbilityAverage" xml:space="preserve">
-    <value>Ability average</value>
+    <value>Átlag</value>
     <comment>Text for Label - Ability average</comment>
   </data>
   <data name="MISC_Text_Actual" xml:space="preserve">
-    <value>Actual</value>
+    <value>Aktuális</value>
     <comment>Text for Labels - Actual</comment>
   </data>
   <data name="MISC_Text_Base" xml:space="preserve">
-    <value>Base</value>
+    <value>Alap</value>
     <comment>Text for Labels - Base</comment>
   </data>
   <data name="MISC_Text_CCP" xml:space="preserve">
-    <value>CCP</value>
+    <value>KAP</value>
     <comment>Text for Labels - Character Creation Points</comment>
   </data>
   <data name="MM_Character" xml:space="preserve">
-    <value>Character</value>
+    <value>Karakter</value>
     <comment>Text for Main menu - Character</comment>
   </data>
   <data name="MM_Character_ExportAsText" xml:space="preserve">
-    <value>Export As Text</value>
+    <value>Mentés szövegfájlba</value>
     <comment>Text for Main menu - Character - Export As Text</comment>
   </data>
   <data name="MM_Character_Generate" xml:space="preserve">
-    <value>Generate</value>
+    <value>Generálás</value>
     <comment>Text for Main menu - Character - Generate</comment>
   </data>
   <data name="MM_File" xml:space="preserve">
-    <value>File</value>
+    <value>Fájl</value>
     <comment>Text for Main menu - File</comment>
   </data>
   <data name="MM_File_New" xml:space="preserve">
-    <value>New</value>
+    <value>Új</value>
     <comment>Text for Main menu - File - New</comment>
   </data>
   <data name="MM_File_New_NPC" xml:space="preserve">
-    <value>Non-Playable Character (NPC)</value>
+    <value>Nem-Játékos Karakter (NJK)</value>
     <comment>Text for Main menu - File - New - Non-Playable Character</comment>
   </data>
   <data name="MM_File_New_PC" xml:space="preserve">
-    <value>Playable Character (PC)</value>
+    <value>Játékos Karakter (JK)</value>
     <comment>Text for Main menu - File - New - Playable Character</comment>
   </data>
   <data name="MM_File_Open" xml:space="preserve">
-    <value>Open</value>
+    <value>Megnyitás</value>
     <comment>Text for Main menu - File - Open</comment>
   </data>
   <data name="MM_File_Quit" xml:space="preserve">
-    <value>Quit</value>
+    <value>Kilépés</value>
     <comment>Text for Main menu - File - Quit</comment>
   </data>
   <data name="MM_File_Save" xml:space="preserve">
-    <value>Save</value>
+    <value>Mentés</value>
     <comment>Text for Main menu - File - Save</comment>
   </data>
   <data name="MM_File_SaveAs" xml:space="preserve">
-    <value>Save As...</value>
+    <value>Mentés másként..</value>
     <comment>Text for Main menu - File - Save As</comment>
   </data>
   <data name="MM_Help" xml:space="preserve">
-    <value>Help</value>
+    <value>Segítség</value>
     <comment>Text for Main menu - Help</comment>
   </data>
   <data name="MM_Help_About" xml:space="preserve">
-    <value>About MagusTools</value>
+    <value>MagusTools névjegye</value>
     <comment>Text for Main menu - Help - About</comment>
   </data>
   <data name="MM_Help_ViewHelp" xml:space="preserve">
-    <value>View Help</value>
+    <value>Segítség megtekintése</value>
     <comment>Text for Main menu - Help - ViewHelp</comment>
   </data>
   <data name="MM_Options" xml:space="preserve">
-    <value>Options</value>
+    <value>Beállítások</value>
     <comment>Text for Main menu - Options</comment>
   </data>
   <data name="MM_Options_Language" xml:space="preserve">
-    <value>Language</value>
+    <value>Nyelvek</value>
     <comment>Text for Main menu - Options - Language</comment>
   </data>
-  <data name="MM_Options_Settings" xml:space="preserve">
-    <value>Settings</value>
-    <comment>Text for Main menu - Options - Settings</comment>
+  <data name="MM_Options_Specials" xml:space="preserve">
+    <value>Speciális</value>
+    <comment>Text for Main menu - Options - Specials</comment>
   </data>
   <data name="MM_Options_Tools" xml:space="preserve">
-    <value>Tools</value>
+    <value>Kiegészítők</value>
     <comment>Text for Main menu - Options - Tools</comment>
   </data>
   <data name="MM_Options_Tools_Diceroller" xml:space="preserve">
-    <value>Diceroller</value>
+    <value>Kockadobó</value>
     <comment>Text for Main menu - Options - Tools - Diceroller</comment>
   </data>
   <data name="TAB_Armory" xml:space="preserve">
-    <value>Armory</value>
+    <value>Fegyverraktár</value>
     <comment>Text for Stat-tab Armory</comment>
   </data>
   <data name="TAB_BasicInfo" xml:space="preserve">
-    <value>Basic Information</value>
+    <value>Alapinformációk</value>
     <comment>Text for Stat-tab Basic Information</comment>
   </data>
+  <data name="TAB_BasicInfo_AvailableCCPLabel" xml:space="preserve">
+    <value>Elosztható KAP</value>
+    <comment>Text for Stat-tab Basic Information - Remaining CCP label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharAgeLabel" xml:space="preserve">
+    <value>Kor</value>
+    <comment>Text for Stat-tab Basic Information - Age label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharBirthplaceLabel" xml:space="preserve">
+    <value>Szülőföld</value>
+    <comment>Text for Stat-tab Basic Information - Birthplace label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharCharacteristicLabel" xml:space="preserve">
+    <value>Jellem</value>
+    <comment>Text for Stat-tab Basic Information - Characterisitics label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharClassLabel" xml:space="preserve">
+    <value>Kaszt</value>
+    <comment>Text for Stat-tab Basic Information - Class label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharGenderLabel" xml:space="preserve">
+    <value>Nem</value>
+    <comment>Text for Stat-tab Basic Information - Gender label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharLevelLabel" xml:space="preserve">
+    <value>Szint</value>
+    <comment>Text for Stat-tab Basic Information - Level label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharNameLabel" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text for Stat-tab Basic Information - Name label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharRaceLabel" xml:space="preserve">
+    <value>Faj</value>
+    <comment>Text for Stat-tab Basic Information - Race label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharRealmsLabel" xml:space="preserve">
+    <value>Szférák</value>
+    <comment>Text for Stat-tab Basic Information - Realms label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharReligionLabel" xml:space="preserve">
+    <value>Vallás</value>
+    <comment>Text for Stat-tab Basic Information - Religion label</comment>
+  </data>
   <data name="TAB_Equipment" xml:space="preserve">
-    <value>Equipment</value>
+    <value>Felszerelés</value>
     <comment>Text for Stat-tab Equipment</comment>
   </data>
   <data name="TAB_PrimaryAttributes" xml:space="preserve">
-    <value>Primary Attributes</value>
+    <value>Elsődleges Képességek</value>
     <comment>Text for Stat-tab PrimaryAttributes</comment>
   </data>
   <data name="TAB_SecondaryAttributes" xml:space="preserve">
-    <value>Secondary Attributes</value>
+    <value>Másodlagos Képességek</value>
     <comment>Text for Stat-tab SecondaryAttributes</comment>
   </data>
   <data name="TAB_Skills" xml:space="preserve">
-    <value>Skills</value>
+    <value>Képzettségek</value>
     <comment>Text for Stat-tab Skills</comment>
   </data>
   <data name="TAB_Summary" xml:space="preserve">
-    <value>Summary</value>
+    <value>Áttekintés</value>
     <comment>Text for Stat-tab Summary</comment>
   </data>
   <data name="TITLE" xml:space="preserve">
-    <value>MagusTools Character Editor</value>
+    <value>MagusTools Karakterszerkesztő</value>
     <comment>Text for Main Window Title</comment>
   </data>
 </root>

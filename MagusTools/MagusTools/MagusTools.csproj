@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="Decals.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Decals.resx</DependentUpon>
+    </Compile>
     <Compile Include="XMLHandler.cs" />
     <Compile Include="Icons.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -61,6 +66,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Decals.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Decals.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,7 +87,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Properties\Resources.hu-HU.resx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,6 +114,7 @@
     <None Include="Resources\ICON_ATTR_Agility.bmp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\DECAL_SideBarA.bmp" />
     <Content Include="SkillData.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
