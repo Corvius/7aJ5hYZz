@@ -1,0 +1,3983 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- Képzettségek -->
+  <skills>
+    <!-- Harci képzettségek -->
+    <!--   Közkeletű harci képzettségek -->
+    <skill name="Ökölharc">
+      <properties>
+        <difficulty value="1" />
+        <skilltype type="levels" />
+      </properties>
+      <level value="1">
+        <requirement type="stat" name="Erő" value="12" />
+        <requirement type="stat" name="Gyorsaság" value="10" />
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="13" />
+        <requirement type="stat" name="Gyorsaság" value="11" />
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="14" />
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="15" />
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <bonus name="KÉ" value="5" />
+        <bonus name="TÉ" value="10" />
+        <bonus name="VÉ" value="10" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="16" />
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <cost value="25" />
+      </level>
+    </skill>
+    <skill name="Bírkózás">
+      <properties>
+        <difficulty value="1" />
+        <skilltype type="levels" />
+      </properties>
+      <level value="1">
+        <requirement type="stat" name="Erő" value="13" />
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Állóképesség" value="11" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="14" />
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Állóképesség" value="13" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="15" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="16" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Állóképesség" value="14" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="17" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Állóképesség" value="15" />
+        <cost value="25" />
+      </level>
+    </skill>
+    <skill name="Fegyverhasználat">
+      <properties>
+        <difficulty value="1" />
+        <skilltype type="levels" />
+      </properties>
+      <level value="1">
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <bonus name="WeaponStatReq" value="1" />
+        <cost value="20" />
+      </level>
+      <level value="4">
+        <bonus name="KÉ" value="5" />
+        <bonus name="TÉ" value="10" />
+        <bonus name="VÉ" value="10" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <bonus name="Túlütés" value="-10" />
+        <cost value="40" />
+      </level>
+    </skill>
+    <skill name="Pajzskezelés">
+      <properties>
+        <difficulty value="1" />
+        <skilltype type="levels" />
+      </properties>
+      <level value="1">
+        <requirement type="stat" name="Erő" value="8" />
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="9" />
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="10" />
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <cost value="20" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="12" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="13" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <cost value="45" />
+      </level>
+    </skill>
+    <skill name="Lefegyverzés">
+      <properties>
+        <difficulty value="3" />
+        <skilltype type="levels" />
+        <dependancy name="Fegyverhasználat" category="sidearm blunt polearm" />
+      </properties>
+      <level value="1">
+        <condition type="and">
+          <requirement type="stat" name="Gyorsaság" value="12" />
+          <requirement type="stat" name="Ügyesség" value="12" />
+          <requirement type="skill" name="Fegyverhasználat" value="4">
+            <condition type="or">
+              <category state="true" name="sidearm" />
+              <category state="true" name="blunt" />
+              <category state="true" name="polearm" />
+            </condition>
+          </requirement>
+          <cost value="1" />
+        </condition>
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="7" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <cost value="25" />
+      </level>
+    </skill>
+    <skill name="Lefegyverzés puszta kézzel">
+      <properties>
+        <difficulty value="4" />
+        <skilltype type="levels" />
+        <dependancy name="Öklharc" fromlevel="1" />
+      </properties>
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="skill" name="Ökölharc" value="4" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="7" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="17" />
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <cost value="25" />
+      </level>
+    </skill>
+    <skill name="Lefegyverzés célzófegyverrel">
+      <properties>
+        <difficulty value="4" />
+        <skilltype type="levels" />
+        <subtype type="ranged" />
+        <dependancy name="Fegyverhasználat" />
+      </properties>
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="7" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="17" />
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <cost value="25" />
+      </level>
+    </skill>
+    <skill name="Fegyverismeret">
+      <properties>
+        <difficulty value="1" />
+        <skilltype type="levels" />
+      </properties>
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <requirement type="stat" name="Érzékelés" value="11" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <cost value="30" />
+      </level>
+    </skill>
+    <skill name="Vívócsel">
+      <properties>
+        <difficulty value="2" />
+        <skilltype type="levels" />
+        <subtype type="sidearms blunt polearm fast" />
+        <dependancy name="Fegyverhasználat" />
+      </properties>
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="12" />
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="17" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <cost value="40" />
+      </level>
+    </skill>
+    <skill name="Belharc">
+      <properties>
+        <difficulty value="3" />
+        <skilltype type="levels" />
+      </properties>
+      <level value="1">
+        <requirement type="stat" name="Erő" value="11" />
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="skill" name="Fegyverhasználat" value="3">
+          <condition type="skill" name="Ökölharc" />
+          <condition type="skill" name="Kocsmai verkedés" />
+          <condition type="subtype" name="Tőr" />
+          <condition type="subtype" name="Kés" />
+          <condition type="class" name="Harcművész" />
+          <condition type="class" name="Kardművész" />
+        </requirement>
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="12" />
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="6" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="13" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="14" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="15" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <cost value="40" />
+      </level>
+    </skill>
+    <skill name="Földredöntés">
+      <subytype dependancy="Fegyverhasználat" category="Melee" />
+      <level value="1">
+        <requirement type="stat" name="Erő" value="10" />
+        <requirement type="stat" name="Gyorsaság" value="11" />
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="skill" name="Fegyverhasználat" value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="10" />
+        <requirement type="stat" name="Gyorsaság" value="12" />
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="skill" name="Fegyverhasználat" value="2" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="10" />
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="skill" name="Fegyverhasználat" value="2" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="11" />
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="skill" name="Fegyverhasználat" value="2" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="12" />
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="skill" name="Fegyverhasználat" value="2" />
+        <cost value="30" />
+      </level>
+    </skill>
+    <skill name="Taktika">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <requirement type="stat" name="Asztrál" value="10" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="9" />
+        <requirement type="stat" name="Asztrál" value="11" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Asztrál" value="12" />
+        <cost value="10" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Asztrál" value="13" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Asztrál" value="14" />
+        <cost value="25" />
+      </level>
+    </skill>
+    <skill name="Stratégia">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Asztrál" value="14" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="17" />
+        <requirement type="stat" name="Asztrál" value="16" />
+        <cost value="50" />
+      </level>
+    </skill>
+    <skill name="Parancsnoklás">
+      <level value="1">
+        <requirement type="stat" name="Akaraterő" value="12" />
+        <requirement type="stat" name="Asztrál" value="13" />
+        <requirement type="stat" name="Érzékelés" value="11" />
+        <requirement type="skill" name="Lélektan" value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Akaraterő" value="13" />
+        <requirement type="stat" name="Asztrál" value="14" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <requirement type="skill" name="Lélektan" value="2" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Akaraterő" value="14" />
+        <requirement type="stat" name="Asztrál" value="15" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <requirement type="skill" name="Lélektan" value="3" />
+        <requirement type="skill" name="Ékesszólás" value="2" />
+        <cost value="16" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Akaraterő" value="16" />
+        <requirement type="stat" name="Asztrál" value="16" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <requirement type="skill" name="Lélektan" value="3" />
+        <requirement type="skill" name="Ékesszólás" value="3" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Akaraterő" value="18" />
+        <requirement type="stat" name="Asztrál" value="17" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <requirement type="skill" name="Lélektan" value="3" />
+        <requirement type="skill" name="Ékesszólás" value="3" />
+        <cost value="50" />
+      </level>
+    </skill>
+    <!--   Szakértő harci képzettségek -->
+    <skill name="Ostromgép kezelése">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="skill" name="Parancsnoklás" value="1" />
+        <cost value="10" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="skill" name="Parancsnoklás" value="1" />
+        <requirement type="skill" name="Mechanika" value="2" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="skill" name="Parancsnoklás" value="1" />
+        <requirement type="skill" name="Mechanika" value="4" />
+        <cost value="30" />
+      </level>
+    </skill>
+    <skill name="Nehézvértviselet">
+      <level value="1">
+        <requirement type="stat" name="Erő" value="12" />
+        <requirement type="stat" name="Állóképesség" value="12" />
+        <requirement type="skill" name="Teherbírás" value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="14" />
+        <requirement type="stat" name="Állóképesség" value="14" />
+        <requirement type="skill" name="Teherbírás" value="3" />
+        <requirement type="skill" name="Egyensúlyérzék" value="30" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="15" />
+        <requirement type="stat" name="Állóképesség" value="16" />
+        <requirement type="skill" name="Teherbírás" value="3" />
+        <requirement type="skill" name="Egyensúlyérzék" value="30" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="16" />
+        <requirement type="stat" name="Állóképesség" value="18" />
+        <requirement type="skill" name="Teherbírás" value="3" />
+        <requirement type="skill" name="Egyensúlyérzék" value="50" />
+        <cost value="16" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="17" />
+        <requirement type="stat" name="Állóképesség" value="19" />
+        <requirement type="skill" name="Teherbírás" value="3" />
+        <requirement type="skill" name="Egyensúlyérzék" value="50" />
+        <cost value="25" />
+      </level>
+    </skill>
+    <skill name="Fegyverdobás">
+      <subtype category="Throwable" />
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="20" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="40" />
+      </level>
+    </skill>
+    <skill name="Fegyverdobás idegen fegyverrel">
+      <subytype dependancy="Fegyverhasználat" category="Melee"/>
+      <level value="1">
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="2" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <cost value="9" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <cost value="40" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="5" />
+        <cost value="60" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="5" />
+        <cost value="80" />
+      </level>
+    </skill>
+    <skill name="Mesterlövészet">
+      <subytype dependancy="Fegyverhasználat" category="Ranged" />
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Asztrál" value="11" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Asztrál" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <cost value="6" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Asztrál" value="13" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Asztrál" value="14" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Asztrál" value="16" />
+        <requirement type="stat" name="Érzékelés" value="17" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <cost value="40" />
+      </level>
+    </skill>
+    <skill name="Lovas ijászat">
+      <subytype dependancy="Fegyverhasználat" category="Ranged" />
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Érzékelés" value="17" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <requirement type="stat" name="Érzékelés" value="18" />
+        <requirement type="skill" name="Fegyverhasználat" value="5" />
+        <requirement type="skill" name="Lovaglás" value="5" />
+        <cost value="35" />
+      </level>
+    </skill>
+    <skill name="Fegyverdobás lóhátról">
+      <subytype dependancy="Fegyverdobás" category="Throwable" />
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <requirement type="skill" name="Fegyverhasználat" value="5" />
+        <requirement type="skill" name="Lovaglás" value="5" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <requirement type="skill" name="Fegyverhasználat" value="5" />
+        <requirement type="skill" name="Lovaglás" value="5" />
+        <cost value="30" />
+      </level>
+    </skill>
+    <skill name="Lasszóvetés lóhátról">
+      <subytype dependancy="Fegyverdobás" category="Throwable" />
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <cost value="6" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <cost value="16" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <requirement type="skill" name="Taktika" value="2" />
+        <cost value="22" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <requirement type="stat" name="Érzékelés" value="17" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Lovaglás" value="4" />
+        <requirement type="skill" name="Taktika" value="2" />
+        <cost value="35" />
+      </level>
+    </skill>
+    <skill name="Tüzfegyver">
+      !
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="8" />
+        <requirement type="stat" name="Érzékelés" value="10" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <requirement type="stat" name="Érzékelés" value="11" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <requirement type="skill" name="Mechanika" value="2" />
+        <cost value="6" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <requirement type="skill" name="Mechanika" value="3" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <requirement type="skill" name="Mechanika" value="4" />
+        <cost value="30" />
+      </level>
+    </skill>
+    <skill name="Kétkezes harc">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <requirement type="skill" name="Egyensúlyérzék" value="25" />
+        <cost value="6" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="skill" name="Fegyverhasználat" value="3" />
+        <requirement type="skill" name="Egyensúlyérzék" value="25" />
+        <cost value="10" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Egyensúlyérzék" value="50" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <requirement type="skill" name="Fegyverhasználat" value="5" />
+        <requirement type="skill" name="Egyensúlyérzék" value="75" />
+        <cost value="35" />
+      </level>
+    </skill>
+    <skill name="állóharc">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="skill" name="Egyensúlyérzék" value="25" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="skill" name="Egyensúlyérzék" value="25" />
+        <cost value="6" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="skill" name="Egyensúlyérzék" value="25" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="skill" name="Egyensúlyérzék" value="50" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="skill" name="Egyensúlyérzék" value="75" />
+        <cost value="24" />
+      </level>
+    </skill>
+    <skill name="Földharc">
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="12" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Állóképesség" value="11" />
+        <requirement type="skill" name="Földredöntés" value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Állóképesség" value="12" />
+        <requirement type="skill" name="Földredöntés" value="2" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Állóképesség" value="13" />
+        <requirement type="skill" name="Földredöntés" value="2" />
+        <cost value="18" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Állóképesség" value="14" />
+        <requirement type="skill" name="Földredöntés" value="2" />
+        <cost value="26" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="17" />
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <requirement type="stat" name="Állóképesség" value="14" />
+        <requirement type="skill" name="Földredöntés" value="2" />
+        <cost value="40" />
+      </level>
+    </skill>
+    <skill name="Fegyvertörés">
+      <subytype dependancy="Fegyverhasználat" category="Melee" />
+      <level value="1">
+        <requirement type="stat" name="Erő" value="11" />
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Fegyverismeret" value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="12" />
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Fegyverismeret" value="2" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="13" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Fegyverismeret" value="3" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="15" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Fegyverismeret" value="3" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="16" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Fegyverismeret" value="3" />
+        <cost value="35" />
+      </level>
+    </skill>
+    <skill name="Harci láz">
+      <level value="1">
+        <requirement type="stat" name="Állóképesség" value="12" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Állóképesség" value="13" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Állóképesség" value="14" />
+        <cost value="5" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Állóképesség" value="16" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Állóképesség" value="17" />
+        <cost value="25" />
+      </level>
+    </skill>
+    <skill name="Kézváltás">
+      <subytype dependancy="Fegyverhasználat" category="Melee" />
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Egyensúlyérzék" value="25" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Egyensúlyérzék" value="50" />
+        <cost value="20" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="17" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Egyensúlyérzék" value="50" />
+        <requirement type="skill" name="Akrobatika" value="2" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="18" />
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <requirement type="skill" name="Fegyverhasználat" value="4" />
+        <requirement type="skill" name="Egyensúlyérzék" value="50" />
+        <requirement type="skill" name="Akrobatika" value="2" />
+        <requirement type="skill" name="Anatómia" value="2" />
+        <cost value="40" />
+      </level>
+    </skill>
+
+    <!--
+ITT TARTOK
+
+#-{Titkos harci képzettségek">
+    <skill name="Mestervágás">!Fegyverhasználat
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="14][Fegyverhasználat value="4][Vívócsel value="2" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <cost value="16" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="17" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="18" />
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <cost value="35" />
+      </level>
+    <skill name="Kínokozás">!Fegyverhasználat
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="12][Fegyverhasználat value="4][Anatómia value="3][Vallatás value="3" />
+        <cost value="4" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <cost value="10" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="13][Anatómia value="4" />
+        <cost value="20" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="15][élettan value="2" />
+        <cost value="40" />
+      </level>
+    <skill name="Pusztítás">!Fegyverhasználat
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="12][Anatómia value="2][Fegyverhasználat value="4" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <cost value="9" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="13][Anatómia value="3" />
+        <cost value="20" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <cost value="40" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Intelligencia" value="15][élettan value="2" />
+        <cost value="60" />
+      </level>
+    <skill name="Körkörös harc">
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="12][Fegyverhasználat value="4" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="10" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="18" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="17" />
+        <requirement type="stat" name="Ügyesség" value="15][Akrobatika value="2" />
+        <cost value="32" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="18" />
+        <requirement type="stat" name="Ügyesség" value="16][Akrobatika value="3][Pajzzkezelés value="5" />
+        <cost value="50" />
+      </level>
+    <skill name="Körkörös harc kétkezes fegyverrel">
+      <level value="1">
+        <requirement type="stat" name="Erő" value="12" />
+        <requirement type="stat" name="Ügyesség" value="12][Fegyverhasználat value="4" />
+        <cost value="4" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="13" />
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="12" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="14" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="20" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="14" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <cost value="35" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="15" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <cost value="50" />
+      </level>
+    <skill name="Vakharc">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="15][Akrobatika value="2" />
+        <cost value="5" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Érzékelés" value="16][Akrobatika value="4" />
+        <cost value="10" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Érzékelés" value="17][EgyensüUlyérzék value="30" />
+        <cost value="25" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="18][Veszélyérzék value="60" />
+        <cost value="40" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Érzékelés" value="19][Veszélyérzék value="90" />
+        <cost value="55" />
+      </level>
+
+#{Szociális képzettségek">
+#-{általános szociális képzettségek">
+    <skill name="élö nyelv">!
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="6" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="20" />
+      </level>
+    <skill name="KultüUra">!élö nyelv
+      <level value="1">
+        <requirement type="stat" name="Érzékelés" value="10][élö nyelv value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="7" />
+        <requirement type="stat" name="Érzékelés" value="11][élö nyelv value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="12][élö nyelv value="3" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="20" />
+      </level>
+    <skill name="Lélektan">!KultüUra
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="11" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="15][KultüUra value="3" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <cost value="30" />
+      </level>
+    <skill name="Helyismeret">!KultüUra
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <requirement type="stat" name="Érzékelés" value="9][élö nyelv value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="10][KultüUra value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="11][KultüUra value="3" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13][Legendaismeret value="2" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="20" />
+      </level>
+    <skill name="ékesszólás">!élö nyelv
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Asztrál" value="11][Legendaismeret value="2][KultüUra value="3][élö nyelv value="4" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Asztrál" value="12][Lélektan value="1" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Asztrál" value="13][Lélektan value="2" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Asztrál" value="15][Lélektan value="3" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Asztrál" value="15][Lélektan value="4" />
+        <cost value="20" />
+      </level>
+    <skill name="Szexuális kultüUra">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="5" />
+        <requirement type="stat" name="Állóképesség" value="5" />
+        <requirement type="stat" name="Intelligencia" value="5" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="6" />
+        <requirement type="stat" name="Állóképesség" value="6" />
+        <requirement type="stat" name="Intelligencia" value="6" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <requirement type="stat" name="Állóképesség" value="9" />
+        <requirement type="stat" name="Intelligencia" value="9" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Állóképesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Állóképesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <cost value="20" />
+      </level>
+    <skill name="Dorbézolás">
+      <level value="1">
+        <requirement type="stat" name="Állóképesség" value="8" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Állóképesség" value="9" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Állóképesség" value="12" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Állóképesség" value="14" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Állóképesség" value="18" />
+        <cost value="20" />
+      </level>
+    <skill name="Vallatás">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <requirement type="stat" name="Asztrál" value="8][Anatómia value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <requirement type="stat" name="Asztrál" value="10" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Asztrál" value="12" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Asztrál" value="13][Anatómia value="4][Lélektan value="2" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Asztrál" value="14][Lélektan value="4" />
+        <cost value="30" />
+      </level>
+    <skill name="Oktatás">!Lélektan
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="9][Lélektan value="2" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="14][Lélektan value="3" />
+        <cost value="16" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <cost value="24" />
+      </level>
+
+#-{Nemesi képzettségek">
+    <skill name="Lovaglás">!állatismeret
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="7" />
+        <requirement type="stat" name="Érzékelés" value="9][állatismeret value="1][EgyensüUlyérzék value="25" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <requirement type="stat" name="Érzékelés" value="10][állatismeret value="2" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Érzékelés" value="11][állatismeret value="3][EgyensüUlyérzék value="50" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Érzékelés" value="13][állatismeret value="4][EgyensüUlyérzék value="75" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="14][állatismeret value="5" />
+        <cost value="30" />
+      </level>
+    <skill name="Birtokigazgatás">!KultüUra
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="9][élö nyelv value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="11][KultüUra value="2][Lélektan value="2" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13][Számtan value="2" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="15][Jog value="2" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16][Pénzügyek value="2" />
+        <cost value="28" />
+      </level>
+    <skill name="Solymászat">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="12][Idomítás value="4" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="12][Lovaglás value="2" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <cost value="25" />
+      </level>
+    <skill name="Heraldika">!KultüUra
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="12][KultüUra value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="13][KultüUra value="2" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="14][KultüUra value="3" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="15][KultüUra value="4" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="16][KultüUra value="5" />
+        <cost value="30" />
+      </level>
+    <skill name="Párbaj">!KultüUra
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="12][KultüUra value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12][KultüUra value="2][ékesszólás value="1][Heraldika value="1" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12][KultüUra value="3][ékesszólás value="2][Heraldika value="2" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Asztrál" value="13][KultüUra value="4][ékesszólás value="3][Heraldika value="3" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Asztrál" value="16][KultüUra value="5][ékesszólás value="4][Heraldika value="4" />
+        <cost value="16" />
+      </level>
+    <skill name="Udvari etikett">!KultüUra
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="10][KultüUra value="3" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12][Lélektan value="1" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13][Lélektan value="2][Heraldika value="2" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Asztrál" value="13][KultüUra value="4][Lélektan value="3][Heraldika value="3" />
+        <cost value="14" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Asztrál" value="15][KultüUra value="5][Lélektan value="4][Heraldika value="4" />
+        <cost value="21" />
+      </level>
+    <skill name="Tornarend">!KultüUra
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="10][KultüUra value="3][Heraldika value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="10][Udvari etikett value="2][Udvari etikett value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="11][Heraldika value="3" />
+        <cost value="6" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="12][KultüUra value="4][Heraldika value="4" />
+        <cost value="16" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="13][KultüUra value="5][Heraldika value="5" />
+        <cost value="28" />
+      </level>
+
+#-{Polgári képzettségek">
+    <skill name="Iparüzés">!
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="8" />
+        <requirement type="stat" name="Intelligencia" value="6" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="20" />
+      </level>
+    <skill name="értékbecslés">!KultüUra
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="6" />
+        <requirement type="stat" name="Érzékelés" value="12][KultüUra value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="7" />
+        <requirement type="stat" name="Érzékelés" value="13][KultüUra value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="14][KultüUra value="3][írás/Olvasás value="2][Számtan value="2" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="15][KultüUra value="4][Pénzügyek value="2" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Érzékelés" value="16][KultüUra value="5][Legendaismeret value="2" />
+        <cost value="20" />
+      </level>
+    <skill name="Pénzügyek">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8][Lélektan value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="10][Lélektan value="2][Számtan value="1" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13][Lélektan value="3" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="16][Lélektan value="4][Számtan value="3" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="17][Lélektan value="5" />
+        <cost value="20" />
+      </level>
+
+#-{Póri képzettségek">
+    <skill name="Teherbírás">
+      <level value="1">
+        <requirement type="stat" name="Erő" value="9" />
+        <requirement type="stat" name="Állóképesség" value="9" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="10" />
+        <requirement type="stat" name="Állóképesség" value="10" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="12" />
+        <requirement type="stat" name="Állóképesség" value="12" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="14" />
+        <requirement type="stat" name="Állóképesség" value="14" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="16" />
+        <requirement type="stat" name="Állóképesség" value="16" />
+        <cost value="20" />
+      </level>
+    <skill name="Földmüvelés">
+      <level value="1">
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <cost value="4" />
+      </level>
+      <level value="4">[Idöjóslás value="4" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <cost value="20" />
+      </level>
+    <skill name="állattartás">!állatismeret
+      <level value="1">[állatismeret value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">[állatismeret value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">[állatismeret value="3" />
+        <cost value="4" />
+      </level>
+      <level value="4">[állatismeret value="4" />
+        <cost value="10" />
+      </level>
+      <level value="5">[állatismeret value="5" />
+        <cost value="20" />
+      </level>
+    <skill name="Kocsihajtás">!állatismeret
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <requirement type="stat" name="Érzékelés" value="10][állatismeret value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Érzékelés" value="11][állatismeret value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="12][állatismeret value="3" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Érzékelés" value="14][állatismeret value="4][Mechanika value="2" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Érzékelés" value="15][állatismeret value="5" />
+        <cost value="20" />
+      </level>
+    <skill name="Hajózás">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="8" />
+        <requirement type="stat" name="Intelligencia" value="6" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <requirement type="stat" name="Intelligencia" value="7][Térképészet value="2][Csomózás value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Intelligencia" value="8][Idöjóslás value="2" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="11][Parancsnoklás value="2][Térképészet value="3" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="15][Parancsnoklás value="4" />
+        <cost value="20" />
+      </level>
+    <skill name="Bányászat">
+      <level value="1">
+        <requirement type="stat" name="Állóképesség" value="10][Teherbírás value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Állóképesség" value="11][Teherbírás value="2][ásványtan value="1" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Állóképesség" value="13][Teherbírás value="3][ásványtan value="2" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Állóképesség" value="14][Teherbírás value="4][ásványtan value="3" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Állóképesség" value="15][Teherbírás value="5][ásványtan value="4" />
+        <cost value="20" />
+      </level>
+
+#-{Müvészi képzettségek">
+    <skill name="ének">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="6][KultüUra value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="6" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="9" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="13][Lélektan value="2" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="20" />
+      </level>
+    <skill name="zene">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="7" />
+        <requirement type="stat" name="Intelligencia" value="6" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <cost value="20" />
+      </level>
+    <skill name="Tánc">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="13][EgyensüUlyérzék value="50" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16][EgyensüUlyérzék value="75" />
+        <cost value="20" />
+      </level>
+    <skill name="Festészet/Rajz">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Érzékelés" value="10" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Érzékelés" value="11" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="20" />
+      </level>
+    <skill name="Szobrászat">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="11" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Érzékelés" value="12][Anatómia value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Érzékelés" value="14][Anatómia value="3" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="15][Anatómia value="4" />
+        <cost value="20" />
+      </level>
+    <skill name="Tetoválás">!élö nyelv
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <requirement type="stat" name="Érzékelés" value="12][élö nyelv value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Érzékelés" value="12][Tetoválásismeret value="1][Festészet/Rajz value="2][Anatómia value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Érzékelés" value="12][Tetoválásismeret value="2" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Érzékelés" value="14][Tetoválásismeret value="3" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="15][Tetoválásismeret value="4][Mestermágia value="2" />
+        <cost value="20" />
+      </level>
+    <skill name="Irodalom">!élö nyelv
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8][élö nyelv value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="9][élö nyelv value="3" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12][élö nyelv value="4][Legendaismeret value="2" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="14][élö nyelv value="5][Legendaismeret value="3" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16][Legendaismeret value="4" />
+        <cost value="20" />
+      </level>
+    <skill name="Színészet">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Intelligencia" value="10][ékesszólás value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Intelligencia" value="11][ékesszólás value="2][Lélektan value="1" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="12][ékesszólás value="3][Lélektan value="2" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="12][ékesszólás value="4][Lélektan value="3" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="12][ékesszólás value="5][Lélektan value="4" />
+        <cost value="20" />
+      </level>
+
+#{Alvilági képzettségek">
+#-{álcázó képzettségek">
+    <skill name="álcázás">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="9" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="35" />
+      </level>
+    <skill name="álöltözet">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="10][KultüUra value="1" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="11][KultüUra value="2" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="13][KultüUra value="3" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="14][KultüUra value="4" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Intelligencia" value="14][KultüUra value="5" />
+        <cost value="35" />
+      </level>
+    <skill name="Arctalanság">
+      <level value="1">
+        <requirement type="stat" name="Asztrál" value="15][Helyismeret value="1][álcázás value="3" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Asztrál" value="16][Helyismeret value="2][Színészet value="3][álöltözet value="3" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Asztrál" value="17][Helyismeret value="3][Lélektan value="3][álcázás value="4" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Asztrál" value="18][Helyismeret value="4][Pszi value="2][álöltözet value="4" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Asztrál" value="19][Helyismeret value="5][Mágiaismeret value="2" />
+        <cost value="35" />
+      </level>
+    <skill name="Lopódzás">%
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+    <skill name="Rejtözés">%
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+
+#-{Kommunikációs képzettségek">
+    <skill name="Jelbeszéd">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="12][KultüUra value="1" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13][KultüUra value="2" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="14][KultüUra value="3" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Érzékelés" value="15][KultüUra value="4" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="17" />
+        <requirement type="stat" name="Érzékelés" value="16][KultüUra value="5" />
+        <cost value="50" />
+      </level>
+    <skill name="Szájról olvasás">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="13][élö nyelv value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="14][élö nyelv value="2" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="15][élö nyelv value="3" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="16][élö nyelv value="4][Lélektan value="3" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Érzékelés" value="17][élö nyelv value="5" />
+        <cost value="27" />
+      </level>
+    <skill name="Hangutánzás">
+      <level value="1">
+        <requirement type="stat" name="Akaraterő" value="10][állatismeret value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Akaraterő" value="11][állatismeret value="2" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Akaraterő" value="12][állatismeret value="3" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Akaraterő" value="13][Lélektan value="2" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Akaraterő" value="14][Lélektan value="3" />
+        <cost value="27" />
+      </level>
+    <skill name="Hasbeszéd">
+      <level value="1">
+        <requirement type="stat" name="Akaraterő" value="13][élö nyelv value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Akaraterő" value="13][élö nyelv value="2][Hangutánzás value="1" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Akaraterő" value="14][élö nyelv value="3][Hangutánzás value="2" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Akaraterő" value="14][élö nyelv value="4][Hangutánzás value="3" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Akaraterő" value="15][élö nyelv value="5][Hangutánzás value="4" />
+        <cost value="27" />
+      </level>
+    <skill name="Tetoválásismeret">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="9][KultüUra value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="11][KultüUra value="2" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12][KultüUra value="3" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="13][KultüUra value="4" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Érzékelés" value="15][KultüUra value="5][Mestermágia value="1" />
+        <cost value="27" />
+      </level>
+
+#-{Pénzzzerzö képzettségek">
+    <skill name="Hazárdjáték">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Asztrál" value="12" />
+        <requirement type="stat" name="Érzékelés" value="11][élö nyelv value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Asztrál" value="13" />
+        <requirement type="stat" name="Érzékelés" value="12][élö nyelv value="2][Lélektan value="1" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Asztrál" value="14" />
+        <requirement type="stat" name="Érzékelés" value="13][élö nyelv value="3][Lélektan value="2][Számtan value="3" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Asztrál" value="15" />
+        <requirement type="stat" name="Érzékelés" value="14][élö nyelv value="4][Lélektan value="3][Színészet value="3" />
+        <cost value="9" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="17" />
+        <requirement type="stat" name="Asztrál" value="16" />
+        <requirement type="stat" name="Érzékelés" value="15][élö nyelv value="5][Lélektan value="4" />
+        <cost value="20" />
+      </level>
+    <skill name="Hamisjáték">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12][élö nyelv value="1][Hazárdjáték value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13][élö nyelv value="2][Hazárdjáték value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14][élö nyelv value="3][Hazárdjáték value="3" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16][élö nyelv value="4][Hazárdjáték value="4" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="17][élö nyelv value="5][Hazárdjáték value="5" />
+        <cost value="30" />
+      </level>
+    <skill name="zzebmetszés">%
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="12" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="12" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="12" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="12" />
+      </level>
+    <skill name="értékhamisítás">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="12][élö nyelv value="1][értékbecslés value="2][Iparüzés value="3" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="12][élö nyelv value="2][értékbecslés value="3][ásványtan value="2" />
+        <cost value="9" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13][élö nyelv value="3][értékbecslés value="4][Festészet/Rajz value="3][Legendaismeret value="3" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="14][élö nyelv value="4][értékbecslés value="5][Iparüzés value="4" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="16][élö nyelv value="5][értékbecslés value="5][Titkos Pszi value="1][Legendaismeret value="4" />
+        <cost value="45" />
+      </level>
+    <skill name="Okirathamisítás">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="13][Jog value="1][írás/Olvasás value="4" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="14][Jog value="2][Festészet/Rajz value="3" />
+        <cost value="9" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="16][Jog value="3][Térképészet value="3" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="17][Jog value="4][Heraldika value="3][Mestermágia value="1" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Érzékelés" value="18][Jog value="5][Titkos Pszi value="1" />
+        <cost value="45" />
+      </level>
+
+#-{Alvilági harci képzettségek">
+    <skill name="Kocsmai verekedés">
+      <level value="1">
+        <requirement type="stat" name="Erő" value="9" />
+        <requirement type="stat" name="Gyorsaság" value="9" />
+        <requirement type="stat" name="Ügyesség" value="8" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="10" />
+        <requirement type="stat" name="Gyorsaság" value="10" />
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="11" />
+        <requirement type="stat" name="Gyorsaság" value="12" />
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="12" />
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="12][Piszkos csel value="2" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="13" />
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="27" />
+      </level>
+    <skill name="Orvtámadás">
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="12][Fegyverhasználat value="2" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="9" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Ügyesség" value="14][Anatómia value="2" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="18" />
+        <requirement type="stat" name="Ügyesség" value="17][Fegyverhasználat value="4" />
+        <cost value="45" />
+      </level>
+    <skill name="Rejtett támdás">
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="14][Orvtámadás value="4][álcázás value="4" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="15][álöltözet value="3" />
+        <cost value="9" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Ügyesség" value="16][Színészet value="3" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="17" />
+        <requirement type="stat" name="Ügyesség" value="17][Lélektan value="3" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="18" />
+        <requirement type="stat" name="Ügyesség" value="19][Arctalanság value="3" />
+        <cost value="45" />
+      </level>
+    <skill name="Lesvetés">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="11][Rejtözés value="30][Helyismeret value="3" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13][Lélektan value="2" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="15][Taktika value="2" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16][Pszi value="2" />
+        <cost value="45" />
+      </level>
+    <skill name="Méregkezelés">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="9" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="11][Fegyverismeret value="2" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <cost value="45" />
+      </level>
+    <skill name="Piszkos csel">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13][Fegyverismeret value="2" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <cost value="45" />
+      </level>
+
+#-{Behatoló képzettségek">
+    <skill name="Rejtekhelykutatás">%
+      <level value="1">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+    <skill name="Csapdakeresés">%
+      <level value="1">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+    <skill name="Csapdaleszerelés">%
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1" />
+        <cost value="13" />
+      </level>
+=20        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1][Csomózás value="2" />
+        <cost value="13" />
+      </level>
+=40        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1][Csapdakeresés value="10" />
+        <cost value="3" />
+      </level>
+=60        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1][Mechanika value="2][Csapdakeresés value="30" />
+        <cost value="13" />
+      </level>
+=80        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1][Veszélyérzék value="26][Csapdakeresés value="50" />
+        <cost value="13" />
+      </level>
+    <skill name="zárnyitás">%
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1" />
+        <cost value="13" />
+      </level>
+=20        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1][Mechanika value="1" />
+        <cost value="13" />
+      </level>
+=40        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1][Mechanika value="2" />
+        <cost value="13" />
+      </level>
+=60        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1][Mechanika value="3" />
+        <cost value="13" />
+      </level>
+=80        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1][Mechanika value="4" />
+        <cost value="13" />
+      </level>
+=100        <requirement type="stat" name="Ügyesség" value="1" />
+        <requirement type="stat" name="Intelligencia" value="1][Mechanika value="5" />
+        <cost value="13" />
+      </level>
+
+#-{Ellenálló képzettségek">
+    <skill name="Kíntürés">
+      <level value="1">
+        <requirement type="stat" name="Akaraterő" value="14" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Akaraterő" value="15" />
+        <cost value="12" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Akaraterő" value="16" />
+        <cost value="24" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Akaraterő" value="18" />
+        <cost value="36" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Akaraterő" value="19" />
+        <cost value="48" />
+      </level>
+    <skill name="Méregtürés">
+      <level value="1">
+        <requirement type="stat" name="Egészség" value="15" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Egészség" value="16" />
+        <cost value="12" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Egészség" value="17" />
+        <cost value="24" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Egészség" value="18" />
+        <cost value="36" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Egészség" value="20" />
+        <cost value="48" />
+      </level>
+
+#{TüUlélö képzettségek">
+#-{Vadonjáró képzettségek">
+    <skill name="Futás">
+      <level value="1">
+        <requirement type="stat" name="Állóképesség" value="12" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Állóképesség" value="13" />
+        <cost value="9" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Állóképesség" value="14" />
+        <requirement type="stat" name="Akaraterő" value="13" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Állóképesség" value="16" />
+        <requirement type="stat" name="Akaraterő" value="14" />
+        <cost value="24" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Állóképesség" value="17" />
+        <requirement type="stat" name="Akaraterő" value="15" />
+        <cost value="30" />
+      </level>
+    <skill name="üUszás">
+      <level value="1">
+        <requirement type="stat" name="Erő" value="6" />
+        <requirement type="stat" name="Állóképesség" value="6" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="9" />
+        <requirement type="stat" name="Állóképesség" value="9" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="11" />
+        <requirement type="stat" name="Állóképesség" value="12" />
+        <cost value="4" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="15" />
+        <requirement type="stat" name="Állóképesség" value="14" />
+        <cost value="10" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="16" />
+        <requirement type="stat" name="Állóképesség" value="15" />
+        <cost value="15" />
+      </level>
+    <skill name="állatismeret">!
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <requirement type="stat" name="Érzékelés" value="9" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="9" />
+        <requirement type="stat" name="Érzékelés" value="10" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="11" />
+        <cost value="10" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="16" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="25" />
+      </level>
+    <skill name="Idomítás">!állatismeret
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Asztrál" value="12][állatismeret value="3" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Asztrál" value="13][állatismeret value="4" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Asztrál" value="14" />
+        <cost value="14" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Asztrál" value="16" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Asztrál" value="17" />
+        <cost value="26" />
+      </level>
+    <skill name="Nyomolvasás">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="4" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="10" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="30" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <cost value="45" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <cost value="65" />
+      </level>
+    <skill name="Vadászat">
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="11" />
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Érzékelés" value="11][Nyomolvasás value="2][állatismeret value="2][Fegyverhasználat value="2][Rejtözés value="30" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Gyorsaság" value="12" />
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13][Csapdaállítás value="2][Lopódzás value="35][Idomítás value="2" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Érzékelés" value="14][Lovaglás value="3" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <cost value="17" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="17][Lovas ijászat value="2][Stratégia value="2" />
+        <cost value="30" />
+      </level>
+    <skill name="Halászat">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <requirement type="stat" name="Érzékelés" value="10][Csomózás value="2" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Érzékelés" value="12][Hajózás value="2" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <cost value="17" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <cost value="30" />
+      </level>
+    <skill name="Csomózás">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <cost value="7" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <cost value="24" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <cost value="32" />
+      </level>
+    <skill name="Csapdaállítás">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="9][Csomózás value="2][Csapdakeresés value="20][Csapdaleszerelés value="10" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="10][álcázás value="1" />
+        <cost value="10" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="11][álcázás value="2" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="12][álcázás value="3][Mechanika value="2" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Érzékelés" value="13][álcázás value="4][Mechanika value="3" />
+        <cost value="30" />
+      </level>
+    <skill name="Veszélyérzék">%
+      <level value="1">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="23" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="23" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="23" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="23" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="23" />
+      </level>
+    <skill name="Irányérzék">%
+      <level value="1">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Érzékelés" value="1" />
+        <cost value="13" />
+      </level>
+
+#-{Atlétikai képzettségek">
+    <skill name="EgyensüUlyérzék">%
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+    <skill name="Akrobatika">
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="12" />
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Erő" value="11][EgyensüUlyérzék value="25" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Erő" value="12][EgyensüUlyérzék value="45" />
+        <cost value="10" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Erő" value="13][EgyensüUlyérzék value="65" />
+        <cost value="16" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <requirement type="stat" name="Erő" value="14][EgyensüUlyérzék value="85" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Ügyesség" value="19" />
+        <requirement type="stat" name="Erő" value="15][EgyensüUlyérzék|15" />
+        <cost value="38" />
+      </level>
+    <skill name="Mászás">%
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="1][EgyensüUlyérzék value="25" />
+        <cost value="13" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+    <skill name="Esés">%
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="1" />
+        <cost value="13" />
+      </level>
+    <skill name="Ugrás">%
+      <level value="1">
+        <requirement type="stat" name="Erő" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Erő" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Erő" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Erő" value="1" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Erő" value="1" />
+        <cost value="13" />
+      </level>
+    <skill name="Szabadulómüvészet">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="14][Csomózás value="2" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="16][Csomózás value="4" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="18][zárnyitás value="40" />
+        <cost value="17" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="19][zárnyitás value="75][Akrobatika value="2" />
+        <cost value="30" />
+      </level>
+
+#{Elméleti lépzettségek">
+#-{Közkeletü elméleti képzettségek">
+    <skill name="írás/Olvasás">!élö nyelv
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="7][élö nyelv value="1" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="9][élö nyelv value="2" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="11][élö nyelv value="3" />
+        <cost value="6" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="13][élö nyelv value="4" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="15][élö nyelv value="5" />
+        <cost value="25" />
+      </level>
+    <skill name="Legendaismeret">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="6][Helyismeret value="1][KultüUra value="1][élö nyelv value="1" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="8][Helyismeret value="2][KultüUra value="2][élö nyelv value="2" />
+        <cost value="6" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="10][Helyismeret value="3][KultüUra value="3][élö nyelv value="3" />
+        <cost value="10" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="12][írás/Olvasás value="2][Helyismeret value="4][KultüUra value="4][élö nyelv value="4" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="14][KultüUra value="5][élö nyelv value="5" />
+        <cost value="35" />
+      </level>
+    <skill name="Térképészet">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Intelligencia" value="11][élö nyelv value="2][KultüUra value="2" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Intelligencia" value="12][írás/Olvasás value="2][Festészet/Rajz value="2][Mértan value="1" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="13][Mértan value="2" />
+        <cost value="10" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="15][Mértan value="3" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="16][Mértan value="4" />
+        <cost value="35" />
+      </level>
+    <skill name="ásványtan">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <requirement type="stat" name="Érzékelés" value="10" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="9" />
+        <requirement type="stat" name="Érzékelés" value="11" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="6" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="15][Mértan value="3" />
+        <cost value="25" />
+      </level>
+    <skill name="Herbalizmus">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <cost value="6" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <cost value="10" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="18" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <cost value="35" />
+      </level>
+    <skill name="Idöjóslás">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="17" />
+        <cost value="25" />
+      </level>
+    <skill name="Jövendömondás">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <requirement type="stat" name="Érzékelés" value="14][Vallásismeret value="1" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="9" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="17" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="18" />
+        <cost value="40" />
+      </level>
+
+#-{Szakértö élméleti képzettségek">
+    <skill name="Holt nyelv">!
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="12][írás/Olvasás value="4" />
+        <cost value="5" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <cost value="10" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <cost value="18" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="17" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="18" />
+        <cost value="45" />
+      </level>
+    <skill name="Történelem">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8][élö nyelv value="1" />
+        <cost value="3" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="10][élö nyelv value="2" />
+        <cost value="8" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12][élö nyelv value="3][írás/Olvasás value="3" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="14][élö nyelv value="4][Vallásismeret value="2][Politika/Diplomácia value="2" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16][élö nyelv value="5" />
+        <cost value="30" />
+      </level>
+    <skill name="Jog">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="11][KultüUra value="1" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="13][KultüUra value="2][ékesszólás value="2" />
+        <cost value="6" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="14][KultüUra value="3" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="16][KultüUra value="4][írás/Olvasás value="3" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="17][KultüUra value="5" />
+        <cost value="30" />
+      </level>
+    <skill name="Vallásismeret">!
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8][élö nyelv value="1" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="10][élö nyelv value="2" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12][élö nyelv value="3][írás/Olvasás value="3" />
+        <cost value="6" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="14][élö nyelv value="4" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16][élö nyelv value="5][Holt nyelv value="3" />
+        <cost value="25" />
+      </level>
+    <skill name="Kriptográfia">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="9" />
+        <requirement type="stat" name="Intelligencia" value="12][írás/Olvasás value="3" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <cost value="6" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="16][Számtan value="3" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="17][Mestermágia value="2" />
+        <cost value="30" />
+      </level>
+    <skill name="Politika/Diplomácia">
+      <level value="1">[Szépség value="11" />
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <cost value="2" />
+      </level>
+      <level value="2">[Szépség value="11" />
+        <requirement type="stat" name="Intelligencia" value="12][ékesszólás value="3][Történelem value="3" />
+        <cost value="4" />
+      </level>
+      <level value="3">[Szépség value="12" />
+        <requirement type="stat" name="Intelligencia" value="14][Udvari etikett value="2" />
+        <cost value="6" />
+      </level>
+      <level value="4">[Szépség value="13" />
+        <requirement type="stat" name="Intelligencia" value="16][Udvari etikett value="3" />
+        <cost value="13" />
+      </level>
+      <level value="5">[Szépség value="13" />
+        <requirement type="stat" name="Intelligencia" value="17][Udvari etikett value="4" />
+        <cost value="25" />
+      </level>
+    <skill name="Antissjárás">
+      <level value="1">
+        <requirement type="stat" name="Akaraterő" value="13" />
+        <requirement type="stat" name="Asztrál" value="13" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Akaraterő" value="14" />
+        <requirement type="stat" name="Asztrál" value="14" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Akaraterő" value="15" />
+        <requirement type="stat" name="Asztrál" value="15" />
+        <cost value="10" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Akaraterő" value="16" />
+        <requirement type="stat" name="Asztrál" value="16" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Akaraterő" value="17" />
+        <requirement type="stat" name="Asztrál" value="17" />
+        <cost value="32" />
+      </level>
+    <skill name="Számtan">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="11][élö nyelv value="1" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12][élö nyelv value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13][írás/Olvasás value="3][élö nyelv value="3" />
+        <cost value="5" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="15][élö nyelv value="4" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="17][élö nyelv value="5" />
+        <cost value="25" />
+      </level>
+    <skill name="Mértan">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="11][Számtan value="1][írás/Olvasás value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12][Számtan value="2" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13][Számtan value="3][írás/Olvasás value="3" />
+        <cost value="5" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="15][Számtan value="4" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16][Számtan value="5" />
+        <cost value="25" />
+      </level>
+    <skill name="Mechanika">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="12][élö nyelv value="1" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="13][élö nyelv value="2" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="14][élö nyelv value="3][írás/Olvasás value="3][Mértan value="2" />
+        <cost value="6" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="16][élö nyelv value="4][Mértan value="3" />
+        <cost value="13" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <requirement type="stat" name="Intelligencia" value="17][élö nyelv value="5][Mértan value="4" />
+        <cost value="25" />
+      </level>
+    <skill name="építészet">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="12][írás/Olvasás value="3][Mértan value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13][Térképészet value="2][Mértan value="4" />
+        <cost value="2" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="5" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Érzékelés" value="17" />
+        <cost value="25" />
+      </level>
+    <skill name="Alkímia">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="10][írás/Olvasás value="4][Holt nyelv value="2][Számtan value="2" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="11" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Érzékelés" value="13][Mértan value="2][Idöjóslás value="2" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="18" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <cost value="30" />
+      </level>
+    <skill name="Anatómia">!
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="8" />
+        <requirement type="stat" name="Érzékelés" value="10][élö nyelv value="1" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="10" />
+        <requirement type="stat" name="Érzékelés" value="12][élö nyelv value="2" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13][élö nyelv value="3" />
+        <cost value="6" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="15][élö nyelv value="4][írás/Olvasás value="3" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Érzékelés" value="17" />
+        <cost value="30" />
+      </level>
+    <skill name="Orvoslás">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="11][Anatómia value="1" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="12][Anatómia value="2][Herbalizmus value="1" />
+        <cost value="5" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="13][Anatómia value="3][Herbalizmus value="2" />
+        <cost value="12" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="15][Anatómia value="4][Herbalizmus value="3][Alkímia value="2" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Intelligencia" value="16][Anatómia value="5][Herbalizmus value="4][élettan value="2" />
+        <cost value="30" />
+      </level>
+    <skill name="Balzzamozás">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Akaraterő" value="11][Anatómia value="4" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Akaraterő" value="12][Herbalizmus value="3" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Akaraterő" value="13][Alkímia value="3" />
+        <cost value="9" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Akaraterő" value="14][élettan value="2" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Akaraterő" value="15][élettan value="4" />
+        <cost value="25" />
+      </level>
+    <skill name="Méregkeverés">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="10" />
+        <requirement type="stat" name="Intelligencia" value="12][Méregkezelés value="1][Számtan value="2" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="11" />
+        <requirement type="stat" name="Intelligencia" value="13][Méregkezelés value="2][Herbalizmus value="1][ásványtan value="1" />
+        <cost value="6" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="14][Méregkezelés value="3][Herbalizmus value="2][ásványtan value="2][írás/Olvasás value="3" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="16][Méregkezelés value="4][Herbalizmus value="3][ásványtan value="3][Alkímia value="2" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="17][Méregkezelés value="5][Herbalizmus value="4][ásványtan value="4" />
+        <cost value="30" />
+      </level>
+    <skill name="Pszi">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="12][írás/Olvasás value="2" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Akaraterő" value="12" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Akaraterő" value="12" />
+        <requirement type="stat" name="Asztrál" value="12" />
+        <cost value="10" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Akaraterő" value="12" />
+        <requirement type="stat" name="Asztrál" value="12" />
+        <cost value="22" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Akaraterő" value="12" />
+        <requirement type="stat" name="Asztrál" value="12" />
+        <cost value="40" />
+      </level>
+
+#-{Titkos elméleti képzettségek">
+    <skill name="Vulgármágia">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Érzékelés" value="12][élö nyelv value="1" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="13][élö nyelv value="2" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Érzékelés" value="14][írás/Olvasás value="2" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <requirement type="stat" name="Akaraterő" value="19" />
+        <cost value="40" />
+      </level>
+    <skill name="Szakrális mágia">
+      <level value="1">
+        <requirement type="stat" name="Akaraterő" value="12" />
+        <requirement type="stat" name="Érzékelés" value="12][Vallásismeret value="4" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Akaraterő" value="13" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Akaraterő" value="14" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Akaraterő" value="16" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Akaraterő" value="17" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <requirement type="stat" name="Asztrál" value="16" />
+        <cost value="40" />
+      </level>
+    <skill name="Magasmágia">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="12" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Érzékelés" value="14][írás/Olvasás value="3][élö nyelv value="3" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="17" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="40" />
+      </level>
+    <skill name="Szimbólummágia">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="12][írás/Olvasás value="4][Holt nyelv value="2][Holt nyelv value="2" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="13][írás/Olvasás value="5][Holt nyelv value="3][Holt nyelv value="3][Magasmágia value="2" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <cost value="13" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <cost value="45" />
+      </level>
+    <skill name="Mestermágia">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="12][élö nyelv value="1][Iparüzés value="3" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="13][élö nyelv value="2][Magasmágia value="2" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="14][élö nyelv value="3][Magasmágia value="3][Iparüzés value="4" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="16" />
+        <requirement type="stat" name="Intelligencia" value="15][élö nyelv value="4" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="18" />
+        <requirement type="stat" name="Intelligencia" value="16][élö nyelv value="5" />
+        <cost value="45" />
+      </level>
+    <skill name="Drágakömágia">
+      <level value="1">
+        <requirement type="stat" name="Ügyesség" value="12" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="11][ásványtan value="4][értékbecslés value="4" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Ügyesség" value="13" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="12][Magasmágia value="2" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Ügyesség" value="14" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="13][Magasmágia value="3" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Ügyesség" value="15" />
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Érzékelés" value="14][ásványtan value="5" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Ügyesség" value="17" />
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <cost value="40" />
+      </level>
+    <skill name="élettan">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Akaraterő" value="10" />
+        <requirement type="stat" name="Asztrál" value="11][Anatómia value="5][Holt nyelv value="3][Holt nyelv value="3" />
+        <cost value="1" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Akaraterő" value="11" />
+        <requirement type="stat" name="Asztrál" value="12][Alkímia value="4][Holt nyelv value="4][Holt nyelv value="4" />
+        <cost value="3" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Akaraterő" value="12" />
+        <requirement type="stat" name="Asztrál" value="13" />
+        <cost value="6" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="18" />
+        <requirement type="stat" name="Akaraterő" value="13" />
+        <requirement type="stat" name="Asztrál" value="14][Mágiaismeret value="2" />
+        <cost value="15" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="19" />
+        <requirement type="stat" name="Akaraterő" value="15" />
+        <requirement type="stat" name="Asztrál" value="16" />
+        <cost value="35" />
+      </level>
+    <skill name="Auraelemzés">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="12][Pszi value="5" />
+        <cost value="2" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="13" />
+        <cost value="4" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Érzékelés" value="14" />
+        <cost value="8" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <cost value="20" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="18" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <cost value="40" />
+      </level>
+    <skill name="Démonológia">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Akaraterő" value="14][írás/Olvasás value="4][Holt nyelv value="3" />
+        <cost value="5" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Akaraterő" value="15][írás/Olvasás value="5][Holt nyelv value="4" />
+        <cost value="10" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Akaraterő" value="16][Szimbólummágia value="3][Magasmágia value="3" />
+        <cost value="17" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Akaraterő" value="17][Auraelemzés value="4" />
+        <cost value="25" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Akaraterő" value="19][Auraelemzés value="5" />
+        <cost value="38" />
+      </level>
+
+#-{Titkos szervezeti hagyományok">
+    <skill name="Auraleplezés">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="11" />
+        <requirement type="stat" name="Akaraterő" value="15" />
+        <requirement type="stat" name="Asztrál" value="15][Színészet value="4" />
+        <cost value="5" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Akaraterő" value="15" />
+        <requirement type="stat" name="Asztrál" value="15][Lélektan value="3" />
+        <cost value="7" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Akaraterő" value="15" />
+        <requirement type="stat" name="Asztrál" value="15][Lélektan value="4" />
+        <cost value="15" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Akaraterő" value="16" />
+        <requirement type="stat" name="Asztrál" value="17" />
+        <cost value="30" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Akaraterő" value="18" />
+        <requirement type="stat" name="Asztrál" value="18" />
+        <cost value="45" />
+      </level>
+    <skill name="Mágiaismeret">
+      <level value="1">
+        <requirement type="stat" name="Gyorsaság" value="13" />
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Érzékelés" value="15][élö nyelv value="1" />
+        <cost value="5" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Gyorsaság" value="14" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="15" />
+        <cost value="15" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Gyorsaság" value="15" />
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Érzékelés" value="16" />
+        <cost value="30" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Gyorsaság" value="16" />
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Érzékelés" value="17][Veszélyérzék value="76" />
+        <cost value="45" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Gyorsaság" value="17" />
+        <requirement type="stat" name="Intelligencia" value="15" />
+        <requirement type="stat" name="Érzékelés" value="19" />
+        <cost value="60" />
+      </level>
+    <skill name="Mágiahasználat">
+      <level value="1">
+        <requirement type="stat" name="Intelligencia" value="12" />
+        <requirement type="stat" name="Akaraterő" value="12" />
+        <requirement type="stat" name="Asztrál" value="10][írás/Olvasás value="2][KultüUra value="2" />
+        <cost value="5" />
+      </level>
+      <level value="2">
+        <requirement type="stat" name="Intelligencia" value="13" />
+        <requirement type="stat" name="Akaraterő" value="13" />
+        <requirement type="stat" name="Asztrál" value="11" />
+        <cost value="15" />
+      </level>
+      <level value="3">
+        <requirement type="stat" name="Intelligencia" value="14" />
+        <requirement type="stat" name="Akaraterő" value="14" />
+        <requirement type="stat" name="Asztrál" value="12" />
+        <cost value="30" />
+      </level>
+      <level value="4">
+        <requirement type="stat" name="Intelligencia" value="16" />
+        <requirement type="stat" name="Akaraterő" value="15" />
+        <requirement type="stat" name="Asztrál" value="13][Vulgármágia value="2" />
+        <cost value="45" />
+      </level>
+      <level value="5">
+        <requirement type="stat" name="Intelligencia" value="17" />
+        <requirement type="stat" name="Akaraterő" value="16" />
+        <requirement type="stat" name="Asztrál" value="14" />
+        <cost value="60" />
+      </level>
+    <skill name="Titkos Pszi">
+      <level value="1">[Legendaismeret value="2][Pszi value="3" />
+        <cost value="5" />
+      </level>
+      <level value="2">[Legendaismeret value="3" />
+        <cost value="12" />
+      </level>
+      <level value="3">
+        <cost value="20" />
+      </level>
+      <level value="4">[Legendaismeret value="2" />
+        <cost value="30" />
+      </level>
+      <level value="5">[Legendaismeret value="3" />
+        <cost value="45" />
+      </level>
+-->
+  </skills>
+</root>

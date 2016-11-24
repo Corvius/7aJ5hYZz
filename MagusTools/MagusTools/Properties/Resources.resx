@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ATTR_Agility" xml:space="preserve">
+    <value>Ügyesség</value>
+    <comment>Text for Label - Attribute - Agility</comment>
+  </data>
+  <data name="ATTR_Astral" xml:space="preserve">
+    <value>Asztrál</value>
+    <comment>Text for Label - Attribute - Astral</comment>
+  </data>
+  <data name="ATTR_Charisma" xml:space="preserve">
+    <value>Szépség</value>
+    <comment>Text for Label - Attribute - Charisma</comment>
+  </data>
+  <data name="ATTR_Endurance" xml:space="preserve">
+    <value>Állóképesség</value>
+    <comment>Text for Label - Attribute - Endurance</comment>
+  </data>
+  <data name="ATTR_Health" xml:space="preserve">
+    <value>Életerő</value>
+    <comment>Text for Label - Attribute - Health</comment>
+  </data>
+  <data name="ATTR_Intelligence" xml:space="preserve">
+    <value>Intelligencia</value>
+    <comment>Text for Label - Attribute - Intelligence</comment>
+  </data>
+  <data name="ATTR_Perception" xml:space="preserve">
+    <value>Érzékelés</value>
+    <comment>Text for Label - Attribute - Perception</comment>
+  </data>
+  <data name="ATTR_Speed" xml:space="preserve">
+    <value>Gyorsaság</value>
+    <comment>Text for Label - Attribute - Speed</comment>
+  </data>
+  <data name="ATTR_Strength" xml:space="preserve">
+    <value>Erő</value>
+    <comment>Text for Label - Attribute - Strength</comment>
+  </data>
+  <data name="ATTR_Willpower" xml:space="preserve">
+    <value>Akaraterő</value>
+    <comment>Text for Label - Attribute - Willpower</comment>
+  </data>
+  <data name="MISC_PrimaryAttributes_SpentCCP" xml:space="preserve">
+    <value>KAP költség</value>
+    <comment>Text for Stat-tab Primary Attributes - Spent CCP label</comment>
+  </data>
+  <data name="MISC_Text_AbilityAverage" xml:space="preserve">
+    <value>Átlag</value>
+    <comment>Text for Label - Ability average</comment>
+  </data>
+  <data name="MISC_Text_Actual" xml:space="preserve">
+    <value>Aktuális</value>
+    <comment>Text for Labels - Actual</comment>
+  </data>
+  <data name="MISC_Text_Base" xml:space="preserve">
+    <value>Alap</value>
+    <comment>Text for Labels - Base</comment>
+  </data>
+  <data name="MISC_Text_CCP" xml:space="preserve">
+    <value>KAP</value>
+    <comment>Text for Labels - Character Creation Points</comment>
+  </data>
+  <data name="MM_Character" xml:space="preserve">
+    <value>Karakter</value>
+    <comment>Text for Main menu - Character</comment>
+  </data>
+  <data name="MM_Character_ExportAsText" xml:space="preserve">
+    <value>Mentés szövegfájlba</value>
+    <comment>Text for Main menu - Character - Export As Text</comment>
+  </data>
+  <data name="MM_Character_Generate" xml:space="preserve">
+    <value>Generálás</value>
+    <comment>Text for Main menu - Character - Generate</comment>
+  </data>
+  <data name="MM_File" xml:space="preserve">
+    <value>Fájl</value>
+    <comment>Text for Main menu - File</comment>
+  </data>
+  <data name="MM_File_New" xml:space="preserve">
+    <value>Új</value>
+    <comment>Text for Main menu - File - New</comment>
+  </data>
+  <data name="MM_File_New_NPC" xml:space="preserve">
+    <value>Nem-Játékos Karakter (NJK)</value>
+    <comment>Text for Main menu - File - New - Non-Playable Character</comment>
+  </data>
+  <data name="MM_File_New_PC" xml:space="preserve">
+    <value>Játékos Karakter (JK)</value>
+    <comment>Text for Main menu - File - New - Playable Character</comment>
+  </data>
+  <data name="MM_File_Open" xml:space="preserve">
+    <value>Megnyitás</value>
+    <comment>Text for Main menu - File - Open</comment>
+  </data>
+  <data name="MM_File_Quit" xml:space="preserve">
+    <value>Kilépés</value>
+    <comment>Text for Main menu - File - Quit</comment>
+  </data>
+  <data name="MM_File_Save" xml:space="preserve">
+    <value>Mentés</value>
+    <comment>Text for Main menu - File - Save</comment>
+  </data>
+  <data name="MM_File_SaveAs" xml:space="preserve">
+    <value>Mentés másként..</value>
+    <comment>Text for Main menu - File - Save As</comment>
+  </data>
+  <data name="MM_Help" xml:space="preserve">
+    <value>Segítség</value>
+    <comment>Text for Main menu - Help</comment>
+  </data>
+  <data name="MM_Help_About" xml:space="preserve">
+    <value>MagusTools névjegye</value>
+    <comment>Text for Main menu - Help - About</comment>
+  </data>
+  <data name="MM_Help_ViewHelp" xml:space="preserve">
+    <value>Segítség megtekintése</value>
+    <comment>Text for Main menu - Help - ViewHelp</comment>
+  </data>
+  <data name="MM_Options" xml:space="preserve">
+    <value>Beállítások</value>
+    <comment>Text for Main menu - Options</comment>
+  </data>
+  <data name="MM_Options_Language" xml:space="preserve">
+    <value>Nyelvek</value>
+    <comment>Text for Main menu - Options - Language</comment>
+  </data>
+  <data name="MM_Options_Specials" xml:space="preserve">
+    <value>Speciális</value>
+    <comment>Text for Main menu - Options - Specials</comment>
+  </data>
+  <data name="MM_Options_Tools" xml:space="preserve">
+    <value>Kiegészítők</value>
+    <comment>Text for Main menu - Options - Tools</comment>
+  </data>
+  <data name="MM_Options_Tools_Diceroller" xml:space="preserve">
+    <value>Kockadobó</value>
+    <comment>Text for Main menu - Options - Tools - Diceroller</comment>
+  </data>
+  <data name="TAB_Armory" xml:space="preserve">
+    <value>Fegyverraktár</value>
+    <comment>Text for Stat-tab Armory</comment>
+  </data>
+  <data name="TAB_BasicInfo" xml:space="preserve">
+    <value>Alapinformációk</value>
+    <comment>Text for Stat-tab Basic Information</comment>
+  </data>
+  <data name="TAB_BasicInfo_AvailableCCPLabel" xml:space="preserve">
+    <value>Elosztható KAP</value>
+    <comment>Text for Stat-tab Basic Information - Remaining CCP label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharAgeLabel" xml:space="preserve">
+    <value>Kor</value>
+    <comment>Text for Stat-tab Basic Information - Age label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharBirthplaceLabel" xml:space="preserve">
+    <value>Szülőföld</value>
+    <comment>Text for Stat-tab Basic Information - Birthplace label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharCharacteristicLabel" xml:space="preserve">
+    <value>Jellem</value>
+    <comment>Text for Stat-tab Basic Information - Characterisitics label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharClassLabel" xml:space="preserve">
+    <value>Kaszt</value>
+    <comment>Text for Stat-tab Basic Information - Class label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharGenderLabel" xml:space="preserve">
+    <value>Nem</value>
+    <comment>Text for Stat-tab Basic Information - Gender label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharLevelLabel" xml:space="preserve">
+    <value>Szint</value>
+    <comment>Text for Stat-tab Basic Information - Level label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharNameLabel" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text for Stat-tab Basic Information - Name label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharRaceLabel" xml:space="preserve">
+    <value>Faj</value>
+    <comment>Text for Stat-tab Basic Information - Race label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharRealmsLabel" xml:space="preserve">
+    <value>Szférák</value>
+    <comment>Text for Stat-tab Basic Information - Realms label</comment>
+  </data>
+  <data name="TAB_BasicInfo_CharReligionLabel" xml:space="preserve">
+    <value>Vallás</value>
+    <comment>Text for Stat-tab Basic Information - Religion label</comment>
+  </data>
+  <data name="TAB_Equipment" xml:space="preserve">
+    <value>Felszerelés</value>
+    <comment>Text for Stat-tab Equipment</comment>
+  </data>
+  <data name="TAB_PrimaryAttributes" xml:space="preserve">
+    <value>Elsődleges Képességek</value>
+    <comment>Text for Stat-tab PrimaryAttributes</comment>
+  </data>
+  <data name="TAB_SecondaryAttributes" xml:space="preserve">
+    <value>Másodlagos Képességek</value>
+    <comment>Text for Stat-tab SecondaryAttributes</comment>
+  </data>
+  <data name="TAB_Skills" xml:space="preserve">
+    <value>Képzettségek</value>
+    <comment>Text for Stat-tab Skills</comment>
+  </data>
+  <data name="TAB_Summary" xml:space="preserve">
+    <value>Áttekintés</value>
+    <comment>Text for Stat-tab Summary</comment>
+  </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>MagusTools Karakterszerkesztő</value>
+    <comment>Text for Main Window Title</comment>
+  </data>
+</root>

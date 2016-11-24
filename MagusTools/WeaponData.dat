@@ -1,0 +1,32 @@
+//  TBaseWeapon = record
+//    Name: String;
+//    CombatStat: array[KE..CE] of Integer;
+//    Dmg_Min: Integer;
+//    Dmg_Max: Integer;
+//    Dmg_Add: Integer;
+//    Category: Integer;
+//    TPK : Integer; // Tám / kör -> 0 = 1/4; 1 = 1/3; 2 = 1/2; 3 = 1; 4 = 2 ... 8 = 6;
+//    ReqType: String;
+//    ReqValue: Integer;
+//    DoubleHanded: Boolean // 0 - false, 1 - true
+//  end;
+//
+// REQTYPE:  0 - ERO, 1 - GYO, 2 - UGY
+// Fegyverkategóriák: 0 - Vágófegyverek, 1 - Szúrófegyverek, 2 - Zúzófegyverek
+// 	3 - Szálfegyverek, 4 - Dobófegyverek, 5 - Célzófegyverek
+// 	6 - Tûzfegyverek, 7 - Pajzsok, 8 - Egyéb fegyverek
+//
+// Pl. Sebzés = 2k6 + 1 -> legkisebb 2, legnagyobb 12, hozzáadott 1
+// 
+// {Fegyvernév} (Fegyverkategória, KÉ, TÉ, VÉ, CÉ, Táv, MGT, Legkisebb sebzés,
+//	Legnagyobb sebzés, Hozááadott sebzés, Tám / kör,
+//	Képesség-követelmény típusa, Képesség-követelmény értéke, kétkezsesség)
+//
+{Kard}(0,2,4,8,0,0,0,1,6,0,3,Ügyesség,12,0)
+{Zöldségpucoló}(1,22,14,8,0,0,0,3,18,6,3,Ügyesség,12,0)
+{Súroló Ijedõs Kender}(4,2,1,1,5,0,0,1,6,4,3,Ügyesség,12,0)
+{Lézeríj}(5,12,0,0,50,180,0,1,6,2,3,Ügyesség,14,1)
+{Sütiparittya}(5,1,0,0,30,80,0,1,2,0,3,Erõ,10,0)
+{Homokágyú}(6,100,0,0,200,10,0,100,200,0,2,Erõ,14,1)
+{Hangos betonoszlop}(3,0,40,5,0,0,0,10,50,10,3,Erõ,20,0)
+{Zilált borpajzs}(7,5,0,25,0,0,0,2,12,2,1,Gyorsaság,0,0)
