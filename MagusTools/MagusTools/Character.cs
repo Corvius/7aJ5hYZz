@@ -150,7 +150,7 @@ namespace MagusTools
         internal enum WeaponAttackPerRound { OneInFour, OneInThree, OneInTwo, OneInOne, TwoInOne, ThreeInOne, FourInOne }
 
         // The list of all available weapons.
-        private static List<Weapon> weapons;
+        private static List<Weapon> weapons = new List<Weapon>();
 
         public static bool IsWeaponEquipped(Weapon weapon)
         {
@@ -225,7 +225,7 @@ namespace MagusTools
 
     internal class Armors
     {
-        private List<Armor> armors;
+        //private List<Armor> armors;
     }
 
     internal class Armor
@@ -234,7 +234,7 @@ namespace MagusTools
 
     internal class Items
     {
-        private List<Item> items;
+        //private List<Item> items;
     }
 
     internal class Item
@@ -253,7 +253,7 @@ namespace MagusTools
     {
         internal enum WeaponLevelCheck { LessThan, LessOrEqualTo, EqualTo, GreaterOrEqualTo, GreaterThan }
 
-        private static List<Skill> skills;
+        private static List<Skill> skills = new List<Skill>();
 
         public static IEnumerable<Skill> GetSkilsThatMatch(string skillName, string subType, int level, WeaponLevelCheck levelCheckType)
         {

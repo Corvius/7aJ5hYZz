@@ -117,65 +117,105 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ATTR_Agility" xml:space="preserve">
+  <data name="ATTR_PrimaryAttributes_Agility" xml:space="preserve">
     <value>Ügyesség</value>
-    <comment>Text for Label - Attribute - Agility</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Agility</comment>
   </data>
-  <data name="ATTR_Astral" xml:space="preserve">
+  <data name="ATTR_PrimaryAttributes_Astral" xml:space="preserve">
     <value>Asztrál</value>
-    <comment>Text for Label - Attribute - Astral</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Astral</comment>
   </data>
-  <data name="ATTR_Charisma" xml:space="preserve">
+  <data name="ATTR_PrimaryAttributes_Charisma" xml:space="preserve">
     <value>Szépség</value>
-    <comment>Text for Label - Attribute - Charisma</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Charisma</comment>
   </data>
-  <data name="ATTR_Endurance" xml:space="preserve">
+  <data name="ATTR_PrimaryAttributes_Endurance" xml:space="preserve">
     <value>Állóképesség</value>
-    <comment>Text for Label - Attribute - Endurance</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Endurance</comment>
   </data>
-  <data name="ATTR_Health" xml:space="preserve">
+  <data name="ATTR_PrimaryAttributes_Health" xml:space="preserve">
     <value>Életerő</value>
-    <comment>Text for Label - Attribute - Health</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Health</comment>
   </data>
-  <data name="ATTR_Intelligence" xml:space="preserve">
+  <data name="ATTR_PrimaryAttributes_Intelligence" xml:space="preserve">
     <value>Intelligencia</value>
-    <comment>Text for Label - Attribute - Intelligence</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Intelligence</comment>
   </data>
-  <data name="ATTR_Perception" xml:space="preserve">
+  <data name="ATTR_PrimaryAttributes_Perception" xml:space="preserve">
     <value>Érzékelés</value>
-    <comment>Text for Label - Attribute - Perception</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Perception</comment>
   </data>
-  <data name="ATTR_Speed" xml:space="preserve">
+  <data name="ATTR_PrimaryAttributes_Speed" xml:space="preserve">
     <value>Gyorsaság</value>
-    <comment>Text for Label - Attribute - Speed</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Speed</comment>
   </data>
-  <data name="ATTR_Strength" xml:space="preserve">
+  <data name="ATTR_PrimaryAttributes_Strength" xml:space="preserve">
     <value>Erő</value>
-    <comment>Text for Label - Attribute - Strength</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Strength</comment>
   </data>
-  <data name="ATTR_Willpower" xml:space="preserve">
+  <data name="ATTR_PrimaryAttributes_Willpower" xml:space="preserve">
     <value>Akaraterő</value>
-    <comment>Text for Label - Attribute - Willpower</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Willpower</comment>
   </data>
-  <data name="MISC_PrimaryAttributes_SpentCCP" xml:space="preserve">
-    <value>KAP költség</value>
-    <comment>Text for Stat-tab Primary Attributes - Spent CCP label</comment>
+  <data name="ATTR_SecondaryAttributes_Aim" xml:space="preserve">
+    <value>CÉ</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Aim</comment>
+  </data>
+  <data name="ATTR_SecondaryAttributes_Attack" xml:space="preserve">
+    <value>TÉ</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Attack</comment>
+  </data>
+  <data name="ATTR_SecondaryAttributes_CMperLevel" xml:space="preserve">
+    <value>HM / Szint</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - CM / Level</comment>
+  </data>
+  <data name="ATTR_SecondaryAttributes_Defense" xml:space="preserve">
+    <value>VÉ</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Defence</comment>
+  </data>
+  <data name="ATTR_SecondaryAttributes_HP" xml:space="preserve">
+    <value>ÉP</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Health Points</comment>
+  </data>
+  <data name="ATTR_SecondaryAttributes_Initiative" xml:space="preserve">
+    <value>KÉ</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Initiative</comment>
+  </data>
+  <data name="ATTR_SecondaryAttributes_KPperLevel" xml:space="preserve">
+    <value>KP / Szint</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Knowledge Points Gain / Level</comment>
+  </data>
+  <data name="ATTR_SecondaryAttributes_KP" xml:space="preserve">
+    <value>KP</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Knowlege Points</comment>
+  </data>
+  <data name="ATTR_SecondaryAttributes_PRperLevel" xml:space="preserve">
+    <value>FP / Szint</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Pain Resistance Gain / Level</comment>
+  </data>
+  <data name="ATTR_SecondaryAttributes_PR" xml:space="preserve">
+    <value>FP</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Pain Resistance</comment>
+  </data>
+  <data name="MISC_SecondaryAttributes_Text_SpentCM" xml:space="preserve">
+    <value>HM</value>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Spent CM</comment>
   </data>
   <data name="MISC_Text_AbilityAverage" xml:space="preserve">
     <value>Átlag</value>
-    <comment>Text for Label - Ability average</comment>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Ability average</comment>
   </data>
   <data name="MISC_Text_Actual" xml:space="preserve">
     <value>Aktuális</value>
     <comment>Text for Labels - Actual</comment>
   </data>
-  <data name="MISC_Text_Base" xml:space="preserve">
-    <value>Alap</value>
-    <comment>Text for Labels - Base</comment>
-  </data>
   <data name="MISC_Text_CCP" xml:space="preserve">
     <value>KAP</value>
     <comment>Text for Labels - Character Creation Points</comment>
+  </data>
+  <data name="MISC_Text_TotalSpentCCPOnTab" xml:space="preserve">
+    <value>KAP költség</value>
+    <comment>Text for Stat-tab PrimaryAttributes - Label - Spent CCP</comment>
   </data>
   <data name="MM_Character" xml:space="preserve">
     <value>Karakter</value>
@@ -267,43 +307,43 @@
   </data>
   <data name="TAB_BasicInfo_CharAgeLabel" xml:space="preserve">
     <value>Kor</value>
-    <comment>Text for Stat-tab Basic Information - Age label</comment>
+    <comment>Text for Stat-tab Basic Information - Label - Age</comment>
   </data>
   <data name="TAB_BasicInfo_CharBirthplaceLabel" xml:space="preserve">
     <value>Szülőföld</value>
-    <comment>Text for Stat-tab Basic Information - Birthplace label</comment>
+    <comment>Text for Stat-tab Basic Information - Label - Birthplace</comment>
   </data>
   <data name="TAB_BasicInfo_CharCharacteristicLabel" xml:space="preserve">
     <value>Jellem</value>
-    <comment>Text for Stat-tab Basic Information - Characterisitics label</comment>
+    <comment>Text for Stat-tab Basic Information - Label - Characterisitics</comment>
   </data>
   <data name="TAB_BasicInfo_CharClassLabel" xml:space="preserve">
     <value>Kaszt</value>
-    <comment>Text for Stat-tab Basic Information - Class label</comment>
+    <comment>Text for Stat-tab Basic Information - Label - Class</comment>
   </data>
   <data name="TAB_BasicInfo_CharGenderLabel" xml:space="preserve">
     <value>Nem</value>
-    <comment>Text for Stat-tab Basic Information - Gender label</comment>
+    <comment>Text for Stat-tab Basic Information - Label - Gender</comment>
   </data>
   <data name="TAB_BasicInfo_CharLevelLabel" xml:space="preserve">
     <value>Szint</value>
-    <comment>Text for Stat-tab Basic Information - Level label</comment>
+    <comment>Text for Stat-tab Basic Information - Label - Level</comment>
   </data>
   <data name="TAB_BasicInfo_CharNameLabel" xml:space="preserve">
-    <value>Name</value>
-    <comment>Text for Stat-tab Basic Information - Name label</comment>
+    <value>Név</value>
+    <comment>Text for Stat-tab Basic Information - Label - Name</comment>
   </data>
   <data name="TAB_BasicInfo_CharRaceLabel" xml:space="preserve">
     <value>Faj</value>
-    <comment>Text for Stat-tab Basic Information - Race label</comment>
+    <comment>Text for Stat-tab Basic Information - Label - Race</comment>
   </data>
   <data name="TAB_BasicInfo_CharRealmsLabel" xml:space="preserve">
     <value>Szférák</value>
-    <comment>Text for Stat-tab Basic Information - Realms label</comment>
+    <comment>Text for Stat-tab Basic Information - Label - Realms</comment>
   </data>
   <data name="TAB_BasicInfo_CharReligionLabel" xml:space="preserve">
     <value>Vallás</value>
-    <comment>Text for Stat-tab Basic Information - Religion label</comment>
+    <comment>Text for Stat-tab Basic Information - Label - Religion</comment>
   </data>
   <data name="TAB_Equipment" xml:space="preserve">
     <value>Felszerelés</value>
@@ -328,5 +368,25 @@
   <data name="TITLE" xml:space="preserve">
     <value>MagusTools Karakterszerkesztő</value>
     <comment>Text for Main Window Title</comment>
+  </data>
+  <data name="MISC_Text_Remaining" xml:space="preserve">
+    <value>Elosztható</value>
+    <comment>Text for Labels - Remaining</comment>
+  </data>
+  <data name="TAB_Skills_AvailableSkillsLabel" xml:space="preserve">
+    <value>Választható képzettségek</value>
+    <comment>Text for Stat-tab Skills - Label - Available Skills</comment>
+  </data>
+  <data name="TAB_Skills_Hint_A" xml:space="preserve">
+    <value>* Húzd át a kívánt képzettségeket a jobb oldalra a felvételhez.</value>
+    <comment>Text for Stat-tab Skills - Label - First Hint</comment>
+  </data>
+  <data name="TAB_Skills_Hint_B" xml:space="preserve">
+    <value>* A felvett képzettségeket dupla kattintással szerkesztheted, a kijelölteket Delete gombbal pedig törölheted.</value>
+    <comment>Text for Stat-tab Skills - Label - Second Hint</comment>
+  </data>
+  <data name="TAB_Skills_SelectedSkillsLabel" xml:space="preserve">
+    <value>Felvett képzettségek</value>
+    <comment>Text for Stat-tab Skills - Label - Selected Skills</comment>
   </data>
 </root>

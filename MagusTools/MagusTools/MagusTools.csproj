@@ -115,6 +115,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DECAL_SideBarA.bmp" />
+    <None Include="Resources\ICON_CE.bmp" />
+    <None Include="Resources\ICON_EP.bmp" />
+    <None Include="Resources\ICON_FP.bmp" />
+    <None Include="Resources\ICON_FPTSZ.bmp" />
+    <None Include="Resources\ICON_HMTSZ.bmp" />
+    <None Include="Resources\ICON_KE.bmp" />
+    <None Include="Resources\ICON_KP.bmp" />
+    <None Include="Resources\ICON_KPTSZ.bmp" />
+    <None Include="Resources\ICON_TE.bmp" />
+    <None Include="Resources\ICON_VE.bmp" />
+    <None Include="Resources\TreeViewCollapse.bmp" />
+    <None Include="Resources\TreeViewExpand.bmp" />
+    <None Include="Resources\TreeViewExpandSecondaryNodes.bmp" />
     <Content Include="SkillData.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

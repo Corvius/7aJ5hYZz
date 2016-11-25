@@ -73,6 +73,16 @@ namespace MagusTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ICON_ATTR_Aim {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ATTR_Aim", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_ATTR_Astral {
             get {
                 object obj = ResourceManager.GetObject("ICON_ATTR_Astral", resourceCulture);
@@ -83,9 +93,39 @@ namespace MagusTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ICON_ATTR_Attack {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ATTR_Attack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_ATTR_Charisma {
             get {
                 object obj = ResourceManager.GetObject("ICON_ATTR_Charisma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_ATTR_CMperLevel {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ATTR_CMperLevel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_ATTR_Defense {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ATTR_Defense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +153,26 @@ namespace MagusTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ICON_ATTR_HP {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ATTR_HP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_ATTR_Initiative {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ATTR_Initiative", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_ATTR_Intelligence {
             get {
                 object obj = ResourceManager.GetObject("ICON_ATTR_Intelligence", resourceCulture);
@@ -123,9 +183,49 @@ namespace MagusTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ICON_ATTR_KP {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ATTR_KP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_ATTR_KPperLevel {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ATTR_KPperLevel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_ATTR_Perception {
             get {
                 object obj = ResourceManager.GetObject("ICON_ATTR_Perception", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_ATTR_PR {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ATTR_PR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_ATTR_PRperLevel {
+            get {
+                object obj = ResourceManager.GetObject("ICON_ATTR_PRperLevel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +256,36 @@ namespace MagusTools {
         internal static System.Drawing.Bitmap ICON_ATTR_Willpower {
             get {
                 object obj = ResourceManager.GetObject("ICON_ATTR_Willpower", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TreeViewCollapse {
+            get {
+                object obj = ResourceManager.GetObject("TreeViewCollapse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TreeViewExpand {
+            get {
+                object obj = ResourceManager.GetObject("TreeViewExpand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TreeViewExpandSecondaryNodes {
+            get {
+                object obj = ResourceManager.GetObject("TreeViewExpandSecondaryNodes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -12,9 +12,6 @@ namespace MagusTools
         /// </summary>
         private XElement xmlDefaults = new XElement("root");
 
-        // Was used for something in the past
-        private bool IsInitialized = false;
-
         /// <summary>
         /// Stores the current location of the XML file
         /// </summary>
@@ -35,7 +32,6 @@ namespace MagusTools
 
             if (LoadXML(ref xmlDefaults, currentFileLocation))
             {
-                IsInitialized = true;
             }
         }
 

@@ -121,11 +121,23 @@
   <data name="ICON_ATTR_Agility" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ICON_ATTR_Agility.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ICON_ATTR_Aim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ICON_CE.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ICON_ATTR_Astral" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ICON_ATTR_Astral.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ICON_ATTR_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ICON_TE.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ICON_ATTR_Charisma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ICON_ATTR_Charisma.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_ATTR_CMperLevel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ICON_HMTSZ.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_ATTR_Defense" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ICON_VE.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ICON_ATTR_Endurance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ICON_ATTR_Endurance.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,11 +145,29 @@
   <data name="ICON_ATTR_Health" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ICON_ATTR_Health.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ICON_ATTR_HP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ICON_EP.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_ATTR_Initiative" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ICON_KE.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ICON_ATTR_Intelligence" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ICON_ATTR_Intelligence.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ICON_ATTR_KP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ICON_KP.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_ATTR_KPperLevel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ICON_KPTSZ.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ICON_ATTR_Perception" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ICON_ATTR_Perception.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_ATTR_PR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ICON_FP.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_ATTR_PRperLevel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ICON_FPTSZ.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ICON_ATTR_Speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ICON_ATTR_Speed.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,5 +177,14 @@
   </data>
   <data name="ICON_ATTR_Willpower" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ICON_ATTR_Willpower.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TreeViewCollapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TreeViewCollapse.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TreeViewExpand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TreeViewExpand.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TreeViewExpandSecondaryNodes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TreeViewExpandSecondaryNodes.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

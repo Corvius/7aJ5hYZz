@@ -63,99 +63,189 @@ namespace MagusTools.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Ügyesség.
         /// </summary>
-        internal static string ATTR_Agility {
+        internal static string ATTR_PrimaryAttributes_Agility {
             get {
-                return ResourceManager.GetString("ATTR_Agility", resourceCulture);
+                return ResourceManager.GetString("ATTR_PrimaryAttributes_Agility", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Asztrál.
         /// </summary>
-        internal static string ATTR_Astral {
+        internal static string ATTR_PrimaryAttributes_Astral {
             get {
-                return ResourceManager.GetString("ATTR_Astral", resourceCulture);
+                return ResourceManager.GetString("ATTR_PrimaryAttributes_Astral", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Szépség.
         /// </summary>
-        internal static string ATTR_Charisma {
+        internal static string ATTR_PrimaryAttributes_Charisma {
             get {
-                return ResourceManager.GetString("ATTR_Charisma", resourceCulture);
+                return ResourceManager.GetString("ATTR_PrimaryAttributes_Charisma", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Állóképesség.
         /// </summary>
-        internal static string ATTR_Endurance {
+        internal static string ATTR_PrimaryAttributes_Endurance {
             get {
-                return ResourceManager.GetString("ATTR_Endurance", resourceCulture);
+                return ResourceManager.GetString("ATTR_PrimaryAttributes_Endurance", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Életerő.
         /// </summary>
-        internal static string ATTR_Health {
+        internal static string ATTR_PrimaryAttributes_Health {
             get {
-                return ResourceManager.GetString("ATTR_Health", resourceCulture);
+                return ResourceManager.GetString("ATTR_PrimaryAttributes_Health", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Intelligencia.
         /// </summary>
-        internal static string ATTR_Intelligence {
+        internal static string ATTR_PrimaryAttributes_Intelligence {
             get {
-                return ResourceManager.GetString("ATTR_Intelligence", resourceCulture);
+                return ResourceManager.GetString("ATTR_PrimaryAttributes_Intelligence", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Érzékelés.
         /// </summary>
-        internal static string ATTR_Perception {
+        internal static string ATTR_PrimaryAttributes_Perception {
             get {
-                return ResourceManager.GetString("ATTR_Perception", resourceCulture);
+                return ResourceManager.GetString("ATTR_PrimaryAttributes_Perception", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Gyorsaság.
         /// </summary>
-        internal static string ATTR_Speed {
+        internal static string ATTR_PrimaryAttributes_Speed {
             get {
-                return ResourceManager.GetString("ATTR_Speed", resourceCulture);
+                return ResourceManager.GetString("ATTR_PrimaryAttributes_Speed", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Erő.
         /// </summary>
-        internal static string ATTR_Strength {
+        internal static string ATTR_PrimaryAttributes_Strength {
             get {
-                return ResourceManager.GetString("ATTR_Strength", resourceCulture);
+                return ResourceManager.GetString("ATTR_PrimaryAttributes_Strength", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Akaraterő.
         /// </summary>
-        internal static string ATTR_Willpower {
+        internal static string ATTR_PrimaryAttributes_Willpower {
             get {
-                return ResourceManager.GetString("ATTR_Willpower", resourceCulture);
+                return ResourceManager.GetString("ATTR_PrimaryAttributes_Willpower", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KAP költség.
+        ///   Looks up a localized string similar to CÉ.
         /// </summary>
-        internal static string MISC_PrimaryAttributes_SpentCCP {
+        internal static string ATTR_SecondaryAttributes_Aim {
             get {
-                return ResourceManager.GetString("MISC_PrimaryAttributes_SpentCCP", resourceCulture);
+                return ResourceManager.GetString("ATTR_SecondaryAttributes_Aim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TÉ.
+        /// </summary>
+        internal static string ATTR_SecondaryAttributes_Attack {
+            get {
+                return ResourceManager.GetString("ATTR_SecondaryAttributes_Attack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HM / Szint.
+        /// </summary>
+        internal static string ATTR_SecondaryAttributes_CMperLevel {
+            get {
+                return ResourceManager.GetString("ATTR_SecondaryAttributes_CMperLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VÉ.
+        /// </summary>
+        internal static string ATTR_SecondaryAttributes_Defense {
+            get {
+                return ResourceManager.GetString("ATTR_SecondaryAttributes_Defense", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ÉP.
+        /// </summary>
+        internal static string ATTR_SecondaryAttributes_HP {
+            get {
+                return ResourceManager.GetString("ATTR_SecondaryAttributes_HP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KÉ.
+        /// </summary>
+        internal static string ATTR_SecondaryAttributes_Initiative {
+            get {
+                return ResourceManager.GetString("ATTR_SecondaryAttributes_Initiative", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KP.
+        /// </summary>
+        internal static string ATTR_SecondaryAttributes_KP {
+            get {
+                return ResourceManager.GetString("ATTR_SecondaryAttributes_KP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KP / Szint.
+        /// </summary>
+        internal static string ATTR_SecondaryAttributes_KPperLevel {
+            get {
+                return ResourceManager.GetString("ATTR_SecondaryAttributes_KPperLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FP.
+        /// </summary>
+        internal static string ATTR_SecondaryAttributes_PR {
+            get {
+                return ResourceManager.GetString("ATTR_SecondaryAttributes_PR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FP / Szint.
+        /// </summary>
+        internal static string ATTR_SecondaryAttributes_PRperLevel {
+            get {
+                return ResourceManager.GetString("ATTR_SecondaryAttributes_PRperLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HM.
+        /// </summary>
+        internal static string MISC_SecondaryAttributes_Text_SpentCM {
+            get {
+                return ResourceManager.GetString("MISC_SecondaryAttributes_Text_SpentCM", resourceCulture);
             }
         }
         
@@ -178,20 +268,29 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alap.
-        /// </summary>
-        internal static string MISC_Text_Base {
-            get {
-                return ResourceManager.GetString("MISC_Text_Base", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to KAP.
         /// </summary>
         internal static string MISC_Text_CCP {
             get {
                 return ResourceManager.GetString("MISC_Text_CCP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Elosztható.
+        /// </summary>
+        internal static string MISC_Text_Remaining {
+            get {
+                return ResourceManager.GetString("MISC_Text_Remaining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KAP költség.
+        /// </summary>
+        internal static string MISC_Text_TotalSpentCCPOnTab {
+            get {
+                return ResourceManager.GetString("MISC_Text_TotalSpentCCPOnTab", resourceCulture);
             }
         }
         
@@ -448,7 +547,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to Név.
         /// </summary>
         internal static string TAB_BasicInfo_CharNameLabel {
             get {
@@ -516,6 +615,42 @@ namespace MagusTools.Properties {
         internal static string TAB_Skills {
             get {
                 return ResourceManager.GetString("TAB_Skills", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Választható képzettségek.
+        /// </summary>
+        internal static string TAB_Skills_AvailableSkillsLabel {
+            get {
+                return ResourceManager.GetString("TAB_Skills_AvailableSkillsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to * Húzd át a kívánt képzettségeket a jobb oldalra a felvételhez..
+        /// </summary>
+        internal static string TAB_Skills_Hint_A {
+            get {
+                return ResourceManager.GetString("TAB_Skills_Hint_A", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to * A felvett képzettségeket dupla kattintással szerkesztheted, a kijelölteket Delete gombbal pedig törölheted..
+        /// </summary>
+        internal static string TAB_Skills_Hint_B {
+            get {
+                return ResourceManager.GetString("TAB_Skills_Hint_B", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Felvett képzettségek.
+        /// </summary>
+        internal static string TAB_Skills_SelectedSkillsLabel {
+            get {
+                return ResourceManager.GetString("TAB_Skills_SelectedSkillsLabel", resourceCulture);
             }
         }
         
