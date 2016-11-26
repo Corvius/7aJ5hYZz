@@ -250,6 +250,10 @@
             this.lblCharCCP = new System.Windows.Forms.Label();
             this.lblMiscHypen = new System.Windows.Forms.Label();
             this.mainTabControl = new System.Windows.Forms.TabControl();
+            this.tabDebug = new System.Windows.Forms.TabPage();
+            this.debug_tlp = new System.Windows.Forms.TableLayoutPanel();
+            this.debug_label1 = new System.Windows.Forms.Label();
+            this.debug_comboBox7 = new System.Windows.Forms.ComboBox();
             this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
             this.stlblFileName = new System.Windows.Forms.ToolStripStatusLabel();
             this.mainMenuStrip.SuspendLayout();
@@ -311,6 +315,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.updCharLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.updCharAge)).BeginInit();
             this.mainTabControl.SuspendLayout();
+            this.tabDebug.SuspendLayout();
+            this.debug_tlp.SuspendLayout();
             this.mainStatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -3691,6 +3697,7 @@
             this.mainTabControl.Controls.Add(this.tabSecondaryAttributes);
             this.mainTabControl.Controls.Add(this.tabSkills);
             this.mainTabControl.Controls.Add(this.tabSummary);
+            this.mainTabControl.Controls.Add(this.tabDebug);
             this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainTabControl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.mainTabControl.Location = new System.Drawing.Point(0, 24);
@@ -3698,6 +3705,59 @@
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(684, 716);
             this.mainTabControl.TabIndex = 0;
+            // 
+            // tabDebug
+            // 
+            this.tabDebug.Controls.Add(this.debug_tlp);
+            this.tabDebug.Location = new System.Drawing.Point(4, 24);
+            this.tabDebug.Name = "tabDebug";
+            this.tabDebug.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDebug.Size = new System.Drawing.Size(676, 688);
+            this.tabDebug.TabIndex = 11;
+            this.tabDebug.Text = "Debug Controls";
+            this.tabDebug.UseVisualStyleBackColor = true;
+            // 
+            // debug_tlp
+            // 
+            this.debug_tlp.ColumnCount = 2;
+            this.debug_tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.debug_tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.debug_tlp.Controls.Add(this.debug_label1, 0, 0);
+            this.debug_tlp.Controls.Add(this.debug_comboBox7, 0, 1);
+            this.debug_tlp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.debug_tlp.Location = new System.Drawing.Point(3, 3);
+            this.debug_tlp.Name = "debug_tlp";
+            this.debug_tlp.RowCount = 4;
+            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.debug_tlp.Size = new System.Drawing.Size(670, 682);
+            this.debug_tlp.TabIndex = 0;
+            // 
+            // debug_label1
+            // 
+            this.debug_label1.AutoSize = true;
+            this.debug_label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.debug_label1.Location = new System.Drawing.Point(3, 0);
+            this.debug_label1.Name = "debug_label1";
+            this.debug_label1.Size = new System.Drawing.Size(329, 30);
+            this.debug_label1.TabIndex = 0;
+            this.debug_label1.Text = "Choose a language";
+            this.debug_label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // debug_comboBox7
+            // 
+            this.debug_comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.debug_comboBox7.FormattingEnabled = true;
+            this.debug_comboBox7.Items.AddRange(new object[] {
+            "hu-HU",
+            "en-EN"});
+            this.debug_comboBox7.Location = new System.Drawing.Point(3, 33);
+            this.debug_comboBox7.Name = "debug_comboBox7";
+            this.debug_comboBox7.Size = new System.Drawing.Size(329, 23);
+            this.debug_comboBox7.TabIndex = 1;
+            this.debug_comboBox7.SelectedIndexChanged += new System.EventHandler(this.debug_comboBox7_SelectedIndexChanged);
             // 
             // mainStatusStrip
             // 
@@ -3794,6 +3854,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.updCharLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.updCharAge)).EndInit();
             this.mainTabControl.ResumeLayout(false);
+            this.tabDebug.ResumeLayout(false);
+            this.debug_tlp.ResumeLayout(false);
+            this.debug_tlp.PerformLayout();
             this.mainStatusStrip.ResumeLayout(false);
             this.mainStatusStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -4026,6 +4089,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TabPage tabDebug;
+        private System.Windows.Forms.TableLayoutPanel debug_tlp;
+        private System.Windows.Forms.Label debug_label1;
+        private System.Windows.Forms.ComboBox debug_comboBox7;
     }
 }
 

@@ -438,5 +438,13 @@ namespace MagusTools
                 return (combined.GetHashCode());
             }
         }
+
+
+        // DEBUG CONTROLS
+        private void debug_comboBox7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ChangeLanguage((string)debug_comboBox7.SelectedItem);
+            LoadLocalizedStrings();
+        }
     }
 }
