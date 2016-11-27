@@ -31,8 +31,6 @@
             this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileNew = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuFileNewPC = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuFileNewNPC = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuFileSave = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,7 +48,12 @@
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelpViewhelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabSummary = new System.Windows.Forms.TabPage();
+            this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
+            this.stlblFileName = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tabDebug = new System.Windows.Forms.TabPage();
+            this.debug_tlp = new System.Windows.Forms.TableLayoutPanel();
+            this.debug_label1 = new System.Windows.Forms.Label();
+            this.debug_comboBox7 = new System.Windows.Forms.ComboBox();
             this.tabSkills = new System.Windows.Forms.TabPage();
             this.tlpSkills = new System.Windows.Forms.TableLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
@@ -250,13 +253,10 @@
             this.lblCharCCP = new System.Windows.Forms.Label();
             this.lblMiscHypen = new System.Windows.Forms.Label();
             this.mainTabControl = new System.Windows.Forms.TabControl();
-            this.tabDebug = new System.Windows.Forms.TabPage();
-            this.debug_tlp = new System.Windows.Forms.TableLayoutPanel();
-            this.debug_label1 = new System.Windows.Forms.Label();
-            this.debug_comboBox7 = new System.Windows.Forms.ComboBox();
-            this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
-            this.stlblFileName = new System.Windows.Forms.ToolStripStatusLabel();
             this.mainMenuStrip.SuspendLayout();
+            this.mainStatusStrip.SuspendLayout();
+            this.tabDebug.SuspendLayout();
+            this.debug_tlp.SuspendLayout();
             this.tabSkills.SuspendLayout();
             this.tlpSkills.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -315,9 +315,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.updCharLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.updCharAge)).BeginInit();
             this.mainTabControl.SuspendLayout();
-            this.tabDebug.SuspendLayout();
-            this.debug_tlp.SuspendLayout();
-            this.mainStatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainMenuStrip
@@ -349,57 +346,42 @@
             // 
             // mnuFileNew
             // 
-            this.mnuFileNew.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuFileNewPC,
-            this.mnuFileNewNPC});
             this.mnuFileNew.Name = "mnuFileNew";
-            this.mnuFileNew.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileNew.Size = new System.Drawing.Size(152, 22);
             this.mnuFileNew.Text = "New";
-            // 
-            // mnuFileNewPC
-            // 
-            this.mnuFileNewPC.Name = "mnuFileNewPC";
-            this.mnuFileNewPC.Size = new System.Drawing.Size(235, 22);
-            this.mnuFileNewPC.Text = "Playable Character (PC)";
-            // 
-            // mnuFileNewNPC
-            // 
-            this.mnuFileNewNPC.Name = "mnuFileNewNPC";
-            this.mnuFileNewNPC.Size = new System.Drawing.Size(235, 22);
-            this.mnuFileNewNPC.Text = "Non-Playable Character (NPC)";
             // 
             // mnuFileOpen
             // 
             this.mnuFileOpen.Name = "mnuFileOpen";
-            this.mnuFileOpen.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileOpen.Size = new System.Drawing.Size(152, 22);
             this.mnuFileOpen.Text = "Open";
             // 
             // mnuFileSeparator1
             // 
             this.mnuFileSeparator1.Name = "mnuFileSeparator1";
-            this.mnuFileSeparator1.Size = new System.Drawing.Size(120, 6);
+            this.mnuFileSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuFileSave
             // 
             this.mnuFileSave.Name = "mnuFileSave";
-            this.mnuFileSave.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileSave.Size = new System.Drawing.Size(152, 22);
             this.mnuFileSave.Text = "Save";
             // 
             // mnuFileSaveAs
             // 
             this.mnuFileSaveAs.Name = "mnuFileSaveAs";
-            this.mnuFileSaveAs.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileSaveAs.Size = new System.Drawing.Size(152, 22);
             this.mnuFileSaveAs.Text = "Save As...";
             // 
             // mnuFileSeparator2
             // 
             this.mnuFileSeparator2.Name = "mnuFileSeparator2";
-            this.mnuFileSeparator2.Size = new System.Drawing.Size(120, 6);
+            this.mnuFileSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuFileQuit
             // 
             this.mnuFileQuit.Name = "mnuFileQuit";
-            this.mnuFileQuit.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileQuit.Size = new System.Drawing.Size(152, 22);
             this.mnuFileQuit.Text = "Quit";
             // 
             // mnuCharacter
@@ -480,15 +462,75 @@
             this.mnuHelpAbout.Size = new System.Drawing.Size(174, 22);
             this.mnuHelpAbout.Text = "About MagusTools";
             // 
-            // tabSummary
+            // mainStatusStrip
             // 
-            this.tabSummary.Location = new System.Drawing.Point(4, 24);
-            this.tabSummary.Name = "tabSummary";
-            this.tabSummary.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSummary.Size = new System.Drawing.Size(676, 688);
-            this.tabSummary.TabIndex = 6;
-            this.tabSummary.Text = "Summary";
-            this.tabSummary.UseVisualStyleBackColor = true;
+            this.mainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stlblFileName});
+            this.mainStatusStrip.Location = new System.Drawing.Point(0, 740);
+            this.mainStatusStrip.Name = "mainStatusStrip";
+            this.mainStatusStrip.Size = new System.Drawing.Size(684, 22);
+            this.mainStatusStrip.SizingGrip = false;
+            this.mainStatusStrip.TabIndex = 2;
+            this.mainStatusStrip.Text = "mainStatusStrip";
+            // 
+            // stlblFileName
+            // 
+            this.stlblFileName.Name = "stlblFileName";
+            this.stlblFileName.Size = new System.Drawing.Size(97, 17);
+            this.stlblFileName.Text = "<Filename here>";
+            // 
+            // tabDebug
+            // 
+            this.tabDebug.Controls.Add(this.debug_tlp);
+            this.tabDebug.Location = new System.Drawing.Point(4, 24);
+            this.tabDebug.Name = "tabDebug";
+            this.tabDebug.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDebug.Size = new System.Drawing.Size(676, 688);
+            this.tabDebug.TabIndex = 11;
+            this.tabDebug.Text = "Debug Controls";
+            this.tabDebug.UseVisualStyleBackColor = true;
+            // 
+            // debug_tlp
+            // 
+            this.debug_tlp.ColumnCount = 2;
+            this.debug_tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.debug_tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.debug_tlp.Controls.Add(this.debug_label1, 0, 0);
+            this.debug_tlp.Controls.Add(this.debug_comboBox7, 0, 1);
+            this.debug_tlp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.debug_tlp.Location = new System.Drawing.Point(3, 3);
+            this.debug_tlp.Name = "debug_tlp";
+            this.debug_tlp.RowCount = 4;
+            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.debug_tlp.Size = new System.Drawing.Size(670, 682);
+            this.debug_tlp.TabIndex = 0;
+            // 
+            // debug_label1
+            // 
+            this.debug_label1.AutoSize = true;
+            this.debug_label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.debug_label1.Location = new System.Drawing.Point(3, 0);
+            this.debug_label1.Name = "debug_label1";
+            this.debug_label1.Size = new System.Drawing.Size(329, 30);
+            this.debug_label1.TabIndex = 0;
+            this.debug_label1.Text = "Choose a language";
+            this.debug_label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // debug_comboBox7
+            // 
+            this.debug_comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.debug_comboBox7.FormattingEnabled = true;
+            this.debug_comboBox7.Items.AddRange(new object[] {
+            "hu-HU",
+            "en-EN"});
+            this.debug_comboBox7.Location = new System.Drawing.Point(3, 33);
+            this.debug_comboBox7.Name = "debug_comboBox7";
+            this.debug_comboBox7.Size = new System.Drawing.Size(329, 23);
+            this.debug_comboBox7.TabIndex = 1;
+            this.debug_comboBox7.SelectedIndexChanged += new System.EventHandler(this.debug_comboBox7_SelectedIndexChanged);
             // 
             // tabSkills
             // 
@@ -3696,7 +3738,6 @@
             this.mainTabControl.Controls.Add(this.tabPrimaryAttributes);
             this.mainTabControl.Controls.Add(this.tabSecondaryAttributes);
             this.mainTabControl.Controls.Add(this.tabSkills);
-            this.mainTabControl.Controls.Add(this.tabSummary);
             this.mainTabControl.Controls.Add(this.tabDebug);
             this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainTabControl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -3705,76 +3746,6 @@
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(684, 716);
             this.mainTabControl.TabIndex = 0;
-            // 
-            // tabDebug
-            // 
-            this.tabDebug.Controls.Add(this.debug_tlp);
-            this.tabDebug.Location = new System.Drawing.Point(4, 24);
-            this.tabDebug.Name = "tabDebug";
-            this.tabDebug.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDebug.Size = new System.Drawing.Size(676, 688);
-            this.tabDebug.TabIndex = 11;
-            this.tabDebug.Text = "Debug Controls";
-            this.tabDebug.UseVisualStyleBackColor = true;
-            // 
-            // debug_tlp
-            // 
-            this.debug_tlp.ColumnCount = 2;
-            this.debug_tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.debug_tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.debug_tlp.Controls.Add(this.debug_label1, 0, 0);
-            this.debug_tlp.Controls.Add(this.debug_comboBox7, 0, 1);
-            this.debug_tlp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.debug_tlp.Location = new System.Drawing.Point(3, 3);
-            this.debug_tlp.Name = "debug_tlp";
-            this.debug_tlp.RowCount = 4;
-            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.debug_tlp.Size = new System.Drawing.Size(670, 682);
-            this.debug_tlp.TabIndex = 0;
-            // 
-            // debug_label1
-            // 
-            this.debug_label1.AutoSize = true;
-            this.debug_label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.debug_label1.Location = new System.Drawing.Point(3, 0);
-            this.debug_label1.Name = "debug_label1";
-            this.debug_label1.Size = new System.Drawing.Size(329, 30);
-            this.debug_label1.TabIndex = 0;
-            this.debug_label1.Text = "Choose a language";
-            this.debug_label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // debug_comboBox7
-            // 
-            this.debug_comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.debug_comboBox7.FormattingEnabled = true;
-            this.debug_comboBox7.Items.AddRange(new object[] {
-            "hu-HU",
-            "en-EN"});
-            this.debug_comboBox7.Location = new System.Drawing.Point(3, 33);
-            this.debug_comboBox7.Name = "debug_comboBox7";
-            this.debug_comboBox7.Size = new System.Drawing.Size(329, 23);
-            this.debug_comboBox7.TabIndex = 1;
-            this.debug_comboBox7.SelectedIndexChanged += new System.EventHandler(this.debug_comboBox7_SelectedIndexChanged);
-            // 
-            // mainStatusStrip
-            // 
-            this.mainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.stlblFileName});
-            this.mainStatusStrip.Location = new System.Drawing.Point(0, 740);
-            this.mainStatusStrip.Name = "mainStatusStrip";
-            this.mainStatusStrip.Size = new System.Drawing.Size(684, 22);
-            this.mainStatusStrip.SizingGrip = false;
-            this.mainStatusStrip.TabIndex = 2;
-            this.mainStatusStrip.Text = "mainStatusStrip";
-            // 
-            // stlblFileName
-            // 
-            this.stlblFileName.Name = "stlblFileName";
-            this.stlblFileName.Size = new System.Drawing.Size(97, 17);
-            this.stlblFileName.Text = "<Filename here>";
             // 
             // MainForm
             // 
@@ -3792,6 +3763,11 @@
             this.Text = "MagusTools Karakterszerkesztő";
             this.mainMenuStrip.ResumeLayout(false);
             this.mainMenuStrip.PerformLayout();
+            this.mainStatusStrip.ResumeLayout(false);
+            this.mainStatusStrip.PerformLayout();
+            this.tabDebug.ResumeLayout(false);
+            this.debug_tlp.ResumeLayout(false);
+            this.debug_tlp.PerformLayout();
             this.tabSkills.ResumeLayout(false);
             this.tlpSkills.ResumeLayout(false);
             this.tlpSkills.PerformLayout();
@@ -3854,11 +3830,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.updCharLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.updCharAge)).EndInit();
             this.mainTabControl.ResumeLayout(false);
-            this.tabDebug.ResumeLayout(false);
-            this.debug_tlp.ResumeLayout(false);
-            this.debug_tlp.PerformLayout();
-            this.mainStatusStrip.ResumeLayout(false);
-            this.mainStatusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3868,10 +3839,8 @@
         private System.Windows.Forms.MenuStrip mainMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem mnuFile;
         private System.Windows.Forms.ToolStripMenuItem mnuFileNew;
-        private System.Windows.Forms.ToolStripMenuItem mnuFileNewPC;
         private System.Windows.Forms.ToolStripMenuItem mnuOptions;
         private System.Windows.Forms.ToolStripMenuItem mnuHelp;
-        private System.Windows.Forms.ToolStripMenuItem mnuFileNewNPC;
         private System.Windows.Forms.ToolStripMenuItem mnuFileOpen;
         private System.Windows.Forms.ToolStripSeparator mnuFileSeparator1;
         private System.Windows.Forms.ToolStripMenuItem mnuFileSave;
@@ -3887,8 +3856,23 @@
         private System.Windows.Forms.ToolStripMenuItem mnuHelpViewhelp;
         private System.Windows.Forms.ToolStripMenuItem mnuHelpAbout;
         private System.Windows.Forms.ToolStripMenuItem mnuOptionsLanguage;
-        private System.Windows.Forms.TabPage tabSummary;
+        private System.Windows.Forms.StatusStrip mainStatusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel stlblFileName;
+        private System.Windows.Forms.TabPage tabDebug;
+        private System.Windows.Forms.TableLayoutPanel debug_tlp;
+        private System.Windows.Forms.Label debug_label1;
+        private System.Windows.Forms.ComboBox debug_comboBox7;
         private System.Windows.Forms.TabPage tabSkills;
+        private System.Windows.Forms.TableLayoutPanel tlpSkills;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblSK01;
+        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.Label lblAD00;
+        private System.Windows.Forms.Label lblAD01;
+        private System.Windows.Forms.Label lblSK00;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabPage tabSecondaryAttributes;
         private System.Windows.Forms.TableLayoutPanel tlpSecondaryAttributesOld;
         private System.Windows.Forms.Label lblCMT03;
@@ -4077,22 +4061,6 @@
         private System.Windows.Forms.Label lblCharCCP;
         private System.Windows.Forms.Label lblMiscHypen;
         private System.Windows.Forms.TabControl mainTabControl;
-        private System.Windows.Forms.StatusStrip mainStatusStrip;
-        private System.Windows.Forms.ToolStripStatusLabel stlblFileName;
-        private System.Windows.Forms.TableLayoutPanel tlpSkills;
-        private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.Label lblAD00;
-        private System.Windows.Forms.Label lblAD01;
-        private System.Windows.Forms.Label lblSK00;
-        private System.Windows.Forms.Label lblSK01;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TabPage tabDebug;
-        private System.Windows.Forms.TableLayoutPanel debug_tlp;
-        private System.Windows.Forms.Label debug_label1;
-        private System.Windows.Forms.ComboBox debug_comboBox7;
     }
 }
 

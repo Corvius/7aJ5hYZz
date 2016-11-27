@@ -31,7 +31,7 @@ namespace MagusTools
             PrepareUI();
 
             // Set the initial language.
-            ChangeLanguage("hu");
+            ChangeLanguage("hu-HU");
 
             // Refresh all strings with the selected language.
             LoadLocalizedStrings();
@@ -45,7 +45,7 @@ namespace MagusTools
         /// This method changes the current culture settings, and loading
         /// a different language resource file for the program.
         /// </summary>
-        /// <param name="cultureName">Specifies the new culture's shortened name. ex.: 'en' for english</param>
+        /// <param name="cultureName">Specifies the new culture's shortened name. ex.: 'en-EN' for english</param>
         private void ChangeLanguage(string cultureName)
         {
             try
@@ -64,7 +64,7 @@ namespace MagusTools
         }
 
         /// <summary>
-        /// This method updates all stings to the proper language version.
+        /// This method updates all strings to the proper language version.
         /// </summary>
         private void LoadLocalizedStrings()
         {
@@ -79,8 +79,6 @@ namespace MagusTools
                 //
                 this.mnuFile.Text = Properties.Resources.MM_File;
                 this.mnuFileNew.Text = Properties.Resources.MM_File_New;
-                this.mnuFileNewNPC.Text = Properties.Resources.MM_File_New_NPC;
-                this.mnuFileNewPC.Text = Properties.Resources.MM_File_New_PC;
                 this.mnuFileOpen.Text = Properties.Resources.MM_File_Open;
                 this.mnuFileSave.Text = Properties.Resources.MM_File_Save;
                 this.mnuFileSaveAs.Text = Properties.Resources.MM_File_SaveAs;
@@ -117,7 +115,6 @@ namespace MagusTools
                 this.tabSkills.Text = Properties.Resources.TAB_Skills;
                 //this.tabArmory.Text = Properties.Resources.TAB_Armory;
                 //this.tabEquipment.Text = Properties.Resources.TAB_Equipment;
-                this.tabSummary.Text = Properties.Resources.TAB_Summary;
                 //
                 // Tab BasicInfo - Labels
                 //
@@ -426,7 +423,7 @@ namespace MagusTools
                 return 
                     (
                         (first.Name == second.Name) && 
-                        (first.Description == first.Description) &&
+                        (first.Description == second.Description) &&
                         (first.OwnerTab == second.OwnerTab) &&
                         (first.OrderValue == second.OrderValue)
                     );

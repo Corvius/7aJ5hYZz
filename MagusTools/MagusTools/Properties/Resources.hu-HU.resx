@@ -234,16 +234,8 @@
     <comment>Text for Main menu - File</comment>
   </data>
   <data name="MM_File_New" xml:space="preserve">
-    <value>Új</value>
+    <value>Új karakter</value>
     <comment>Text for Main menu - File - New</comment>
-  </data>
-  <data name="MM_File_New_NPC" xml:space="preserve">
-    <value>Nem-Játékos Karakter (NJK)</value>
-    <comment>Text for Main menu - File - New - Non-Playable Character</comment>
-  </data>
-  <data name="MM_File_New_PC" xml:space="preserve">
-    <value>Játékos Karakter (JK)</value>
-    <comment>Text for Main menu - File - New - Playable Character</comment>
   </data>
   <data name="MM_File_Open" xml:space="preserve">
     <value>Megnyitás</value>

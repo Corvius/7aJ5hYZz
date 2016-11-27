@@ -222,7 +222,7 @@
     <comment>Text for Main menu - Character</comment>
   </data>
   <data name="MM_Character_ExportAsText" xml:space="preserve">
-    <value>Export As Text</value>
+    <value>Export as text</value>
     <comment>Text for Main menu - Character - Export As Text</comment>
   </data>
   <data name="MM_Character_Generate" xml:space="preserve">
@@ -234,16 +234,8 @@
     <comment>Text for Main menu - File</comment>
   </data>
   <data name="MM_File_New" xml:space="preserve">
-    <value>New</value>
+    <value>New character</value>
     <comment>Text for Main menu - File - New</comment>
-  </data>
-  <data name="MM_File_New_NPC" xml:space="preserve">
-    <value>Non-Playable Character (NPC)</value>
-    <comment>Text for Main menu - File - New - Non-Playable Character</comment>
-  </data>
-  <data name="MM_File_New_PC" xml:space="preserve">
-    <value>Playable Character (PC)</value>
-    <comment>Text for Main menu - File - New - Playable Character</comment>
   </data>
   <data name="MM_File_Open" xml:space="preserve">
     <value>Open</value>
@@ -270,7 +262,7 @@
     <comment>Text for Main menu - Help - About</comment>
   </data>
   <data name="MM_Help_ViewHelp" xml:space="preserve">
-    <value>View Help</value>
+    <value>View help</value>
     <comment>Text for Main menu - Help - ViewHelp</comment>
   </data>
   <data name="MM_Options" xml:space="preserve">
