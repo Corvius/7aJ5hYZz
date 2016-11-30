@@ -1,6 +1,6 @@
 ﻿namespace MagusTools
 {
-    partial class MainForm
+    partial class mainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileNew = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,28 +57,21 @@
             this.debug_comboBox7 = new System.Windows.Forms.ComboBox();
             this.tabSkills = new System.Windows.Forms.TabPage();
             this.tlpSkills = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btSkillsExpand = new System.Windows.Forms.Button();
+            this.btSkillExpandAll = new System.Windows.Forms.Button();
             this.lblSK01 = new System.Windows.Forms.Label();
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.twSkillTree = new System.Windows.Forms.TreeView();
             this.lblAD00 = new System.Windows.Forms.Label();
             this.lblAD01 = new System.Windows.Forms.Label();
             this.lblSK00 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dgSelectedSkills = new System.Windows.Forms.DataGridView();
+            this.btSkillsCollapse = new System.Windows.Forms.Button();
             this.tabSecondaryAttributes = new System.Windows.Forms.TabPage();
             this.tlpSecondaryAttributesOld = new System.Windows.Forms.TableLayoutPanel();
             this.lblCMT03 = new System.Windows.Forms.Label();
             this.lblCMT02 = new System.Windows.Forms.Label();
             this.lblCMT01 = new System.Windows.Forms.Label();
             this.lblCMT00 = new System.Windows.Forms.Label();
-            this.updM03 = new System.Windows.Forms.NumericUpDown();
-            this.updB13 = new System.Windows.Forms.NumericUpDown();
-            this.updM02 = new System.Windows.Forms.NumericUpDown();
-            this.updB12 = new System.Windows.Forms.NumericUpDown();
-            this.updM01 = new System.Windows.Forms.NumericUpDown();
-            this.updB11 = new System.Windows.Forms.NumericUpDown();
-            this.updM00 = new System.Windows.Forms.NumericUpDown();
             this.lblCT16 = new System.Windows.Forms.Label();
             this.lblCT19 = new System.Windows.Forms.Label();
             this.lblCT18 = new System.Windows.Forms.Label();
@@ -120,12 +114,6 @@
             this.lblAT14 = new System.Windows.Forms.Label();
             this.lblAT12 = new System.Windows.Forms.Label();
             this.lblAT13 = new System.Windows.Forms.Label();
-            this.updB19 = new System.Windows.Forms.NumericUpDown();
-            this.updB18 = new System.Windows.Forms.NumericUpDown();
-            this.updB16 = new System.Windows.Forms.NumericUpDown();
-            this.updB15 = new System.Windows.Forms.NumericUpDown();
-            this.updB17 = new System.Windows.Forms.NumericUpDown();
-            this.updB14 = new System.Windows.Forms.NumericUpDown();
             this.pbM19 = new System.Windows.Forms.PictureBox();
             this.pbM18 = new System.Windows.Forms.PictureBox();
             this.pbM16 = new System.Windows.Forms.PictureBox();
@@ -148,14 +136,9 @@
             this.lblMAT10 = new System.Windows.Forms.Label();
             this.lblAT10 = new System.Windows.Forms.Label();
             this.pbM10 = new System.Windows.Forms.PictureBox();
-            this.updB10 = new System.Windows.Forms.NumericUpDown();
             this.lblAV10 = new System.Windows.Forms.Label();
             this.tabPrimaryAttributes = new System.Windows.Forms.TabPage();
             this.tlpPrimaryAttributesOld = new System.Windows.Forms.TableLayoutPanel();
-            this.updB00 = new System.Windows.Forms.NumericUpDown();
-            this.updB01 = new System.Windows.Forms.NumericUpDown();
-            this.updB02 = new System.Windows.Forms.NumericUpDown();
-            this.updB03 = new System.Windows.Forms.NumericUpDown();
             this.lblCT06 = new System.Windows.Forms.Label();
             this.lblCT09 = new System.Windows.Forms.Label();
             this.lblCT08 = new System.Windows.Forms.Label();
@@ -198,12 +181,6 @@
             this.lblAT04 = new System.Windows.Forms.Label();
             this.lblAT02 = new System.Windows.Forms.Label();
             this.lblAT03 = new System.Windows.Forms.Label();
-            this.updB09 = new System.Windows.Forms.NumericUpDown();
-            this.updB08 = new System.Windows.Forms.NumericUpDown();
-            this.updB06 = new System.Windows.Forms.NumericUpDown();
-            this.updB05 = new System.Windows.Forms.NumericUpDown();
-            this.updB07 = new System.Windows.Forms.NumericUpDown();
-            this.updB04 = new System.Windows.Forms.NumericUpDown();
             this.pbM09 = new System.Windows.Forms.PictureBox();
             this.pbM08 = new System.Windows.Forms.PictureBox();
             this.pbM06 = new System.Windows.Forms.PictureBox();
@@ -229,53 +206,79 @@
             this.lblAV00 = new System.Windows.Forms.Label();
             this.tabBasicInfo = new System.Windows.Forms.TabPage();
             this.tlpBasicInfo = new System.Windows.Forms.TableLayoutPanel();
-            this.updCharLevel = new System.Windows.Forms.NumericUpDown();
             this.lblCharName = new System.Windows.Forms.Label();
             this.txtCharName = new System.Windows.Forms.TextBox();
             this.lblCharGender = new System.Windows.Forms.Label();
             this.lblCharAge = new System.Windows.Forms.Label();
             this.lblCharRace = new System.Windows.Forms.Label();
             this.lblCharLevel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.updCharAge = new System.Windows.Forms.NumericUpDown();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbCharGender = new System.Windows.Forms.ComboBox();
+            this.cbCharRace = new System.Windows.Forms.ComboBox();
             this.lblCharClass = new System.Windows.Forms.Label();
-            this.lblCharCharacteristic = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lblCharAlignment = new System.Windows.Forms.Label();
+            this.cbCharAlignment = new System.Windows.Forms.ComboBox();
             this.lblCharBirthplace = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cbCharClass = new System.Windows.Forms.ComboBox();
+            this.cbCharBirthplace = new System.Windows.Forms.ComboBox();
             this.lblCharReligion = new System.Windows.Forms.Label();
             this.lblCharRealms = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.cbCharReligion = new System.Windows.Forms.ComboBox();
             this.lblCharRealmsList = new System.Windows.Forms.Label();
             this.lblCharAvailableCCP = new System.Windows.Forms.Label();
             this.lblCharCCP = new System.Windows.Forms.Label();
             this.lblMiscHypen = new System.Windows.Forms.Label();
+            this.pbD02 = new System.Windows.Forms.PictureBox();
+            this.lblCharOtherStats = new System.Windows.Forms.Label();
+            this.lblCharAMR = new System.Windows.Forms.Label();
+            this.lblOV00 = new System.Windows.Forms.Label();
+            this.lblCharMMR = new System.Windows.Forms.Label();
+            this.lblOV01 = new System.Windows.Forms.Label();
+            this.lblCharDamagebonus = new System.Windows.Forms.Label();
+            this.lblOV02 = new System.Windows.Forms.Label();
+            this.lblCharMP = new System.Windows.Forms.Label();
+            this.lblOV03 = new System.Windows.Forms.Label();
+            this.lblCharMPperLevel = new System.Windows.Forms.Label();
+            this.lblOV04 = new System.Windows.Forms.Label();
             this.mainTabControl = new System.Windows.Forms.TabControl();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updCharLevel = new MagusTools.NumericUpDownExt();
+            this.updCharAge = new MagusTools.NumericUpDownExt();
+            this.updB00 = new MagusTools.NumericUpDownExt();
+            this.updB01 = new MagusTools.NumericUpDownExt();
+            this.updB02 = new MagusTools.NumericUpDownExt();
+            this.updB03 = new MagusTools.NumericUpDownExt();
+            this.updB09 = new MagusTools.NumericUpDownExt();
+            this.updB08 = new MagusTools.NumericUpDownExt();
+            this.updB06 = new MagusTools.NumericUpDownExt();
+            this.updB05 = new MagusTools.NumericUpDownExt();
+            this.updB07 = new MagusTools.NumericUpDownExt();
+            this.updB04 = new MagusTools.NumericUpDownExt();
+            this.updM03 = new MagusTools.NumericUpDownExt();
+            this.updB13 = new MagusTools.NumericUpDownExt();
+            this.updM02 = new MagusTools.NumericUpDownExt();
+            this.updB12 = new MagusTools.NumericUpDownExt();
+            this.updM01 = new MagusTools.NumericUpDownExt();
+            this.updB11 = new MagusTools.NumericUpDownExt();
+            this.updM00 = new MagusTools.NumericUpDownExt();
+            this.updB19 = new MagusTools.NumericUpDownExt();
+            this.updB18 = new MagusTools.NumericUpDownExt();
+            this.updB16 = new MagusTools.NumericUpDownExt();
+            this.updB15 = new MagusTools.NumericUpDownExt();
+            this.updB17 = new MagusTools.NumericUpDownExt();
+            this.updB14 = new MagusTools.NumericUpDownExt();
+            this.updB10 = new MagusTools.NumericUpDownExt();
             this.mainMenuStrip.SuspendLayout();
             this.mainStatusStrip.SuspendLayout();
             this.tabDebug.SuspendLayout();
             this.debug_tlp.SuspendLayout();
             this.tabSkills.SuspendLayout();
             this.tlpSkills.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgSelectedSkills)).BeginInit();
             this.tabSecondaryAttributes.SuspendLayout();
             this.tlpSecondaryAttributesOld.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.updM03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updM02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updM01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updM00)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbD01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM16)).BeginInit();
@@ -286,20 +289,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbM12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB10)).BeginInit();
             this.tabPrimaryAttributes.SuspendLayout();
             this.tlpPrimaryAttributesOld.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.updB00)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB03)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbD00)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB09)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB07)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM09)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM08)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM06)).BeginInit();
@@ -312,9 +304,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbM00)).BeginInit();
             this.tabBasicInfo.SuspendLayout();
             this.tlpBasicInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbD02)).BeginInit();
+            this.mainTabControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.updCharLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.updCharAge)).BeginInit();
-            this.mainTabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.updB00)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB09)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB07)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updM03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updM02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updM01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updM00)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB10)).BeginInit();
             this.SuspendLayout();
             // 
             // mainMenuStrip
@@ -347,41 +364,41 @@
             // mnuFileNew
             // 
             this.mnuFileNew.Name = "mnuFileNew";
-            this.mnuFileNew.Size = new System.Drawing.Size(152, 22);
+            this.mnuFileNew.Size = new System.Drawing.Size(123, 22);
             this.mnuFileNew.Text = "New";
             // 
             // mnuFileOpen
             // 
             this.mnuFileOpen.Name = "mnuFileOpen";
-            this.mnuFileOpen.Size = new System.Drawing.Size(152, 22);
+            this.mnuFileOpen.Size = new System.Drawing.Size(123, 22);
             this.mnuFileOpen.Text = "Open";
             // 
             // mnuFileSeparator1
             // 
             this.mnuFileSeparator1.Name = "mnuFileSeparator1";
-            this.mnuFileSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.mnuFileSeparator1.Size = new System.Drawing.Size(120, 6);
             // 
             // mnuFileSave
             // 
             this.mnuFileSave.Name = "mnuFileSave";
-            this.mnuFileSave.Size = new System.Drawing.Size(152, 22);
+            this.mnuFileSave.Size = new System.Drawing.Size(123, 22);
             this.mnuFileSave.Text = "Save";
             // 
             // mnuFileSaveAs
             // 
             this.mnuFileSaveAs.Name = "mnuFileSaveAs";
-            this.mnuFileSaveAs.Size = new System.Drawing.Size(152, 22);
+            this.mnuFileSaveAs.Size = new System.Drawing.Size(123, 22);
             this.mnuFileSaveAs.Text = "Save As...";
             // 
             // mnuFileSeparator2
             // 
             this.mnuFileSeparator2.Name = "mnuFileSeparator2";
-            this.mnuFileSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.mnuFileSeparator2.Size = new System.Drawing.Size(120, 6);
             // 
             // mnuFileQuit
             // 
             this.mnuFileQuit.Name = "mnuFileQuit";
-            this.mnuFileQuit.Size = new System.Drawing.Size(152, 22);
+            this.mnuFileQuit.Size = new System.Drawing.Size(123, 22);
             this.mnuFileQuit.Text = "Quit";
             // 
             // mnuCharacter
@@ -554,15 +571,15 @@
             this.tlpSkills.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tlpSkills.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
             this.tlpSkills.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tlpSkills.Controls.Add(this.button3, 4, 0);
-            this.tlpSkills.Controls.Add(this.button2, 3, 0);
+            this.tlpSkills.Controls.Add(this.btSkillsExpand, 4, 0);
+            this.tlpSkills.Controls.Add(this.btSkillExpandAll, 3, 0);
             this.tlpSkills.Controls.Add(this.lblSK01, 6, 0);
-            this.tlpSkills.Controls.Add(this.treeView1, 1, 1);
+            this.tlpSkills.Controls.Add(this.twSkillTree, 1, 1);
             this.tlpSkills.Controls.Add(this.lblAD00, 1, 2);
             this.tlpSkills.Controls.Add(this.lblAD01, 1, 3);
             this.tlpSkills.Controls.Add(this.lblSK00, 1, 0);
-            this.tlpSkills.Controls.Add(this.dataGridView1, 6, 1);
-            this.tlpSkills.Controls.Add(this.button1, 2, 0);
+            this.tlpSkills.Controls.Add(this.dgSelectedSkills, 6, 1);
+            this.tlpSkills.Controls.Add(this.btSkillsCollapse, 2, 0);
             this.tlpSkills.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpSkills.Location = new System.Drawing.Point(3, 3);
             this.tlpSkills.Name = "tlpSkills";
@@ -574,25 +591,27 @@
             this.tlpSkills.Size = new System.Drawing.Size(670, 682);
             this.tlpSkills.TabIndex = 0;
             // 
-            // button3
+            // btSkillsExpand
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Image = global::MagusTools.Icons.TreeViewExpandSecondaryNodes;
-            this.button3.Location = new System.Drawing.Point(266, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(26, 18);
-            this.button3.TabIndex = 12;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btSkillsExpand.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btSkillsExpand.Image = global::MagusTools.Icons.TreeViewExpandSecondaryNodes;
+            this.btSkillsExpand.Location = new System.Drawing.Point(266, 3);
+            this.btSkillsExpand.Name = "btSkillsExpand";
+            this.btSkillsExpand.Size = new System.Drawing.Size(26, 18);
+            this.btSkillsExpand.TabIndex = 12;
+            this.btSkillsExpand.UseVisualStyleBackColor = true;
+            this.btSkillsExpand.Click += new System.EventHandler(this.btSkillsExpand_Click);
             // 
-            // button2
+            // btSkillExpandAll
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Image = global::MagusTools.Icons.TreeViewExpand;
-            this.button2.Location = new System.Drawing.Point(234, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(26, 18);
-            this.button2.TabIndex = 11;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btSkillExpandAll.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btSkillExpandAll.Image = global::MagusTools.Icons.TreeViewExpand;
+            this.btSkillExpandAll.Location = new System.Drawing.Point(234, 3);
+            this.btSkillExpandAll.Name = "btSkillExpandAll";
+            this.btSkillExpandAll.Size = new System.Drawing.Size(26, 18);
+            this.btSkillExpandAll.TabIndex = 11;
+            this.btSkillExpandAll.UseVisualStyleBackColor = true;
+            this.btSkillExpandAll.Click += new System.EventHandler(this.btSkillExpandAll_Click);
             // 
             // lblSK01
             // 
@@ -607,15 +626,16 @@
             this.lblSK01.Text = "Selected skills";
             this.lblSK01.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // treeView1
+            // twSkillTree
             // 
-            this.tlpSkills.SetColumnSpan(this.treeView1, 4);
-            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.Location = new System.Drawing.Point(24, 24);
-            this.treeView1.Margin = new System.Windows.Forms.Padding(0);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(271, 626);
-            this.treeView1.TabIndex = 0;
+            this.tlpSkills.SetColumnSpan(this.twSkillTree, 4);
+            this.twSkillTree.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.twSkillTree.Location = new System.Drawing.Point(24, 24);
+            this.twSkillTree.Margin = new System.Windows.Forms.Padding(0);
+            this.twSkillTree.Name = "twSkillTree";
+            this.twSkillTree.Size = new System.Drawing.Size(271, 626);
+            this.twSkillTree.TabIndex = 0;
+            this.twSkillTree.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.twSkillTree_ItemDrag);
             // 
             // lblAD00
             // 
@@ -654,26 +674,49 @@
             this.lblSK00.Text = "Available Skills";
             this.lblSK00.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // dataGridView1
+            // dgSelectedSkills
             // 
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(319, 24);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(325, 626);
-            this.dataGridView1.TabIndex = 8;
+            this.dgSelectedSkills.AllowDrop = true;
+            this.dgSelectedSkills.AllowUserToAddRows = false;
+            this.dgSelectedSkills.AllowUserToDeleteRows = false;
+            this.dgSelectedSkills.AllowUserToResizeColumns = false;
+            this.dgSelectedSkills.AllowUserToResizeRows = false;
+            this.dgSelectedSkills.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgSelectedSkills.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgSelectedSkills.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgSelectedSkills.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colName,
+            this.colLevel,
+            this.colPrice});
+            this.dgSelectedSkills.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgSelectedSkills.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgSelectedSkills.Location = new System.Drawing.Point(319, 24);
+            this.dgSelectedSkills.Margin = new System.Windows.Forms.Padding(0);
+            this.dgSelectedSkills.Name = "dgSelectedSkills";
+            this.dgSelectedSkills.RowHeadersVisible = false;
+            this.dgSelectedSkills.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgSelectedSkills.Size = new System.Drawing.Size(325, 626);
+            this.dgSelectedSkills.TabIndex = 8;
+            this.dgSelectedSkills.DragDrop += new System.Windows.Forms.DragEventHandler(this.dgSelectedSkills_DragDrop);
+            this.dgSelectedSkills.DragEnter += new System.Windows.Forms.DragEventHandler(this.dgSelectedSkills_DragEnter);
             // 
-            // button1
+            // btSkillsCollapse
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Image = global::MagusTools.Icons.TreeViewCollapse;
-            this.button1.Location = new System.Drawing.Point(202, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 18);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btSkillsCollapse.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btSkillsCollapse.Image = global::MagusTools.Icons.TreeViewCollapse;
+            this.btSkillsCollapse.Location = new System.Drawing.Point(202, 3);
+            this.btSkillsCollapse.Name = "btSkillsCollapse";
+            this.btSkillsCollapse.Size = new System.Drawing.Size(26, 18);
+            this.btSkillsCollapse.TabIndex = 10;
+            this.btSkillsCollapse.UseVisualStyleBackColor = true;
+            this.btSkillsCollapse.Click += new System.EventHandler(this.btSkillsCollapse_Click);
             // 
             // tabSecondaryAttributes
             // 
@@ -885,202 +928,6 @@
             this.lblCMT00.TabIndex = 110;
             this.lblCMT00.Text = "CM";
             this.lblCMT00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // updM03
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM03, 2);
-            this.updM03.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updM03.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updM03.Location = new System.Drawing.Point(88, 452);
-            this.updM03.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updM03.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updM03.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updM03.Name = "updM03";
-            this.updM03.Size = new System.Drawing.Size(88, 27);
-            this.updM03.TabIndex = 109;
-            this.updM03.Tag = "";
-            this.updM03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updM03.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB13
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB13, 2);
-            this.updB13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB13.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB13.Location = new System.Drawing.Point(88, 416);
-            this.updB13.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB13.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB13.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB13.Name = "updB13";
-            this.updB13.Size = new System.Drawing.Size(88, 27);
-            this.updB13.TabIndex = 108;
-            this.updB13.Tag = "";
-            this.updB13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB13.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updM02
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM02, 2);
-            this.updM02.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updM02.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updM02.Location = new System.Drawing.Point(88, 328);
-            this.updM02.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updM02.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updM02.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updM02.Name = "updM02";
-            this.updM02.Size = new System.Drawing.Size(88, 27);
-            this.updM02.TabIndex = 107;
-            this.updM02.Tag = "";
-            this.updM02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updM02.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB12
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB12, 2);
-            this.updB12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB12.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB12.Location = new System.Drawing.Point(88, 292);
-            this.updB12.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB12.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB12.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB12.Name = "updB12";
-            this.updB12.Size = new System.Drawing.Size(88, 27);
-            this.updB12.TabIndex = 106;
-            this.updB12.Tag = "";
-            this.updB12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB12.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updM01
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM01, 2);
-            this.updM01.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updM01.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updM01.Location = new System.Drawing.Point(88, 204);
-            this.updM01.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updM01.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updM01.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updM01.Name = "updM01";
-            this.updM01.Size = new System.Drawing.Size(88, 27);
-            this.updM01.TabIndex = 105;
-            this.updM01.Tag = "";
-            this.updM01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updM01.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB11
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB11, 2);
-            this.updB11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB11.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB11.Location = new System.Drawing.Point(88, 168);
-            this.updB11.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB11.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB11.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB11.Name = "updB11";
-            this.updB11.Size = new System.Drawing.Size(88, 27);
-            this.updB11.TabIndex = 104;
-            this.updB11.Tag = "";
-            this.updB11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB11.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updM00
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM00, 2);
-            this.updM00.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updM00.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updM00.Location = new System.Drawing.Point(88, 80);
-            this.updM00.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updM00.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updM00.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updM00.Name = "updM00";
-            this.updM00.Size = new System.Drawing.Size(88, 27);
-            this.updM00.TabIndex = 103;
-            this.updM00.Tag = "";
-            this.updM00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updM00.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
             // 
             // lblCT16
             // 
@@ -1613,170 +1460,6 @@
             this.lblAT13.Text = "Actual";
             this.lblAT13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // updB19
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB19, 2);
-            this.updB19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB19.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB19.Location = new System.Drawing.Point(471, 540);
-            this.updB19.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB19.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB19.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB19.Name = "updB19";
-            this.updB19.Size = new System.Drawing.Size(88, 64);
-            this.updB19.TabIndex = 57;
-            this.updB19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB19.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB18
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB18, 2);
-            this.updB18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB18.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB18.Location = new System.Drawing.Point(471, 416);
-            this.updB18.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB18.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB18.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB18.Name = "updB18";
-            this.updB18.Size = new System.Drawing.Size(88, 64);
-            this.updB18.TabIndex = 56;
-            this.updB18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB18.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB16
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB16, 2);
-            this.updB16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB16.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB16.Location = new System.Drawing.Point(471, 168);
-            this.updB16.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB16.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB16.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB16.Name = "updB16";
-            this.tlpSecondaryAttributesOld.SetRowSpan(this.updB16, 3);
-            this.updB16.Size = new System.Drawing.Size(88, 64);
-            this.updB16.TabIndex = 55;
-            this.updB16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB16.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB15
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB15, 2);
-            this.updB15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB15.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB15.Location = new System.Drawing.Point(471, 44);
-            this.updB15.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB15.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB15.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB15.Name = "updB15";
-            this.tlpSecondaryAttributesOld.SetRowSpan(this.updB15, 3);
-            this.updB15.Size = new System.Drawing.Size(88, 64);
-            this.updB15.TabIndex = 54;
-            this.updB15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB15.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB17
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB17, 2);
-            this.updB17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB17.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB17.Location = new System.Drawing.Point(471, 292);
-            this.updB17.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB17.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB17.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB17.Name = "updB17";
-            this.updB17.Size = new System.Drawing.Size(88, 64);
-            this.updB17.TabIndex = 53;
-            this.updB17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB17.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB14
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB14, 2);
-            this.updB14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB14.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB14.Location = new System.Drawing.Point(88, 540);
-            this.updB14.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB14.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB14.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB14.Name = "updB14";
-            this.updB14.Size = new System.Drawing.Size(88, 64);
-            this.updB14.TabIndex = 52;
-            this.updB14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB14.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
             // pbM19
             // 
             this.pbM19.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2063,34 +1746,6 @@
             this.pbM10.TabIndex = 28;
             this.pbM10.TabStop = false;
             // 
-            // updB10
-            // 
-            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB10, 2);
-            this.updB10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB10.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB10.Location = new System.Drawing.Point(88, 44);
-            this.updB10.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB10.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB10.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB10.Name = "updB10";
-            this.updB10.Size = new System.Drawing.Size(88, 27);
-            this.updB10.TabIndex = 48;
-            this.updB10.Tag = "";
-            this.updB10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB10.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
             // lblAV10
             // 
             this.lblAV10.AutoSize = true;
@@ -2256,117 +1911,8 @@
             this.tlpPrimaryAttributesOld.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tlpPrimaryAttributesOld.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tlpPrimaryAttributesOld.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tlpPrimaryAttributesOld.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpPrimaryAttributesOld.Size = new System.Drawing.Size(670, 682);
             this.tlpPrimaryAttributesOld.TabIndex = 2;
-            // 
-            // updB00
-            // 
-            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB00, 2);
-            this.updB00.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB00.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB00.Location = new System.Drawing.Point(88, 44);
-            this.updB00.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB00.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB00.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB00.Name = "updB00";
-            this.updB00.Size = new System.Drawing.Size(88, 64);
-            this.updB00.TabIndex = 106;
-            this.updB00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB00.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB01
-            // 
-            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB01, 2);
-            this.updB01.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB01.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB01.Location = new System.Drawing.Point(88, 168);
-            this.updB01.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB01.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB01.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB01.Name = "updB01";
-            this.updB01.Size = new System.Drawing.Size(88, 64);
-            this.updB01.TabIndex = 105;
-            this.updB01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB01.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB02
-            // 
-            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB02, 2);
-            this.updB02.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB02.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB02.Location = new System.Drawing.Point(88, 292);
-            this.updB02.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB02.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB02.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB02.Name = "updB02";
-            this.updB02.Size = new System.Drawing.Size(88, 64);
-            this.updB02.TabIndex = 104;
-            this.updB02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB02.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB03
-            // 
-            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB03, 2);
-            this.updB03.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB03.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB03.Location = new System.Drawing.Point(88, 416);
-            this.updB03.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB03.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB03.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB03.Name = "updB03";
-            this.updB03.Size = new System.Drawing.Size(88, 64);
-            this.updB03.TabIndex = 103;
-            this.updB03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB03.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
             // 
             // lblCT06
             // 
@@ -2898,170 +2444,6 @@
             this.lblAT03.Text = "Actual";
             this.lblAT03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // updB09
-            // 
-            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB09, 2);
-            this.updB09.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB09.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB09.Location = new System.Drawing.Point(471, 540);
-            this.updB09.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB09.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB09.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB09.Name = "updB09";
-            this.updB09.Size = new System.Drawing.Size(88, 64);
-            this.updB09.TabIndex = 57;
-            this.updB09.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB09.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB08
-            // 
-            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB08, 2);
-            this.updB08.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB08.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB08.Location = new System.Drawing.Point(471, 416);
-            this.updB08.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB08.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB08.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB08.Name = "updB08";
-            this.updB08.Size = new System.Drawing.Size(88, 64);
-            this.updB08.TabIndex = 56;
-            this.updB08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB08.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB06
-            // 
-            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB06, 2);
-            this.updB06.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB06.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB06.Location = new System.Drawing.Point(471, 168);
-            this.updB06.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB06.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB06.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB06.Name = "updB06";
-            this.tlpPrimaryAttributesOld.SetRowSpan(this.updB06, 3);
-            this.updB06.Size = new System.Drawing.Size(88, 64);
-            this.updB06.TabIndex = 55;
-            this.updB06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB06.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB05
-            // 
-            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB05, 2);
-            this.updB05.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB05.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB05.Location = new System.Drawing.Point(471, 44);
-            this.updB05.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB05.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB05.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB05.Name = "updB05";
-            this.tlpPrimaryAttributesOld.SetRowSpan(this.updB05, 3);
-            this.updB05.Size = new System.Drawing.Size(88, 64);
-            this.updB05.TabIndex = 54;
-            this.updB05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB05.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB07
-            // 
-            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB07, 2);
-            this.updB07.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB07.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB07.Location = new System.Drawing.Point(471, 292);
-            this.updB07.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB07.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB07.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB07.Name = "updB07";
-            this.updB07.Size = new System.Drawing.Size(88, 64);
-            this.updB07.TabIndex = 53;
-            this.updB07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB07.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // updB04
-            // 
-            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB04, 2);
-            this.updB04.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updB04.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB04.Location = new System.Drawing.Point(88, 540);
-            this.updB04.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.updB04.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.updB04.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.updB04.Name = "updB04";
-            this.updB04.Size = new System.Drawing.Size(88, 64);
-            this.updB04.TabIndex = 52;
-            this.updB04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.updB04.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
             // pbM09
             // 
             this.pbM09.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3364,6 +2746,7 @@
             // 
             // tabBasicInfo
             // 
+            this.tabBasicInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tabBasicInfo.Controls.Add(this.tlpBasicInfo);
             this.tabBasicInfo.Location = new System.Drawing.Point(4, 24);
             this.tabBasicInfo.Name = "tabBasicInfo";
@@ -3396,28 +2779,48 @@
             this.tlpBasicInfo.Controls.Add(this.lblCharAge, 7, 2);
             this.tlpBasicInfo.Controls.Add(this.lblCharRace, 9, 2);
             this.tlpBasicInfo.Controls.Add(this.lblCharLevel, 11, 0);
-            this.tlpBasicInfo.Controls.Add(this.comboBox1, 1, 3);
+            this.tlpBasicInfo.Controls.Add(this.cbCharGender, 1, 3);
             this.tlpBasicInfo.Controls.Add(this.updCharAge, 7, 3);
-            this.tlpBasicInfo.Controls.Add(this.comboBox3, 9, 3);
+            this.tlpBasicInfo.Controls.Add(this.cbCharRace, 9, 3);
             this.tlpBasicInfo.Controls.Add(this.lblCharClass, 1, 4);
-            this.tlpBasicInfo.Controls.Add(this.lblCharCharacteristic, 3, 2);
-            this.tlpBasicInfo.Controls.Add(this.comboBox2, 3, 3);
+            this.tlpBasicInfo.Controls.Add(this.lblCharAlignment, 3, 2);
+            this.tlpBasicInfo.Controls.Add(this.cbCharAlignment, 3, 3);
             this.tlpBasicInfo.Controls.Add(this.lblCharBirthplace, 5, 4);
-            this.tlpBasicInfo.Controls.Add(this.comboBox4, 1, 5);
-            this.tlpBasicInfo.Controls.Add(this.comboBox5, 5, 5);
+            this.tlpBasicInfo.Controls.Add(this.cbCharClass, 1, 5);
+            this.tlpBasicInfo.Controls.Add(this.cbCharBirthplace, 5, 5);
             this.tlpBasicInfo.Controls.Add(this.lblCharReligion, 1, 6);
             this.tlpBasicInfo.Controls.Add(this.lblCharRealms, 5, 6);
-            this.tlpBasicInfo.Controls.Add(this.comboBox6, 1, 7);
+            this.tlpBasicInfo.Controls.Add(this.cbCharReligion, 1, 7);
             this.tlpBasicInfo.Controls.Add(this.lblCharRealmsList, 5, 7);
             this.tlpBasicInfo.Controls.Add(this.lblCharAvailableCCP, 11, 4);
             this.tlpBasicInfo.Controls.Add(this.lblCharCCP, 11, 5);
             this.tlpBasicInfo.Controls.Add(this.lblMiscHypen, 4, 7);
+            this.tlpBasicInfo.Controls.Add(this.pbD02, 1, 9);
+            this.tlpBasicInfo.Controls.Add(this.lblCharOtherStats, 1, 10);
+            this.tlpBasicInfo.Controls.Add(this.lblCharAMR, 1, 11);
+            this.tlpBasicInfo.Controls.Add(this.lblOV00, 3, 11);
+            this.tlpBasicInfo.Controls.Add(this.lblCharMMR, 1, 12);
+            this.tlpBasicInfo.Controls.Add(this.lblOV01, 3, 12);
+            this.tlpBasicInfo.Controls.Add(this.lblCharDamagebonus, 1, 13);
+            this.tlpBasicInfo.Controls.Add(this.lblOV02, 3, 13);
+            this.tlpBasicInfo.Controls.Add(this.lblCharMP, 1, 14);
+            this.tlpBasicInfo.Controls.Add(this.lblOV03, 3, 14);
+            this.tlpBasicInfo.Controls.Add(this.lblCharMPperLevel, 1, 15);
+            this.tlpBasicInfo.Controls.Add(this.lblOV04, 3, 15);
             this.tlpBasicInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpBasicInfo.Location = new System.Drawing.Point(3, 3);
             this.tlpBasicInfo.Name = "tlpBasicInfo";
-            this.tlpBasicInfo.RowCount = 9;
+            this.tlpBasicInfo.RowCount = 17;
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
@@ -3427,6 +2830,464 @@
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpBasicInfo.Size = new System.Drawing.Size(670, 682);
             this.tlpBasicInfo.TabIndex = 0;
+            // 
+            // lblCharName
+            // 
+            this.lblCharName.AutoSize = true;
+            this.tlpBasicInfo.SetColumnSpan(this.lblCharName, 3);
+            this.lblCharName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharName.Location = new System.Drawing.Point(26, 0);
+            this.lblCharName.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharName.Name = "lblCharName";
+            this.lblCharName.Size = new System.Drawing.Size(180, 36);
+            this.lblCharName.TabIndex = 0;
+            this.lblCharName.Text = "Character\'s name";
+            this.lblCharName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // txtCharName
+            // 
+            this.tlpBasicInfo.SetColumnSpan(this.txtCharName, 9);
+            this.txtCharName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCharName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtCharName.Location = new System.Drawing.Point(29, 39);
+            this.txtCharName.Name = "txtCharName";
+            this.txtCharName.Size = new System.Drawing.Size(419, 29);
+            this.txtCharName.TabIndex = 1;
+            // 
+            // lblCharGender
+            // 
+            this.lblCharGender.AutoSize = true;
+            this.lblCharGender.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharGender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharGender.Location = new System.Drawing.Point(26, 72);
+            this.lblCharGender.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharGender.Name = "lblCharGender";
+            this.lblCharGender.Size = new System.Drawing.Size(107, 36);
+            this.lblCharGender.TabIndex = 2;
+            this.lblCharGender.Text = "Gender";
+            this.lblCharGender.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblCharAge
+            // 
+            this.lblCharAge.AutoSize = true;
+            this.lblCharAge.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharAge.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharAge.Location = new System.Drawing.Point(285, 72);
+            this.lblCharAge.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharAge.Name = "lblCharAge";
+            this.lblCharAge.Size = new System.Drawing.Size(53, 36);
+            this.lblCharAge.TabIndex = 4;
+            this.lblCharAge.Text = "Age";
+            this.lblCharAge.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblCharRace
+            // 
+            this.lblCharRace.AutoSize = true;
+            this.lblCharRace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharRace.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharRace.Location = new System.Drawing.Point(351, 72);
+            this.lblCharRace.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharRace.Name = "lblCharRace";
+            this.lblCharRace.Size = new System.Drawing.Size(100, 36);
+            this.lblCharRace.TabIndex = 5;
+            this.lblCharRace.Text = "Race";
+            this.lblCharRace.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblCharLevel
+            // 
+            this.lblCharLevel.AutoSize = true;
+            this.lblCharLevel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharLevel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharLevel.Location = new System.Drawing.Point(500, 0);
+            this.lblCharLevel.Name = "lblCharLevel";
+            this.lblCharLevel.Size = new System.Drawing.Size(134, 36);
+            this.lblCharLevel.TabIndex = 6;
+            this.lblCharLevel.Text = "Level";
+            this.lblCharLevel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // cbCharGender
+            // 
+            this.cbCharGender.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbCharGender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbCharGender.FormattingEnabled = true;
+            this.cbCharGender.Location = new System.Drawing.Point(29, 111);
+            this.cbCharGender.Name = "cbCharGender";
+            this.cbCharGender.Size = new System.Drawing.Size(101, 29);
+            this.cbCharGender.TabIndex = 7;
+            // 
+            // cbCharRace
+            // 
+            this.cbCharRace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbCharRace.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbCharRace.FormattingEnabled = true;
+            this.cbCharRace.Location = new System.Drawing.Point(354, 111);
+            this.cbCharRace.Name = "cbCharRace";
+            this.cbCharRace.Size = new System.Drawing.Size(94, 29);
+            this.cbCharRace.TabIndex = 10;
+            // 
+            // lblCharClass
+            // 
+            this.lblCharClass.AutoSize = true;
+            this.tlpBasicInfo.SetColumnSpan(this.lblCharClass, 3);
+            this.lblCharClass.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharClass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCharClass.Location = new System.Drawing.Point(26, 144);
+            this.lblCharClass.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharClass.Name = "lblCharClass";
+            this.lblCharClass.Size = new System.Drawing.Size(180, 36);
+            this.lblCharClass.TabIndex = 12;
+            this.lblCharClass.Text = "Class";
+            this.lblCharClass.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblCharAlignment
+            // 
+            this.lblCharAlignment.AutoSize = true;
+            this.tlpBasicInfo.SetColumnSpan(this.lblCharAlignment, 3);
+            this.lblCharAlignment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharAlignment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharAlignment.Location = new System.Drawing.Point(146, 72);
+            this.lblCharAlignment.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharAlignment.Name = "lblCharAlignment";
+            this.lblCharAlignment.Size = new System.Drawing.Size(126, 36);
+            this.lblCharAlignment.TabIndex = 3;
+            this.lblCharAlignment.Text = "Alignment";
+            this.lblCharAlignment.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // cbCharAlignment
+            // 
+            this.tlpBasicInfo.SetColumnSpan(this.cbCharAlignment, 3);
+            this.cbCharAlignment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbCharAlignment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbCharAlignment.FormattingEnabled = true;
+            this.cbCharAlignment.Location = new System.Drawing.Point(149, 111);
+            this.cbCharAlignment.Name = "cbCharAlignment";
+            this.cbCharAlignment.Size = new System.Drawing.Size(120, 29);
+            this.cbCharAlignment.TabIndex = 8;
+            // 
+            // lblCharBirthplace
+            // 
+            this.lblCharBirthplace.AutoSize = true;
+            this.tlpBasicInfo.SetColumnSpan(this.lblCharBirthplace, 3);
+            this.lblCharBirthplace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharBirthplace.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharBirthplace.Location = new System.Drawing.Point(226, 144);
+            this.lblCharBirthplace.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharBirthplace.Name = "lblCharBirthplace";
+            this.lblCharBirthplace.Size = new System.Drawing.Size(112, 36);
+            this.lblCharBirthplace.TabIndex = 13;
+            this.lblCharBirthplace.Text = "Birthplace";
+            this.lblCharBirthplace.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // cbCharClass
+            // 
+            this.tlpBasicInfo.SetColumnSpan(this.cbCharClass, 3);
+            this.cbCharClass.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbCharClass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbCharClass.FormattingEnabled = true;
+            this.cbCharClass.Location = new System.Drawing.Point(29, 183);
+            this.cbCharClass.Name = "cbCharClass";
+            this.cbCharClass.Size = new System.Drawing.Size(174, 29);
+            this.cbCharClass.TabIndex = 14;
+            // 
+            // cbCharBirthplace
+            // 
+            this.tlpBasicInfo.SetColumnSpan(this.cbCharBirthplace, 5);
+            this.cbCharBirthplace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbCharBirthplace.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbCharBirthplace.FormattingEnabled = true;
+            this.cbCharBirthplace.Location = new System.Drawing.Point(229, 183);
+            this.cbCharBirthplace.Name = "cbCharBirthplace";
+            this.cbCharBirthplace.Size = new System.Drawing.Size(219, 29);
+            this.cbCharBirthplace.TabIndex = 15;
+            // 
+            // lblCharReligion
+            // 
+            this.lblCharReligion.AutoSize = true;
+            this.tlpBasicInfo.SetColumnSpan(this.lblCharReligion, 3);
+            this.lblCharReligion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharReligion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharReligion.Location = new System.Drawing.Point(26, 216);
+            this.lblCharReligion.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharReligion.Name = "lblCharReligion";
+            this.lblCharReligion.Size = new System.Drawing.Size(180, 36);
+            this.lblCharReligion.TabIndex = 16;
+            this.lblCharReligion.Text = "Religion";
+            this.lblCharReligion.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblCharRealms
+            // 
+            this.lblCharRealms.AutoSize = true;
+            this.tlpBasicInfo.SetColumnSpan(this.lblCharRealms, 3);
+            this.lblCharRealms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharRealms.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharRealms.Location = new System.Drawing.Point(226, 216);
+            this.lblCharRealms.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharRealms.Name = "lblCharRealms";
+            this.lblCharRealms.Size = new System.Drawing.Size(112, 36);
+            this.lblCharRealms.TabIndex = 17;
+            this.lblCharRealms.Text = "Realms";
+            this.lblCharRealms.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // cbCharReligion
+            // 
+            this.tlpBasicInfo.SetColumnSpan(this.cbCharReligion, 3);
+            this.cbCharReligion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbCharReligion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbCharReligion.FormattingEnabled = true;
+            this.cbCharReligion.Location = new System.Drawing.Point(29, 255);
+            this.cbCharReligion.Name = "cbCharReligion";
+            this.cbCharReligion.Size = new System.Drawing.Size(174, 29);
+            this.cbCharReligion.TabIndex = 18;
+            // 
+            // lblCharRealmsList
+            // 
+            this.lblCharRealmsList.AutoSize = true;
+            this.lblCharRealmsList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tlpBasicInfo.SetColumnSpan(this.lblCharRealmsList, 5);
+            this.lblCharRealmsList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharRealmsList.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharRealmsList.Location = new System.Drawing.Point(230, 256);
+            this.lblCharRealmsList.Margin = new System.Windows.Forms.Padding(4);
+            this.lblCharRealmsList.Name = "lblCharRealmsList";
+            this.lblCharRealmsList.Size = new System.Drawing.Size(217, 28);
+            this.lblCharRealmsList.TabIndex = 19;
+            this.lblCharRealmsList.Text = "Life";
+            this.lblCharRealmsList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblCharAvailableCCP
+            // 
+            this.lblCharAvailableCCP.AutoSize = true;
+            this.lblCharAvailableCCP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharAvailableCCP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharAvailableCCP.Location = new System.Drawing.Point(500, 144);
+            this.lblCharAvailableCCP.Name = "lblCharAvailableCCP";
+            this.lblCharAvailableCCP.Size = new System.Drawing.Size(134, 36);
+            this.lblCharAvailableCCP.TabIndex = 21;
+            this.lblCharAvailableCCP.Text = "Available CCP";
+            this.lblCharAvailableCCP.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblCharCCP
+            // 
+            this.lblCharCCP.AutoSize = true;
+            this.lblCharCCP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCharCCP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharCCP.Font = new System.Drawing.Font("Harrington", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCharCCP.Location = new System.Drawing.Point(505, 180);
+            this.lblCharCCP.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.lblCharCCP.Name = "lblCharCCP";
+            this.tlpBasicInfo.SetRowSpan(this.lblCharCCP, 3);
+            this.lblCharCCP.Size = new System.Drawing.Size(132, 108);
+            this.lblCharCCP.TabIndex = 22;
+            this.lblCharCCP.Text = "375";
+            this.lblCharCCP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMiscHypen
+            // 
+            this.lblMiscHypen.AutoSize = true;
+            this.lblMiscHypen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMiscHypen.Location = new System.Drawing.Point(209, 252);
+            this.lblMiscHypen.Name = "lblMiscHypen";
+            this.lblMiscHypen.Size = new System.Drawing.Size(14, 36);
+            this.lblMiscHypen.TabIndex = 23;
+            this.lblMiscHypen.Text = "-";
+            this.lblMiscHypen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbD02
+            // 
+            this.tlpBasicInfo.SetColumnSpan(this.pbD02, 11);
+            this.pbD02.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbD02.Image = global::MagusTools.Decals.DECAL_SideBarB;
+            this.pbD02.Location = new System.Drawing.Point(26, 312);
+            this.pbD02.Margin = new System.Windows.Forms.Padding(0);
+            this.pbD02.Name = "pbD02";
+            this.pbD02.Size = new System.Drawing.Size(611, 31);
+            this.pbD02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbD02.TabIndex = 51;
+            this.pbD02.TabStop = false;
+            // 
+            // lblCharOtherStats
+            // 
+            this.lblCharOtherStats.AutoSize = true;
+            this.lblCharOtherStats.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharOtherStats.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharOtherStats.Location = new System.Drawing.Point(26, 343);
+            this.lblCharOtherStats.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharOtherStats.Name = "lblCharOtherStats";
+            this.lblCharOtherStats.Size = new System.Drawing.Size(107, 36);
+            this.lblCharOtherStats.TabIndex = 52;
+            this.lblCharOtherStats.Text = "Other stats";
+            this.lblCharOtherStats.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblCharAMR
+            // 
+            this.lblCharAMR.AutoSize = true;
+            this.lblCharAMR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharAMR.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharAMR.Location = new System.Drawing.Point(26, 379);
+            this.lblCharAMR.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharAMR.Name = "lblCharAMR";
+            this.lblCharAMR.Size = new System.Drawing.Size(107, 36);
+            this.lblCharAMR.TabIndex = 53;
+            this.lblCharAMR.Text = "AMR";
+            this.lblCharAMR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblOV00
+            // 
+            this.lblOV00.AutoSize = true;
+            this.lblOV00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV00.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV00.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV00.Location = new System.Drawing.Point(146, 379);
+            this.lblOV00.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV00.Name = "lblOV00";
+            this.lblOV00.Size = new System.Drawing.Size(60, 36);
+            this.lblOV00.TabIndex = 54;
+            this.lblOV00.Text = "0";
+            this.lblOV00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCharMMR
+            // 
+            this.lblCharMMR.AutoSize = true;
+            this.lblCharMMR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharMMR.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharMMR.Location = new System.Drawing.Point(26, 415);
+            this.lblCharMMR.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharMMR.Name = "lblCharMMR";
+            this.lblCharMMR.Size = new System.Drawing.Size(107, 36);
+            this.lblCharMMR.TabIndex = 55;
+            this.lblCharMMR.Text = "MMR";
+            this.lblCharMMR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblOV01
+            // 
+            this.lblOV01.AutoSize = true;
+            this.lblOV01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV01.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV01.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV01.Location = new System.Drawing.Point(146, 415);
+            this.lblOV01.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV01.Name = "lblOV01";
+            this.lblOV01.Size = new System.Drawing.Size(60, 36);
+            this.lblOV01.TabIndex = 56;
+            this.lblOV01.Text = "0";
+            this.lblOV01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCharDamagebonus
+            // 
+            this.lblCharDamagebonus.AutoSize = true;
+            this.lblCharDamagebonus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharDamagebonus.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharDamagebonus.Location = new System.Drawing.Point(26, 451);
+            this.lblCharDamagebonus.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharDamagebonus.Name = "lblCharDamagebonus";
+            this.lblCharDamagebonus.Size = new System.Drawing.Size(107, 36);
+            this.lblCharDamagebonus.TabIndex = 57;
+            this.lblCharDamagebonus.Text = "Damagebonus";
+            this.lblCharDamagebonus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblOV02
+            // 
+            this.lblOV02.AutoSize = true;
+            this.lblOV02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV02.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV02.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV02.Location = new System.Drawing.Point(146, 451);
+            this.lblOV02.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV02.Name = "lblOV02";
+            this.lblOV02.Size = new System.Drawing.Size(60, 36);
+            this.lblOV02.TabIndex = 58;
+            this.lblOV02.Text = "0";
+            this.lblOV02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCharMP
+            // 
+            this.lblCharMP.AutoSize = true;
+            this.lblCharMP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharMP.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharMP.Location = new System.Drawing.Point(26, 487);
+            this.lblCharMP.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharMP.Name = "lblCharMP";
+            this.lblCharMP.Size = new System.Drawing.Size(107, 36);
+            this.lblCharMP.TabIndex = 59;
+            this.lblCharMP.Text = "Mana";
+            this.lblCharMP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblOV03
+            // 
+            this.lblOV03.AutoSize = true;
+            this.lblOV03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV03.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV03.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV03.Location = new System.Drawing.Point(146, 487);
+            this.lblOV03.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV03.Name = "lblOV03";
+            this.lblOV03.Size = new System.Drawing.Size(60, 36);
+            this.lblOV03.TabIndex = 60;
+            this.lblOV03.Text = "0";
+            this.lblOV03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCharMPperLevel
+            // 
+            this.lblCharMPperLevel.AutoSize = true;
+            this.lblCharMPperLevel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharMPperLevel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharMPperLevel.Location = new System.Drawing.Point(26, 523);
+            this.lblCharMPperLevel.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharMPperLevel.Name = "lblCharMPperLevel";
+            this.lblCharMPperLevel.Size = new System.Drawing.Size(107, 36);
+            this.lblCharMPperLevel.TabIndex = 61;
+            this.lblCharMPperLevel.Text = "Mana / Level";
+            this.lblCharMPperLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblOV04
+            // 
+            this.lblOV04.AutoSize = true;
+            this.lblOV04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV04.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV04.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV04.Location = new System.Drawing.Point(146, 523);
+            this.lblOV04.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV04.Name = "lblOV04";
+            this.lblOV04.Size = new System.Drawing.Size(60, 36);
+            this.lblOV04.TabIndex = 62;
+            this.lblOV04.Text = "0";
+            this.lblOV04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mainTabControl
+            // 
+            this.mainTabControl.Controls.Add(this.tabBasicInfo);
+            this.mainTabControl.Controls.Add(this.tabPrimaryAttributes);
+            this.mainTabControl.Controls.Add(this.tabSecondaryAttributes);
+            this.mainTabControl.Controls.Add(this.tabSkills);
+            this.mainTabControl.Controls.Add(this.tabDebug);
+            this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainTabControl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mainTabControl.Location = new System.Drawing.Point(0, 24);
+            this.mainTabControl.Name = "mainTabControl";
+            this.mainTabControl.SelectedIndex = 0;
+            this.mainTabControl.Size = new System.Drawing.Size(684, 716);
+            this.mainTabControl.TabIndex = 0;
+            // 
+            // colName
+            // 
+            this.colName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colName.HeaderText = "Skill name";
+            this.colName.Name = "colName";
+            // 
+            // colLevel
+            // 
+            this.colLevel.HeaderText = "Lv/%";
+            this.colLevel.Name = "colLevel";
+            this.colLevel.ReadOnly = true;
+            this.colLevel.Width = 40;
+            // 
+            // colPrice
+            // 
+            this.colPrice.HeaderText = "Price";
+            this.colPrice.Name = "colPrice";
+            this.colPrice.ReadOnly = true;
+            this.colPrice.Width = 50;
             // 
             // updCharLevel
             // 
@@ -3456,91 +3317,6 @@
             0,
             0});
             // 
-            // lblCharName
-            // 
-            this.lblCharName.AutoSize = true;
-            this.tlpBasicInfo.SetColumnSpan(this.lblCharName, 3);
-            this.lblCharName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharName.Location = new System.Drawing.Point(26, 0);
-            this.lblCharName.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharName.Name = "lblCharName";
-            this.lblCharName.Size = new System.Drawing.Size(180, 36);
-            this.lblCharName.TabIndex = 0;
-            this.lblCharName.Text = "Karakter neve";
-            this.lblCharName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // txtCharName
-            // 
-            this.tlpBasicInfo.SetColumnSpan(this.txtCharName, 9);
-            this.txtCharName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCharName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtCharName.Location = new System.Drawing.Point(29, 39);
-            this.txtCharName.Name = "txtCharName";
-            this.txtCharName.Size = new System.Drawing.Size(419, 29);
-            this.txtCharName.TabIndex = 1;
-            // 
-            // lblCharGender
-            // 
-            this.lblCharGender.AutoSize = true;
-            this.lblCharGender.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharGender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharGender.Location = new System.Drawing.Point(26, 72);
-            this.lblCharGender.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharGender.Name = "lblCharGender";
-            this.lblCharGender.Size = new System.Drawing.Size(107, 36);
-            this.lblCharGender.TabIndex = 2;
-            this.lblCharGender.Text = "Nem";
-            this.lblCharGender.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // lblCharAge
-            // 
-            this.lblCharAge.AutoSize = true;
-            this.lblCharAge.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharAge.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharAge.Location = new System.Drawing.Point(285, 72);
-            this.lblCharAge.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharAge.Name = "lblCharAge";
-            this.lblCharAge.Size = new System.Drawing.Size(53, 36);
-            this.lblCharAge.TabIndex = 4;
-            this.lblCharAge.Text = "Kor";
-            this.lblCharAge.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // lblCharRace
-            // 
-            this.lblCharRace.AutoSize = true;
-            this.lblCharRace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharRace.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharRace.Location = new System.Drawing.Point(351, 72);
-            this.lblCharRace.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharRace.Name = "lblCharRace";
-            this.lblCharRace.Size = new System.Drawing.Size(100, 36);
-            this.lblCharRace.TabIndex = 5;
-            this.lblCharRace.Text = "Faj";
-            this.lblCharRace.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // lblCharLevel
-            // 
-            this.lblCharLevel.AutoSize = true;
-            this.lblCharLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharLevel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharLevel.Location = new System.Drawing.Point(500, 0);
-            this.lblCharLevel.Name = "lblCharLevel";
-            this.lblCharLevel.Size = new System.Drawing.Size(134, 36);
-            this.lblCharLevel.TabIndex = 6;
-            this.lblCharLevel.Text = "Szint";
-            this.lblCharLevel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(29, 111);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(101, 29);
-            this.comboBox1.TabIndex = 7;
-            // 
             // updCharAge
             // 
             this.updCharAge.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3555,199 +3331,667 @@
             this.updCharAge.Size = new System.Drawing.Size(47, 29);
             this.updCharAge.TabIndex = 9;
             // 
-            // comboBox3
+            // updB00
             // 
-            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(354, 111);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(94, 29);
-            this.comboBox3.TabIndex = 10;
+            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB00, 2);
+            this.updB00.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB00.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB00.Location = new System.Drawing.Point(88, 44);
+            this.updB00.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB00.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB00.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB00.Name = "updB00";
+            this.updB00.Size = new System.Drawing.Size(88, 64);
+            this.updB00.TabIndex = 106;
+            this.updB00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB00.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // lblCharClass
+            // updB01
             // 
-            this.lblCharClass.AutoSize = true;
-            this.tlpBasicInfo.SetColumnSpan(this.lblCharClass, 3);
-            this.lblCharClass.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharClass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCharClass.Location = new System.Drawing.Point(26, 144);
-            this.lblCharClass.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharClass.Name = "lblCharClass";
-            this.lblCharClass.Size = new System.Drawing.Size(180, 36);
-            this.lblCharClass.TabIndex = 12;
-            this.lblCharClass.Text = "Kaszt";
-            this.lblCharClass.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB01, 2);
+            this.updB01.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB01.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB01.Location = new System.Drawing.Point(88, 168);
+            this.updB01.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB01.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB01.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB01.Name = "updB01";
+            this.updB01.Size = new System.Drawing.Size(88, 64);
+            this.updB01.TabIndex = 105;
+            this.updB01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB01.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // lblCharCharacteristic
+            // updB02
             // 
-            this.lblCharCharacteristic.AutoSize = true;
-            this.tlpBasicInfo.SetColumnSpan(this.lblCharCharacteristic, 3);
-            this.lblCharCharacteristic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharCharacteristic.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharCharacteristic.Location = new System.Drawing.Point(146, 72);
-            this.lblCharCharacteristic.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharCharacteristic.Name = "lblCharCharacteristic";
-            this.lblCharCharacteristic.Size = new System.Drawing.Size(126, 36);
-            this.lblCharCharacteristic.TabIndex = 3;
-            this.lblCharCharacteristic.Text = "Jellem";
-            this.lblCharCharacteristic.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB02, 2);
+            this.updB02.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB02.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB02.Location = new System.Drawing.Point(88, 292);
+            this.updB02.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB02.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB02.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB02.Name = "updB02";
+            this.updB02.Size = new System.Drawing.Size(88, 64);
+            this.updB02.TabIndex = 104;
+            this.updB02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB02.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // comboBox2
+            // updB03
             // 
-            this.tlpBasicInfo.SetColumnSpan(this.comboBox2, 3);
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(149, 111);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(120, 29);
-            this.comboBox2.TabIndex = 8;
+            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB03, 2);
+            this.updB03.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB03.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB03.Location = new System.Drawing.Point(88, 416);
+            this.updB03.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB03.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB03.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB03.Name = "updB03";
+            this.updB03.Size = new System.Drawing.Size(88, 64);
+            this.updB03.TabIndex = 103;
+            this.updB03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB03.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // lblCharBirthplace
+            // updB09
             // 
-            this.lblCharBirthplace.AutoSize = true;
-            this.tlpBasicInfo.SetColumnSpan(this.lblCharBirthplace, 3);
-            this.lblCharBirthplace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharBirthplace.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharBirthplace.Location = new System.Drawing.Point(226, 144);
-            this.lblCharBirthplace.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharBirthplace.Name = "lblCharBirthplace";
-            this.lblCharBirthplace.Size = new System.Drawing.Size(112, 36);
-            this.lblCharBirthplace.TabIndex = 13;
-            this.lblCharBirthplace.Text = "Szülőföld";
-            this.lblCharBirthplace.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB09, 2);
+            this.updB09.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB09.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB09.Location = new System.Drawing.Point(471, 540);
+            this.updB09.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB09.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB09.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB09.Name = "updB09";
+            this.updB09.Size = new System.Drawing.Size(88, 64);
+            this.updB09.TabIndex = 57;
+            this.updB09.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB09.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // comboBox4
+            // updB08
             // 
-            this.tlpBasicInfo.SetColumnSpan(this.comboBox4, 3);
-            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(29, 183);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(174, 29);
-            this.comboBox4.TabIndex = 14;
+            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB08, 2);
+            this.updB08.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB08.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB08.Location = new System.Drawing.Point(471, 416);
+            this.updB08.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB08.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB08.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB08.Name = "updB08";
+            this.updB08.Size = new System.Drawing.Size(88, 64);
+            this.updB08.TabIndex = 56;
+            this.updB08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB08.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // comboBox5
+            // updB06
             // 
-            this.tlpBasicInfo.SetColumnSpan(this.comboBox5, 5);
-            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(229, 183);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(219, 29);
-            this.comboBox5.TabIndex = 15;
+            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB06, 2);
+            this.updB06.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB06.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB06.Location = new System.Drawing.Point(471, 168);
+            this.updB06.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB06.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB06.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB06.Name = "updB06";
+            this.tlpPrimaryAttributesOld.SetRowSpan(this.updB06, 3);
+            this.updB06.Size = new System.Drawing.Size(88, 64);
+            this.updB06.TabIndex = 55;
+            this.updB06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB06.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // lblCharReligion
+            // updB05
             // 
-            this.lblCharReligion.AutoSize = true;
-            this.tlpBasicInfo.SetColumnSpan(this.lblCharReligion, 3);
-            this.lblCharReligion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharReligion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharReligion.Location = new System.Drawing.Point(26, 216);
-            this.lblCharReligion.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharReligion.Name = "lblCharReligion";
-            this.lblCharReligion.Size = new System.Drawing.Size(180, 36);
-            this.lblCharReligion.TabIndex = 16;
-            this.lblCharReligion.Text = "Vallás";
-            this.lblCharReligion.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB05, 2);
+            this.updB05.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB05.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB05.Location = new System.Drawing.Point(471, 44);
+            this.updB05.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB05.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB05.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB05.Name = "updB05";
+            this.tlpPrimaryAttributesOld.SetRowSpan(this.updB05, 3);
+            this.updB05.Size = new System.Drawing.Size(88, 64);
+            this.updB05.TabIndex = 54;
+            this.updB05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB05.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // lblCharRealms
+            // updB07
             // 
-            this.lblCharRealms.AutoSize = true;
-            this.tlpBasicInfo.SetColumnSpan(this.lblCharRealms, 3);
-            this.lblCharRealms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharRealms.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharRealms.Location = new System.Drawing.Point(226, 216);
-            this.lblCharRealms.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharRealms.Name = "lblCharRealms";
-            this.lblCharRealms.Size = new System.Drawing.Size(112, 36);
-            this.lblCharRealms.TabIndex = 17;
-            this.lblCharRealms.Text = "Szférák";
-            this.lblCharRealms.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB07, 2);
+            this.updB07.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB07.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB07.Location = new System.Drawing.Point(471, 292);
+            this.updB07.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB07.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB07.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB07.Name = "updB07";
+            this.updB07.Size = new System.Drawing.Size(88, 64);
+            this.updB07.TabIndex = 53;
+            this.updB07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB07.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // comboBox6
+            // updB04
             // 
-            this.tlpBasicInfo.SetColumnSpan(this.comboBox6, 3);
-            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(29, 255);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(174, 29);
-            this.comboBox6.TabIndex = 18;
+            this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB04, 2);
+            this.updB04.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB04.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB04.Location = new System.Drawing.Point(88, 540);
+            this.updB04.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB04.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB04.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB04.Name = "updB04";
+            this.updB04.Size = new System.Drawing.Size(88, 64);
+            this.updB04.TabIndex = 52;
+            this.updB04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB04.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // lblCharRealmsList
+            // updM03
             // 
-            this.lblCharRealmsList.AutoSize = true;
-            this.lblCharRealmsList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tlpBasicInfo.SetColumnSpan(this.lblCharRealmsList, 5);
-            this.lblCharRealmsList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharRealmsList.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharRealmsList.Location = new System.Drawing.Point(230, 256);
-            this.lblCharRealmsList.Margin = new System.Windows.Forms.Padding(4);
-            this.lblCharRealmsList.Name = "lblCharRealmsList";
-            this.lblCharRealmsList.Size = new System.Drawing.Size(217, 28);
-            this.lblCharRealmsList.TabIndex = 19;
-            this.lblCharRealmsList.Text = "Life";
-            this.lblCharRealmsList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM03, 2);
+            this.updM03.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updM03.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updM03.Location = new System.Drawing.Point(88, 452);
+            this.updM03.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updM03.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updM03.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updM03.Name = "updM03";
+            this.updM03.Size = new System.Drawing.Size(88, 27);
+            this.updM03.TabIndex = 109;
+            this.updM03.Tag = "";
+            this.updM03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updM03.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // lblCharAvailableCCP
+            // updB13
             // 
-            this.lblCharAvailableCCP.AutoSize = true;
-            this.lblCharAvailableCCP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharAvailableCCP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharAvailableCCP.Location = new System.Drawing.Point(500, 144);
-            this.lblCharAvailableCCP.Name = "lblCharAvailableCCP";
-            this.lblCharAvailableCCP.Size = new System.Drawing.Size(134, 36);
-            this.lblCharAvailableCCP.TabIndex = 21;
-            this.lblCharAvailableCCP.Text = "Maradék KAP";
-            this.lblCharAvailableCCP.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB13, 2);
+            this.updB13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB13.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB13.Location = new System.Drawing.Point(88, 416);
+            this.updB13.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB13.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB13.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB13.Name = "updB13";
+            this.updB13.Size = new System.Drawing.Size(88, 27);
+            this.updB13.TabIndex = 108;
+            this.updB13.Tag = "";
+            this.updB13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB13.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // lblCharCCP
+            // updM02
             // 
-            this.lblCharCCP.AutoSize = true;
-            this.lblCharCCP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCharCCP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharCCP.Font = new System.Drawing.Font("Harrington", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCharCCP.Location = new System.Drawing.Point(505, 180);
-            this.lblCharCCP.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.lblCharCCP.Name = "lblCharCCP";
-            this.tlpBasicInfo.SetRowSpan(this.lblCharCCP, 3);
-            this.lblCharCCP.Size = new System.Drawing.Size(132, 108);
-            this.lblCharCCP.TabIndex = 22;
-            this.lblCharCCP.Text = "375";
-            this.lblCharCCP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM02, 2);
+            this.updM02.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updM02.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updM02.Location = new System.Drawing.Point(88, 328);
+            this.updM02.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updM02.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updM02.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updM02.Name = "updM02";
+            this.updM02.Size = new System.Drawing.Size(88, 27);
+            this.updM02.TabIndex = 107;
+            this.updM02.Tag = "";
+            this.updM02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updM02.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // lblMiscHypen
+            // updB12
             // 
-            this.lblMiscHypen.AutoSize = true;
-            this.lblMiscHypen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblMiscHypen.Location = new System.Drawing.Point(209, 252);
-            this.lblMiscHypen.Name = "lblMiscHypen";
-            this.lblMiscHypen.Size = new System.Drawing.Size(14, 36);
-            this.lblMiscHypen.TabIndex = 23;
-            this.lblMiscHypen.Text = "-";
-            this.lblMiscHypen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB12, 2);
+            this.updB12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB12.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB12.Location = new System.Drawing.Point(88, 292);
+            this.updB12.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB12.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB12.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB12.Name = "updB12";
+            this.updB12.Size = new System.Drawing.Size(88, 27);
+            this.updB12.TabIndex = 106;
+            this.updB12.Tag = "";
+            this.updB12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB12.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // mainTabControl
+            // updM01
             // 
-            this.mainTabControl.Controls.Add(this.tabBasicInfo);
-            this.mainTabControl.Controls.Add(this.tabPrimaryAttributes);
-            this.mainTabControl.Controls.Add(this.tabSecondaryAttributes);
-            this.mainTabControl.Controls.Add(this.tabSkills);
-            this.mainTabControl.Controls.Add(this.tabDebug);
-            this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainTabControl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.mainTabControl.Location = new System.Drawing.Point(0, 24);
-            this.mainTabControl.Name = "mainTabControl";
-            this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(684, 716);
-            this.mainTabControl.TabIndex = 0;
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM01, 2);
+            this.updM01.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updM01.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updM01.Location = new System.Drawing.Point(88, 204);
+            this.updM01.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updM01.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updM01.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updM01.Name = "updM01";
+            this.updM01.Size = new System.Drawing.Size(88, 27);
+            this.updM01.TabIndex = 105;
+            this.updM01.Tag = "";
+            this.updM01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updM01.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             // 
-            // MainForm
+            // updB11
+            // 
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB11, 2);
+            this.updB11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB11.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB11.Location = new System.Drawing.Point(88, 168);
+            this.updB11.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB11.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB11.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB11.Name = "updB11";
+            this.updB11.Size = new System.Drawing.Size(88, 27);
+            this.updB11.TabIndex = 104;
+            this.updB11.Tag = "";
+            this.updB11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB11.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // updM00
+            // 
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM00, 2);
+            this.updM00.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updM00.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updM00.Location = new System.Drawing.Point(88, 80);
+            this.updM00.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updM00.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updM00.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updM00.Name = "updM00";
+            this.updM00.Size = new System.Drawing.Size(88, 27);
+            this.updM00.TabIndex = 103;
+            this.updM00.Tag = "";
+            this.updM00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updM00.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // updB19
+            // 
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB19, 2);
+            this.updB19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB19.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB19.Location = new System.Drawing.Point(471, 540);
+            this.updB19.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB19.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB19.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB19.Name = "updB19";
+            this.updB19.Size = new System.Drawing.Size(88, 64);
+            this.updB19.TabIndex = 57;
+            this.updB19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB19.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // updB18
+            // 
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB18, 2);
+            this.updB18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB18.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB18.Location = new System.Drawing.Point(471, 416);
+            this.updB18.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB18.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB18.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB18.Name = "updB18";
+            this.updB18.Size = new System.Drawing.Size(88, 64);
+            this.updB18.TabIndex = 56;
+            this.updB18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB18.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // updB16
+            // 
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB16, 2);
+            this.updB16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB16.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB16.Location = new System.Drawing.Point(471, 168);
+            this.updB16.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB16.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB16.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB16.Name = "updB16";
+            this.tlpSecondaryAttributesOld.SetRowSpan(this.updB16, 3);
+            this.updB16.Size = new System.Drawing.Size(88, 64);
+            this.updB16.TabIndex = 55;
+            this.updB16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB16.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // updB15
+            // 
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB15, 2);
+            this.updB15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB15.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB15.Location = new System.Drawing.Point(471, 44);
+            this.updB15.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB15.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB15.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB15.Name = "updB15";
+            this.tlpSecondaryAttributesOld.SetRowSpan(this.updB15, 3);
+            this.updB15.Size = new System.Drawing.Size(88, 64);
+            this.updB15.TabIndex = 54;
+            this.updB15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB15.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // updB17
+            // 
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB17, 2);
+            this.updB17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB17.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB17.Location = new System.Drawing.Point(471, 292);
+            this.updB17.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB17.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB17.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB17.Name = "updB17";
+            this.updB17.Size = new System.Drawing.Size(88, 64);
+            this.updB17.TabIndex = 53;
+            this.updB17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB17.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // updB14
+            // 
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB14, 2);
+            this.updB14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB14.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB14.Location = new System.Drawing.Point(88, 540);
+            this.updB14.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB14.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB14.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB14.Name = "updB14";
+            this.updB14.Size = new System.Drawing.Size(88, 64);
+            this.updB14.TabIndex = 52;
+            this.updB14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB14.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // updB10
+            // 
+            this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB10, 2);
+            this.updB10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updB10.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updB10.Location = new System.Drawing.Point(88, 44);
+            this.updB10.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.updB10.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.updB10.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.updB10.Name = "updB10";
+            this.updB10.Size = new System.Drawing.Size(88, 27);
+            this.updB10.TabIndex = 48;
+            this.updB10.Tag = "";
+            this.updB10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updB10.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -3759,7 +4003,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.mainMenuStrip;
             this.MaximizeBox = false;
-            this.Name = "MainForm";
+            this.Name = "mainForm";
             this.Text = "MagusTools Karakterszerkesztő";
             this.mainMenuStrip.ResumeLayout(false);
             this.mainMenuStrip.PerformLayout();
@@ -3771,24 +4015,11 @@
             this.tabSkills.ResumeLayout(false);
             this.tlpSkills.ResumeLayout(false);
             this.tlpSkills.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgSelectedSkills)).EndInit();
             this.tabSecondaryAttributes.ResumeLayout(false);
             this.tlpSecondaryAttributesOld.ResumeLayout(false);
             this.tlpSecondaryAttributesOld.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.updM03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updM02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updM01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updM00)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbD01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM16)).EndInit();
@@ -3799,21 +4030,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbM12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB10)).EndInit();
             this.tabPrimaryAttributes.ResumeLayout(false);
             this.tlpPrimaryAttributesOld.ResumeLayout(false);
             this.tlpPrimaryAttributesOld.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.updB00)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB03)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbD00)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB09)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB07)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updB04)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM09)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM08)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbM06)).EndInit();
@@ -3827,9 +4047,34 @@
             this.tabBasicInfo.ResumeLayout(false);
             this.tlpBasicInfo.ResumeLayout(false);
             this.tlpBasicInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbD02)).EndInit();
+            this.mainTabControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.updCharLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.updCharAge)).EndInit();
-            this.mainTabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.updB00)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB09)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB07)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updM03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updM02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updM01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updM00)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updB10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3864,28 +4109,28 @@
         private System.Windows.Forms.ComboBox debug_comboBox7;
         private System.Windows.Forms.TabPage tabSkills;
         private System.Windows.Forms.TableLayoutPanel tlpSkills;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btSkillsExpand;
+        private System.Windows.Forms.Button btSkillExpandAll;
         private System.Windows.Forms.Label lblSK01;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView twSkillTree;
         private System.Windows.Forms.Label lblAD00;
         private System.Windows.Forms.Label lblAD01;
         private System.Windows.Forms.Label lblSK00;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgSelectedSkills;
+        private System.Windows.Forms.Button btSkillsCollapse;
         private System.Windows.Forms.TabPage tabSecondaryAttributes;
         private System.Windows.Forms.TableLayoutPanel tlpSecondaryAttributesOld;
         private System.Windows.Forms.Label lblCMT03;
         private System.Windows.Forms.Label lblCMT02;
         private System.Windows.Forms.Label lblCMT01;
         private System.Windows.Forms.Label lblCMT00;
-        private System.Windows.Forms.NumericUpDown updM03;
-        private System.Windows.Forms.NumericUpDown updB13;
-        private System.Windows.Forms.NumericUpDown updM02;
-        private System.Windows.Forms.NumericUpDown updB12;
-        private System.Windows.Forms.NumericUpDown updM01;
-        private System.Windows.Forms.NumericUpDown updB11;
-        private System.Windows.Forms.NumericUpDown updM00;
+        private MagusTools.NumericUpDownExt updM03;
+        private MagusTools.NumericUpDownExt updB13;
+        private MagusTools.NumericUpDownExt updM02;
+        private MagusTools.NumericUpDownExt updB12;
+        private MagusTools.NumericUpDownExt updM01;
+        private MagusTools.NumericUpDownExt updB11;
+        private MagusTools.NumericUpDownExt updM00;
         private System.Windows.Forms.Label lblCT16;
         private System.Windows.Forms.Label lblCT19;
         private System.Windows.Forms.Label lblCT18;
@@ -3928,12 +4173,12 @@
         private System.Windows.Forms.Label lblAT14;
         private System.Windows.Forms.Label lblAT12;
         private System.Windows.Forms.Label lblAT13;
-        private System.Windows.Forms.NumericUpDown updB19;
-        private System.Windows.Forms.NumericUpDown updB18;
-        private System.Windows.Forms.NumericUpDown updB16;
-        private System.Windows.Forms.NumericUpDown updB15;
-        private System.Windows.Forms.NumericUpDown updB17;
-        private System.Windows.Forms.NumericUpDown updB14;
+        private MagusTools.NumericUpDownExt updB19;
+        private MagusTools.NumericUpDownExt updB18;
+        private MagusTools.NumericUpDownExt updB16;
+        private MagusTools.NumericUpDownExt updB15;
+        private MagusTools.NumericUpDownExt updB17;
+        private MagusTools.NumericUpDownExt updB14;
         private System.Windows.Forms.PictureBox pbM19;
         private System.Windows.Forms.PictureBox pbM18;
         private System.Windows.Forms.PictureBox pbM16;
@@ -3956,14 +4201,14 @@
         private System.Windows.Forms.Label lblMAT10;
         private System.Windows.Forms.Label lblAT10;
         private System.Windows.Forms.PictureBox pbM10;
-        private System.Windows.Forms.NumericUpDown updB10;
+        private MagusTools.NumericUpDownExt updB10;
         private System.Windows.Forms.Label lblAV10;
         private System.Windows.Forms.TabPage tabPrimaryAttributes;
         private System.Windows.Forms.TableLayoutPanel tlpPrimaryAttributesOld;
-        private System.Windows.Forms.NumericUpDown updB00;
-        private System.Windows.Forms.NumericUpDown updB01;
-        private System.Windows.Forms.NumericUpDown updB02;
-        private System.Windows.Forms.NumericUpDown updB03;
+        private MagusTools.NumericUpDownExt updB00;
+        private MagusTools.NumericUpDownExt updB01;
+        private MagusTools.NumericUpDownExt updB02;
+        private MagusTools.NumericUpDownExt updB03;
         private System.Windows.Forms.Label lblCT06;
         private System.Windows.Forms.Label lblCT09;
         private System.Windows.Forms.Label lblCT08;
@@ -4006,12 +4251,12 @@
         private System.Windows.Forms.Label lblAT04;
         private System.Windows.Forms.Label lblAT02;
         private System.Windows.Forms.Label lblAT03;
-        private System.Windows.Forms.NumericUpDown updB09;
-        private System.Windows.Forms.NumericUpDown updB08;
-        private System.Windows.Forms.NumericUpDown updB06;
-        private System.Windows.Forms.NumericUpDown updB05;
-        private System.Windows.Forms.NumericUpDown updB07;
-        private System.Windows.Forms.NumericUpDown updB04;
+        private MagusTools.NumericUpDownExt updB09;
+        private MagusTools.NumericUpDownExt updB08;
+        private MagusTools.NumericUpDownExt updB06;
+        private MagusTools.NumericUpDownExt updB05;
+        private MagusTools.NumericUpDownExt updB07;
+        private MagusTools.NumericUpDownExt updB04;
         private System.Windows.Forms.PictureBox pbM09;
         private System.Windows.Forms.PictureBox pbM08;
         private System.Windows.Forms.PictureBox pbM06;
@@ -4037,30 +4282,45 @@
         private System.Windows.Forms.Label lblAV00;
         private System.Windows.Forms.TabPage tabBasicInfo;
         private System.Windows.Forms.TableLayoutPanel tlpBasicInfo;
-        private System.Windows.Forms.NumericUpDown updCharLevel;
+        private MagusTools.NumericUpDownExt updCharLevel;
         private System.Windows.Forms.Label lblCharName;
         private System.Windows.Forms.TextBox txtCharName;
         private System.Windows.Forms.Label lblCharGender;
         private System.Windows.Forms.Label lblCharAge;
         private System.Windows.Forms.Label lblCharRace;
         private System.Windows.Forms.Label lblCharLevel;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.NumericUpDown updCharAge;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbCharGender;
+        private MagusTools.NumericUpDownExt updCharAge;
+        private System.Windows.Forms.ComboBox cbCharRace;
         private System.Windows.Forms.Label lblCharClass;
-        private System.Windows.Forms.Label lblCharCharacteristic;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label lblCharAlignment;
+        private System.Windows.Forms.ComboBox cbCharAlignment;
         private System.Windows.Forms.Label lblCharBirthplace;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cbCharClass;
+        private System.Windows.Forms.ComboBox cbCharBirthplace;
         private System.Windows.Forms.Label lblCharReligion;
         private System.Windows.Forms.Label lblCharRealms;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cbCharReligion;
         private System.Windows.Forms.Label lblCharRealmsList;
         private System.Windows.Forms.Label lblCharAvailableCCP;
         private System.Windows.Forms.Label lblCharCCP;
         private System.Windows.Forms.Label lblMiscHypen;
         private System.Windows.Forms.TabControl mainTabControl;
+        private System.Windows.Forms.PictureBox pbD02;
+        private System.Windows.Forms.Label lblCharOtherStats;
+        private System.Windows.Forms.Label lblCharAMR;
+        private System.Windows.Forms.Label lblOV00;
+        private System.Windows.Forms.Label lblCharMMR;
+        private System.Windows.Forms.Label lblOV01;
+        private System.Windows.Forms.Label lblCharDamagebonus;
+        private System.Windows.Forms.Label lblOV02;
+        private System.Windows.Forms.Label lblCharMP;
+        private System.Windows.Forms.Label lblOV03;
+        private System.Windows.Forms.Label lblCharMPperLevel;
+        private System.Windows.Forms.Label lblOV04;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
     }
 }
 

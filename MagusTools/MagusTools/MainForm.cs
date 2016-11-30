@@ -6,26 +6,27 @@ using System.Globalization;
 using System.Resources;
 using System.Threading;
 using System.Windows.Forms;
+using System.Windows;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
 
 namespace MagusTools
 {
-    public partial class MainForm : Form
+    public partial class mainForm : Form
     {
         // Control dictionaries
-        private Dictionary<ControlIDTag, NumericUpDown> updControls = new Dictionary<ControlIDTag, NumericUpDown>(new ControlIDTagEqualityComparer());
+        private Dictionary<ControlIDTag, NumericUpDownExt> updControls = new Dictionary<ControlIDTag, NumericUpDownExt>(new ControlIDTagEqualityComparer());
         private Dictionary<ControlIDTag, Label> lblControls = new Dictionary<ControlIDTag, Label>(new ControlIDTagEqualityComparer());
 
+        // Main character object
+        public Character character = new Character();
+
         // MainForm's Constructor
-        public MainForm()
+        public mainForm()
         {
             // Auto-generated code.
             InitializeComponent();
-
-            // Initialize static lists.
-            Stats.Initialize();
 
             // Set up elements of the UI
             PrepareUI();
@@ -36,9 +37,9 @@ namespace MagusTools
             // Refresh all strings with the selected language.
             LoadLocalizedStrings();
 
-            // Do some debugging on the XML file
-            //            XMLChecker.Check();
-            
+            // Debug
+            MTDebug.FillTreeView(twSkillTree, 15, 3);
+            MTDebug.FillDataGrid(dgSelectedSkills);
         }
 
         /// <summary>
@@ -120,7 +121,7 @@ namespace MagusTools
                 //
                 this.lblCharName.Text = Properties.Resources.TAB_BasicInfo_CharNameLabel;
                 this.lblCharGender.Text = Properties.Resources.TAB_BasicInfo_CharGenderLabel;
-                this.lblCharCharacteristic.Text = Properties.Resources.TAB_BasicInfo_CharCharacteristicLabel;
+                this.lblCharAlignment.Text = Properties.Resources.TAB_BasicInfo_CharAlignmentLabel;
                 this.lblCharAge.Text = Properties.Resources.TAB_BasicInfo_CharAgeLabel;
                 this.lblCharRace.Text = Properties.Resources.TAB_BasicInfo_CharRaceLabel;
                 this.lblCharLevel.Text = Properties.Resources.TAB_BasicInfo_CharLevelLabel;
@@ -129,6 +130,12 @@ namespace MagusTools
                 this.lblCharReligion.Text = Properties.Resources.TAB_BasicInfo_CharReligionLabel;
                 this.lblCharRealms.Text = Properties.Resources.TAB_BasicInfo_CharRealmsLabel;
                 this.lblCharAvailableCCP.Text = Properties.Resources.TAB_BasicInfo_AvailableCCPLabel;
+                this.lblCharOtherStats.Text = Properties.Resources.TAB_BasicInfo_OtherStatsLabel;
+                this.lblCharAMR.Text = Properties.Resources.TAB_BasicInfo_AMRLabel;
+                this.lblCharMMR.Text = Properties.Resources.TAB_BasicInfo_MMRLabel;
+                this.lblCharDamagebonus.Text = Properties.Resources.TAB_BasicInfo_DamageBonusLabel;
+                this.lblCharMP.Text = Properties.Resources.TAB_BasicInfo_MPLabel;
+                this.lblCharMPperLevel.Text = Properties.Resources.TAB_BasicInfo_MPperLevelLabel;
                 //
                 // Tab PrimaryAttributes & Tab SecondaryAttributes - Dictionary controls
                 //
@@ -182,8 +189,8 @@ namespace MagusTools
         /// </summary>
         private void PrepareUI()
         {
-            // NumericUpDowns
-            #region Add NumericUpDowns to Dictionary
+            // NumericUpDownExts
+            #region Add NumericUpDownExts to Dictionary
             updControls.Add(new ControlIDTag("Strength", "Base", mainTabControl.TabPages[1], 0), this.updB00);
             updControls.Add(new ControlIDTag("Speed", "Base", mainTabControl.TabPages[1], 1), this.updB01);
             updControls.Add(new ControlIDTag("Agility", "Base", mainTabControl.TabPages[1], 2), this.updB02);
@@ -215,13 +222,11 @@ namespace MagusTools
             updControls.Add(new ControlIDTag("CharAge", "Base", mainTabControl.TabPages[0], 0), this.updCharAge);
             #endregion
 
-            #region Setup NumericUpDown Properties
+            #region Setup NumericUpDownExt Properties
             foreach (var entry in updControls)
             {
                 ControlIDTag tag = entry.Key;
-                NumericUpDown upd = entry.Value;
-
-                upd.Increment = 1m / SystemInformation.MouseWheelScrollLines;
+                NumericUpDownExt upd = entry.Value;
 
                 if (tag.Name == "Initiative" || tag.Name == "Attack" || tag.Name == "Defense" || tag.Name == "Aim")
                 {
@@ -385,6 +390,17 @@ namespace MagusTools
 
             #endregion
 
+            // Event Handlers
+            #region Assign Event Handlers
+            foreach (var upd in updControls)
+            {
+                ((NumericUpDownExt)upd.Value).ValueChanged += character.userEvent_UpDownChanged;
+            }
+
+            cbCharRace.SelectionChangeCommitted += character.userEvent_ComboBoxChanged;
+            cbCharClass.SelectionChangeCommitted += character.userEvent_ComboBoxChanged;
+
+            #endregion
         }
 
         /// <summary>
@@ -436,6 +452,50 @@ namespace MagusTools
             }
         }
 
+        #region TreeView Control Buttons' Events
+        private void btSkillsCollapse_Click(object sender, EventArgs e)
+        {
+            twSkillTree.CollapseAll();
+        }
+
+        private void btSkillsExpand_Click(object sender, EventArgs e)
+        {
+            twSkillTree.CollapseAll();
+
+            foreach (TreeNode node in twSkillTree.Nodes)
+            {
+                node.Expand();
+            }
+        }
+
+        private void btSkillExpandAll_Click(object sender, EventArgs e)
+        {
+            twSkillTree.ExpandAll();
+        }
+        #endregion
+
+        #region TreeView's DragDrop Operations
+        private void twSkillTree_ItemDrag(object sender, ItemDragEventArgs e)
+        {
+            this.DoDragDrop(e.Item, DragDropEffects.Copy);
+        }
+
+        private void dgSelectedSkills_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void dgSelectedSkills_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent("System.Windows.Forms.TreeNode", false))
+            {
+                TreeNode draggedNode = (TreeNode)e.Data.GetData("System.Windows.Forms.TreeNode");
+                DataGridView dragTarget = (DataGridView)sender;
+
+                Console.WriteLine("Dragged " + draggedNode.Text + " to " + dragTarget.Name);
+            }
+        }
+        #endregion
 
         // DEBUG CONTROLS
         private void debug_comboBox7_SelectedIndexChanged(object sender, EventArgs e)

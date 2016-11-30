@@ -466,6 +466,15 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AMR.
+        /// </summary>
+        internal static string TAB_BasicInfo_AMRLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_AMRLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Available CCP.
         /// </summary>
         internal static string TAB_BasicInfo_AvailableCCPLabel {
@@ -484,20 +493,20 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Alignment.
+        /// </summary>
+        internal static string TAB_BasicInfo_CharAlignmentLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_CharAlignmentLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Birthplace.
         /// </summary>
         internal static string TAB_BasicInfo_CharBirthplaceLabel {
             get {
                 return ResourceManager.GetString("TAB_BasicInfo_CharBirthplaceLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Characteristics.
-        /// </summary>
-        internal static string TAB_BasicInfo_CharCharacteristicLabel {
-            get {
-                return ResourceManager.GetString("TAB_BasicInfo_CharCharacteristicLabel", resourceCulture);
             }
         }
         
@@ -561,6 +570,51 @@ namespace MagusTools.Properties {
         internal static string TAB_BasicInfo_CharReligionLabel {
             get {
                 return ResourceManager.GetString("TAB_BasicInfo_CharReligionLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Damagebonus.
+        /// </summary>
+        internal static string TAB_BasicInfo_DamageBonusLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_DamageBonusLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MMR.
+        /// </summary>
+        internal static string TAB_BasicInfo_MMRLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_MMRLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mana.
+        /// </summary>
+        internal static string TAB_BasicInfo_MPLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_MPLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mana / Level.
+        /// </summary>
+        internal static string TAB_BasicInfo_MPperLevelLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_MPperLevelLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other stats.
+        /// </summary>
+        internal static string TAB_BasicInfo_OtherStatsLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_OtherStatsLabel", resourceCulture);
             }
         }
         

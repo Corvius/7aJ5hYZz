@@ -63,9 +63,29 @@ namespace MagusTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DECAL_Magus_LogoB {
+            get {
+                object obj = ResourceManager.GetObject("DECAL_Magus_LogoB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DECAL_SideBarA {
             get {
                 object obj = ResourceManager.GetObject("DECAL_SideBarA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DECAL_SideBarB {
+            get {
+                object obj = ResourceManager.GetObject("DECAL_SideBarB", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

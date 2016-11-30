@@ -381,4 +381,28 @@
     <value>Felvett képzettségek</value>
     <comment>Text for Stat-tab Skills - Label - Selected Skills</comment>
   </data>
+  <data name="TAB_BasicInfo_AMRLabel" xml:space="preserve">
+    <value>AME</value>
+    <comment>Text for Stat-tab Basic Information - Label - AMR</comment>
+  </data>
+  <data name="TAB_BasicInfo_DamageBonusLabel" xml:space="preserve">
+    <value>Sebzésjárulék</value>
+    <comment>Text for Stat-tab Basic Information - Label - Damagebonus</comment>
+  </data>
+  <data name="TAB_BasicInfo_MMRLabel" xml:space="preserve">
+    <value>MME</value>
+    <comment>Text for Stat-tab Basic Information - Label - MMR</comment>
+  </data>
+  <data name="TAB_BasicInfo_MPLabel" xml:space="preserve">
+    <value>Mana</value>
+    <comment>Text for Stat-tab Basic Information - Label - Mana</comment>
+  </data>
+  <data name="TAB_BasicInfo_MPperLevelLabel" xml:space="preserve">
+    <value>Mana / Szint</value>
+    <comment>Text for Stat-tab Basic Information - Label - Mana / Level</comment>
+  </data>
+  <data name="TAB_BasicInfo_OtherStatsLabel" xml:space="preserve">
+    <value>Egyéb adatok</value>
+    <comment>Text for Stat-tab Basic Information - Label - Other Stats</comment>
+  </data>
 </root>

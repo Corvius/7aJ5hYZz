@@ -47,10 +47,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="MTDebug.cs" />
+    <Compile Include="NumericUpDownExt.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Decals.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Decals.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="XMLHandler.cs" />
     <Compile Include="Icons.Designer.cs">
@@ -79,14 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Properties\Resources.hu-HU.resx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -129,6 +133,10 @@
     <None Include="Resources\TreeViewCollapse.bmp" />
     <None Include="Resources\TreeViewExpand.bmp" />
     <None Include="Resources\TreeViewExpandSecondaryNodes.bmp" />
+    <None Include="Resources\DECAL_SideBarC.bmp" />
+    <None Include="Resources\DECAL_SideBarB.bmp" />
+    <None Include="Resources\Magus_LogoB.png" />
+    <None Include="Resources\DECAL_Magus_LogoB.png" />
     <Content Include="SkillData.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

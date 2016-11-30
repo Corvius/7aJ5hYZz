@@ -305,9 +305,9 @@
     <value>Birthplace</value>
     <comment>Text for Stat-tab Basic Information - Label - Birthplace</comment>
   </data>
-  <data name="TAB_BasicInfo_CharCharacteristicLabel" xml:space="preserve">
-    <value>Characteristics</value>
-    <comment>Text for Stat-tab Basic Information - Label - Characterisitics</comment>
+  <data name="TAB_BasicInfo_CharAlignmentLabel" xml:space="preserve">
+    <value>Alignment</value>
+    <comment>Text for Stat-tab Basic Information - Label - Alignment</comment>
   </data>
   <data name="TAB_BasicInfo_CharClassLabel" xml:space="preserve">
     <value>Class</value>
@@ -380,5 +380,29 @@
   <data name="TAB_Skills_SelectedSkillsLabel" xml:space="preserve">
     <value>Selected Skills</value>
     <comment>Text for Stat-tab Skills - Label - Selected Skills</comment>
+  </data>
+  <data name="TAB_BasicInfo_AMRLabel" xml:space="preserve">
+    <value>AMR</value>
+    <comment>Text for Stat-tab Basic Information - Label - AMR</comment>
+  </data>
+  <data name="TAB_BasicInfo_DamageBonusLabel" xml:space="preserve">
+    <value>Damagebonus</value>
+    <comment>Text for Stat-tab Basic Information - Label - Damagebonus</comment>
+  </data>
+  <data name="TAB_BasicInfo_MMRLabel" xml:space="preserve">
+    <value>MMR</value>
+    <comment>Text for Stat-tab Basic Information - Label - MMR</comment>
+  </data>
+  <data name="TAB_BasicInfo_MPLabel" xml:space="preserve">
+    <value>Mana</value>
+    <comment>Text for Stat-tab Basic Information - Label - Mana</comment>
+  </data>
+  <data name="TAB_BasicInfo_MPperLevelLabel" xml:space="preserve">
+    <value>Mana / Level</value>
+    <comment>Text for Stat-tab Basic Information - Label - Mana / Level</comment>
+  </data>
+  <data name="TAB_BasicInfo_OtherStatsLabel" xml:space="preserve">
+    <value>Other stats</value>
+    <comment>Text for Stat-tab Basic Information - Label - Other Stats</comment>
   </data>
 </root>
