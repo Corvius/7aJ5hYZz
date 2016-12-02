@@ -16,8 +16,8 @@ namespace MagusTools
     public partial class mainForm : Form
     {
         // Control dictionaries
-        private Dictionary<ControlIDTag, NumericUpDownExt> updControls = new Dictionary<ControlIDTag, NumericUpDownExt>(new ControlIDTagEqualityComparer());
-        private Dictionary<ControlIDTag, Label> lblControls = new Dictionary<ControlIDTag, Label>(new ControlIDTagEqualityComparer());
+        private Dictionary<NumericUpDownExt, ControlIDTag> updControls = new Dictionary<NumericUpDownExt, ControlIDTag>();
+        private Dictionary<Label, ControlIDTag> lblControls = new Dictionary<Label, ControlIDTag>();
 
         // Main character object
         public Character character = new Character();
@@ -141,32 +141,45 @@ namespace MagusTools
                 //
                 foreach (var entry in lblControls)
                 {
-                    ControlIDTag tag = entry.Key;
-                    if (tag.Description == "Main")
+                    ControlIDTag tag = entry.Value;
+                    switch (tag.m_Description)
                     {
-                        string tabName = tag.OwnerTab.Name.Replace("tab", "");
-                        ((Label)entry.Value).Text = Properties.Resources.ResourceManager.GetString("ATTR_" + tabName + "_" + tag.Name);
-                    }
+                        case ControlIDTag.TagDescription.Main:
+                            {
+                                string tabName = tag.m_OwnerTab.Name.Replace("tab", "");
+                                ((Label)entry.Key).Text = Properties.Resources.ResourceManager.GetString("ATTR_" + tabName + "_" + tag.m_Name);
+                            }
+                            break;
+                        case ControlIDTag.TagDescription.Text:
+                            switch (tag.m_Name)
+                            {
+                                case "Actual":
+                                    ((Label)entry.Key).Text = Properties.Resources.MISC_Text_Actual;
+                                    break;
 
-                    if (tag.Description == "Text")
-                    {
-                        if (tag.Name == "Actual")
-                            ((Label)entry.Value).Text = Properties.Resources.MISC_Text_Actual;
+                                case "Ccp":
+                                    ((Label)entry.Key).Text = Properties.Resources.MISC_Text_CCP;
+                                    break;
 
-                        if (tag.Name == "Ccp")
-                            ((Label)entry.Value).Text = Properties.Resources.MISC_Text_CCP;
+                                case "AddedCM":
+                                    ((Label)entry.Key).Text = Properties.Resources.MISC_SecondaryAttributes_Text_SpentCM;
+                                    break;
 
-                        if (tag.Name == "AddedCM")
-                            ((Label)entry.Value).Text = Properties.Resources.MISC_SecondaryAttributes_Text_SpentCM;
+                                case "SpentCcp":
+                                    ((Label)entry.Key).Text = Properties.Resources.MISC_Text_TotalSpentCCPOnTab;
+                                    break;
 
-                        if (tag.Name == "SpentCcp")
-                            ((Label)entry.Value).Text = Properties.Resources.MISC_Text_TotalSpentCCPOnTab;
+                                case "StatAverage":
+                                    ((Label)entry.Key).Text = Properties.Resources.MISC_Text_AbilityAverage;
+                                    break;
 
-                        if (tag.Name == "StatAverage")
-                            ((Label)entry.Value).Text = Properties.Resources.MISC_Text_AbilityAverage;
-
-                        if (tag.Name == "Remaining")
-                            ((Label)entry.Value).Text = Properties.Resources.MISC_Text_Remaining;
+                                case "Remaining":
+                                    ((Label)entry.Key).Text = Properties.Resources.MISC_Text_Remaining;
+                                    break;
+                            }
+                            break;
+                        default:
+                            break;
                     }
                 }
                 //
@@ -191,202 +204,211 @@ namespace MagusTools
         {
             // NumericUpDownExts
             #region Add NumericUpDownExts to Dictionary
-            updControls.Add(new ControlIDTag("Strength", "Base", mainTabControl.TabPages[1], 0), this.updB00);
-            updControls.Add(new ControlIDTag("Speed", "Base", mainTabControl.TabPages[1], 1), this.updB01);
-            updControls.Add(new ControlIDTag("Agility", "Base", mainTabControl.TabPages[1], 2), this.updB02);
-            updControls.Add(new ControlIDTag("Endurance", "Base", mainTabControl.TabPages[1], 3), this.updB03);
-            updControls.Add(new ControlIDTag("Health", "Base", mainTabControl.TabPages[1], 4), this.updB04);
-            updControls.Add(new ControlIDTag("Charisma", "Base", mainTabControl.TabPages[1], 5), this.updB05);
-            updControls.Add(new ControlIDTag("Intelligence", "Base", mainTabControl.TabPages[1], 6), this.updB06);
-            updControls.Add(new ControlIDTag("Willpower", "Base", mainTabControl.TabPages[1], 7), this.updB07);
-            updControls.Add(new ControlIDTag("Astral", "Base", mainTabControl.TabPages[1], 8), this.updB08);
-            updControls.Add(new ControlIDTag("Perception", "Base", mainTabControl.TabPages[1], 9), this.updB09);
+            updControls.Add(this.updB00, new ControlIDTag("Strength", ControlIDTag.TagDescription.BaseTypeE, mainTabControl.TabPages[1], 0));
+            updControls.Add(this.updB01, new ControlIDTag("Speed", ControlIDTag.TagDescription.BaseTypeE, mainTabControl.TabPages[1], 1));
+            updControls.Add(this.updB02, new ControlIDTag("Agility", ControlIDTag.TagDescription.BaseTypeE, mainTabControl.TabPages[1], 2));
+            updControls.Add(this.updB03, new ControlIDTag("Endurance", ControlIDTag.TagDescription.BaseTypeE, mainTabControl.TabPages[1], 3));
+            updControls.Add(this.updB04, new ControlIDTag("Health", ControlIDTag.TagDescription.BaseTypeE, mainTabControl.TabPages[1], 4));
+            updControls.Add(this.updB05, new ControlIDTag("Charisma", ControlIDTag.TagDescription.BaseTypeE, mainTabControl.TabPages[1], 5));
+            updControls.Add(this.updB06, new ControlIDTag("Intelligence", ControlIDTag.TagDescription.BaseTypeE, mainTabControl.TabPages[1], 6));
+            updControls.Add(this.updB07, new ControlIDTag("Willpower", ControlIDTag.TagDescription.BaseTypeE, mainTabControl.TabPages[1], 7));
+            updControls.Add(this.updB08, new ControlIDTag("Astral", ControlIDTag.TagDescription.BaseTypeE, mainTabControl.TabPages[1], 8));
+            updControls.Add(this.updB09, new ControlIDTag("Perception", ControlIDTag.TagDescription.BaseTypeE, mainTabControl.TabPages[1], 9));
 
-            updControls.Add(new ControlIDTag("Initiative", "Base", mainTabControl.TabPages[2], 0), this.updB10);
-            updControls.Add(new ControlIDTag("Attack", "Base", mainTabControl.TabPages[2], 1), this.updB11);
-            updControls.Add(new ControlIDTag("Defense", "Base", mainTabControl.TabPages[2], 2), this.updB12);
-            updControls.Add(new ControlIDTag("Aim", "Base", mainTabControl.TabPages[2], 3), this.updB13);
-            updControls.Add(new ControlIDTag("CMperLevel", "Base", mainTabControl.TabPages[2], 4), this.updB14);
-            updControls.Add(new ControlIDTag("HP", "Base", mainTabControl.TabPages[2], 5), this.updB15);
-            updControls.Add(new ControlIDTag("PR", "Base", mainTabControl.TabPages[2], 6), this.updB16);
-            updControls.Add(new ControlIDTag("PRperLevel", "Base", mainTabControl.TabPages[2], 7), this.updB17);
-            updControls.Add(new ControlIDTag("KP", "Base", mainTabControl.TabPages[2], 8), this.updB18);
-            updControls.Add(new ControlIDTag("KPperLevel", "Base", mainTabControl.TabPages[2], 9), this.updB19);
+            updControls.Add(this.updB10, new ControlIDTag("Initiative", ControlIDTag.TagDescription.BaseTypeA, mainTabControl.TabPages[2], 0));
+            updControls.Add(this.updB11, new ControlIDTag("Attack", ControlIDTag.TagDescription.BaseTypeA, mainTabControl.TabPages[2], 1));
+            updControls.Add(this.updB12, new ControlIDTag("Defense", ControlIDTag.TagDescription.BaseTypeA, mainTabControl.TabPages[2], 2));
+            updControls.Add(this.updB13, new ControlIDTag("Aim", ControlIDTag.TagDescription.BaseTypeA, mainTabControl.TabPages[2], 3));
+            updControls.Add(this.updB14, new ControlIDTag("CMperLevel", ControlIDTag.TagDescription.BaseTypeB, mainTabControl.TabPages[2], 4));
+            updControls.Add(this.updB15, new ControlIDTag("HP", ControlIDTag.TagDescription.BaseTypeC, mainTabControl.TabPages[2], 5));
+            updControls.Add(this.updB16, new ControlIDTag("PR", ControlIDTag.TagDescription.BaseTypeC, mainTabControl.TabPages[2], 6));
+            updControls.Add(this.updB17, new ControlIDTag("PRperLevel", ControlIDTag.TagDescription.BaseTypeB, mainTabControl.TabPages[2], 7));
+            updControls.Add(this.updB18, new ControlIDTag("KP", ControlIDTag.TagDescription.BaseTypeB, mainTabControl.TabPages[2], 8));
+            updControls.Add(this.updB19, new ControlIDTag("KPperLevel", ControlIDTag.TagDescription.BaseTypeB, mainTabControl.TabPages[2], 9));
 
-            updControls.Add(new ControlIDTag("Initiative", "Mod", mainTabControl.TabPages[2], 0), this.updM00);
-            updControls.Add(new ControlIDTag("Attack", "Mod", mainTabControl.TabPages[2], 1), this.updM01);
-            updControls.Add(new ControlIDTag("Defense", "Mod", mainTabControl.TabPages[2], 2), this.updM02);
-            updControls.Add(new ControlIDTag("Aim", "Mod", mainTabControl.TabPages[2], 3), this.updM03);
+            updControls.Add(this.updM00, new ControlIDTag("InitiativeCM", ControlIDTag.TagDescription.BaseTypeA, mainTabControl.TabPages[2], 0));
+            updControls.Add(this.updM01, new ControlIDTag("AttackCM", ControlIDTag.TagDescription.BaseTypeA, mainTabControl.TabPages[2], 1));
+            updControls.Add(this.updM02, new ControlIDTag("DefenseCM", ControlIDTag.TagDescription.BaseTypeA, mainTabControl.TabPages[2], 2));
+            updControls.Add(this.updM03, new ControlIDTag("AimCM", ControlIDTag.TagDescription.BaseTypeA, mainTabControl.TabPages[2], 3));
 
-            updControls.Add(new ControlIDTag("CharLevel", "Base", mainTabControl.TabPages[0], 0), this.updCharLevel);
-            updControls.Add(new ControlIDTag("CharAge", "Base", mainTabControl.TabPages[0], 0), this.updCharAge);
+            updControls.Add(this.updCharLevel, new ControlIDTag("CharLevel", ControlIDTag.TagDescription.BaseTypeC, mainTabControl.TabPages[0], 0));
+            updControls.Add(this.updCharAge, new ControlIDTag("CharAge", ControlIDTag.TagDescription.BaseTypeD, mainTabControl.TabPages[0], 0));
             #endregion
 
             #region Setup NumericUpDownExt Properties
             foreach (var entry in updControls)
             {
-                ControlIDTag tag = entry.Key;
-                NumericUpDownExt upd = entry.Value;
+                ControlIDTag tag = entry.Value;
+                NumericUpDownExt upd = entry.Key;
 
-                if (tag.Name == "Initiative" || tag.Name == "Attack" || tag.Name == "Defense" || tag.Name == "Aim")
+                switch (tag.m_Description)
                 {
-                    upd.Maximum = 100;
-                    upd.Minimum = 0;
-                    upd.Value = 0;
-                }
-                else if (tag.Name == "CMperLevel" || tag.Name == "PRperLevel" || tag.Name == "KP" || tag.Name == "KPperLevel")
-                {
-                    upd.Maximum = 20;
-                    upd.Minimum = 0;
-                    upd.Value = 0;
-                }
-                else if (tag.Name == "HP" || tag.Name == "PR" || tag.Name == "CharLevel")
-                {
-                    upd.Maximum = 20;
-                    upd.Minimum = 1;
-                    upd.Value = 1;
-                }
-                else if (tag.Name == "CharAge")
-                {
-                    upd.Maximum = 30;
-                    upd.Minimum = 16;
-                    upd.Value = 18;
-                }
-                else
-                {
-                    upd.Maximum = 20;
-                    upd.Minimum = 3;
-                    upd.Value = 12;
+                    case ControlIDTag.TagDescription.BaseTypeA:
+                        {
+                            upd.Maximum = 100;
+                            upd.Minimum = 0;
+                            upd.Value = 0;
+                        }
+                        break;
+                    case ControlIDTag.TagDescription.BaseTypeB:
+                        {
+                            upd.Maximum = 20;
+                            upd.Minimum = 0;
+                            upd.Value = 0;
+                        }
+                        break;
+                    case ControlIDTag.TagDescription.BaseTypeC:
+                        {
+                            upd.Maximum = 20;
+                            upd.Minimum = 1;
+                            upd.Value = 1;
+                        }
+                        break;
+                    case ControlIDTag.TagDescription.BaseTypeD:
+                        {
+                            upd.Maximum = 30;
+                            upd.Minimum = 16;
+                            upd.Value = 18;
+                        }
+                        break;
+                    case ControlIDTag.TagDescription.BaseTypeE:
+                    default:
+                        {
+                            upd.Maximum = 20;
+                            upd.Minimum = 3;
+                            upd.Value = 12;
+                        }
+                        break;
                 }
             }
             #endregion
 
             // Labels
             #region Add Labels to Dictionary
-            lblControls.Add(new ControlIDTag("Strength", "Main", mainTabControl.TabPages[1], 0), this.lblMAT00);
-            lblControls.Add(new ControlIDTag("Speed", "Main", mainTabControl.TabPages[1], 1), this.lblMAT01);
-            lblControls.Add(new ControlIDTag("Agility", "Main", mainTabControl.TabPages[1], 2), this.lblMAT02);
-            lblControls.Add(new ControlIDTag("Endurance", "Main", mainTabControl.TabPages[1], 3), this.lblMAT03);
-            lblControls.Add(new ControlIDTag("Health", "Main", mainTabControl.TabPages[1], 4), this.lblMAT04);
-            lblControls.Add(new ControlIDTag("Charisma", "Main", mainTabControl.TabPages[1], 5), this.lblMAT05);
-            lblControls.Add(new ControlIDTag("Intelligence", "Main", mainTabControl.TabPages[1], 6), this.lblMAT06);
-            lblControls.Add(new ControlIDTag("Willpower", "Main", mainTabControl.TabPages[1], 7), this.lblMAT07);
-            lblControls.Add(new ControlIDTag("Astral", "Main", mainTabControl.TabPages[1], 8), this.lblMAT08);
-            lblControls.Add(new ControlIDTag("Perception", "Main", mainTabControl.TabPages[1], 9), this.lblMAT09);
+            lblControls.Add(this.lblMAT00, new ControlIDTag("Strength", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[1], 0));
+            lblControls.Add(this.lblMAT01, new ControlIDTag("Speed", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[1], 1));
+            lblControls.Add(this.lblMAT02, new ControlIDTag("Agility", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[1], 2));
+            lblControls.Add(this.lblMAT03, new ControlIDTag("Endurance", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[1], 3));
+            lblControls.Add(this.lblMAT04, new ControlIDTag("Health", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[1], 4));
+            lblControls.Add(this.lblMAT05, new ControlIDTag("Charisma", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[1], 5));
+            lblControls.Add(this.lblMAT06, new ControlIDTag("Intelligence", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[1], 6));
+            lblControls.Add(this.lblMAT07, new ControlIDTag("Willpower", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[1], 7));
+            lblControls.Add(this.lblMAT08, new ControlIDTag("Astral", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[1], 8));
+            lblControls.Add(this.lblMAT09, new ControlIDTag("Perception", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[1], 9));
 
-            lblControls.Add(new ControlIDTag("Initiative", "Main", mainTabControl.TabPages[2], 0), this.lblMAT10);
-            lblControls.Add(new ControlIDTag("Attack", "Main", mainTabControl.TabPages[2], 1), this.lblMAT11);
-            lblControls.Add(new ControlIDTag("Defense", "Main", mainTabControl.TabPages[2], 2), this.lblMAT12);
-            lblControls.Add(new ControlIDTag("Aim", "Main", mainTabControl.TabPages[2], 3), this.lblMAT13);
-            lblControls.Add(new ControlIDTag("CMperLevel", "Main", mainTabControl.TabPages[2], 4), this.lblMAT14);
-            lblControls.Add(new ControlIDTag("HP", "Main", mainTabControl.TabPages[2], 5), this.lblMAT15);
-            lblControls.Add(new ControlIDTag("PR", "Main", mainTabControl.TabPages[2], 6), this.lblMAT16);
-            lblControls.Add(new ControlIDTag("PRperLevel", "Main", mainTabControl.TabPages[2], 7), this.lblMAT17);
-            lblControls.Add(new ControlIDTag("KP", "Main", mainTabControl.TabPages[2], 8), this.lblMAT18);
-            lblControls.Add(new ControlIDTag("KPperLevel", "Main", mainTabControl.TabPages[2], 9), this.lblMAT19);
+            lblControls.Add(this.lblMAT10, new ControlIDTag("Initiative", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[2], 0));
+            lblControls.Add(this.lblMAT11, new ControlIDTag("Attack", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[2], 1));
+            lblControls.Add(this.lblMAT12, new ControlIDTag("Defense", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[2], 2));
+            lblControls.Add(this.lblMAT13, new ControlIDTag("Aim", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[2], 3));
+            lblControls.Add(this.lblMAT14, new ControlIDTag("CMperLevel", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[2], 4));
+            lblControls.Add(this.lblMAT15, new ControlIDTag("HP", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[2], 5));
+            lblControls.Add(this.lblMAT16, new ControlIDTag("PR", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[2], 6));
+            lblControls.Add(this.lblMAT17, new ControlIDTag("PRperLevel", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[2], 7));
+            lblControls.Add(this.lblMAT18, new ControlIDTag("KP", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[2], 8));
+            lblControls.Add(this.lblMAT19, new ControlIDTag("KPperLevel", ControlIDTag.TagDescription.Main, mainTabControl.TabPages[2], 9));
 
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[1], 0), this.lblAV00);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[1], 1), this.lblAV01);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[1], 2), this.lblAV02);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[1], 3), this.lblAV03);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[1], 4), this.lblAV04);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[1], 5), this.lblAV05);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[1], 6), this.lblAV06);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[1], 7), this.lblAV07);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[1], 8), this.lblAV08);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[1], 9), this.lblAV09);
+            lblControls.Add(this.lblAV00, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 0));
+            lblControls.Add(this.lblAV01, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 1));
+            lblControls.Add(this.lblAV02, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 2));
+            lblControls.Add(this.lblAV03, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 3));
+            lblControls.Add(this.lblAV04, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 4));
+            lblControls.Add(this.lblAV05, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 5));
+            lblControls.Add(this.lblAV06, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 6));
+            lblControls.Add(this.lblAV07, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 7));
+            lblControls.Add(this.lblAV08, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 8));
+            lblControls.Add(this.lblAV09, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 9));
 
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[2], 0), this.lblAV10);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[2], 1), this.lblAV11);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[2], 2), this.lblAV12);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[2], 3), this.lblAV13);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[2], 4), this.lblAV14);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[2], 5), this.lblAV15);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[2], 6), this.lblAV16);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[2], 7), this.lblAV17);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[2], 8), this.lblAV18);
-            lblControls.Add(new ControlIDTag("Actual", "Value", mainTabControl.TabPages[2], 9), this.lblAV19);
+            lblControls.Add(this.lblAV10, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 0));
+            lblControls.Add(this.lblAV11, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 1));
+            lblControls.Add(this.lblAV12, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 2));
+            lblControls.Add(this.lblAV13, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 3));
+            lblControls.Add(this.lblAV14, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 4));
+            lblControls.Add(this.lblAV15, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 5));
+            lblControls.Add(this.lblAV16, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 6));
+            lblControls.Add(this.lblAV17, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 7));
+            lblControls.Add(this.lblAV18, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 8));
+            lblControls.Add(this.lblAV19, new ControlIDTag("Actual", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 9));
 
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[1], 0), this.lblCV00);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[1], 1), this.lblCV01);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[1], 2), this.lblCV02);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[1], 3), this.lblCV03);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[1], 4), this.lblCV04);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[1], 5), this.lblCV05);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[1], 6), this.lblCV06);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[1], 7), this.lblCV07);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[1], 8), this.lblCV08);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[1], 9), this.lblCV09);
+            lblControls.Add(this.lblCV00, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 0));
+            lblControls.Add(this.lblCV01, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 1));
+            lblControls.Add(this.lblCV02, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 2));
+            lblControls.Add(this.lblCV03, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 3));
+            lblControls.Add(this.lblCV04, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 4));
+            lblControls.Add(this.lblCV05, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 5));
+            lblControls.Add(this.lblCV06, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 6));
+            lblControls.Add(this.lblCV07, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 7));
+            lblControls.Add(this.lblCV08, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 8));
+            lblControls.Add(this.lblCV09, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 9));
 
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[2], 0), this.lblCV10);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[2], 1), this.lblCV11);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[2], 2), this.lblCV12);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[2], 3), this.lblCV13);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[2], 4), this.lblCV14);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[2], 5), this.lblCV15);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[2], 6), this.lblCV16);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[2], 7), this.lblCV17);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[2], 8), this.lblCV18);
-            lblControls.Add(new ControlIDTag("Ccp", "Value", mainTabControl.TabPages[2], 9), this.lblCV19);
+            lblControls.Add(this.lblCV10, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 0));
+            lblControls.Add(this.lblCV11, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 1));
+            lblControls.Add(this.lblCV12, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 2));
+            lblControls.Add(this.lblCV13, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 3));
+            lblControls.Add(this.lblCV14, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 4));
+            lblControls.Add(this.lblCV15, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 5));
+            lblControls.Add(this.lblCV16, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 6));
+            lblControls.Add(this.lblCV17, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 7));
+            lblControls.Add(this.lblCV18, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 8));
+            lblControls.Add(this.lblCV19, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 9));
 
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[1], 0), this.lblAT00);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[1], 1), this.lblAT01);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[1], 2), this.lblAT02);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[1], 3), this.lblAT03);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[1], 4), this.lblAT04);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[1], 5), this.lblAT05);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[1], 6), this.lblAT06);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[1], 7), this.lblAT07);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[1], 8), this.lblAT08);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[1], 9), this.lblAT09);
+            lblControls.Add(this.lblAT00, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 0));
+            lblControls.Add(this.lblAT01, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 1));
+            lblControls.Add(this.lblAT02, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 2));
+            lblControls.Add(this.lblAT03, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 3));
+            lblControls.Add(this.lblAT04, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 4));
+            lblControls.Add(this.lblAT05, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 5));
+            lblControls.Add(this.lblAT06, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 6));
+            lblControls.Add(this.lblAT07, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 7));
+            lblControls.Add(this.lblAT08, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 8));
+            lblControls.Add(this.lblAT09, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 9));
 
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[2], 0), this.lblAT10);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[2], 1), this.lblAT11);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[2], 2), this.lblAT12);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[2], 3), this.lblAT13);
-            lblControls.Add(new ControlIDTag("Remaining", "Text", mainTabControl.TabPages[2], 4), this.lblAT14);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[2], 5), this.lblAT15);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[2], 6), this.lblAT16);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[2], 7), this.lblAT17);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[2], 8), this.lblAT18);
-            lblControls.Add(new ControlIDTag("Actual", "Text", mainTabControl.TabPages[2], 9), this.lblAT19);
+            lblControls.Add(this.lblAT10, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 0));
+            lblControls.Add(this.lblAT11, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 1));
+            lblControls.Add(this.lblAT12, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 2));
+            lblControls.Add(this.lblAT13, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 3));
+            lblControls.Add(this.lblAT14, new ControlIDTag("Remaining", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 4));
+            lblControls.Add(this.lblAT15, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 5));
+            lblControls.Add(this.lblAT16, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 6));
+            lblControls.Add(this.lblAT17, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 7));
+            lblControls.Add(this.lblAT18, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 8));
+            lblControls.Add(this.lblAT19, new ControlIDTag("Actual", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 9));
 
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[1], 0), this.lblCT00);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[1], 1), this.lblCT01);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[1], 2), this.lblCT02);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[1], 3), this.lblCT03);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[1], 4), this.lblCT04);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[1], 5), this.lblCT05);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[1], 6), this.lblCT06);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[1], 7), this.lblCT07);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[1], 8), this.lblCT08);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[1], 9), this.lblCT09);
+            lblControls.Add(this.lblCT00, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 0));
+            lblControls.Add(this.lblCT01, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 1));
+            lblControls.Add(this.lblCT02, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 2));
+            lblControls.Add(this.lblCT03, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 3));
+            lblControls.Add(this.lblCT04, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 4));
+            lblControls.Add(this.lblCT05, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 5));
+            lblControls.Add(this.lblCT06, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 6));
+            lblControls.Add(this.lblCT07, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 7));
+            lblControls.Add(this.lblCT08, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 8));
+            lblControls.Add(this.lblCT09, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 9));
 
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[2], 0), this.lblCT10);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[2], 1), this.lblCT11);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[2], 2), this.lblCT12);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[2], 3), this.lblCT13);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[2], 4), this.lblCT14);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[2], 5), this.lblCT15);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[2], 6), this.lblCT16);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[2], 7), this.lblCT17);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[2], 8), this.lblCT18);
-            lblControls.Add(new ControlIDTag("Ccp", "Text", mainTabControl.TabPages[2], 9), this.lblCT19);
+            lblControls.Add(this.lblCT10, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 0));
+            lblControls.Add(this.lblCT11, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 1));
+            lblControls.Add(this.lblCT12, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 2));
+            lblControls.Add(this.lblCT13, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 3));
+            lblControls.Add(this.lblCT14, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 4));
+            lblControls.Add(this.lblCT15, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 5));
+            lblControls.Add(this.lblCT16, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 6));
+            lblControls.Add(this.lblCT17, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 7));
+            lblControls.Add(this.lblCT18, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 8));
+            lblControls.Add(this.lblCT19, new ControlIDTag("Ccp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 9));
 
-            lblControls.Add(new ControlIDTag("AddedCM", "Text", mainTabControl.TabPages[2], 0), this.lblCMT00);
-            lblControls.Add(new ControlIDTag("AddedCM", "Text", mainTabControl.TabPages[2], 1), this.lblCMT01);
-            lblControls.Add(new ControlIDTag("AddedCM", "Text", mainTabControl.TabPages[2], 2), this.lblCMT02);
-            lblControls.Add(new ControlIDTag("AddedCM", "Text", mainTabControl.TabPages[2], 3), this.lblCMT03);
+            lblControls.Add(this.lblCMT00, new ControlIDTag("AddedCM", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 0));
+            lblControls.Add(this.lblCMT01, new ControlIDTag("AddedCM", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 1));
+            lblControls.Add(this.lblCMT02, new ControlIDTag("AddedCM", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 2));
+            lblControls.Add(this.lblCMT03, new ControlIDTag("AddedCM", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 3));
 
-            lblControls.Add(new ControlIDTag("SpentCcp", "Text", mainTabControl.TabPages[1], 0), this.lblMCT00);
-            lblControls.Add(new ControlIDTag("SpentCcp", "Text", mainTabControl.TabPages[2], 1), this.lblMCT01);
-            lblControls.Add(new ControlIDTag("SpentCcp", "Text", mainTabControl.TabPages[2], 2), this.lblMCT02);
-            lblControls.Add(new ControlIDTag("StatAverage", "Text", mainTabControl.TabPages[1], 3), this.lblMST00);
+            lblControls.Add(this.lblMCT00, new ControlIDTag("SpentCcp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 0));
+            lblControls.Add(this.lblMCT01, new ControlIDTag("SpentCcp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 1));
+            lblControls.Add(this.lblMCT02, new ControlIDTag("SpentCcp", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[2], 2));
+            lblControls.Add(this.lblMST00, new ControlIDTag("StatAverage", ControlIDTag.TagDescription.Text, mainTabControl.TabPages[1], 3));
 
-            lblControls.Add(new ControlIDTag("SpentCcp", "Value", mainTabControl.TabPages[1], 0), this.lblMCV00);
-            lblControls.Add(new ControlIDTag("SpentCcp", "Value", mainTabControl.TabPages[2], 1), this.lblMCV01);
-            lblControls.Add(new ControlIDTag("SpentCcp", "Value", mainTabControl.TabPages[2], 2), this.lblMCV02);
-            lblControls.Add(new ControlIDTag("StatAverage", "Value", mainTabControl.TabPages[1], 3), this.lblMSV00);
+            lblControls.Add(this.lblMCV00, new ControlIDTag("SpentCcp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 0));
+            lblControls.Add(this.lblMCV01, new ControlIDTag("SpentCcp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 1));
+            lblControls.Add(this.lblMCV02, new ControlIDTag("SpentCcp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 2));
+            lblControls.Add(this.lblMSV00, new ControlIDTag("StatAverage", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 3));
 
             #endregion
 
@@ -394,38 +416,48 @@ namespace MagusTools
             #region Assign Event Handlers
             foreach (var upd in updControls)
             {
-                ((NumericUpDownExt)upd.Value).ValueChanged += character.userEvent_UpDownChanged;
+                ((NumericUpDownExt)upd.Key).ValueChanged += userEvent_UpDownChanged;
             }
 
-            cbCharRace.SelectionChangeCommitted += character.userEvent_ComboBoxChanged;
-            cbCharClass.SelectionChangeCommitted += character.userEvent_ComboBoxChanged;
+            cbCharRace.SelectionChangeCommitted += userEvent_ComboBoxChanged;
+            cbCharClass.SelectionChangeCommitted += userEvent_ComboBoxChanged;
 
             #endregion
         }
 
         /// <summary>
-        /// Custom class to better identify controls stored in a Dictionary
+        /// Custom struct to better identify controls stored in a Dictionary
         /// </summary>
-        private class ControlIDTag
+        private struct ControlIDTag
         {
-            public TabPage OwnerTab { get; }
-            public string Description { get; }
-            public string Name { get; }
-            public int OrderValue { get; }
+            // BaseTypeA - Refers to NumericUpDowns that have min = 0, max = 100, value = 0
+            // BaseTypeB - Refers to NumericUpDowns that have min = 0, max = 20, value = 0
+            // BaseTypeC - Refers to NumericUpDowns that have min = 1, max = 20, value = 1
+            // BaseTypeD - Refers to NumericUpDowns that have min = 16, max = 30, value = 16
+            // BaseTypeE - Refers to NumericUpDowns that have min = 3, max = 20, value = 12
+            // Main - Refers to Labels that display attributes names
+            // Text - Refers to Labels that display information about Value type Labels
+            // Value - Refers to Labels that display the value property of an attribute
+            public enum TagDescription { BaseTypeA, BaseTypeB, BaseTypeC, BaseTypeD, BaseTypeE, Main, Text, Value }
+
+            public TabPage m_OwnerTab { get; }
+            public string m_Name { get; }
+            public TagDescription m_Description { get; }
+            public int m_OrderValue { get; }
 
             /// <summary>
             /// Stores additional info of a dictionary object
             /// </summary>
-            /// <param name="name">The name of the object</param>
-            /// <param name="description">Description tag of the object</param>
-            /// <param name="owner">Owning TabPage control</param>
-            /// <param name="orderValue">The closer this value to 0 is, the closer the object gets to the start of the list when sorting</param>
-            public ControlIDTag(string name, string description, TabPage owner, int orderValue)
+            /// <param name="p_name">The name of the object</param>
+            /// <param name="p_description">Description tag of the object</param>
+            /// <param name="p_owner">Owning TabPage control</param>
+            /// <param name="p_orderValue">The closer this value to 0 is, the closer the object gets to the start of the list when sorting</param>
+            public ControlIDTag(string p_name, TagDescription p_description, TabPage p_owner, int p_orderValue)
             {
-                this.Name = name;
-                this.Description = description;
-                this.OwnerTab = owner;
-                this.OrderValue = orderValue;
+                this.m_Name = p_name;
+                this.m_Description = p_description;
+                this.m_OwnerTab = p_owner;
+                this.m_OrderValue = p_orderValue;
             }
         }
 
@@ -434,20 +466,20 @@ namespace MagusTools
         /// </summary>
         private class ControlIDTagEqualityComparer : IEqualityComparer<ControlIDTag>
         {
-            public bool Equals(ControlIDTag first, ControlIDTag second)
+            public bool Equals(ControlIDTag p_first, ControlIDTag p_second)
             {
                 return 
                     (
-                        (first.Name == second.Name) && 
-                        (first.Description == second.Description) &&
-                        (first.OwnerTab == second.OwnerTab) &&
-                        (first.OrderValue == second.OrderValue)
+                        (p_first.m_Name == p_second.m_Name) && 
+                        (p_first.m_Description == p_second.m_Description) &&
+                        (p_first.m_OwnerTab == p_second.m_OwnerTab) &&
+                        (p_first.m_OrderValue == p_second.m_OrderValue)
                     );
             }
 
-            public int GetHashCode(ControlIDTag tag)
+            public int GetHashCode(ControlIDTag p_tag)
             {
-                string combined = tag.Name + "|" + tag.Description.ToString() + "|" + tag.OrderValue.ToString();
+                string combined = p_tag.m_Name + "|" + p_tag.m_Description.ToString() + "|" + p_tag.m_OrderValue.ToString();
                 return (combined.GetHashCode());
             }
         }
@@ -497,11 +529,65 @@ namespace MagusTools
         }
         #endregion
 
+        #region NumericUpDown Eventhandlers
+        public void userEvent_UpDownChanged(object sender, EventArgs e)
+        {
+            ControlIDTag cidt = new ControlIDTag();
+            NumericUpDownExt upd = (NumericUpDownExt)sender;
+
+            try
+            {
+                updControls.TryGetValue(upd, out cidt);
+                debug_UpdateLog(RichTextBoxExt.LogType.Text, cidt.m_Name, sender.GetType().ToString(), upd.Value.ToString());
+            }
+            catch (Exception ex)
+            {
+                debug_UpdateLog(RichTextBoxExt.LogType.Error, cidt.m_Name, sender.GetType().ToString(), ex.Message);
+            }
+        }
+
+        public void userEvent_ComboBoxChanged(object sender, EventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            debug_UpdateLog(RichTextBoxExt.LogType.Text, cb.Name, sender.GetType().ToString(), cb.SelectedItem.ToString());
+        }
+        #endregion
+
         // DEBUG CONTROLS
         private void debug_comboBox7_SelectedIndexChanged(object sender, EventArgs e)
         {
             ChangeLanguage((string)debug_comboBox7.SelectedItem);
             LoadLocalizedStrings();
+        }
+
+        private void debug_UpdateLog(RichTextBoxExt.LogType p_logType, string p_control, string p_type, string p_text)
+        {
+            debug_textBox1.AppendText(DateTime.Now.ToLongTimeString() + ": ");
+
+            switch (p_logType)
+            {
+                case RichTextBoxExt.LogType.Text:
+                    {
+                        debug_textBox1.AppendText(p_control, Color.Blue);
+                        debug_textBox1.AppendText(", a type of ", debug_textBox1.ForeColor);
+                        debug_textBox1.AppendText(p_type, Color.LightGreen);
+                        debug_textBox1.AppendText(" has changed to the value of ", debug_textBox1.ForeColor);
+                        debug_textBox1.AppendText(p_text, Color.Cyan);
+                    }
+                    break;
+                case RichTextBoxExt.LogType.Error:
+                    {
+                        debug_textBox1.AppendText(p_control, Color.Blue);
+                        debug_textBox1.AppendText(", a type of ", debug_textBox1.ForeColor);
+                        debug_textBox1.AppendText(p_type, Color.LightGreen);
+                        debug_textBox1.AppendText(" - exception thrown!\n" + p_text, Color.Red);
+                    }
+                    break;
+                default:
+                    debug_textBox1.AppendText("Undefined log event -> " + Enum.GetName(typeof(RichTextBoxExt.LogType), p_logType), Color.IndianRed);
+                    break;
+            }
+            debug_textBox1.AppendText("\n");
         }
     }
 }

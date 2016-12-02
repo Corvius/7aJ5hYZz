@@ -7,20 +7,10 @@ namespace MagusTools
 {
     public class Character
     {
+        // TODO: U
         public Character()
         {
         }
-
-        public void userEvent_UpDownChanged(object sender, EventArgs e)
-        {
-            Console.WriteLine(((Control)sender).Name);
-        }
-
-        public void userEvent_ComboBoxChanged(object sender, EventArgs e)
-        {
-            Console.WriteLine(((Control)sender).Name);
-        }
-
     }
 
     internal static class Stats

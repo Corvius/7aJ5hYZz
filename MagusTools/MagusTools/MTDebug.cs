@@ -53,4 +53,32 @@ namespace MagusTools
             dg.Rows.Add(RandomString(8), "3", "24 KP");
         }
     }
+    public class RichTextBoxExt : System.Windows.Forms.RichTextBox
+    {
+        public enum LogType { Text, Error }
+
+        public int m_MaxLines { get; }
+
+        public RichTextBoxExt()
+        {
+            m_MaxLines = 50;
+        }
+
+        public void AppendText(string p_text, System.Drawing.Color p_color)
+        {
+            this.SelectionStart = this.TextLength;
+            this.SelectionLength = 0;
+
+            this.SelectionColor = p_color;
+            this.AppendText(p_text);
+            this.SelectionColor = this.ForeColor;
+
+            if (this.Lines.Length > m_MaxLines)
+            {
+                this.SelectionStart = this.GetFirstCharIndexFromLine(0);
+                this.SelectionLength = this.Lines[0].Length + 1;
+                this.SelectedText = String.Empty;
+            }
+        }
+    }
 }
