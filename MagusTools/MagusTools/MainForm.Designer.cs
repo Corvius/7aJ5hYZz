@@ -54,8 +54,6 @@
             this.debug_tlp = new System.Windows.Forms.TableLayoutPanel();
             this.debug_label1 = new System.Windows.Forms.Label();
             this.debug_comboBox7 = new System.Windows.Forms.ComboBox();
-            this.debug_label2 = new System.Windows.Forms.Label();
-            this.debug_textBox1 = new MagusTools.RichTextBoxExt();
             this.tabSkills = new System.Windows.Forms.TabPage();
             this.tlpSkills = new System.Windows.Forms.TableLayoutPanel();
             this.btSkillsExpand = new System.Windows.Forms.Button();
@@ -514,8 +512,6 @@
             this.debug_tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.debug_tlp.Controls.Add(this.debug_label1, 0, 0);
             this.debug_tlp.Controls.Add(this.debug_comboBox7, 0, 1);
-            this.debug_tlp.Controls.Add(this.debug_label2, 0, 2);
-            this.debug_tlp.Controls.Add(this.debug_textBox1, 0, 3);
             this.debug_tlp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.debug_tlp.Location = new System.Drawing.Point(3, 3);
             this.debug_tlp.Name = "debug_tlp";
@@ -552,29 +548,6 @@
             this.debug_comboBox7.Size = new System.Drawing.Size(329, 23);
             this.debug_comboBox7.TabIndex = 1;
             this.debug_comboBox7.SelectedIndexChanged += new System.EventHandler(this.debug_comboBox7_SelectedIndexChanged);
-            // 
-            // debug_label2
-            // 
-            this.debug_label2.AutoSize = true;
-            this.debug_label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.debug_label2.Location = new System.Drawing.Point(3, 60);
-            this.debug_label2.Name = "debug_label2";
-            this.debug_label2.Size = new System.Drawing.Size(329, 30);
-            this.debug_label2.TabIndex = 2;
-            this.debug_label2.Text = "Summary";
-            this.debug_label2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // debug_textBox1
-            // 
-            this.debug_textBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.debug_tlp.SetColumnSpan(this.debug_textBox1, 2);
-            this.debug_textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.debug_textBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.debug_textBox1.Location = new System.Drawing.Point(3, 93);
-            this.debug_textBox1.Name = "debug_textBox1";
-            this.debug_textBox1.Size = new System.Drawing.Size(664, 280);
-            this.debug_textBox1.TabIndex = 3;
-            this.debug_textBox1.Text = "";
             // 
             // tabSkills
             // 
@@ -4028,6 +4001,7 @@
             this.MaximizeBox = false;
             this.Name = "mainForm";
             this.Text = "MagusTools Karakterszerkesztő";
+            this.Load += new System.EventHandler(this.mainForm_Load);
             this.mainMenuStrip.ResumeLayout(false);
             this.mainMenuStrip.PerformLayout();
             this.mainStatusStrip.ResumeLayout(false);
@@ -4344,8 +4318,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
-        private System.Windows.Forms.Label debug_label2;
-        private MagusTools.RichTextBoxExt debug_textBox1;
     }
 }
 

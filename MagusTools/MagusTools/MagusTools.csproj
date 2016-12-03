@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="LogWindow.cs" />
     <Compile Include="MTDebug.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="NumericUpDownExt.cs">
       <SubType>Component</SubType>
     </Compile>

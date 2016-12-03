@@ -1,7 +1,5 @@
-﻿using System;
+﻿using System.Drawing;
 using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Forms;
 
 namespace MagusTools
 {
@@ -10,6 +8,25 @@ namespace MagusTools
         // TODO: U
         public Character()
         {
+            Program.logger.Log(new object[] { Color.Blue, "Character", Color.Black, " object was created." });
+
+            Node a = new Node(1);
+            Node b = new Node(2);
+            Node c = new Node(4);
+            DataNode d = new DataNode();
+            d.SetValue(8);
+
+            ModifierNode m = new ModifierNode(ModifierNode.NodeType.Add);
+            m.AddSource(a);
+            m.AddSource(b);
+            m.AddSource(c);
+            m.AddSource(d);
+
+            Program.logger.Log(new object[] { "ModifierNode output value is now : ", Color.Cyan, m.GetValue().ToString() });
+
+            d.SetValue(13);
+
+            Program.logger.Log(new object[] { "ModifierNode output value is now : ", Color.Cyan, m.GetValue().ToString() });
         }
     }
 

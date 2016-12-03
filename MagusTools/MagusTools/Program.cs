@@ -8,15 +8,28 @@ namespace MagusTools
 {
     static class Program
     {
+        // Logger object
+        public static LogWindow.LogWindow logger;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
+            // Configure application
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainForm());
+
+            // Initailize form
+            mainForm main = new mainForm();
+
+            // Create and show debug window
+            logger = new LogWindow.LogWindow(main);
+            logger.Show();
+
+            // Run application
+            Application.Run(main);
         }
     }
 }

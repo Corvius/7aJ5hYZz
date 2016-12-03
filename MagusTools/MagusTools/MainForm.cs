@@ -20,14 +20,18 @@ namespace MagusTools
         private Dictionary<Label, ControlIDTag> lblControls = new Dictionary<Label, ControlIDTag>();
 
         // Main character object
-        public Character character = new Character();
+        public Character character;
 
         // MainForm's Constructor
         public mainForm()
         {
             // Auto-generated code.
             InitializeComponent();
+        }
 
+        // When the form first loads, prepare all controls
+        private void mainForm_Load(object sender, EventArgs e)
+        {
             // Set up elements of the UI
             PrepareUI();
 
@@ -37,9 +41,14 @@ namespace MagusTools
             // Refresh all strings with the selected language.
             LoadLocalizedStrings();
 
+            character = new Character();
+
             // Debug
             MTDebug.FillTreeView(twSkillTree, 15, 3);
             MTDebug.FillDataGrid(dgSelectedSkills);
+
+            //Program.logger = new LogWindow.LogWindow(this);
+            //Program.logger.Show();
         }
 
         /// <summary>
@@ -538,18 +547,18 @@ namespace MagusTools
             try
             {
                 updControls.TryGetValue(upd, out cidt);
-                debug_UpdateLog(RichTextBoxExt.LogType.Text, cidt.m_Name, sender.GetType().ToString(), upd.Value.ToString());
+                Program.logger.Log(new object[] { Color.Blue, cidt.m_Name, Color.Black, " has changed it's value to ", Color.Cyan, upd.Value.ToString() });
             }
             catch (Exception ex)
             {
-                debug_UpdateLog(RichTextBoxExt.LogType.Error, cidt.m_Name, sender.GetType().ToString(), ex.Message);
+                Program.logger.Log(new object[] { Color.Orange, cidt.m_Name, Color.Black, " has thrown the following error:\n", Color.IndianRed, ex.Message });
             }
         }
 
         public void userEvent_ComboBoxChanged(object sender, EventArgs e)
         {
             ComboBox cb = (ComboBox)sender;
-            debug_UpdateLog(RichTextBoxExt.LogType.Text, cb.Name, sender.GetType().ToString(), cb.SelectedItem.ToString());
+            Program.logger.Log(new object[] { Color.Blue, cb.Name, Color.Black, " has changed it's value to ", Color.Cyan, cb.SelectedItem.ToString() });
         }
         #endregion
 
@@ -558,36 +567,6 @@ namespace MagusTools
         {
             ChangeLanguage((string)debug_comboBox7.SelectedItem);
             LoadLocalizedStrings();
-        }
-
-        private void debug_UpdateLog(RichTextBoxExt.LogType p_logType, string p_control, string p_type, string p_text)
-        {
-            debug_textBox1.AppendText(DateTime.Now.ToLongTimeString() + ": ");
-
-            switch (p_logType)
-            {
-                case RichTextBoxExt.LogType.Text:
-                    {
-                        debug_textBox1.AppendText(p_control, Color.Blue);
-                        debug_textBox1.AppendText(", a type of ", debug_textBox1.ForeColor);
-                        debug_textBox1.AppendText(p_type, Color.LightGreen);
-                        debug_textBox1.AppendText(" has changed to the value of ", debug_textBox1.ForeColor);
-                        debug_textBox1.AppendText(p_text, Color.Cyan);
-                    }
-                    break;
-                case RichTextBoxExt.LogType.Error:
-                    {
-                        debug_textBox1.AppendText(p_control, Color.Blue);
-                        debug_textBox1.AppendText(", a type of ", debug_textBox1.ForeColor);
-                        debug_textBox1.AppendText(p_type, Color.LightGreen);
-                        debug_textBox1.AppendText(" - exception thrown!\n" + p_text, Color.Red);
-                    }
-                    break;
-                default:
-                    debug_textBox1.AppendText("Undefined log event -> " + Enum.GetName(typeof(RichTextBoxExt.LogType), p_logType), Color.IndianRed);
-                    break;
-            }
-            debug_textBox1.AppendText("\n");
         }
     }
 }
