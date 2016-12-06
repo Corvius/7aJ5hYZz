@@ -20,7 +20,7 @@ namespace MagusTools
         private Dictionary<Label, ControlIDTag> lblControls = new Dictionary<Label, ControlIDTag>();
 
         // Main character object
-        public Character character;
+        public Character character = new Character();
 
         // MainForm's Constructor
         public mainForm()
@@ -40,15 +40,6 @@ namespace MagusTools
 
             // Refresh all strings with the selected language.
             LoadLocalizedStrings();
-
-            character = new Character();
-
-            // Debug
-            MTDebug.FillTreeView(twSkillTree, 15, 3);
-            MTDebug.FillDataGrid(dgSelectedSkills);
-
-            //Program.logger = new LogWindow.LogWindow(this);
-            //Program.logger.Show();
         }
 
         /// <summary>
@@ -145,6 +136,8 @@ namespace MagusTools
                 this.lblCharDamagebonus.Text = Properties.Resources.TAB_BasicInfo_DamageBonusLabel;
                 this.lblCharMP.Text = Properties.Resources.TAB_BasicInfo_MPLabel;
                 this.lblCharMPperLevel.Text = Properties.Resources.TAB_BasicInfo_MPperLevelLabel;
+                this.lblCharPsy.Text = Properties.Resources.TAB_BasicInfo_PSYLabel;
+                this.lblCharPSYperLevel.Text = Properties.Resources.TAB_BasicInfo_PSYperLevelLabel;
                 //
                 // Tab PrimaryAttributes & Tab SecondaryAttributes - Dictionary controls
                 //
@@ -419,17 +412,13 @@ namespace MagusTools
             lblControls.Add(this.lblMCV02, new ControlIDTag("SpentCcp", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[2], 2));
             lblControls.Add(this.lblMSV00, new ControlIDTag("StatAverage", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 3));
 
-            #endregion
-
-            // Event Handlers
-            #region Assign Event Handlers
-            foreach (var upd in updControls)
-            {
-                ((NumericUpDownExt)upd.Key).ValueChanged += userEvent_UpDownChanged;
-            }
-
-            cbCharRace.SelectionChangeCommitted += userEvent_ComboBoxChanged;
-            cbCharClass.SelectionChangeCommitted += userEvent_ComboBoxChanged;
+            lblControls.Add(this.lblOV00, new ControlIDTag("AMR", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 0));
+            lblControls.Add(this.lblOV01, new ControlIDTag("MMR", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 1));
+            lblControls.Add(this.lblOV02, new ControlIDTag("DamageBonus", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 2));
+            lblControls.Add(this.lblOV03, new ControlIDTag("Mana", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 3));
+            lblControls.Add(this.lblOV04, new ControlIDTag("ManaPerLevel", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 4));
+            lblControls.Add(this.lblOV05, new ControlIDTag("Psy", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 5));
+            lblControls.Add(this.lblOV06, new ControlIDTag("PsyPerLevel", ControlIDTag.TagDescription.Value, mainTabControl.TabPages[1], 6));
 
             #endregion
         }
@@ -538,35 +527,10 @@ namespace MagusTools
         }
         #endregion
 
-        #region NumericUpDown Eventhandlers
-        public void userEvent_UpDownChanged(object sender, EventArgs e)
+        private void updCharLevel_ValueChanged(object sender, EventArgs e)
         {
-            ControlIDTag cidt = new ControlIDTag();
-            NumericUpDownExt upd = (NumericUpDownExt)sender;
-
-            try
-            {
-                updControls.TryGetValue(upd, out cidt);
-                Program.logger.Log(new object[] { Color.Blue, cidt.m_Name, Color.Black, " has changed it's value to ", Color.Cyan, upd.Value.ToString() });
-            }
-            catch (Exception ex)
-            {
-                Program.logger.Log(new object[] { Color.Orange, cidt.m_Name, Color.Black, " has thrown the following error:\n", Color.IndianRed, ex.Message });
-            }
-        }
-
-        public void userEvent_ComboBoxChanged(object sender, EventArgs e)
-        {
-            ComboBox cb = (ComboBox)sender;
-            Program.logger.Log(new object[] { Color.Blue, cb.Name, Color.Black, " has changed it's value to ", Color.Cyan, cb.SelectedItem.ToString() });
-        }
-        #endregion
-
-        // DEBUG CONTROLS
-        private void debug_comboBox7_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ChangeLanguage((string)debug_comboBox7.SelectedItem);
-            LoadLocalizedStrings();
+            if (sender is NumericUpDownExt)
+                character.SetStat(Character.Stats.Level, (int)((NumericUpDownExt)sender).Value);
         }
     }
 }

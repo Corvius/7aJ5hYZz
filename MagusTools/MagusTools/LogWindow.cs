@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿// Only include this module in the project when debugging
+
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace LogWindow
@@ -18,10 +20,12 @@ namespace LogWindow
     public class LogWindow : Form
     {
         private RichTextBoxExt rtb = new RichTextBoxExt();
+        private Point startLocation = new Point(100, 100);
 
-        public LogWindow(Form pOwner)
+        public LogWindow(Form pOwner, Point pStartLocation)
         {
             Owner = pOwner;
+            startLocation = pStartLocation;
             InitializeComponent();
             Load += LogWindow_Load;
             FormClosing += LogWindow_FormClosing;
@@ -42,25 +46,19 @@ namespace LogWindow
 
         private void LogWindow_Load(object sender, System.EventArgs e)
         {
-            if (Owner != null)
-            {
-                Point newPos = Owner.Location;
-                newPos.Offset(Owner.Width, 0);
-                Location = newPos;
-            }
+            Location = startLocation;
         }
 
         private void InitializeComponent()
         {
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 400);
             Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(238)));
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MinimizeBox = false;
             MaximizeBox = false;
             Name = "debugForm";
-            Text = "Debug Information";
+            if (Text == "") Text = "Generic Debug Information";
 
             rtb.BackColor = SystemColors.ControlDark;
             rtb.Dock = DockStyle.Fill;
@@ -75,6 +73,7 @@ namespace LogWindow
             Controls.Add(rtb);
         }
 
+        [System.Diagnostics.Conditional("DEBUG")]
         public void Log(object[] args)
         {
             Color textColor = Color.Black;
@@ -85,6 +84,8 @@ namespace LogWindow
                     textColor = (Color)item;
                 else if (item is string)
                     rtb.AppendText((string)item, textColor);
+                else
+                    rtb.AppendText(item.ToString(), textColor);
             }
 
             rtb.AppendText("\n");
@@ -119,3 +120,4 @@ namespace LogWindow
         }
     }
 }
+

@@ -619,6 +619,24 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Psy.
+        /// </summary>
+        internal static string TAB_BasicInfo_PSYLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_PSYLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Psy / Level.
+        /// </summary>
+        internal static string TAB_BasicInfo_PSYperLevelLabel {
+            get {
+                return ResourceManager.GetString("TAB_BasicInfo_PSYperLevelLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Equipment.
         /// </summary>
         internal static string TAB_Equipment {

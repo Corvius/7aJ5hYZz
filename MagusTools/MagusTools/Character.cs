@@ -1,119 +1,131 @@
-﻿using System.Drawing;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace MagusTools
 {
     public class Character
     {
-        // TODO: U
+        public enum Stats
+        {
+            Strength, Speed, Agility, Endurance, Health, Charisma, Intelligence, Willpower, Astral, Perception, 
+            Initiative, Attack, Defense, Aim, CMperLevel, HP, PR, PRperLevel, KP, KPperLevel,
+            Level, DamageBonus, Resistance, AMR, MMR, MP, MPperLevel, Psy, PsyperLevel
+        }
+
+        private List<Stat> statList = new List<Stat>();
+
         public Character()
         {
-            Program.logger.Log(new object[] { Color.Blue, "Character", Color.Black, " object was created." });
-
-            Node a = new Node(1);
-            Node b = new Node(2);
-            Node c = new Node(4);
-            DataNode d = new DataNode();
-            d.SetValue(8);
-
-            ModifierNode m = new ModifierNode(ModifierNode.NodeType.Add);
-            m.AddSource(a);
-            m.AddSource(b);
-            m.AddSource(c);
-            m.AddSource(d);
-
-            Program.logger.Log(new object[] { "ModifierNode output value is now : ", Color.Cyan, m.GetValue().ToString() });
-
-            d.SetValue(13);
-
-            Program.logger.Log(new object[] { "ModifierNode output value is now : ", Color.Cyan, m.GetValue().ToString() });
+            foreach (var item in System.Enum.GetValues(typeof(Stats)))
+            {
+                statList.Add(new Stat() { Actual = 0, Base = 0 });
+            }
         }
-    }
 
-    internal static class Stats
-    {
-        private static List<Stat> stats = new List<Stat>();
-    }
-
-    internal class Stat
-    {
-    }
-
-    internal static class Weapons
-    {
-        private static List<Weapon> weapons = new List<Weapon>();
-    }
-
-    internal class Weapon
-    { 
-        public string Name { get; }
-        public string Category { get; }
-        public int Initiative { get; }
-        public int Attack { get; }
-        public int Defense { get; }
-        public int Aim { get; }
-        public int Range { get; }
-        public int MinDamage { get; }
-        public int MaxDamage { get; }
-        public int BaseDamage { get; }
-        public float AttackPerRound { get; }
-
-        public string RequiredStatType { get; }
-        public int RequiredStatValue { get; }
-        public bool IsDoubleHanded { get; }
-
-        public bool IsOwnedByCharacter { get; }
-        public bool IsEquippedByCharacter { get; }
-
-        /// <summary>
-        /// Constructor for a melee weapon.
-        /// </summary>
-        public Weapon(string name, string category, int initiative, int attack_aim, int defense_range,
-            int minDamage, int maxDamage, int baseDamage, float attackPerRound,
-            string requiredStatType, int requiredStatValue, bool isDoubleHanded)
+        public int GetStat(Stats stat)
         {
-            bool isRanged = category == "célzófegyver" || category == "tűzfegyver";
-
-            Name = name;
-            Category = category;
-            Initiative = initiative;
-            Attack = (isRanged) ? -1 : attack_aim;
-            Defense = (isRanged) ? -1 : defense_range;
-            Aim = (isRanged) ? attack_aim : -1;
-            Range = (isRanged) ? defense_range : -1;
-            MinDamage = minDamage;
-            MaxDamage = maxDamage;
-            BaseDamage = baseDamage;
-            AttackPerRound = attackPerRound;
-            RequiredStatType = requiredStatType;
-            RequiredStatValue = requiredStatValue;
-            IsDoubleHanded = isDoubleHanded;
+            return statList[(int)stat].Actual;
         }
-    }
 
-    internal static class Armors
-    {
-        //private List<Armor> armors;
-    }
+        public void SetStat(Stats stat, int newValue)
+        {
+            if (newValue < 0) return; // You Shall Not Pass!
 
-    internal class Armor
-    {
-    }
+            statList[(int)stat].Base = newValue;
+            statList[(int)stat].Actual = newValue;
 
-    internal static class Items
-    {
-    }
+            int valueAboveTen = System.Math.Max(newValue - 10, 0);
 
-    internal class Item
-    {
-    }
+            switch (stat)
+            {
+                case Stats.Strength:
+                    statList[(int)stat].Actual += (IsSkillLearned(3, "Erő") ? 1 : 0);
+                    statList[(int)Stats.DamageBonus].Actual += 
+                        System.Math.Max(statList[(int)stat].Actual - 16, 0) +
+                        ((GetClass() == "Fejvadász") ? statList[(int)Stats.Level].Base / 2 : 0);
+                    statList[(int)Stats.Attack].Actual += valueAboveTen;
+                    break;
+                case Stats.Speed:
+                    statList[(int)Stats.Initiative].Actual += valueAboveTen; // TODO: Extend this to Ügyesség! (and fix the rest)
+                    statList[(int)Stats.Attack].Actual += valueAboveTen;
+                    statList[(int)Stats.Defense].Actual += valueAboveTen;
+                    break;
+                case Stats.Agility:
+                    statList[(int)stat].Actual += (IsSkillLearned(3, "Ügyesség") ? 1 : 0);
+                    statList[(int)Stats.Initiative].Actual += valueAboveTen;
+                    statList[(int)Stats.Attack].Actual += valueAboveTen;
+                    statList[(int)Stats.Defense].Actual += valueAboveTen;
+                    break;
+                case Stats.Endurance:
+                    statList[(int)Stats.PR].Actual = valueAboveTen;
+                    break;
+                case Stats.Health:
+                    statList[(int)Stats.HP].Actual += valueAboveTen;
+                    statList[(int)Stats.Resistance].Actual = valueAboveTen;
+                    break;
+                case Stats.Charisma:
+                    break;
+                case Stats.Intelligence:
+                    statList[(int)Stats.MP].Actual += ((GetClass() == "Bárd") ? valueAboveTen : 0);
+                    statList[(int)Stats.Psy].Actual += (IsSkillLearned("Pszi", 1) ? valueAboveTen : 0);
+                    break;
+                case Stats.Willpower:
+                    statList[(int)Stats.PR].Actual += valueAboveTen;
+                    statList[(int)Stats.MMR].Actual += valueAboveTen;
+                    break;
+                case Stats.Astral:
+                    statList[(int)Stats.AMR].Actual += valueAboveTen;
+                    break;
+                case Stats.Perception:
+                    break;
 
-    internal static class Skills
-    {
-        private static List<Skill> skills = new List<Skill>();
-    }
+                case Stats.Initiative:
+                    statList[(int)stat].Actual +=
+                        System.Math.Max(statList[(int)Stats.Speed].Base - 10, 0);
+                    break;
+                case Stats.Attack:
+                    break;
+                case Stats.Defense:
+                    break;
+                case Stats.Aim:
+                    break;
+                case Stats.CMperLevel:
+                    break;
+                case Stats.HP:
+                    break;
+                case Stats.PR:
+                    break;
+                case Stats.PRperLevel:
+                    break;
+                case Stats.KP:
+                    break;
+                case Stats.KPperLevel:
+                    break;
+                case Stats.Level:
+                    break;
+                default:
+                    break;
+            }
+        }
 
-    internal class Skill
-    {
+        public string GetClass()
+        {
+            return "Fejvadász";
+        }
+
+        public bool IsSkillLearned(string skillName, int level)
+        {
+            return true;
+        }
+
+        public bool IsSkillLearned(int level, string subTypeReq)
+        {
+            return true;
+        }
+
+        private class Stat
+        {
+            public int Actual { get; set; }
+            public int Base { get; set; }
+        }
     }
 }

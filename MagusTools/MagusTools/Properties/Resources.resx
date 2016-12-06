@@ -171,7 +171,7 @@
   </data>
   <data name="ATTR_SecondaryAttributes_Defense" xml:space="preserve">
     <value>Defense</value>
-    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Defence</comment>
+    <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Defense</comment>
   </data>
   <data name="ATTR_SecondaryAttributes_HP" xml:space="preserve">
     <value>HP</value>
@@ -404,5 +404,13 @@
   <data name="TAB_BasicInfo_OtherStatsLabel" xml:space="preserve">
     <value>Other stats</value>
     <comment>Text for Stat-tab Basic Information - Label - Other Stats</comment>
+  </data>
+  <data name="TAB_BasicInfo_PSYLabel" xml:space="preserve">
+    <value>Psy</value>
+    <comment>Text for Stat-tab Basic Information - Label - Psy</comment>
+  </data>
+  <data name="TAB_BasicInfo_PSYperLevelLabel" xml:space="preserve">
+    <value>Psy / Level</value>
+    <comment>Text for Stat-tab Basic Information - Label - Psy / Level</comment>
   </data>
 </root>

@@ -405,4 +405,12 @@
     <value>Egyéb adatok</value>
     <comment>Text for Stat-tab Basic Information - Label - Other Stats</comment>
   </data>
+  <data name="TAB_BasicInfo_PSYLabel" xml:space="preserve">
+    <value>Pszí</value>
+    <comment>Text for Stat-tab Basic Information - Label - Psy</comment>
+  </data>
+  <data name="TAB_BasicInfo_PSYperLevelLabel" xml:space="preserve">
+    <value>Pszí / Szint</value>
+    <comment>Text for Stat-tab Basic Information - Label - Psy / Level</comment>
+  </data>
 </root>

@@ -48,8 +48,6 @@
   <ItemGroup>
     <Compile Include="Character.cs" />
     <Compile Include="LogWindow.cs" />
-    <Compile Include="MTDebug.cs" />
-    <Compile Include="Node.cs" />
     <Compile Include="NumericUpDownExt.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -139,6 +137,17 @@
     <None Include="Resources\DECAL_SideBarB.bmp" />
     <None Include="Resources\Magus_LogoB.png" />
     <None Include="Resources\DECAL_Magus_LogoB.png" />
+    <None Include="Resources\MENU_CharMenu.bmp" />
+    <None Include="Resources\MENU_Dice.bmp" />
+    <None Include="Resources\MENU_Exit.bmp" />
+    <None Include="Resources\MENU_FileMenu.bmp" />
+    <None Include="Resources\MENU_Generate.bmp" />
+    <None Include="Resources\MENU_LoadChar.bmp" />
+    <None Include="Resources\MENU_NewChar.bmp" />
+    <None Include="Resources\MENU_SaveAsChar.bmp" />
+    <None Include="Resources\MENU_SaveChar.bmp" />
+    <None Include="Resources\MENU_Settings.bmp" />
+    <None Include="Resources\MENU_Text.bmp" />
     <Content Include="SkillData.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

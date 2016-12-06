@@ -50,10 +50,6 @@
             this.mnuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
             this.stlblFileName = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabDebug = new System.Windows.Forms.TabPage();
-            this.debug_tlp = new System.Windows.Forms.TableLayoutPanel();
-            this.debug_label1 = new System.Windows.Forms.Label();
-            this.debug_comboBox7 = new System.Windows.Forms.ComboBox();
             this.tabSkills = new System.Windows.Forms.TabPage();
             this.tlpSkills = new System.Windows.Forms.TableLayoutPanel();
             this.btSkillsExpand = new System.Windows.Forms.Button();
@@ -232,6 +228,10 @@
             this.lblAV00 = new System.Windows.Forms.Label();
             this.tabBasicInfo = new System.Windows.Forms.TabPage();
             this.tlpBasicInfo = new System.Windows.Forms.TableLayoutPanel();
+            this.lblOV05 = new System.Windows.Forms.Label();
+            this.lblOV06 = new System.Windows.Forms.Label();
+            this.lblCharPSYperLevel = new System.Windows.Forms.Label();
+            this.lblCharPsy = new System.Windows.Forms.Label();
             this.updCharLevel = new MagusTools.NumericUpDownExt();
             this.lblCharName = new System.Windows.Forms.Label();
             this.txtCharName = new System.Windows.Forms.TextBox();
@@ -256,22 +256,21 @@
             this.lblCharCCP = new System.Windows.Forms.Label();
             this.lblMiscHypen = new System.Windows.Forms.Label();
             this.pbD02 = new System.Windows.Forms.PictureBox();
-            this.lblCharOtherStats = new System.Windows.Forms.Label();
-            this.lblCharAMR = new System.Windows.Forms.Label();
-            this.lblOV00 = new System.Windows.Forms.Label();
-            this.lblCharMMR = new System.Windows.Forms.Label();
             this.lblOV01 = new System.Windows.Forms.Label();
-            this.lblCharDamagebonus = new System.Windows.Forms.Label();
             this.lblOV02 = new System.Windows.Forms.Label();
             this.lblCharMP = new System.Windows.Forms.Label();
             this.lblOV03 = new System.Windows.Forms.Label();
             this.lblCharMPperLevel = new System.Windows.Forms.Label();
             this.lblOV04 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblOV00 = new System.Windows.Forms.Label();
+            this.lblCharAMR = new System.Windows.Forms.Label();
+            this.lblCharOtherStats = new System.Windows.Forms.Label();
             this.mainTabControl = new System.Windows.Forms.TabControl();
+            this.lblCharMMR = new System.Windows.Forms.Label();
+            this.lblCharDamagebonus = new System.Windows.Forms.Label();
             this.mainMenuStrip.SuspendLayout();
             this.mainStatusStrip.SuspendLayout();
-            this.tabDebug.SuspendLayout();
-            this.debug_tlp.SuspendLayout();
             this.tabSkills.SuspendLayout();
             this.tlpSkills.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgSelectedSkills)).BeginInit();
@@ -330,6 +329,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.updCharLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.updCharAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbD02)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.mainTabControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -348,6 +348,7 @@
             // 
             // mnuFile
             // 
+            this.mnuFile.BackColor = System.Drawing.Color.Transparent;
             this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFileNew,
             this.mnuFileOpen,
@@ -356,18 +357,21 @@
             this.mnuFileSaveAs,
             this.mnuFileSeparator2,
             this.mnuFileQuit});
+            this.mnuFile.Image = global::MagusTools.Icons.MENU_FileMenu;
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(37, 20);
+            this.mnuFile.Size = new System.Drawing.Size(53, 20);
             this.mnuFile.Text = "File";
             // 
             // mnuFileNew
             // 
+            this.mnuFileNew.Image = global::MagusTools.Icons.MENU_NewChar;
             this.mnuFileNew.Name = "mnuFileNew";
             this.mnuFileNew.Size = new System.Drawing.Size(123, 22);
             this.mnuFileNew.Text = "New";
             // 
             // mnuFileOpen
             // 
+            this.mnuFileOpen.Image = global::MagusTools.Icons.MENU_LoadChar;
             this.mnuFileOpen.Name = "mnuFileOpen";
             this.mnuFileOpen.Size = new System.Drawing.Size(123, 22);
             this.mnuFileOpen.Text = "Open";
@@ -379,12 +383,14 @@
             // 
             // mnuFileSave
             // 
+            this.mnuFileSave.Image = global::MagusTools.Icons.MENU_SaveChar;
             this.mnuFileSave.Name = "mnuFileSave";
             this.mnuFileSave.Size = new System.Drawing.Size(123, 22);
             this.mnuFileSave.Text = "Save";
             // 
             // mnuFileSaveAs
             // 
+            this.mnuFileSaveAs.Image = global::MagusTools.Icons.MENU_SaveAsChar;
             this.mnuFileSaveAs.Name = "mnuFileSaveAs";
             this.mnuFileSaveAs.Size = new System.Drawing.Size(123, 22);
             this.mnuFileSaveAs.Text = "Save As...";
@@ -396,6 +402,7 @@
             // 
             // mnuFileQuit
             // 
+            this.mnuFileQuit.Image = global::MagusTools.Icons.MENU_Exit;
             this.mnuFileQuit.Name = "mnuFileQuit";
             this.mnuFileQuit.Size = new System.Drawing.Size(123, 22);
             this.mnuFileQuit.Text = "Quit";
@@ -405,18 +412,21 @@
             this.mnuCharacter.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuCharacterExportAsText,
             this.mnuCharacterGenerate});
+            this.mnuCharacter.Image = global::MagusTools.Icons.MENU_CharMenu;
             this.mnuCharacter.Name = "mnuCharacter";
-            this.mnuCharacter.Size = new System.Drawing.Size(70, 20);
+            this.mnuCharacter.Size = new System.Drawing.Size(86, 20);
             this.mnuCharacter.Text = "Character";
             // 
             // mnuCharacterExportAsText
             // 
+            this.mnuCharacterExportAsText.Image = global::MagusTools.Icons.MENU_Text;
             this.mnuCharacterExportAsText.Name = "mnuCharacterExportAsText";
             this.mnuCharacterExportAsText.Size = new System.Drawing.Size(145, 22);
             this.mnuCharacterExportAsText.Text = "Export as Text";
             // 
             // mnuCharacterGenerate
             // 
+            this.mnuCharacterGenerate.Image = global::MagusTools.Icons.MENU_Generate;
             this.mnuCharacterGenerate.Name = "mnuCharacterGenerate";
             this.mnuCharacterGenerate.Size = new System.Drawing.Size(145, 22);
             this.mnuCharacterGenerate.Text = "Generate";
@@ -427,8 +437,9 @@
             this.mnuOptionsSettings,
             this.mnuOptionsLanguage,
             this.mnuOptionsTools});
+            this.mnuOptions.Image = global::MagusTools.Icons.MENU_Settings;
             this.mnuOptions.Name = "mnuOptions";
-            this.mnuOptions.Size = new System.Drawing.Size(61, 20);
+            this.mnuOptions.Size = new System.Drawing.Size(77, 20);
             this.mnuOptions.Text = "Options";
             // 
             // mnuOptionsSettings
@@ -453,6 +464,7 @@
             // 
             // mnuOptionsToolsDiceroller
             // 
+            this.mnuOptionsToolsDiceroller.Image = global::MagusTools.Icons.MENU_Dice;
             this.mnuOptionsToolsDiceroller.Name = "mnuOptionsToolsDiceroller";
             this.mnuOptionsToolsDiceroller.Size = new System.Drawing.Size(124, 22);
             this.mnuOptionsToolsDiceroller.Text = "Diceroller";
@@ -493,61 +505,6 @@
             // 
             this.stlblFileName.Name = "stlblFileName";
             this.stlblFileName.Size = new System.Drawing.Size(0, 17);
-            // 
-            // tabDebug
-            // 
-            this.tabDebug.Controls.Add(this.debug_tlp);
-            this.tabDebug.Location = new System.Drawing.Point(4, 24);
-            this.tabDebug.Name = "tabDebug";
-            this.tabDebug.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDebug.Size = new System.Drawing.Size(676, 688);
-            this.tabDebug.TabIndex = 11;
-            this.tabDebug.Text = "Debug Controls";
-            this.tabDebug.UseVisualStyleBackColor = true;
-            // 
-            // debug_tlp
-            // 
-            this.debug_tlp.ColumnCount = 2;
-            this.debug_tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.debug_tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.debug_tlp.Controls.Add(this.debug_label1, 0, 0);
-            this.debug_tlp.Controls.Add(this.debug_comboBox7, 0, 1);
-            this.debug_tlp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.debug_tlp.Location = new System.Drawing.Point(3, 3);
-            this.debug_tlp.Name = "debug_tlp";
-            this.debug_tlp.RowCount = 6;
-            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.debug_tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.debug_tlp.Size = new System.Drawing.Size(670, 682);
-            this.debug_tlp.TabIndex = 0;
-            // 
-            // debug_label1
-            // 
-            this.debug_label1.AutoSize = true;
-            this.debug_label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.debug_label1.Location = new System.Drawing.Point(3, 0);
-            this.debug_label1.Name = "debug_label1";
-            this.debug_label1.Size = new System.Drawing.Size(329, 30);
-            this.debug_label1.TabIndex = 0;
-            this.debug_label1.Text = "Choose a language";
-            this.debug_label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // debug_comboBox7
-            // 
-            this.debug_comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.debug_comboBox7.FormattingEnabled = true;
-            this.debug_comboBox7.Items.AddRange(new object[] {
-            "hu-HU",
-            "en-EN"});
-            this.debug_comboBox7.Location = new System.Drawing.Point(3, 33);
-            this.debug_comboBox7.Name = "debug_comboBox7";
-            this.debug_comboBox7.Size = new System.Drawing.Size(329, 23);
-            this.debug_comboBox7.TabIndex = 1;
-            this.debug_comboBox7.SelectedIndexChanged += new System.EventHandler(this.debug_comboBox7_SelectedIndexChanged);
             // 
             // tabSkills
             // 
@@ -2063,7 +2020,7 @@
             this.tlpSecondaryAttributesOld.SetRowSpan(this.lblMAT12, 2);
             this.lblMAT12.Size = new System.Drawing.Size(154, 28);
             this.lblMAT12.TabIndex = 19;
-            this.lblMAT12.Text = "Defence";
+            this.lblMAT12.Text = "Defense";
             this.lblMAT12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMAT11
@@ -3444,6 +3401,10 @@
             this.tlpBasicInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.tlpBasicInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
             this.tlpBasicInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.tlpBasicInfo.Controls.Add(this.lblOV05, 3, 16);
+            this.tlpBasicInfo.Controls.Add(this.lblOV06, 3, 17);
+            this.tlpBasicInfo.Controls.Add(this.lblCharPSYperLevel, 1, 17);
+            this.tlpBasicInfo.Controls.Add(this.lblCharPsy, 1, 16);
             this.tlpBasicInfo.Controls.Add(this.updCharLevel, 11, 1);
             this.tlpBasicInfo.Controls.Add(this.lblCharName, 1, 0);
             this.tlpBasicInfo.Controls.Add(this.txtCharName, 1, 1);
@@ -3468,21 +3429,17 @@
             this.tlpBasicInfo.Controls.Add(this.lblCharCCP, 11, 5);
             this.tlpBasicInfo.Controls.Add(this.lblMiscHypen, 4, 7);
             this.tlpBasicInfo.Controls.Add(this.pbD02, 1, 9);
-            this.tlpBasicInfo.Controls.Add(this.lblCharOtherStats, 1, 10);
-            this.tlpBasicInfo.Controls.Add(this.lblCharAMR, 1, 11);
-            this.tlpBasicInfo.Controls.Add(this.lblOV00, 3, 11);
-            this.tlpBasicInfo.Controls.Add(this.lblCharMMR, 1, 12);
             this.tlpBasicInfo.Controls.Add(this.lblOV01, 3, 12);
-            this.tlpBasicInfo.Controls.Add(this.lblCharDamagebonus, 1, 13);
             this.tlpBasicInfo.Controls.Add(this.lblOV02, 3, 13);
             this.tlpBasicInfo.Controls.Add(this.lblCharMP, 1, 14);
             this.tlpBasicInfo.Controls.Add(this.lblOV03, 3, 14);
             this.tlpBasicInfo.Controls.Add(this.lblCharMPperLevel, 1, 15);
             this.tlpBasicInfo.Controls.Add(this.lblOV04, 3, 15);
+            this.tlpBasicInfo.Controls.Add(this.tableLayoutPanel1, 7, 11);
             this.tlpBasicInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpBasicInfo.Location = new System.Drawing.Point(3, 3);
             this.tlpBasicInfo.Name = "tlpBasicInfo";
-            this.tlpBasicInfo.RowCount = 17;
+            this.tlpBasicInfo.RowCount = 19;
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
@@ -3499,9 +3456,65 @@
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpBasicInfo.Size = new System.Drawing.Size(670, 682);
             this.tlpBasicInfo.TabIndex = 0;
+            // 
+            // lblOV05
+            // 
+            this.lblOV05.AutoSize = true;
+            this.lblOV05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV05.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV05.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV05.Location = new System.Drawing.Point(146, 559);
+            this.lblOV05.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV05.Name = "lblOV05";
+            this.lblOV05.Size = new System.Drawing.Size(60, 36);
+            this.lblOV05.TabIndex = 65;
+            this.lblOV05.Text = "0";
+            this.lblOV05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblOV06
+            // 
+            this.lblOV06.AutoSize = true;
+            this.lblOV06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV06.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV06.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV06.Location = new System.Drawing.Point(146, 595);
+            this.lblOV06.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV06.Name = "lblOV06";
+            this.lblOV06.Size = new System.Drawing.Size(60, 36);
+            this.lblOV06.TabIndex = 66;
+            this.lblOV06.Text = "0";
+            this.lblOV06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCharPSYperLevel
+            // 
+            this.lblCharPSYperLevel.AutoSize = true;
+            this.lblCharPSYperLevel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharPSYperLevel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharPSYperLevel.Location = new System.Drawing.Point(26, 595);
+            this.lblCharPSYperLevel.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharPSYperLevel.Name = "lblCharPSYperLevel";
+            this.lblCharPSYperLevel.Size = new System.Drawing.Size(107, 36);
+            this.lblCharPSYperLevel.TabIndex = 64;
+            this.lblCharPSYperLevel.Text = "Psy / Level";
+            this.lblCharPSYperLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblCharPsy
+            // 
+            this.lblCharPsy.AutoSize = true;
+            this.lblCharPsy.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharPsy.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharPsy.Location = new System.Drawing.Point(26, 559);
+            this.lblCharPsy.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharPsy.Name = "lblCharPsy";
+            this.lblCharPsy.Size = new System.Drawing.Size(107, 36);
+            this.lblCharPsy.TabIndex = 63;
+            this.lblCharPsy.Text = "Psy";
+            this.lblCharPsy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // updCharLevel
             // 
@@ -3530,6 +3543,7 @@
             0,
             0,
             0});
+            this.updCharLevel.ValueChanged += new System.EventHandler(this.updCharLevel_ValueChanged);
             // 
             // lblCharName
             // 
@@ -3824,59 +3838,6 @@
             this.pbD02.TabIndex = 51;
             this.pbD02.TabStop = false;
             // 
-            // lblCharOtherStats
-            // 
-            this.lblCharOtherStats.AutoSize = true;
-            this.lblCharOtherStats.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharOtherStats.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharOtherStats.Location = new System.Drawing.Point(26, 343);
-            this.lblCharOtherStats.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharOtherStats.Name = "lblCharOtherStats";
-            this.lblCharOtherStats.Size = new System.Drawing.Size(107, 36);
-            this.lblCharOtherStats.TabIndex = 52;
-            this.lblCharOtherStats.Text = "Other stats";
-            this.lblCharOtherStats.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // lblCharAMR
-            // 
-            this.lblCharAMR.AutoSize = true;
-            this.lblCharAMR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharAMR.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharAMR.Location = new System.Drawing.Point(26, 379);
-            this.lblCharAMR.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharAMR.Name = "lblCharAMR";
-            this.lblCharAMR.Size = new System.Drawing.Size(107, 36);
-            this.lblCharAMR.TabIndex = 53;
-            this.lblCharAMR.Text = "AMR";
-            this.lblCharAMR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblOV00
-            // 
-            this.lblOV00.AutoSize = true;
-            this.lblOV00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblOV00.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOV00.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblOV00.Location = new System.Drawing.Point(146, 379);
-            this.lblOV00.Margin = new System.Windows.Forms.Padding(0);
-            this.lblOV00.Name = "lblOV00";
-            this.lblOV00.Size = new System.Drawing.Size(60, 36);
-            this.lblOV00.TabIndex = 54;
-            this.lblOV00.Text = "0";
-            this.lblOV00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCharMMR
-            // 
-            this.lblCharMMR.AutoSize = true;
-            this.lblCharMMR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharMMR.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharMMR.Location = new System.Drawing.Point(26, 415);
-            this.lblCharMMR.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharMMR.Name = "lblCharMMR";
-            this.lblCharMMR.Size = new System.Drawing.Size(107, 36);
-            this.lblCharMMR.TabIndex = 55;
-            this.lblCharMMR.Text = "MMR";
-            this.lblCharMMR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // lblOV01
             // 
             this.lblOV01.AutoSize = true;
@@ -3890,19 +3851,6 @@
             this.lblOV01.TabIndex = 56;
             this.lblOV01.Text = "0";
             this.lblOV01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCharDamagebonus
-            // 
-            this.lblCharDamagebonus.AutoSize = true;
-            this.lblCharDamagebonus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharDamagebonus.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharDamagebonus.Location = new System.Drawing.Point(26, 451);
-            this.lblCharDamagebonus.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharDamagebonus.Name = "lblCharDamagebonus";
-            this.lblCharDamagebonus.Size = new System.Drawing.Size(107, 36);
-            this.lblCharDamagebonus.TabIndex = 57;
-            this.lblCharDamagebonus.Text = "Damagebonus";
-            this.lblCharDamagebonus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblOV02
             // 
@@ -3972,13 +3920,79 @@
             this.lblOV04.Text = "0";
             this.lblOV04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tlpBasicInfo.SetColumnSpan(this.tableLayoutPanel1, 5);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.lblCharDamagebonus, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblCharMMR, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblOV00, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblCharAMR, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblCharOtherStats, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(288, 382);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 8;
+            this.tlpBasicInfo.SetRowSpan(this.tableLayoutPanel1, 7);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(346, 246);
+            this.tableLayoutPanel1.TabIndex = 67;
+            // 
+            // lblOV00
+            // 
+            this.lblOV00.AutoSize = true;
+            this.lblOV00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV00.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV00.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV00.Location = new System.Drawing.Point(173, 30);
+            this.lblOV00.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV00.Name = "lblOV00";
+            this.lblOV00.Size = new System.Drawing.Size(173, 30);
+            this.lblOV00.TabIndex = 55;
+            this.lblOV00.Text = "0";
+            this.lblOV00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCharAMR
+            // 
+            this.lblCharAMR.AutoSize = true;
+            this.lblCharAMR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharAMR.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharAMR.Location = new System.Drawing.Point(0, 30);
+            this.lblCharAMR.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharAMR.Name = "lblCharAMR";
+            this.lblCharAMR.Size = new System.Drawing.Size(173, 30);
+            this.lblCharAMR.TabIndex = 54;
+            this.lblCharAMR.Text = "AMR";
+            this.lblCharAMR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblCharOtherStats
+            // 
+            this.lblCharOtherStats.AutoSize = true;
+            this.lblCharOtherStats.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharOtherStats.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharOtherStats.Location = new System.Drawing.Point(0, 0);
+            this.lblCharOtherStats.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharOtherStats.Name = "lblCharOtherStats";
+            this.lblCharOtherStats.Size = new System.Drawing.Size(173, 30);
+            this.lblCharOtherStats.TabIndex = 53;
+            this.lblCharOtherStats.Text = "Other stats";
+            this.lblCharOtherStats.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
             // mainTabControl
             // 
             this.mainTabControl.Controls.Add(this.tabBasicInfo);
             this.mainTabControl.Controls.Add(this.tabPrimaryAttributes);
             this.mainTabControl.Controls.Add(this.tabSecondaryAttributes);
             this.mainTabControl.Controls.Add(this.tabSkills);
-            this.mainTabControl.Controls.Add(this.tabDebug);
             this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainTabControl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.mainTabControl.Location = new System.Drawing.Point(0, 24);
@@ -3986,6 +4000,32 @@
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(684, 716);
             this.mainTabControl.TabIndex = 0;
+            // 
+            // lblCharMMR
+            // 
+            this.lblCharMMR.AutoSize = true;
+            this.lblCharMMR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharMMR.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharMMR.Location = new System.Drawing.Point(0, 60);
+            this.lblCharMMR.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharMMR.Name = "lblCharMMR";
+            this.lblCharMMR.Size = new System.Drawing.Size(173, 30);
+            this.lblCharMMR.TabIndex = 57;
+            this.lblCharMMR.Text = "MMR";
+            this.lblCharMMR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblCharDamagebonus
+            // 
+            this.lblCharDamagebonus.AutoSize = true;
+            this.lblCharDamagebonus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharDamagebonus.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharDamagebonus.Location = new System.Drawing.Point(0, 90);
+            this.lblCharDamagebonus.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharDamagebonus.Name = "lblCharDamagebonus";
+            this.lblCharDamagebonus.Size = new System.Drawing.Size(173, 30);
+            this.lblCharDamagebonus.TabIndex = 58;
+            this.lblCharDamagebonus.Text = "Damagebonus";
+            this.lblCharDamagebonus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // mainForm
             // 
@@ -4006,9 +4046,6 @@
             this.mainMenuStrip.PerformLayout();
             this.mainStatusStrip.ResumeLayout(false);
             this.mainStatusStrip.PerformLayout();
-            this.tabDebug.ResumeLayout(false);
-            this.debug_tlp.ResumeLayout(false);
-            this.debug_tlp.PerformLayout();
             this.tabSkills.ResumeLayout(false);
             this.tlpSkills.ResumeLayout(false);
             this.tlpSkills.PerformLayout();
@@ -4071,6 +4108,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.updCharLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.updCharAge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbD02)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.mainTabControl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -4100,10 +4139,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuOptionsLanguage;
         private System.Windows.Forms.StatusStrip mainStatusStrip;
         private System.Windows.Forms.ToolStripStatusLabel stlblFileName;
-        private System.Windows.Forms.TabPage tabDebug;
-        private System.Windows.Forms.TableLayoutPanel debug_tlp;
-        private System.Windows.Forms.Label debug_label1;
-        private System.Windows.Forms.ComboBox debug_comboBox7;
         private System.Windows.Forms.TabPage tabSkills;
         private System.Windows.Forms.TableLayoutPanel tlpSkills;
         private System.Windows.Forms.Button btSkillsExpand;
@@ -4114,6 +4149,9 @@
         private System.Windows.Forms.Label lblAD01;
         private System.Windows.Forms.Label lblSK00;
         private System.Windows.Forms.DataGridView dgSelectedSkills;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
         private System.Windows.Forms.Button btSkillsCollapse;
         private System.Windows.Forms.TabPage tabSecondaryAttributes;
         private System.Windows.Forms.TableLayoutPanel tlpSecondaryAttributesOld;
@@ -4121,13 +4159,13 @@
         private System.Windows.Forms.Label lblCMT02;
         private System.Windows.Forms.Label lblCMT01;
         private System.Windows.Forms.Label lblCMT00;
-        private MagusTools.NumericUpDownExt updM03;
-        private MagusTools.NumericUpDownExt updB13;
-        private MagusTools.NumericUpDownExt updM02;
-        private MagusTools.NumericUpDownExt updB12;
-        private MagusTools.NumericUpDownExt updM01;
-        private MagusTools.NumericUpDownExt updB11;
-        private MagusTools.NumericUpDownExt updM00;
+        private NumericUpDownExt updM03;
+        private NumericUpDownExt updB13;
+        private NumericUpDownExt updM02;
+        private NumericUpDownExt updB12;
+        private NumericUpDownExt updM01;
+        private NumericUpDownExt updB11;
+        private NumericUpDownExt updM00;
         private System.Windows.Forms.Label lblCT16;
         private System.Windows.Forms.Label lblCT19;
         private System.Windows.Forms.Label lblCT18;
@@ -4170,12 +4208,12 @@
         private System.Windows.Forms.Label lblAT14;
         private System.Windows.Forms.Label lblAT12;
         private System.Windows.Forms.Label lblAT13;
-        private MagusTools.NumericUpDownExt updB19;
-        private MagusTools.NumericUpDownExt updB18;
-        private MagusTools.NumericUpDownExt updB16;
-        private MagusTools.NumericUpDownExt updB15;
-        private MagusTools.NumericUpDownExt updB17;
-        private MagusTools.NumericUpDownExt updB14;
+        private NumericUpDownExt updB19;
+        private NumericUpDownExt updB18;
+        private NumericUpDownExt updB16;
+        private NumericUpDownExt updB15;
+        private NumericUpDownExt updB17;
+        private NumericUpDownExt updB14;
         private System.Windows.Forms.PictureBox pbM19;
         private System.Windows.Forms.PictureBox pbM18;
         private System.Windows.Forms.PictureBox pbM16;
@@ -4198,14 +4236,14 @@
         private System.Windows.Forms.Label lblMAT10;
         private System.Windows.Forms.Label lblAT10;
         private System.Windows.Forms.PictureBox pbM10;
-        private MagusTools.NumericUpDownExt updB10;
+        private NumericUpDownExt updB10;
         private System.Windows.Forms.Label lblAV10;
         private System.Windows.Forms.TabPage tabPrimaryAttributes;
         private System.Windows.Forms.TableLayoutPanel tlpPrimaryAttributesOld;
-        private MagusTools.NumericUpDownExt updB00;
-        private MagusTools.NumericUpDownExt updB01;
-        private MagusTools.NumericUpDownExt updB02;
-        private MagusTools.NumericUpDownExt updB03;
+        private NumericUpDownExt updB00;
+        private NumericUpDownExt updB01;
+        private NumericUpDownExt updB02;
+        private NumericUpDownExt updB03;
         private System.Windows.Forms.Label lblCT06;
         private System.Windows.Forms.Label lblCT09;
         private System.Windows.Forms.Label lblCT08;
@@ -4248,12 +4286,12 @@
         private System.Windows.Forms.Label lblAT04;
         private System.Windows.Forms.Label lblAT02;
         private System.Windows.Forms.Label lblAT03;
-        private MagusTools.NumericUpDownExt updB09;
-        private MagusTools.NumericUpDownExt updB08;
-        private MagusTools.NumericUpDownExt updB06;
-        private MagusTools.NumericUpDownExt updB05;
-        private MagusTools.NumericUpDownExt updB07;
-        private MagusTools.NumericUpDownExt updB04;
+        private NumericUpDownExt updB09;
+        private NumericUpDownExt updB08;
+        private NumericUpDownExt updB06;
+        private NumericUpDownExt updB05;
+        private NumericUpDownExt updB07;
+        private NumericUpDownExt updB04;
         private System.Windows.Forms.PictureBox pbM09;
         private System.Windows.Forms.PictureBox pbM08;
         private System.Windows.Forms.PictureBox pbM06;
@@ -4279,7 +4317,7 @@
         private System.Windows.Forms.Label lblAV00;
         private System.Windows.Forms.TabPage tabBasicInfo;
         private System.Windows.Forms.TableLayoutPanel tlpBasicInfo;
-        private MagusTools.NumericUpDownExt updCharLevel;
+        private NumericUpDownExt updCharLevel;
         private System.Windows.Forms.Label lblCharName;
         private System.Windows.Forms.TextBox txtCharName;
         private System.Windows.Forms.Label lblCharGender;
@@ -4287,7 +4325,7 @@
         private System.Windows.Forms.Label lblCharRace;
         private System.Windows.Forms.Label lblCharLevel;
         private System.Windows.Forms.ComboBox cbCharGender;
-        private MagusTools.NumericUpDownExt updCharAge;
+        private NumericUpDownExt updCharAge;
         private System.Windows.Forms.ComboBox cbCharRace;
         private System.Windows.Forms.Label lblCharClass;
         private System.Windows.Forms.Label lblCharAlignment;
@@ -4302,22 +4340,24 @@
         private System.Windows.Forms.Label lblCharAvailableCCP;
         private System.Windows.Forms.Label lblCharCCP;
         private System.Windows.Forms.Label lblMiscHypen;
-        private System.Windows.Forms.TabControl mainTabControl;
         private System.Windows.Forms.PictureBox pbD02;
-        private System.Windows.Forms.Label lblCharOtherStats;
-        private System.Windows.Forms.Label lblCharAMR;
-        private System.Windows.Forms.Label lblOV00;
-        private System.Windows.Forms.Label lblCharMMR;
         private System.Windows.Forms.Label lblOV01;
-        private System.Windows.Forms.Label lblCharDamagebonus;
         private System.Windows.Forms.Label lblOV02;
         private System.Windows.Forms.Label lblCharMP;
         private System.Windows.Forms.Label lblOV03;
         private System.Windows.Forms.Label lblCharMPperLevel;
         private System.Windows.Forms.Label lblOV04;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colLevel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
+        private System.Windows.Forms.TabControl mainTabControl;
+        private System.Windows.Forms.Label lblCharPSYperLevel;
+        private System.Windows.Forms.Label lblCharPsy;
+        private System.Windows.Forms.Label lblOV05;
+        private System.Windows.Forms.Label lblOV06;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label lblOV00;
+        private System.Windows.Forms.Label lblCharAMR;
+        private System.Windows.Forms.Label lblCharOtherStats;
+        private System.Windows.Forms.Label lblCharDamagebonus;
+        private System.Windows.Forms.Label lblCharMMR;
     }
 }
 
