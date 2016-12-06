@@ -531,6 +531,26 @@ namespace MagusTools
         {
             if (sender is NumericUpDownExt)
                 character.SetStat(Character.Stats.Level, (int)((NumericUpDownExt)sender).Value);
+
+            int result = character.GetStat(Character.Stats.Level);
+
+            Label lbl = lblControls.Where(l => l.Value.m_Name == Character.Stats.Level.ToString() && l.Value.m_Description == ControlIDTag.TagDescription.Value).FirstOrDefault().Key;
+
+            if (lbl != null)
+                lbl.Text = "A KURVA ANYÁD";
+        }
+
+        private void updB00_ValueChanged(object sender, EventArgs e)
+        {
+            if (sender is NumericUpDownExt)
+                character.SetStat(Character.Stats.Strength, (int)((NumericUpDownExt)sender).Value);
+
+            int result = character.GetStat(Character.Stats.Strength);
+
+            Label lbl = lblControls.Where(l => l.Value.m_Name == Character.Stats.Strength.ToString() && l.Value.m_Description == ControlIDTag.TagDescription.Value).FirstOrDefault().Key;
+
+            if (lbl != null)
+                lbl.Text = "A KURVA ANYÁD";
         }
     }
 }
