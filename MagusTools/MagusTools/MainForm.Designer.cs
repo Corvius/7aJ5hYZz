@@ -204,10 +204,6 @@
             this.lblAV00 = new System.Windows.Forms.Label();
             this.tabBasicInfo = new System.Windows.Forms.TabPage();
             this.tlpBasicInfo = new System.Windows.Forms.TableLayoutPanel();
-            this.lblOV05 = new System.Windows.Forms.Label();
-            this.lblOV06 = new System.Windows.Forms.Label();
-            this.lblCharPSYperLevel = new System.Windows.Forms.Label();
-            this.lblCharPsy = new System.Windows.Forms.Label();
             this.lblCharName = new System.Windows.Forms.Label();
             this.txtCharName = new System.Windows.Forms.TextBox();
             this.lblCharGender = new System.Windows.Forms.Label();
@@ -230,12 +226,6 @@
             this.lblCharCCP = new System.Windows.Forms.Label();
             this.lblMiscHypen = new System.Windows.Forms.Label();
             this.pbD02 = new System.Windows.Forms.PictureBox();
-            this.lblOV01 = new System.Windows.Forms.Label();
-            this.lblOV02 = new System.Windows.Forms.Label();
-            this.lblCharMP = new System.Windows.Forms.Label();
-            this.lblOV03 = new System.Windows.Forms.Label();
-            this.lblCharMPperLevel = new System.Windows.Forms.Label();
-            this.lblOV04 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblCharDamagebonus = new System.Windows.Forms.Label();
             this.lblCharMMR = new System.Windows.Forms.Label();
@@ -243,6 +233,16 @@
             this.lblCharAMR = new System.Windows.Forms.Label();
             this.lblCharOtherStats = new System.Windows.Forms.Label();
             this.mainTabControl = new System.Windows.Forms.TabControl();
+            this.lblOV01 = new System.Windows.Forms.Label();
+            this.lblOV05 = new System.Windows.Forms.Label();
+            this.lblOV06 = new System.Windows.Forms.Label();
+            this.lblOV02 = new System.Windows.Forms.Label();
+            this.lblOV03 = new System.Windows.Forms.Label();
+            this.lblOV04 = new System.Windows.Forms.Label();
+            this.lblCharMP = new System.Windows.Forms.Label();
+            this.lblCharMPperLevel = new System.Windows.Forms.Label();
+            this.lblCharPSYperLevel = new System.Windows.Forms.Label();
+            this.lblCharPsy = new System.Windows.Forms.Label();
             this.updCharLevel = new MagusTools.NumericUpDownExt();
             this.updCharAge = new MagusTools.NumericUpDownExt();
             this.updB00 = new MagusTools.NumericUpDownExt();
@@ -2741,10 +2741,6 @@
             this.tlpBasicInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.tlpBasicInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
             this.tlpBasicInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tlpBasicInfo.Controls.Add(this.lblOV05, 3, 16);
-            this.tlpBasicInfo.Controls.Add(this.lblOV06, 3, 17);
-            this.tlpBasicInfo.Controls.Add(this.lblCharPSYperLevel, 1, 17);
-            this.tlpBasicInfo.Controls.Add(this.lblCharPsy, 1, 16);
             this.tlpBasicInfo.Controls.Add(this.updCharLevel, 11, 1);
             this.tlpBasicInfo.Controls.Add(this.lblCharName, 1, 0);
             this.tlpBasicInfo.Controls.Add(this.txtCharName, 1, 1);
@@ -2769,13 +2765,7 @@
             this.tlpBasicInfo.Controls.Add(this.lblCharCCP, 11, 5);
             this.tlpBasicInfo.Controls.Add(this.lblMiscHypen, 4, 7);
             this.tlpBasicInfo.Controls.Add(this.pbD02, 1, 9);
-            this.tlpBasicInfo.Controls.Add(this.lblOV01, 3, 12);
-            this.tlpBasicInfo.Controls.Add(this.lblOV02, 3, 13);
-            this.tlpBasicInfo.Controls.Add(this.lblCharMP, 1, 14);
-            this.tlpBasicInfo.Controls.Add(this.lblOV03, 3, 14);
-            this.tlpBasicInfo.Controls.Add(this.lblCharMPperLevel, 1, 15);
-            this.tlpBasicInfo.Controls.Add(this.lblOV04, 3, 15);
-            this.tlpBasicInfo.Controls.Add(this.tableLayoutPanel1, 7, 11);
+            this.tlpBasicInfo.Controls.Add(this.tableLayoutPanel1, 1, 11);
             this.tlpBasicInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpBasicInfo.Location = new System.Drawing.Point(3, 3);
             this.tlpBasicInfo.Name = "tlpBasicInfo";
@@ -2801,60 +2791,6 @@
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpBasicInfo.Size = new System.Drawing.Size(670, 682);
             this.tlpBasicInfo.TabIndex = 0;
-            // 
-            // lblOV05
-            // 
-            this.lblOV05.AutoSize = true;
-            this.lblOV05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblOV05.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOV05.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblOV05.Location = new System.Drawing.Point(146, 559);
-            this.lblOV05.Margin = new System.Windows.Forms.Padding(0);
-            this.lblOV05.Name = "lblOV05";
-            this.lblOV05.Size = new System.Drawing.Size(60, 36);
-            this.lblOV05.TabIndex = 65;
-            this.lblOV05.Text = "0";
-            this.lblOV05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblOV06
-            // 
-            this.lblOV06.AutoSize = true;
-            this.lblOV06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblOV06.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOV06.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblOV06.Location = new System.Drawing.Point(146, 595);
-            this.lblOV06.Margin = new System.Windows.Forms.Padding(0);
-            this.lblOV06.Name = "lblOV06";
-            this.lblOV06.Size = new System.Drawing.Size(60, 36);
-            this.lblOV06.TabIndex = 66;
-            this.lblOV06.Text = "0";
-            this.lblOV06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCharPSYperLevel
-            // 
-            this.lblCharPSYperLevel.AutoSize = true;
-            this.lblCharPSYperLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharPSYperLevel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharPSYperLevel.Location = new System.Drawing.Point(26, 595);
-            this.lblCharPSYperLevel.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharPSYperLevel.Name = "lblCharPSYperLevel";
-            this.lblCharPSYperLevel.Size = new System.Drawing.Size(107, 36);
-            this.lblCharPSYperLevel.TabIndex = 64;
-            this.lblCharPSYperLevel.Text = "Psy / Level";
-            this.lblCharPSYperLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblCharPsy
-            // 
-            this.lblCharPsy.AutoSize = true;
-            this.lblCharPsy.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharPsy.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharPsy.Location = new System.Drawing.Point(26, 559);
-            this.lblCharPsy.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharPsy.Name = "lblCharPsy";
-            this.lblCharPsy.Size = new System.Drawing.Size(107, 36);
-            this.lblCharPsy.TabIndex = 63;
-            this.lblCharPsy.Text = "Psy";
-            this.lblCharPsy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCharName
             // 
@@ -3135,103 +3071,32 @@
             this.pbD02.TabIndex = 51;
             this.pbD02.TabStop = false;
             // 
-            // lblOV01
-            // 
-            this.lblOV01.AutoSize = true;
-            this.lblOV01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblOV01.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOV01.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblOV01.Location = new System.Drawing.Point(146, 415);
-            this.lblOV01.Margin = new System.Windows.Forms.Padding(0);
-            this.lblOV01.Name = "lblOV01";
-            this.lblOV01.Size = new System.Drawing.Size(60, 36);
-            this.lblOV01.TabIndex = 56;
-            this.lblOV01.Text = "0";
-            this.lblOV01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblOV02
-            // 
-            this.lblOV02.AutoSize = true;
-            this.lblOV02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblOV02.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOV02.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblOV02.Location = new System.Drawing.Point(146, 451);
-            this.lblOV02.Margin = new System.Windows.Forms.Padding(0);
-            this.lblOV02.Name = "lblOV02";
-            this.lblOV02.Size = new System.Drawing.Size(60, 36);
-            this.lblOV02.TabIndex = 58;
-            this.lblOV02.Text = "0";
-            this.lblOV02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCharMP
-            // 
-            this.lblCharMP.AutoSize = true;
-            this.lblCharMP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharMP.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharMP.Location = new System.Drawing.Point(26, 487);
-            this.lblCharMP.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharMP.Name = "lblCharMP";
-            this.lblCharMP.Size = new System.Drawing.Size(107, 36);
-            this.lblCharMP.TabIndex = 59;
-            this.lblCharMP.Text = "Mana";
-            this.lblCharMP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblOV03
-            // 
-            this.lblOV03.AutoSize = true;
-            this.lblOV03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblOV03.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOV03.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblOV03.Location = new System.Drawing.Point(146, 487);
-            this.lblOV03.Margin = new System.Windows.Forms.Padding(0);
-            this.lblOV03.Name = "lblOV03";
-            this.lblOV03.Size = new System.Drawing.Size(60, 36);
-            this.lblOV03.TabIndex = 60;
-            this.lblOV03.Text = "0";
-            this.lblOV03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCharMPperLevel
-            // 
-            this.lblCharMPperLevel.AutoSize = true;
-            this.lblCharMPperLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCharMPperLevel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharMPperLevel.Location = new System.Drawing.Point(26, 523);
-            this.lblCharMPperLevel.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCharMPperLevel.Name = "lblCharMPperLevel";
-            this.lblCharMPperLevel.Size = new System.Drawing.Size(107, 36);
-            this.lblCharMPperLevel.TabIndex = 61;
-            this.lblCharMPperLevel.Text = "Mana / Level";
-            this.lblCharMPperLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblOV04
-            // 
-            this.lblOV04.AutoSize = true;
-            this.lblOV04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblOV04.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOV04.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblOV04.Location = new System.Drawing.Point(146, 523);
-            this.lblOV04.Margin = new System.Windows.Forms.Padding(0);
-            this.lblOV04.Name = "lblOV04";
-            this.lblOV04.Size = new System.Drawing.Size(60, 36);
-            this.lblOV04.TabIndex = 62;
-            this.lblOV04.Text = "0";
-            this.lblOV04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tlpBasicInfo.SetColumnSpan(this.tableLayoutPanel1, 5);
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tlpBasicInfo.SetColumnSpan(this.tableLayoutPanel1, 11);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.Controls.Add(this.lblCharPSYperLevel, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.lblCharPsy, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.lblCharMP, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lblCharMPperLevel, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lblOV05, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.lblOV06, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.lblOV02, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblOV03, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lblOV04, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lblOV01, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblCharDamagebonus, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.lblCharMMR, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblOV00, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblCharAMR, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblCharOtherStats, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(288, 382);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(29, 382);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
+            this.tableLayoutPanel1.RowCount = 9;
             this.tlpBasicInfo.SetRowSpan(this.tableLayoutPanel1, 7);
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -3241,7 +3106,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(346, 246);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(605, 246);
             this.tableLayoutPanel1.TabIndex = 67;
             // 
             // lblCharDamagebonus
@@ -3249,10 +3115,10 @@
             this.lblCharDamagebonus.AutoSize = true;
             this.lblCharDamagebonus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCharDamagebonus.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharDamagebonus.Location = new System.Drawing.Point(0, 90);
+            this.lblCharDamagebonus.Location = new System.Drawing.Point(0, 84);
             this.lblCharDamagebonus.Margin = new System.Windows.Forms.Padding(0);
             this.lblCharDamagebonus.Name = "lblCharDamagebonus";
-            this.lblCharDamagebonus.Size = new System.Drawing.Size(173, 30);
+            this.lblCharDamagebonus.Size = new System.Drawing.Size(151, 28);
             this.lblCharDamagebonus.TabIndex = 58;
             this.lblCharDamagebonus.Text = "Damagebonus";
             this.lblCharDamagebonus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3262,10 +3128,10 @@
             this.lblCharMMR.AutoSize = true;
             this.lblCharMMR.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCharMMR.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharMMR.Location = new System.Drawing.Point(0, 60);
+            this.lblCharMMR.Location = new System.Drawing.Point(0, 56);
             this.lblCharMMR.Margin = new System.Windows.Forms.Padding(0);
             this.lblCharMMR.Name = "lblCharMMR";
-            this.lblCharMMR.Size = new System.Drawing.Size(173, 30);
+            this.lblCharMMR.Size = new System.Drawing.Size(151, 28);
             this.lblCharMMR.TabIndex = 57;
             this.lblCharMMR.Text = "MMR";
             this.lblCharMMR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3276,10 +3142,10 @@
             this.lblOV00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblOV00.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblOV00.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblOV00.Location = new System.Drawing.Point(173, 30);
+            this.lblOV00.Location = new System.Drawing.Point(151, 28);
             this.lblOV00.Margin = new System.Windows.Forms.Padding(0);
             this.lblOV00.Name = "lblOV00";
-            this.lblOV00.Size = new System.Drawing.Size(173, 30);
+            this.lblOV00.Size = new System.Drawing.Size(90, 28);
             this.lblOV00.TabIndex = 55;
             this.lblOV00.Text = "0";
             this.lblOV00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3289,10 +3155,10 @@
             this.lblCharAMR.AutoSize = true;
             this.lblCharAMR.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCharAMR.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharAMR.Location = new System.Drawing.Point(0, 30);
+            this.lblCharAMR.Location = new System.Drawing.Point(0, 28);
             this.lblCharAMR.Margin = new System.Windows.Forms.Padding(0);
             this.lblCharAMR.Name = "lblCharAMR";
-            this.lblCharAMR.Size = new System.Drawing.Size(173, 30);
+            this.lblCharAMR.Size = new System.Drawing.Size(151, 28);
             this.lblCharAMR.TabIndex = 54;
             this.lblCharAMR.Text = "AMR";
             this.lblCharAMR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3305,7 +3171,7 @@
             this.lblCharOtherStats.Location = new System.Drawing.Point(0, 0);
             this.lblCharOtherStats.Margin = new System.Windows.Forms.Padding(0);
             this.lblCharOtherStats.Name = "lblCharOtherStats";
-            this.lblCharOtherStats.Size = new System.Drawing.Size(173, 30);
+            this.lblCharOtherStats.Size = new System.Drawing.Size(151, 28);
             this.lblCharOtherStats.TabIndex = 53;
             this.lblCharOtherStats.Text = "Other stats";
             this.lblCharOtherStats.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -3323,6 +3189,142 @@
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(684, 716);
             this.mainTabControl.TabIndex = 0;
+            // 
+            // lblOV01
+            // 
+            this.lblOV01.AutoSize = true;
+            this.lblOV01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV01.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV01.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV01.Location = new System.Drawing.Point(151, 56);
+            this.lblOV01.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV01.Name = "lblOV01";
+            this.lblOV01.Size = new System.Drawing.Size(90, 28);
+            this.lblOV01.TabIndex = 59;
+            this.lblOV01.Text = "0";
+            this.lblOV01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblOV05
+            // 
+            this.lblOV05.AutoSize = true;
+            this.lblOV05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV05.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV05.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV05.Location = new System.Drawing.Point(151, 168);
+            this.lblOV05.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV05.Name = "lblOV05";
+            this.lblOV05.Size = new System.Drawing.Size(90, 28);
+            this.lblOV05.TabIndex = 70;
+            this.lblOV05.Text = "0";
+            this.lblOV05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblOV06
+            // 
+            this.lblOV06.AutoSize = true;
+            this.lblOV06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV06.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV06.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV06.Location = new System.Drawing.Point(151, 196);
+            this.lblOV06.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV06.Name = "lblOV06";
+            this.lblOV06.Size = new System.Drawing.Size(90, 28);
+            this.lblOV06.TabIndex = 71;
+            this.lblOV06.Text = "0";
+            this.lblOV06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblOV02
+            // 
+            this.lblOV02.AutoSize = true;
+            this.lblOV02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV02.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV02.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV02.Location = new System.Drawing.Point(151, 84);
+            this.lblOV02.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV02.Name = "lblOV02";
+            this.lblOV02.Size = new System.Drawing.Size(90, 28);
+            this.lblOV02.TabIndex = 67;
+            this.lblOV02.Text = "0";
+            this.lblOV02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblOV03
+            // 
+            this.lblOV03.AutoSize = true;
+            this.lblOV03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV03.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV03.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV03.Location = new System.Drawing.Point(151, 112);
+            this.lblOV03.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV03.Name = "lblOV03";
+            this.lblOV03.Size = new System.Drawing.Size(90, 28);
+            this.lblOV03.TabIndex = 68;
+            this.lblOV03.Text = "0";
+            this.lblOV03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblOV04
+            // 
+            this.lblOV04.AutoSize = true;
+            this.lblOV04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOV04.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOV04.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblOV04.Location = new System.Drawing.Point(151, 140);
+            this.lblOV04.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOV04.Name = "lblOV04";
+            this.lblOV04.Size = new System.Drawing.Size(90, 28);
+            this.lblOV04.TabIndex = 69;
+            this.lblOV04.Text = "0";
+            this.lblOV04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCharMP
+            // 
+            this.lblCharMP.AutoSize = true;
+            this.lblCharMP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharMP.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharMP.Location = new System.Drawing.Point(0, 112);
+            this.lblCharMP.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharMP.Name = "lblCharMP";
+            this.lblCharMP.Size = new System.Drawing.Size(151, 28);
+            this.lblCharMP.TabIndex = 72;
+            this.lblCharMP.Text = "Mana";
+            this.lblCharMP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblCharMPperLevel
+            // 
+            this.lblCharMPperLevel.AutoSize = true;
+            this.lblCharMPperLevel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharMPperLevel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharMPperLevel.Location = new System.Drawing.Point(0, 140);
+            this.lblCharMPperLevel.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharMPperLevel.Name = "lblCharMPperLevel";
+            this.lblCharMPperLevel.Size = new System.Drawing.Size(151, 28);
+            this.lblCharMPperLevel.TabIndex = 73;
+            this.lblCharMPperLevel.Text = "Mana / Level";
+            this.lblCharMPperLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblCharPSYperLevel
+            // 
+            this.lblCharPSYperLevel.AutoSize = true;
+            this.lblCharPSYperLevel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharPSYperLevel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharPSYperLevel.Location = new System.Drawing.Point(0, 196);
+            this.lblCharPSYperLevel.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharPSYperLevel.Name = "lblCharPSYperLevel";
+            this.lblCharPSYperLevel.Size = new System.Drawing.Size(151, 28);
+            this.lblCharPSYperLevel.TabIndex = 75;
+            this.lblCharPSYperLevel.Text = "Psy / Level";
+            this.lblCharPSYperLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblCharPsy
+            // 
+            this.lblCharPsy.AutoSize = true;
+            this.lblCharPsy.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCharPsy.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCharPsy.Location = new System.Drawing.Point(0, 168);
+            this.lblCharPsy.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCharPsy.Name = "lblCharPsy";
+            this.lblCharPsy.Size = new System.Drawing.Size(151, 28);
+            this.lblCharPsy.TabIndex = 74;
+            this.lblCharPsy.Text = "Psy";
+            this.lblCharPsy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // updCharLevel
             // 
@@ -3351,7 +3353,6 @@
             0,
             0,
             0});
-            this.updCharLevel.ValueChanged += new System.EventHandler(this.updCharLevel_ValueChanged);
             // 
             // updCharAge
             // 
@@ -3393,7 +3394,6 @@
             0,
             0,
             0});
-            this.updB00.ValueChanged += new System.EventHandler(this.updB00_ValueChanged);
             // 
             // updB01
             // 
@@ -4342,23 +4342,23 @@
         private System.Windows.Forms.Label lblCharCCP;
         private System.Windows.Forms.Label lblMiscHypen;
         private System.Windows.Forms.PictureBox pbD02;
-        private System.Windows.Forms.Label lblOV01;
-        private System.Windows.Forms.Label lblOV02;
-        private System.Windows.Forms.Label lblCharMP;
-        private System.Windows.Forms.Label lblOV03;
-        private System.Windows.Forms.Label lblCharMPperLevel;
-        private System.Windows.Forms.Label lblOV04;
         private System.Windows.Forms.TabControl mainTabControl;
-        private System.Windows.Forms.Label lblCharPSYperLevel;
-        private System.Windows.Forms.Label lblCharPsy;
-        private System.Windows.Forms.Label lblOV05;
-        private System.Windows.Forms.Label lblOV06;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label lblOV00;
         private System.Windows.Forms.Label lblCharAMR;
         private System.Windows.Forms.Label lblCharOtherStats;
         private System.Windows.Forms.Label lblCharDamagebonus;
         private System.Windows.Forms.Label lblCharMMR;
+        private System.Windows.Forms.Label lblCharPSYperLevel;
+        private System.Windows.Forms.Label lblCharPsy;
+        private System.Windows.Forms.Label lblCharMP;
+        private System.Windows.Forms.Label lblCharMPperLevel;
+        private System.Windows.Forms.Label lblOV05;
+        private System.Windows.Forms.Label lblOV06;
+        private System.Windows.Forms.Label lblOV02;
+        private System.Windows.Forms.Label lblOV03;
+        private System.Windows.Forms.Label lblOV04;
+        private System.Windows.Forms.Label lblOV01;
     }
 }
 
