@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
+using System.Drawing;
 
 namespace MagusTools
 {
@@ -27,8 +28,7 @@ namespace MagusTools
 
             currentFileLocation = path + @"\SkillData.xml";
 
-            Console.WriteLine("Loading file from " + currentFileLocation);
-
+            Program.eventLogger.Log(new object[] { "Loading file from ", Color.Blue, currentFileLocation } );
 
             if (LoadXML(ref xmlDefaults, currentFileLocation))
             {
@@ -45,17 +45,60 @@ namespace MagusTools
         {
             try
             {
-                nodes.RemoveAll();
+                //nodes.RemoveAll();
                 nodes = XElement.Load(xmlPath);
 
-                Console.WriteLine("Loaded " + xmlPath + " with " + nodes.Descendants().Count() + " nodes");
+                Program.eventLogger.Log(new object[] { "Loaded ", Color.Cyan, nodes.Descendants().Count(), Color.Black, " nodes" } );
                 return true;
             }
             catch
             {
-                Console.WriteLine("Could not load " + xmlPath + "!");
+                Program.eventLogger.Log(new object[] { "Could not load ", Color.IndianRed, xmlPath, Color.Black, "!" } );
                 return false;
             }
+        }
+
+        public System.Windows.Forms.TreeNode[] GetSkillTree()
+        {
+            var categories =
+                from data in xmlDefaults.Elements("skills").Elements("skill")
+                where data.Element("name").Attribute("language").Value == System.Threading.Thread.CurrentThread.CurrentCulture.Name
+                select new
+                {
+                    name = data.Element("name").Value,
+                    category = data.Attribute("category"),
+                    subcategory = data.Attribute("subcategory")
+                };
+
+            categories.OrderBy(c => c.category).ThenBy(s => s.subcategory).ThenBy(n => n.name);
+
+            System.Collections.Generic.List<System.Windows.Forms.TreeNode[]> result = 
+                new System.Collections.Generic.List<System.Windows.Forms.TreeNode[]>();
+
+            System.Windows.Forms.TreeNode catNode = null;
+            System.Windows.Forms.TreeNode subNode = null;
+
+            int listPos = 0;
+            foreach (var skill in categories)
+            {
+                //if (catNode == null)
+                //    catNode = new System.Windows.Forms.TreeNode(skill.name);
+                //else if (subNode == null)
+                //    subNode = new System.Windows.Forms.TreeNode(skill.name);
+                //else
+                //{
+                //    if ()
+                //}
+
+                if (listPos == 0)
+                    result.
+                   
+                if (result[listPos]) 
+
+
+            }
+
+            return categories;
         }
     }
 }
