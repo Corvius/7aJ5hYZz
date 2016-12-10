@@ -111,58 +111,51 @@ namespace MagusTools
         public string[] GetComboBoxValues(string groupName, string element, string tag = "")
         {
             Program.eventLogger.Log(new object[] { "Getting ComboBox values for <", Color.Blue, groupName, Color.Black, ">" });
-        
-            var xmlQuery =
-                from data in xmlDefaults.Elements(groupName).Elements(element)
-                where data.Element("name").Attribute("language").Value == System.Threading.Thread.CurrentThread.CurrentCulture.Name
-                select data.Element("name").Value;
 
-            if (tag == "teszt")
+            System.Collections.Generic.IEnumerable<string> xmlQuery;
+
+            if (tag != String.Empty)
             {
-                var testQuery =
+                xmlQuery =
                     from data in xmlDefaults.Elements(groupName).Elements(element)
-                    where data.Element("name").Attribute("language").Value == System.Threading.Thread.CurrentThread.CurrentCulture.Name &&
-                          data.Element("tag").Value == "játszható"
-                    select data;
+                    where data.Element("name").Attribute("language").Value == System.Threading.Thread.CurrentThread.CurrentCulture.Name
+                    from tagdata in data.Elements("tag")
+                    where tagdata.Value == tag
+                    select data.Element("name").Value;
+            }
+            else
+            {
+                xmlQuery =
+                    from data in xmlDefaults.Elements(groupName).Elements(element)
+                    where data.Element("name").Attribute("language").Value == System.Threading.Thread.CurrentThread.CurrentCulture.Name
+                    select data.Element("name").Value;
             }
 
             return xmlQuery.ToArray();
         }
 
+        public string GetRealms(string deityName)
+        {
+            var xmlQuery =
+                from data in xmlDefaults.Elements("religions").Elements("religion")
+                where data.Element("name").Attribute("language").Value == System.Threading.Thread.CurrentThread.CurrentCulture.Name
+                where (string)data.Element("name") == deityName
+                select data.Element("realms");
+
+            return xmlQuery.First().Value;
+        }
+
+
     }
 }
 
 /*
-                if (depth == 2)
-                {
-                    if (catNode.Name == skill.category)
-                    {
-                        if (subNode.Name == skill.category)
-                        {
-                            subNode.Nodes.Add(new System.Windows.Forms.TreeNode(skill.name));
-                        }
-                        else
-                        {
-                            depth = 1;
-                        }
-                    }
-                    else
-                    {
-                        depth = 0;
-                    }
-                }
-
-                if (depth == 1)
-                {
-                    subNode = new System.Windows.Forms.TreeNode(skill.category);
-                    catNode.Nodes.Add(subNode);
-                    depth = 2;
-                }
-
-                if (depth == 0)
-                {
-                    catNode = new System.Windows.Forms.TreeNode(skill.category);
-                    result.Add(catNode);
-                    depth = 1;
-                } 
+ * 
+     <creature>
+      <name language="hu-HU">Ember</name>
+      <name language="en-EN"></name>      
+      <tag>élőlény</tag>
+      <tag>humanoid</tag>
+      <tag>faj</tag>
+      <tag>játszható</tag>* 
 */

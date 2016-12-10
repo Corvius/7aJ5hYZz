@@ -5212,127 +5212,158 @@
   <religions>
     <religion>
       <name language="hu-HU">Arel</name>
-      <name language="en-EN">Arel</name>      
+      <name language="en-EN">Arel</name>
+      <realms>Élet, Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Adron</name>
-      <name language="en-EN">Adron</name>      
+      <name language="en-EN">Adron</name>
+      <realms>Halál, Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Alborne</name>
-      <name language="en-EN">Alborne</name>      
+      <name language="en-EN">Alborne</name>
+      <realms>Lélek, Halál</realms>
     </religion>
     <religion>
       <name language="hu-HU">Antoh</name>
-      <name language="en-EN">Antoh</name>      
+      <name language="en-EN">Antoh</name>
+      <realms>Élet, Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Darton</name>
-      <name language="en-EN">Darton</name>      
+      <name language="en-EN">Darton</name>
+      <realms>Élet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Della</name>
-      <name language="en-EN">Della</name>      
+      <name language="en-EN">Della</name>
+      <realms>Halál, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Doldzsah</name>
-      <name language="en-EN">Doldzsah</name>      
+      <name language="en-EN">Doldzsah</name>
+      <realms>Élet, Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Domvik</name>
-      <name language="en-EN">Domvik</name>      
+      <name language="en-EN">Domvik</name>
+      <realms>Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Dreina</name>
-      <name language="en-EN">Dreina</name>      
+      <name language="en-EN">Dreina</name>
+      <realms>Élet, Lélek</realms>
     </religion>
     <religion>
       <name language="hu-HU">Dzsah</name>
-      <name language="en-EN">Dzsah</name>      
+      <name language="en-EN">Dzsah</name>
+      <realms>Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Ellana</name>
-      <name language="en-EN">Ellana</name>      
+      <name language="en-EN">Ellana</name>
+      <realms>Élet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Felice</name>
-      <name language="en-EN">Felice</name>      
+      <name language="en-EN">Felice</name>
+      <realms>Halál, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Galradzsa</name>
-      <name language="en-EN">Galradzsa</name>      
+      <name language="en-EN">Galradzsa</name>
+      <realms>Élet, Halál</realms>
     </religion>
     <religion>
       <name language="hu-HU">Gilron</name>
-      <name language="en-EN">Gilron</name>      
+      <name language="en-EN">Gilron</name>
+      <realms>Élet, Lélek</realms>
     </religion>
     <religion>
       <name language="hu-HU">Kadal</name>
-      <name language="en-EN">Kadal</name>      
+      <name language="en-EN">Kadal</name>
+      <realms>Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Kaoraku</name>
-      <name language="en-EN">Kaoraku</name>      
+      <name language="en-EN">Kaoraku</name>
+      <realms>Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Krad</name>
-      <name language="en-EN">Krad</name>      
+      <name language="en-EN">Krad</name>
+      <realms>Élet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Kyel</name>
-      <name language="en-EN">Kyel</name>      
+      <name language="en-EN">Kyel</name>
+      <realms>Élet, Lélek, Halál</realms>
     </religion>
     <religion>
       <name language="hu-HU">Leutaril</name>
-      <name language="en-EN">Leutaril</name>      
+      <name language="en-EN">Leutaril</name>
+      <realms>Élet, Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Morgena</name>
-      <name language="en-EN">Morgena</name>      
+      <name language="en-EN">Morgena</name>
+      <realms>Lélek</realms>
     </religion>
     <religion>
       <name language="hu-HU">Narmiraen</name>
-      <name language="en-EN">Narmiraen</name>      
+      <name language="en-EN">Narmiraen</name>
+      <realms>Élet, Halál, Lélek</realms>
     </religion>
     <religion>
       <name language="hu-HU">Noir</name>
-      <name language="en-EN">Noir</name>      
+      <name language="en-EN">Noir</name>
+      <realms>Élet, Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Orwella</name>
-      <name language="en-EN">Orwella</name>      
+      <name language="en-EN">Orwella</name>
+      <realms>Halál</realms>
     </religion>
     <religion>
       <name language="hu-HU">Ramrik</name>
-      <name language="en-EN">Ramrik</name>      
+      <name language="en-EN">Ramrik</name>
+      <realms>Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Ranagol</name>
-      <name language="en-EN">Ranagol</name>      
+      <name language="en-EN">Ranagol</name>
+      <realms>Lélek, Halál</realms>
     </religion>
     <religion>
       <name language="hu-HU">Ranil</name>
-      <name language="en-EN">Ranil</name>      
+      <name language="en-EN">Ranil</name>
+      <realms>Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Sogron</name>
-      <name language="en-EN">Sogron</name>      
+      <name language="en-EN">Sogron</name>
+      <realms>Élet, Halál</realms>
     </religion>
     <religion>
       <name language="hu-HU">Tharr</name>
-      <name language="en-EN">Tharr</name>      
+      <name language="en-EN">Tharr</name>
+      <realms>Halál, Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Tomatis</name>
-      <name language="en-EN">Tomatis</name>      
+      <name language="en-EN">Tomatis</name>
+      <realms>Lélek, Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Tooma</name>
       <name language="en-EN">Tooma</name>      
+      <realms>Természet</realms>
     </religion>
     <religion>
       <name language="hu-HU">Uwel</name>
-      <name language="en-EN">Uwel</name>      
+      <name language="en-EN">Uwel</name>
+      <realms>Élet, Halál</realms>
     </religion>
   </religions>
   <!-- -->
