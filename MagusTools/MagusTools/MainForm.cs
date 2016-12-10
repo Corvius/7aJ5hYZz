@@ -21,7 +21,10 @@ namespace MagusTools
         private Dictionary<string, Label> valueLabels = new Dictionary<string, Label>();
 
         // Main character object
-        public Character character = new Character();
+        public Character character;
+
+        // Main skill-handling object
+        public XMLHandler skillHandler;
 
         // MainForm's Constructor
         public mainForm()
@@ -33,6 +36,10 @@ namespace MagusTools
         // When the form first loads, prepare all controls
         private void mainForm_Load(object sender, EventArgs e)
         {
+            // Initailize objects
+            character = new Character();
+            skillHandler = new XMLHandler();
+
             // Set up elements of the UI
             PrepareUI();
 
@@ -479,6 +486,9 @@ namespace MagusTools
 
             updCharLevel_ValueChanged(updCharLevel, new EventArgs());
             #endregion
+
+            // SkillTree setup
+            twSkillTree.Nodes.AddRange(skillHandler.GetSkillTree());
         }
 
         #region TreeView Control Buttons' Events
