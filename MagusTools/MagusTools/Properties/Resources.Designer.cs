@@ -63,180 +63,207 @@ namespace MagusTools.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Agility.
         /// </summary>
-        internal static string ATTR_PrimaryAttributes_Agility {
+        internal static string ATTR_Agility {
             get {
-                return ResourceManager.GetString("ATTR_PrimaryAttributes_Agility", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Astral.
-        /// </summary>
-        internal static string ATTR_PrimaryAttributes_Astral {
-            get {
-                return ResourceManager.GetString("ATTR_PrimaryAttributes_Astral", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Charisma.
-        /// </summary>
-        internal static string ATTR_PrimaryAttributes_Charisma {
-            get {
-                return ResourceManager.GetString("ATTR_PrimaryAttributes_Charisma", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Endurance.
-        /// </summary>
-        internal static string ATTR_PrimaryAttributes_Endurance {
-            get {
-                return ResourceManager.GetString("ATTR_PrimaryAttributes_Endurance", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Health.
-        /// </summary>
-        internal static string ATTR_PrimaryAttributes_Health {
-            get {
-                return ResourceManager.GetString("ATTR_PrimaryAttributes_Health", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Intelligence.
-        /// </summary>
-        internal static string ATTR_PrimaryAttributes_Intelligence {
-            get {
-                return ResourceManager.GetString("ATTR_PrimaryAttributes_Intelligence", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Perception.
-        /// </summary>
-        internal static string ATTR_PrimaryAttributes_Perception {
-            get {
-                return ResourceManager.GetString("ATTR_PrimaryAttributes_Perception", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Speed.
-        /// </summary>
-        internal static string ATTR_PrimaryAttributes_Speed {
-            get {
-                return ResourceManager.GetString("ATTR_PrimaryAttributes_Speed", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Strength.
-        /// </summary>
-        internal static string ATTR_PrimaryAttributes_Strength {
-            get {
-                return ResourceManager.GetString("ATTR_PrimaryAttributes_Strength", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Willpower.
-        /// </summary>
-        internal static string ATTR_PrimaryAttributes_Willpower {
-            get {
-                return ResourceManager.GetString("ATTR_PrimaryAttributes_Willpower", resourceCulture);
+                return ResourceManager.GetString("ATTR_Agility", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Aim.
         /// </summary>
-        internal static string ATTR_SecondaryAttributes_Aim {
+        internal static string ATTR_Aim {
             get {
-                return ResourceManager.GetString("ATTR_SecondaryAttributes_Aim", resourceCulture);
+                return ResourceManager.GetString("ATTR_Aim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Astral.
+        /// </summary>
+        internal static string ATTR_Astral {
+            get {
+                return ResourceManager.GetString("ATTR_Astral", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Attack.
         /// </summary>
-        internal static string ATTR_SecondaryAttributes_Attack {
+        internal static string ATTR_Attack {
             get {
-                return ResourceManager.GetString("ATTR_SecondaryAttributes_Attack", resourceCulture);
+                return ResourceManager.GetString("ATTR_Attack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Charisma.
+        /// </summary>
+        internal static string ATTR_Charisma {
+            get {
+                return ResourceManager.GetString("ATTR_Charisma", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to CM / Level.
         /// </summary>
-        internal static string ATTR_SecondaryAttributes_CMperLevel {
+        internal static string ATTR_CMperLevel {
             get {
-                return ResourceManager.GetString("ATTR_SecondaryAttributes_CMperLevel", resourceCulture);
+                return ResourceManager.GetString("ATTR_CMperLevel", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Defense.
         /// </summary>
-        internal static string ATTR_SecondaryAttributes_Defense {
+        internal static string ATTR_Defense {
             get {
-                return ResourceManager.GetString("ATTR_SecondaryAttributes_Defense", resourceCulture);
+                return ResourceManager.GetString("ATTR_Defense", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Endurance.
+        /// </summary>
+        internal static string ATTR_Endurance {
+            get {
+                return ResourceManager.GetString("ATTR_Endurance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Health.
+        /// </summary>
+        internal static string ATTR_Health {
+            get {
+                return ResourceManager.GetString("ATTR_Health", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to HP.
         /// </summary>
-        internal static string ATTR_SecondaryAttributes_HP {
+        internal static string ATTR_HP {
             get {
-                return ResourceManager.GetString("ATTR_SecondaryAttributes_HP", resourceCulture);
+                return ResourceManager.GetString("ATTR_HP", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Initiative.
         /// </summary>
-        internal static string ATTR_SecondaryAttributes_Initiative {
+        internal static string ATTR_Initiative {
             get {
-                return ResourceManager.GetString("ATTR_SecondaryAttributes_Initiative", resourceCulture);
+                return ResourceManager.GetString("ATTR_Initiative", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Intelligence.
+        /// </summary>
+        internal static string ATTR_Intelligence {
+            get {
+                return ResourceManager.GetString("ATTR_Intelligence", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to KP.
         /// </summary>
-        internal static string ATTR_SecondaryAttributes_KP {
+        internal static string ATTR_KP {
             get {
-                return ResourceManager.GetString("ATTR_SecondaryAttributes_KP", resourceCulture);
+                return ResourceManager.GetString("ATTR_KP", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to KP / Level.
         /// </summary>
-        internal static string ATTR_SecondaryAttributes_KPperLevel {
+        internal static string ATTR_KPperLevel {
             get {
-                return ResourceManager.GetString("ATTR_SecondaryAttributes_KPperLevel", resourceCulture);
+                return ResourceManager.GetString("ATTR_KPperLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Perception.
+        /// </summary>
+        internal static string ATTR_Perception {
+            get {
+                return ResourceManager.GetString("ATTR_Perception", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to PR.
         /// </summary>
-        internal static string ATTR_SecondaryAttributes_PR {
+        internal static string ATTR_PR {
             get {
-                return ResourceManager.GetString("ATTR_SecondaryAttributes_PR", resourceCulture);
+                return ResourceManager.GetString("ATTR_PR", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to PR / Level.
         /// </summary>
-        internal static string ATTR_SecondaryAttributes_PRperLevel {
+        internal static string ATTR_PRperLevel {
             get {
-                return ResourceManager.GetString("ATTR_SecondaryAttributes_PRperLevel", resourceCulture);
+                return ResourceManager.GetString("ATTR_PRperLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Speed.
+        /// </summary>
+        internal static string ATTR_Speed {
+            get {
+                return ResourceManager.GetString("ATTR_Speed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Strength.
+        /// </summary>
+        internal static string ATTR_Strength {
+            get {
+                return ResourceManager.GetString("ATTR_Strength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Willpower.
+        /// </summary>
+        internal static string ATTR_Willpower {
+            get {
+                return ResourceManager.GetString("ATTR_Willpower", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lv/%.
+        /// </summary>
+        internal static string GRID_Level {
+            get {
+                return ResourceManager.GetString("GRID_Level", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Price.
+        /// </summary>
+        internal static string GRID_Price {
+            get {
+                return ResourceManager.GetString("GRID_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Skill name.
+        /// </summary>
+        internal static string GRID_SkillName {
+            get {
+                return ResourceManager.GetString("GRID_SkillName", resourceCulture);
             }
         }
         

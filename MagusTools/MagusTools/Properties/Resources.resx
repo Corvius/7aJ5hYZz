@@ -413,4 +413,16 @@
     <value>Psy / Level</value>
     <comment>Text for Stat-tab Basic Information - Label - Psy / Level</comment>
   </data>
+  <data name="GRID_Level" xml:space="preserve">
+    <value>Lv/%</value>
+    <comment>Text for Skills tab - DataGridView - Level / % Column</comment>
+  </data>
+  <data name="GRID_Price" xml:space="preserve">
+    <value>Price</value>
+    <comment>Text for Skills tab - DataGridView - Price Column</comment>
+  </data>
+  <data name="GRID_SkillName" xml:space="preserve">
+    <value>Skill name</value>
+    <comment>Text for Skills tab - DataGridView - Skill Name Column</comment>
+  </data>
 </root>

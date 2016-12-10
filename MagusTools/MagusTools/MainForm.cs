@@ -65,10 +65,13 @@ namespace MagusTools
                 // If everything's fine, set the new culture.
                 Thread.CurrentThread.CurrentCulture = newCulture;
                 Thread.CurrentThread.CurrentUICulture = newCulture;
+
+                Program.eventLogger.Log(new object[] { "Language has changed to : ", Color.Blue, newCulture.EnglishName });
             }
             catch (CultureNotFoundException e)
             {
-                Console.WriteLine("Unable to instantiate culture {0}", e.InvalidCultureName);
+                Program.eventLogger.Log(new object[] { Color.Red, "Unable to instantiate culture ", Color.Blue, cultureName } );
+                Program.eventLogger.Log(new object[] { Color.Red, e.InvalidCultureName } );
             }
         }
 
@@ -77,6 +80,8 @@ namespace MagusTools
         /// </summary>
         private void LoadLocalizedStrings()
         {
+            Program.eventLogger.Log(new object[] { "Trying to load localized stings"} );
+
             try
             {
                 //
@@ -189,9 +194,13 @@ namespace MagusTools
                 // Tab Skills
                 //
                 this.lblSK00.Text = Properties.Resources.TAB_Skills_AvailableSkillsLabel;
-                this.lblSK00.Text = Properties.Resources.TAB_Skills_SelectedSkillsLabel;
+                this.lblSK01.Text = Properties.Resources.TAB_Skills_SelectedSkillsLabel;
                 this.lblAD00.Text = Properties.Resources.TAB_Skills_Hint_A;
                 this.lblAD01.Text = Properties.Resources.TAB_Skills_Hint_B;
+
+                this.colName.HeaderText = Properties.Resources.GRID_SkillName;
+                this.colLevel.HeaderText = Properties.Resources.GRID_Level;
+                this.colPrice.HeaderText = Properties.Resources.GRID_Price;
             }
             catch (Exception ex)
             {
@@ -489,6 +498,7 @@ namespace MagusTools
 
             // SkillTree setup
             twSkillTree.Nodes.AddRange(skillHandler.GetSkillTree());
+            twSkillTree.ExpandAll();
         }
 
         #region TreeView Control Buttons' Events
@@ -516,7 +526,8 @@ namespace MagusTools
         #region TreeView's DragDrop Operations
         private void twSkillTree_ItemDrag(object sender, ItemDragEventArgs e)
         {
-            this.DoDragDrop(e.Item, DragDropEffects.Copy);
+            if (((TreeNode)e.Item).GetNodeCount(true) == 0)
+                this.DoDragDrop(e.Item, DragDropEffects.Copy);
         }
 
         private void dgSelectedSkills_DragEnter(object sender, DragEventArgs e)
@@ -531,6 +542,7 @@ namespace MagusTools
                 TreeNode draggedNode = (TreeNode)e.Data.GetData("System.Windows.Forms.TreeNode");
                 DataGridView dragTarget = (DataGridView)sender;
 
+                // TODO: Call skill adding logic here
                 Console.WriteLine("Dragged " + draggedNode.Text + " to " + dragTarget.Name);
             }
         }
@@ -541,6 +553,8 @@ namespace MagusTools
             character.SetStat(Character.Stats.Level, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["CMperLevelActual"]).Text = character.GetStat(Character.Stats.CMperLevel).ToString();
+            ((Label)valueLabels["PRActual"]).Text = character.GetStat(Character.Stats.PR).ToString();
+            ((Label)valueLabels["KPActual"]).Text = character.GetStat(Character.Stats.KP).ToString();
         }
 
         private void updB00_ValueChanged(object sender, EventArgs e)
@@ -567,9 +581,10 @@ namespace MagusTools
             character.SetStat(Character.Stats.Agility, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["AgilityActual"]).Text = character.GetStat(Character.Stats.Agility).ToString();
-            ((Label)valueLabels["StrengthActual"]).Text = character.GetStat(Character.Stats.Strength).ToString();
+            ((Label)valueLabels["InitiativeActual"]).Text = character.GetStat(Character.Stats.Initiative).ToString();
             ((Label)valueLabels["AttackActual"]).Text = character.GetStat(Character.Stats.Attack).ToString();
-            ((Label)valueLabels["DefenseActual"]).Text = character.GetStat(Character.Stats.DamageBonus).ToString();
+            ((Label)valueLabels["DefenseActual"]).Text = character.GetStat(Character.Stats.Defense).ToString();
+            ((Label)valueLabels["AimActual"]).Text = character.GetStat(Character.Stats.Aim).ToString();
         }
 
         private void updB03_ValueChanged(object sender, EventArgs e)
@@ -681,6 +696,7 @@ namespace MagusTools
         {
             character.SetStat(Character.Stats.PRperLevel, (int)((NumericUpDownExt)sender).Value);
 
+            ((Label)valueLabels["PRActual"]).Text = character.GetStat(Character.Stats.PR).ToString();
             ((Label)valueLabels["PRperLevelActual"]).Text = character.GetStat(Character.Stats.PRperLevel).ToString();
         }
 
@@ -695,6 +711,7 @@ namespace MagusTools
         {
             character.SetStat(Character.Stats.KPperLevel, (int)((NumericUpDownExt)sender).Value);
 
+            ((Label)valueLabels["KPActual"]).Text = character.GetStat(Character.Stats.KP).ToString();
             ((Label)valueLabels["KPperLevelActual"]).Text = character.GetStat(Character.Stats.KPperLevel).ToString();
         }
 

@@ -60,45 +60,87 @@ namespace MagusTools
 
         public System.Windows.Forms.TreeNode[] GetSkillTree()
         {
+            Program.eventLogger.Log(new object[] { "Fetching Skill Tree" } );
+
             var categories =
                 from data in xmlDefaults.Elements("skills").Elements("skill")
                 where data.Element("name").Attribute("language").Value == System.Threading.Thread.CurrentThread.CurrentCulture.Name
                 select new
                 {
                     name = data.Element("name").Value,
-                    category = data.Attribute("category"),
-                    subcategory = data.Attribute("subcategory")
+                    category = data.Attribute("category").Value,
+                    subcategory = data.Attribute("subcategory").Value
                 };
 
             categories.OrderBy(c => c.category).ThenBy(s => s.subcategory).ThenBy(n => n.name);
 
-            System.Collections.Generic.List<System.Windows.Forms.TreeNode[]> result = 
-                new System.Collections.Generic.List<System.Windows.Forms.TreeNode[]>();
+            System.Collections.Generic.List<System.Windows.Forms.TreeNode> result = 
+                new System.Collections.Generic.List<System.Windows.Forms.TreeNode>();
 
+            string cat = "";
+            string sub = "";
             System.Windows.Forms.TreeNode catNode = null;
             System.Windows.Forms.TreeNode subNode = null;
 
-            int listPos = 0;
             foreach (var skill in categories)
             {
-                //if (catNode == null)
-                //    catNode = new System.Windows.Forms.TreeNode(skill.name);
-                //else if (subNode == null)
-                //    subNode = new System.Windows.Forms.TreeNode(skill.name);
-                //else
-                //{
-                //    if ()
-                //}
-
-                if (listPos == 0)
-                    result.
-                   
-                if (result[listPos]) 
-
-
+                if (cat == skill.category)
+                {
+                    if (sub == skill.subcategory)
+                    {
+                        subNode.Nodes.Add(new System.Windows.Forms.TreeNode(skill.name));
+                    }
+                    else
+                    {
+                        sub = skill.subcategory;
+                        subNode = new System.Windows.Forms.TreeNode(skill.subcategory);
+                        catNode.Nodes.Add(subNode);
+                    }
+                }
+                else
+                {
+                    cat = skill.category;
+                    catNode = new System.Windows.Forms.TreeNode(skill.category);
+                    result.Add(catNode);
+                }
             }
 
-            return categories;
+            return result.ToArray();
         }
     }
 }
+
+/*
+                if (depth == 2)
+                {
+                    if (catNode.Name == skill.category)
+                    {
+                        if (subNode.Name == skill.category)
+                        {
+                            subNode.Nodes.Add(new System.Windows.Forms.TreeNode(skill.name));
+                        }
+                        else
+                        {
+                            depth = 1;
+                        }
+                    }
+                    else
+                    {
+                        depth = 0;
+                    }
+                }
+
+                if (depth == 1)
+                {
+                    subNode = new System.Windows.Forms.TreeNode(skill.category);
+                    catNode.Nodes.Add(subNode);
+                    depth = 2;
+                }
+
+                if (depth == 0)
+                {
+                    catNode = new System.Windows.Forms.TreeNode(skill.category);
+                    result.Add(catNode);
+                    depth = 1;
+                } 
+*/

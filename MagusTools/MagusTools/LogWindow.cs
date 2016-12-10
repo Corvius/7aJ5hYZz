@@ -31,6 +31,11 @@ namespace LogWindow
             FormClosing += LogWindow_FormClosing;
         }
 
+        public void Clear()
+        {
+            rtb.Clear();
+        }
+
         private void LogWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel =

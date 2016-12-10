@@ -1,10 +1,14 @@
 ﻿using System.Collections.Generic;
+using System.Drawing;
 using System.Xml.Linq;
 
 namespace MagusTools
 {
     public class Character
     {
+        private enum Options { TripleCcp, FreeCharisma };
+        private HashSet<Options> OptionFlags = new HashSet<Options>();
+
         public enum Stats
         {
             Strength, Speed, Agility, Endurance, Health, Charisma, Intelligence, Willpower, Astral, Perception, 
@@ -27,103 +31,168 @@ namespace MagusTools
             return statList[(int)stat].Actual;
         }
 
+        private int ValueAbove(Stats stat, int threshold)
+        {
+            return System.Math.Max(statList[(int)stat].Actual - threshold, 0);
+        }
+
         public void SetStat(Stats stat, int newValue)
         {
+            Program.eventLogger.Log(new object[] { "Changing ", Color.Blue, stat.ToString(), Color.Black, " to the value", Color.Cyan, newValue } );
+
             if (newValue < 0) return; // You Shall Not Pass!
 
             statList[(int)stat].Base = newValue;
             statList[(int)stat].Actual = newValue;
 
-            int valueAboveTen = System.Math.Max(newValue - 10, 0);
-
             switch (stat)
             {
                 case Stats.Strength:
                     statList[(int)stat].Actual += (IsSkillLearned(3, "Erő") ? 1 : 0);
-                    statList[(int)Stats.DamageBonus].Actual = statList[(int)Stats.DamageBonus].Base + 
-                        System.Math.Max(statList[(int)stat].Actual - 16, 0) +
+                    statList[(int)Stats.DamageBonus].Actual =
+                        statList[(int)Stats.DamageBonus].Base + 
+                        ValueAbove(stat, 16) +
                         ((GetClass() == "Fejvadász") ? statList[(int)Stats.Level].Actual / 2 : 0);
-                    statList[(int)Stats.Attack].Actual = statList[(int)Stats.Attack].Base + valueAboveTen;
+                    statList[(int)Stats.Attack].Actual =
+                        statList[(int)Stats.Attack].Base +
+                        ValueAbove(stat, 10) +
+                        ValueAbove(Stats.Agility, 10) +
+                        ValueAbove(Stats.Speed, 10);
                     break;
                 case Stats.Speed:
-                    statList[(int)Stats.Initiative].Actual = statList[(int)Stats.Initiative].Base + valueAboveTen;
-                    statList[(int)Stats.Attack].Actual = statList[(int)Stats.Attack].Base + valueAboveTen;
-                    statList[(int)Stats.Defense].Actual = statList[(int)Stats.Defense].Base + valueAboveTen;
+                    statList[(int)Stats.Initiative].Actual =
+                        statList[(int)Stats.Initiative].Base +
+                        ValueAbove(stat, 10) +
+                        ValueAbove(Stats.Agility, 10);
+                statList[(int)Stats.Attack].Actual = 
+                        statList[(int)Stats.Attack].Base + 
+                        ValueAbove(stat, 10) +
+                        ValueAbove(Stats.Agility, 10) +
+                        ValueAbove(Stats.Strength, 10);
+                    statList[(int)Stats.Defense].Actual =
+                        statList[(int)Stats.Defense].Base +
+                        ValueAbove(stat, 10) +
+                        ValueAbove(Stats.Agility, 10);
                     break;
                 case Stats.Agility:
                     statList[(int)stat].Actual += (IsSkillLearned(3, "Ügyesség") ? 1 : 0);
-                    statList[(int)Stats.Initiative].Actual = statList[(int)Stats.Initiative].Base + valueAboveTen;
-                    statList[(int)Stats.Attack].Actual = statList[(int)Stats.Attack].Base + valueAboveTen;
-                    statList[(int)Stats.Defense].Actual = statList[(int)Stats.Defense].Base + valueAboveTen;
+                    statList[(int)Stats.Initiative].Actual =
+                        statList[(int)Stats.Initiative].Base +
+                        ValueAbove(stat, 10) +
+                        ValueAbove(Stats.Speed, 10);
+                    statList[(int)Stats.Attack].Actual =
+                            statList[(int)Stats.Attack].Base +
+                            ValueAbove(stat, 10) +
+                            ValueAbove(Stats.Speed, 10) +
+                            ValueAbove(Stats.Strength, 10);
+                    statList[(int)Stats.Defense].Actual =
+                        statList[(int)Stats.Defense].Base +
+                        ValueAbove(stat, 10) +
+                        ValueAbove(Stats.Speed, 10);
+                    statList[(int)Stats.Aim].Actual =
+                        statList[(int)Stats.Aim].Base +
+                        ValueAbove(stat, 10);
                     break;
                 case Stats.Endurance:
-                    statList[(int)Stats.PR].Actual = statList[(int)Stats.PR].Base +
-                        System.Math.Max(statList[(int)Stats.Willpower].Actual - 10, 0) +
-                        valueAboveTen;
+                    statList[(int)Stats.PR].Actual =
+                        statList[(int)Stats.PR].Base +
+                        ValueAbove(stat, 10) +
+                        ValueAbove(Stats.Willpower, 10);
                     break;
                 case Stats.Health:
-                    statList[(int)Stats.HP].Actual = statList[(int)Stats.HP].Base + valueAboveTen;
-                    statList[(int)Stats.Resistance].Actual = valueAboveTen;
+                    statList[(int)Stats.HP].Actual =
+                        ValueAbove(stat, 10) +
+                        statList[(int)Stats.HP].Base;
+                    statList[(int)Stats.Resistance].Actual =
+                        ValueAbove(stat, 10);
                     break;
                 case Stats.Charisma:
                     break;
                 case Stats.Intelligence:
                     if (GetClass() == "Bárd")
-                        statList[(int)Stats.MP].Actual = statList[(int)Stats.Level].Actual * valueAboveTen;
+                        statList[(int)Stats.MP].Actual =
+                            ValueAbove(stat, 10) * statList[(int)Stats.Level].Actual;
                     if (IsSkillLearned("Pszi", 1))
-                        statList[(int)Stats.Psy].Actual = valueAboveTen + statList[(int)Stats.Level].Actual * statList[(int)Stats.PsyperLevel].Actual;
+                        statList[(int)Stats.Psy].Actual =
+                            ValueAbove(stat, 10) +
+                            statList[(int)Stats.Level].Actual * statList[(int)Stats.PsyperLevel].Actual;
                     break;
                 case Stats.Willpower:
-                    statList[(int)Stats.PR].Actual = statList[(int)Stats.PR].Base +
-                        System.Math.Max(statList[(int)Stats.Endurance].Actual - 10, 0) +
-                        valueAboveTen;
-                    statList[(int)Stats.MMR].Actual = statList[(int)Stats.MMR].Base + valueAboveTen;
+                    statList[(int)Stats.PR].Actual =
+                        statList[(int)Stats.PR].Base +
+                        ValueAbove(stat, 10) +
+                        ValueAbove(Stats.Endurance, 10);
+                    statList[(int)Stats.MMR].Actual =
+                        statList[(int)Stats.MMR].Base +
+                        ValueAbove(stat, 10);
                     break;
                 case Stats.Astral:
-                    statList[(int)Stats.AMR].Actual = statList[(int)Stats.AMR].Base + valueAboveTen;
+                    statList[(int)Stats.AMR].Actual =
+                        statList[(int)Stats.AMR].Base +
+                        ValueAbove(stat, 10);
                     break;
                 case Stats.Perception:
                     break;
 
                 case Stats.Initiative:
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Speed].Base - 10, 0);
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Agility].Base - 10, 0);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Speed, 10);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Agility, 10);
                     break;
                 case Stats.Attack:
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Strength].Base - 10, 0);
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Agility].Base - 10, 0);
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Speed].Base - 10, 0);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Strength, 10);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Agility, 10);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Speed, 10);
                     break;
                 case Stats.Defense:
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Speed].Base - 10, 0);
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Agility].Base - 10, 0);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Speed, 10);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Agility, 10);
                     break;
                 case Stats.Aim:
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Agility].Base - 10, 0);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Agility, 10);
                     break;
                 case Stats.CMperLevel:
                     statList[(int)stat].Actual *= statList[(int)Stats.Level].Base;
                     break;
                 case Stats.HP:
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Health].Base - 10, 0);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Health, 10);
                     break;
                 case Stats.PR:
                     statList[(int)stat].Actual += statList[(int)Stats.PRperLevel].Base * statList[(int)Stats.Level].Base;
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Endurance].Base - 10, 0);
-                    statList[(int)stat].Actual += System.Math.Max(statList[(int)Stats.Willpower].Base - 10, 0);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Endurance, 10);
+                    statList[(int)stat].Actual += ValueAbove(Stats.Willpower, 10);
                     break;
                 case Stats.PRperLevel:
+                    statList[(int)Stats.PR].Actual =
+                        statList[(int)Stats.PR].Base +
+                        statList[(int)stat].Base * statList[(int)Stats.Level].Base +
+                        ValueAbove(Stats.Endurance, 10) +
+                        ValueAbove(Stats.Willpower, 10);
                     break;
                 case Stats.KP:
-                    statList[(int)stat].Actual += statList[(int)Stats.KPperLevel].Base * statList[(int)Stats.Level].Base;
+                    statList[(int)stat].Actual += 
+                        statList[(int)Stats.KPperLevel].Base * statList[(int)Stats.Level].Base;
                     statList[(int)stat].Actual -= GetSpentCcp();
                     break;
                 case Stats.KPperLevel:
+                    statList[(int)Stats.KP].Actual =
+                        statList[(int)Stats.KP].Base +
+                        statList[(int)stat].Base * statList[(int)Stats.Level].Base;
                     break;
                 case Stats.Level:
-                    statList[(int)Stats.CMperLevel].Actual *= statList[(int)Stats.CMperLevel].Base * newValue;
-                    statList[(int)Stats.PRperLevel].Actual *= statList[(int)Stats.PRperLevel].Base * newValue;
-                    statList[(int)Stats.KPperLevel].Actual *= statList[(int)Stats.KPperLevel].Base * newValue;
+                    statList[(int)Stats.CMperLevel].Actual = statList[(int)Stats.CMperLevel].Base * newValue;
+                    statList[(int)Stats.PRperLevel].Actual = statList[(int)Stats.PRperLevel].Base * newValue;
+                    statList[(int)Stats.KPperLevel].Actual = statList[(int)Stats.KPperLevel].Base * newValue;
+                    statList[(int)Stats.PR].Actual =
+                        statList[(int)Stats.PR].Base +
+                        statList[(int)Stats.PRperLevel].Base * statList[(int)Stats.Level].Base +
+                        ValueAbove(Stats.Endurance, 10) +
+                        ValueAbove(Stats.Willpower, 10);
+                    statList[(int)Stats.KP].Actual =
+                        statList[(int)Stats.KP].Base +
+                        statList[(int)Stats.KPperLevel].Base * statList[(int)Stats.Level].Base;
+                        
+                    if (OptionFlags.Contains(Options.TripleCcp))
+                        statList[(int)Stats.KP].Actual *= 3;
                     break;
                 case Stats.DamageBonus:
                     break;
@@ -144,6 +213,19 @@ namespace MagusTools
                 default:
                     break;
             }
+
+            //Program.charLogger.Clear();
+            //for (int counter = 0; counter < statList.Count; counter++)
+            //{
+            //    Program.charLogger.Log(new object[] {
+            //        System.Enum.GetName(typeof(Stats), counter),
+            //        " : ",
+            //        Color.Cyan,
+            //        statList[counter].Base,
+            //        Color.Black,
+            //        " | ",
+            //        statList[counter].Actual });
+            //}
         }
 
         public string GetClass()
