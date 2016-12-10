@@ -56,6 +56,13 @@ namespace MagusTools
             cbCharReligion.Items.AddRange(xmlHandler.GetComboBoxValues("religions", "religion"));
             cbCharClass.Items.AddRange(xmlHandler.GetComboBoxValues("classes", "class"));
             cbCharBirthplace.Items.AddRange(xmlHandler.GetComboBoxValues("languages", "language", "szülőföld"));
+
+            cbCharGender.SelectedIndex = 0;
+            cbCharAlignment.SelectedIndex = 0;
+            cbCharRace.SelectedIndex = 0;
+            cbCharReligion.SelectedIndex = 0;
+            cbCharClass.SelectedIndex = 0;
+            cbCharBirthplace.SelectedIndex = 0;
         }
 
         /// <summary>
@@ -748,6 +755,46 @@ namespace MagusTools
 
         #region Menu Event Handlers
         // Menu Event Handlers
+        private void mnuFileNew_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuFileOpen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuFileSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuFileSaveAs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuFileQuit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void mnuCharacterExportAsText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuCharacterGenerate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuOptionsSettings_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void mnuOptionsLanguage_Click(object sender, EventArgs e)
         {
             if (CultureInfo.CurrentCulture.Name == "hu-HU")
@@ -757,6 +804,37 @@ namespace MagusTools
 
             LoadLocalizedStrings();
         }
+
+        private void mnuOptionsToolsDiceroller_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuHelpViewhelp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuHelpAbout_Click(object sender, EventArgs e)
+        {
+
+        }
         #endregion
+
+        // Other Event handlers
+        private void cbCharClass_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            character.ChangeClass(cbCharClass.SelectedItem.ToString());
+        }
+
+        private void cbCharReligion_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            lblCharRealmsList.Text = xmlHandler.GetRealms(cbCharReligion.SelectedItem.ToString());
+        }
+
+        private void cbCharRace_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            character.ChangeRace(cbCharRace.SelectedItem.ToString());
+        }
     }
 }

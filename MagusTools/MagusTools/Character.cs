@@ -8,6 +8,8 @@ namespace MagusTools
     {
         private enum Options { TripleCcp, FreeCharisma };
         private HashSet<Options> OptionFlags = new HashSet<Options>();
+        private string charClass = "";
+
 
         public enum Stats
         {
@@ -230,8 +232,18 @@ namespace MagusTools
 
         public string GetClass()
         {
-            return "KrumpliOrr";
-            //return "Fejvadász";
+            return charClass;
+        }
+
+        public void ChangeClass(string newClass)
+        {
+            if (newClass != string.Empty)
+                charClass = newClass;
+        }
+
+        public void ChangeRace(string newRace)
+        {
+
         }
 
         public int GetSpentCcp()
