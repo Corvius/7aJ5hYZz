@@ -149,7 +149,7 @@
     <None Include="Resources\MENU_Settings.bmp" />
     <None Include="Resources\MENU_Text.bmp" />
     <Content Include="SkillData.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

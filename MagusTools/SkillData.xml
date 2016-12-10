@@ -9,7 +9,7 @@
     <!-- -->
     <!--   Közkeletű harci képzettségek -->
     <!-- -->
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Ökölharc</name>
       <name language="en-EN">Brawling</name>
       <level value="1">
@@ -43,7 +43,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Bírkózás</name>
       <name language="en-EN">Wrestling</name>
       <level value="1">
@@ -76,7 +76,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="fegyver közelharci" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="fegyver közelharci" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Fegyverhasználat</name>
       <name language="en-EN">Weaponmastery</name>
       <level value="1">
@@ -95,7 +95,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Pajzskezelés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -124,7 +124,7 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Lefegyverzés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -153,7 +153,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeTag="none" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="4" subtypeTag="none" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Lefegyverzés puszta kézzel</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -182,7 +182,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Lefegyverzés célzófegyverrel</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -211,7 +211,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Fegyverismeret</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -240,7 +240,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Vívócsel</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -276,7 +276,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Belharc</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -312,7 +312,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Földredöntés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -345,7 +345,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Taktika</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -374,7 +374,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="none" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="none" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Stratégia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -400,7 +400,7 @@
         <cost value="50" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="none" category="Harci képzettségek" subCategory="Közkeletű harci képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="none" category="Harci képzettségek" subcategory="Közkeletű harci képzettségek">
       <name language="hu-HU">Parancsnoklás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -442,7 +442,7 @@
     <!-- -->
     <!--   Szakértő harci képzettségek -->
     <!-- -->
-    <skill type="levels" difficulty="2" subtypeTag="fegyver ostromgép" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="fegyver ostromgép" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Ostromgép kezelése</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -474,7 +474,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Nehézvértviselet</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -507,7 +507,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="fegyver dobófegyver" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="fegyver dobófegyver" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Fegyverdobás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -528,7 +528,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Fegyverdobás idegen fegyverrel</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -553,7 +553,7 @@
         <cost value="80" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Mesterlövészet</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -588,7 +588,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Lovas ijászat</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -621,7 +621,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Fegyverdobás" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Fegyverdobás" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Fegyverdobás lóhátról</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -654,7 +654,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Fegyverdobás" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Fegyverdobás" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Lasszóvetés lóhátról</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -682,7 +682,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="fegyver tűzfegyver" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="fegyver tűzfegyver" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Tűzfegyver</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -714,7 +714,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Kétkezes harc</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -745,7 +745,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Állóharc</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -772,7 +772,7 @@
         <cost value="24" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Földredöntés" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Földredöntés" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Földharc</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -806,7 +806,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Fegyvertörés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -838,7 +838,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Harci láz</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -862,7 +862,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Szakértő harci képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Szakértő harci képzettségek">
       <name language="hu-HU">Kézváltás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -899,7 +899,7 @@
     <!-- -->
     <!--   Titkos harci képzettségek -->
     <!-- -->
-    <skill type="levels" difficulty="5" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Titkos harci képzettségek">
+    <skill type="levels" difficulty="5" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Titkos harci képzettségek">
       <name language="hu-HU">Mestervágás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -930,7 +930,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="5" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Titkos harci képzettségek">
+    <skill type="levels" difficulty="5" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Titkos harci képzettségek">
       <name language="hu-HU">Kínokozás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -964,7 +964,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Anatómia" category="Harci képzettségek" subCategory="Titkos harci képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Anatómia" category="Harci képzettségek" subcategory="Titkos harci képzettségek">
       <name language="hu-HU">Pusztítás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1004,7 +1004,7 @@
         <cost value="60" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Titkos harci képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Titkos harci képzettségek">
       <name language="hu-HU">Körkörös harc</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1042,7 +1042,7 @@
         <cost value="50" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subCategory="Titkos harci képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Harci képzettségek" subcategory="Titkos harci képzettségek">
       <name language="hu-HU">Körkörös harc kétkezes fegyverrel</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1072,7 +1072,7 @@
         <cost value="50" />
       </level>
     </skill>
-    <skill type="levels" difficulty="5" subtypeTag="none" category="Harci képzettségek" subCategory="Titkos harci képzettségek">
+    <skill type="levels" difficulty="5" subtypeTag="none" category="Harci képzettségek" subcategory="Titkos harci képzettségek">
       <name language="hu-HU">Vakharc</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1112,7 +1112,7 @@
     <!-- -->   
     <!--   Általános szociális képzettségek -->   
     <!-- -->
-    <skill type="levels" difficulty="1" subtypeTag="nyelv aktív" category="Szociális képzettségek" subCategory="Általános szociális képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="nyelv aktív" category="Szociális képzettségek" subcategory="Általános szociális képzettségek">
       <name language="hu-HU">Élö nyelv</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1136,7 +1136,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subCategory="Általános szociális képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subcategory="Általános szociális képzettségek">
       <name language="hu-HU">Kultúra</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1167,7 +1167,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Kultúra" category="Szociális képzettségek" subCategory="Általános szociális képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Kultúra" category="Szociális képzettségek" subcategory="Általános szociális képzettségek">
       <name language="hu-HU">Lélektan</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1197,7 +1197,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subCategory="Általános szociális képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subcategory="Általános szociális képzettségek">
       <name language="hu-HU">Helyismeret</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1230,7 +1230,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subCategory="Általános szociális képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subcategory="Általános szociális képzettségek">
       <name language="hu-HU">Ékesszólás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1266,7 +1266,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subCategory="Általános szociális képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subcategory="Általános szociális képzettségek">
       <name language="hu-HU">Szexuális kultúra</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1300,7 +1300,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subCategory="Általános szociális képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subcategory="Általános szociális képzettségek">
       <name language="hu-HU">Dorbézolás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1324,7 +1324,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Anatómia" category="Szociális képzettségek" subCategory="Általános szociális képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Anatómia" category="Szociális képzettségek" subcategory="Általános szociális képzettségek">
       <name language="hu-HU">Vallatás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1357,7 +1357,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Lélektan" category="Szociális képzettségek" subCategory="Általános szociális képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Lélektan" category="Szociális képzettségek" subcategory="Általános szociális képzettségek">
       <name language="hu-HU">Oktatás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1386,7 +1386,7 @@
     <!-- -->
     <!--   Nemesi képzettségek -->
     <!-- -->
-    <skill type="levels" difficulty="2" subtypeSkill="Állatismeret" category="Szociális képzettségek" subCategory="Nemesi képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Állatismeret" category="Szociális képzettségek" subcategory="Nemesi képzettségek">
       <name language="hu-HU">Lovaglás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1423,7 +1423,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subCategory="Nemesi képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subcategory="Nemesi képzettségek">
       <name language="hu-HU">Birtokigazgatás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1453,7 +1453,7 @@
         <cost value="28" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Idomítás" category="Szociális képzettségek" subCategory="Nemesi képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Idomítás" category="Szociális képzettségek" subcategory="Nemesi képzettségek">
       <name language="hu-HU">Sólymászat</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1484,7 +1484,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Kultúra" category="Szociális képzettségek" subCategory="Nemesi képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Kultúra" category="Szociális képzettségek" subcategory="Nemesi képzettségek">
       <name language="hu-HU">Heraldika</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1518,7 +1518,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Kultúra" category="Szociális képzettségek" subCategory="Nemesi képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Kultúra" category="Szociális képzettségek" subcategory="Nemesi képzettségek">
       <name language="hu-HU">Párbaj</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1557,7 +1557,7 @@
         <cost value="16" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Kultúra" category="Szociális képzettségek" subCategory="Nemesi képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Kultúra" category="Szociális képzettségek" subcategory="Nemesi képzettségek">
       <name language="hu-HU">Udvari etikett</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1593,7 +1593,7 @@
         <cost value="21" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Kultúra" category="Szociális képzettségek" subCategory="Nemesi képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Kultúra" category="Szociális képzettségek" subcategory="Nemesi képzettségek">
       <name language="hu-HU">Tornarend</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1629,7 +1629,7 @@
     <!-- -->
     <!--   Polgári képzettségek -->
     <!-- -->
-    <skill type="levels" difficulty="1" subtypeTag="iparűzés" category="Szociális képzettségek" subCategory="Polgári képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="iparűzés" category="Szociális képzettségek" subcategory="Polgári képzettségek">
       <name language="hu-HU">Iparűzés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1658,7 +1658,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Kultúra" category="Szociális képzettségek" subCategory="Polgári képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Kultúra" category="Szociális képzettségek" subcategory="Polgári képzettségek">
       <name language="hu-HU">Értékbecslés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1696,7 +1696,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subCategory="Polgári képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subcategory="Polgári képzettségek">
       <name language="hu-HU">Pénzügyek</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1730,7 +1730,7 @@
     <!-- -->
     <!--   Póri képzettségek -->
     <!-- -->
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Szociális képzettségek" subCategory="Póri képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Szociális képzettségek" subcategory="Póri képzettségek">
       <name language="hu-HU">TeherbÍrás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1759,7 +1759,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Szociális képzettségek" subCategory="Póri képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Szociális képzettségek" subcategory="Póri képzettségek">
       <name language="hu-HU">Földmüvelés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1779,7 +1779,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Állatismeret" category="Szociális képzettségek" subCategory="Póri képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Állatismeret" category="Szociális képzettségek" subcategory="Póri képzettségek">
       <name language="hu-HU">Állattartás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1803,7 +1803,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Állatismeret" category="Szociális képzettségek" subCategory="Póri képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Állatismeret" category="Szociális képzettségek" subcategory="Póri képzettségek">
       <name language="hu-HU">Kocsihajtás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1838,7 +1838,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subCategory="Póri képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subcategory="Póri képzettségek">
       <name language="hu-HU">Hajózás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1873,7 +1873,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subCategory="Póri képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subcategory="Póri képzettségek">
       <name language="hu-HU">Bányászat</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1909,7 +1909,7 @@
     <!-- -->
     <!--   Müvészi képzettségek -->
     <!-- -->
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Szociális képzettségek" subCategory="Művészi képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Szociális képzettségek" subcategory="Művészi képzettségek">
       <name language="hu-HU">Ének</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1935,7 +1935,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subCategory="Művészi képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subcategory="Művészi képzettségek">
       <name language="hu-HU">Zene</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1962,7 +1962,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subCategory="Művészi képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Szociális képzettségek" subcategory="Művészi képzettségek">
       <name language="hu-HU">Tánc</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -1988,7 +1988,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Szociális képzettségek" subCategory="Művészi képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Szociális képzettségek" subcategory="Művészi képzettségek">
       <name language="hu-HU">Festészet/Rajzolás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2017,7 +2017,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="none" category="Szociális képzettségek" subCategory="Művészi képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="none" category="Szociális képzettségek" subcategory="Művészi képzettségek">
       <name language="hu-HU">Szobrászat</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2049,7 +2049,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subCategory="Művészi képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subcategory="Művészi képzettségek">
       <name language="hu-HU">Tetoválás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2086,7 +2086,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subCategory="Művészi képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Élő nyelv" category="Szociális képzettségek" subcategory="Művészi képzettségek">
       <name language="hu-HU">Irodalom</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2117,7 +2117,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Ékesszólás" category="Szociális képzettségek" subCategory="Művészi képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Ékesszólás" category="Szociális képzettségek" subcategory="Művészi képzettségek">
       <name language="hu-HU">Színészet</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2160,7 +2160,7 @@
     <!-- -->   
     <!--   Álcázó képzettségek -->   
     <!-- -->
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Alvilági képzettségek" subCategory="Álcázó képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Alvilági képzettségek" subcategory="Álcázó képzettségek">
       <name language="hu-HU">Álcázás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2189,7 +2189,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Kultúra" category="Alvilági képzettségek" subCategory="Álcázó képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Kultúra" category="Alvilági képzettségek" subcategory="Álcázó képzettségek">
       <name language="hu-HU">Álöltözet</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2223,7 +2223,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="5" subtypeSkill="Helyismeret" category="Alvilági képzettségek" subCategory="Álcázó képzettségek">
+    <skill type="levels" difficulty="5" subtypeSkill="Helyismeret" category="Alvilági képzettségek" subcategory="Álcázó képzettségek">
       <name language="hu-HU">Arctalanság</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2260,7 +2260,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="percent" difficulty="1" subtypeTag="none" category="Alvilági képzettségek" subCategory="Álcázó képzettségek">
+    <skill type="percent" difficulty="1" subtypeTag="none" category="Alvilági képzettségek" subcategory="Álcázó képzettségek">
       <name language="hu-HU">Lopódzás</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -2284,7 +2284,7 @@
         <cost value="1" />
       </level>
     </skill>
-    <skill type="percent" difficulty="2" subtypeTag="none" category="Alvilági képzettségek" subCategory="Álcázó képzettségek">
+    <skill type="percent" difficulty="2" subtypeTag="none" category="Alvilági képzettségek" subcategory="Álcázó képzettségek">
       <name language="hu-HU">Rejtőzés</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -2311,7 +2311,7 @@
     <!-- -->   
     <!--   Kommunikációs képzettségek -->   
     <!-- -->
-      <skill type="levels" difficulty="2" subtypeSkill="Kultúra" category="Alvilági képzettségek" subCategory="Kommunikációs képzettségek">
+      <skill type="levels" difficulty="2" subtypeSkill="Kultúra" category="Alvilági képzettségek" subcategory="Kommunikációs képzettségek">
       <name language="hu-HU">Jelbeszéd</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2350,7 +2350,7 @@
         <cost value="50" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Élő nyelv" category="Alvilági képzettségek" subCategory="Kommunikációs képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Élő nyelv" category="Alvilági képzettségek" subcategory="Kommunikációs képzettségek">
       <name language="hu-HU">Szájról olvasás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2385,7 +2385,7 @@
         <cost value="27" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Állatismeret Kultúra" category="Alvilági képzettségek" subCategory="Kommunikációs képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Állatismeret Kultúra" category="Alvilági képzettségek" subcategory="Kommunikációs képzettségek">
       <name language="hu-HU">Hangutánzás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2432,7 +2432,7 @@
         <cost value="27" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Élő nyelv" category="Alvilági képzettségek" subCategory="Kommunikációs képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Élő nyelv" category="Alvilági képzettségek" subcategory="Kommunikációs képzettségek">
       <name language="hu-HU">Hasbeszélés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2465,7 +2465,7 @@
         <cost value="27" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Kultúra" category="Alvilági képzettségek" subCategory="Kommunikációs képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Kultúra" category="Alvilági képzettségek" subcategory="Kommunikációs képzettségek">
       <name language="hu-HU">Tetoválásismeret</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2500,7 +2500,7 @@
     <!-- -->   
     <!--   Pénzszerzö képzettségek -->   
     <!-- -->
-    <skill type="levels" difficulty="2" subtypeSkill="Élő nyelv" category="Alvilági képzettségek" subCategory="Pénzszerzö képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Élő nyelv" category="Alvilági képzettségek" subcategory="Pénzszerzö képzettségek">
       <name language="hu-HU">Hazárdjáték</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2545,7 +2545,7 @@
         <cost value="20" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Élő nyelv" category="Alvilági képzettségek" subCategory="Pénzszerzö képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Élő nyelv" category="Alvilági képzettségek" subcategory="Pénzszerzö képzettségek">
       <name language="hu-HU">Hamisjáték</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2579,7 +2579,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="percent" difficulty="3" subtypeTag="none" category="Alvilági képzettségek" subCategory="Pénzszerzö képzettségek">
+    <skill type="percent" difficulty="3" subtypeTag="none" category="Alvilági képzettségek" subcategory="Pénzszerzö képzettségek">
       <name language="hu-HU">Zsebmetszés</name>
       <name language="en-EN"></name>
       <level value="1" increment="2">
@@ -2603,7 +2603,7 @@
         <cost value="1" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Élő nyelv" category="Alvilági képzettségek" subCategory="Pénzszerzö képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Élő nyelv" category="Alvilági képzettségek" subcategory="Pénzszerzö képzettségek">
       <name language="hu-HU">Értékhamisítás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2657,7 +2657,7 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Írás/Olvasás" category="Alvilági képzettségek" subCategory="Pénzszerzö képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Írás/Olvasás" category="Alvilági képzettségek" subcategory="Pénzszerzö képzettségek">
       <name language="hu-HU">Okirathamisítás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2705,7 +2705,7 @@
     <!-- -->   
     <!--   Alvilági harci képzettségek -->   
     <!-- -->
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Alvilági képzettségek" subCategory="Alvilági harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Alvilági képzettségek" subcategory="Alvilági harci képzettségek">
       <name language="hu-HU">Kocsmai verekedés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2740,7 +2740,7 @@
         <cost value="27" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Alvilági képzettségek" subCategory="Alvilági harci képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Fegyverhasználat" category="Alvilági képzettségek" subcategory="Alvilági harci képzettségek">
       <name language="hu-HU">Orvtámadás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2787,7 +2787,7 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill type="levels" difficulty="5" subtypeSkill="Orvtámadás" category="Alvilági képzettségek" subCategory="Alvilági harci képzettségek">
+    <skill type="levels" difficulty="5" subtypeSkill="Orvtámadás" category="Alvilági képzettségek" subcategory="Alvilági harci képzettségek">
       <name language="hu-HU">Rejtett támdás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2822,7 +2822,7 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Helyismeret" category="Alvilági képzettségek" subCategory="Alvilági harci képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Helyismeret" category="Alvilági képzettségek" subcategory="Alvilági harci képzettségek">
       <name language="hu-HU">Lesvetés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2851,7 +2851,7 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Alvilági képzettségek" subCategory="Alvilági harci képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Alvilági képzettségek" subcategory="Alvilági harci képzettségek">
       <name language="hu-HU">Méregkezelés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2881,7 +2881,7 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="piszkos_csel" category="Alvilági képzettségek" subCategory="Alvilági harci képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="piszkos_csel" category="Alvilági képzettségek" subcategory="Alvilági harci képzettségek">
       <name language="hu-HU">Piszkos csel</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -2909,7 +2909,7 @@
     <!-- -->   
     <!--   Behatoló képzettségek -->   
     <!-- -->
-    <skill type="percent" difficulty="1" subtypeTag="none" category="Alvilági képzettségek" subCategory="Behatoló képzettségek">
+    <skill type="percent" difficulty="1" subtypeTag="none" category="Alvilági képzettségek" subcategory="Behatoló képzettségek">
       <name language="hu-HU">Rejtekhelykutatás</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -2933,7 +2933,7 @@
         <cost value="1" />
       </level>
     </skill>
-    <skill type="percent" difficulty="3" subtypeTag="none" category="Alvilági képzettségek" subCategory="Behatoló képzettségek">
+    <skill type="percent" difficulty="3" subtypeTag="none" category="Alvilági képzettségek" subcategory="Behatoló képzettségek">
       <name language="hu-HU">Csapdakeresés</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -2957,7 +2957,7 @@
         <cost value="1" />
       </level>
     </skill>
-    <skill type="percent" difficulty="3" subtypeTag="none" category="Alvilági képzettségek" subCategory="Behatoló képzettségek">
+    <skill type="percent" difficulty="3" subtypeTag="none" category="Alvilági képzettségek" subcategory="Behatoló képzettségek">
       <name language="hu-HU">Csapdaleszerelés</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -2992,7 +2992,7 @@
         <cost value="1" />
       </level>
     </skill>
-    <skill type="percent" difficulty="4" subtypeTag="none" category="Alvilági képzettségek" subCategory="Behatoló képzettségek">
+    <skill type="percent" difficulty="4" subtypeTag="none" category="Alvilági képzettségek" subcategory="Behatoló képzettségek">
       <name language="hu-HU">Zárnyitás</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -3034,7 +3034,7 @@
     <!-- -->   
     <!--   Ellenálló képzettségek -->   
     <!-- -->
-    <skill type="levels" difficulty="4" subtypeTag="none" category="Alvilági képzettségek" subCategory="Ellenálló képzettségek">
+    <skill type="levels" difficulty="4" subtypeTag="none" category="Alvilági képzettségek" subcategory="Ellenálló képzettségek">
       <name language="hu-HU">Kíntürés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3058,7 +3058,7 @@
         <cost value="48" />
       </level>
     </skill>
-    <skill type="levels" difficulty="5" subtypeTag="none" category="Alvilági képzettségek" subCategory="Ellenálló képzettségek">
+    <skill type="levels" difficulty="5" subtypeTag="none" category="Alvilági képzettségek" subcategory="Ellenálló képzettségek">
       <name language="hu-HU">Méregtürés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3087,7 +3087,7 @@
     <!-- -->   
     <!--   Vadonjáró képzettségek -->   
     <!-- -->
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Futás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3114,7 +3114,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Úszás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3143,7 +3143,7 @@
         <cost value="15" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="állat" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="állat" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Állatismeret</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3172,7 +3172,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Állatismeret" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Állatismeret" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Idomítás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3203,7 +3203,7 @@
         <cost value="26" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Nyomolvasás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3232,7 +3232,7 @@
         <cost value="65" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Vadászat</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3276,7 +3276,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Halászat</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3307,7 +3307,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Csomózás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3331,7 +3331,7 @@
         <cost value="32" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Csapdaállítás</name>
       <name language="en-EN">Trap setting</name>
       <level value="1">
@@ -3374,7 +3374,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="percent" difficulty="3" subtypeTag="none" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="percent" difficulty="3" subtypeTag="none" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Veszélyérzék</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -3398,7 +3398,7 @@
         <cost value="2" />
       </level>
     </skill>
-    <skill type="percent" difficulty="2" subtypeTag="none" category="Túlélő képzettségek" subCategory="Vadonjáró képzettségek">
+    <skill type="percent" difficulty="2" subtypeTag="none" category="Túlélő képzettségek" subcategory="Vadonjáró képzettségek">
       <name language="hu-HU">Irányérzék</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -3425,7 +3425,7 @@
     <!-- -->   
     <!--   Atlétikai képzettségek -->   
     <!-- -->
-    <skill type="percent" difficulty="3" subtypeTag="none" category="Túlélő képzettségek" subCategory="Atlétikai képzettségek">
+    <skill type="percent" difficulty="3" subtypeTag="none" category="Túlélő képzettségek" subcategory="Atlétikai képzettségek">
       <name language="hu-HU">Egyensúlyérzék</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -3449,7 +3449,7 @@
         <cost value="1" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeTag="none" category="Túlélő képzettségek" subCategory="Atlétikai képzettségek">
+    <skill type="levels" difficulty="4" subtypeTag="none" category="Túlélő képzettségek" subcategory="Atlétikai képzettségek">
       <name language="hu-HU">Akrobatika</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3488,7 +3488,7 @@
         <cost value="38" />
       </level>
     </skill>
-    <skill type="percent" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subCategory="Atlétikai képzettségek">
+    <skill type="percent" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subcategory="Atlétikai képzettségek">
       <name language="hu-HU">Mászás</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -3512,7 +3512,7 @@
         <cost value="1" />
       </level>
     </skill>
-    <skill type="percent" difficulty="3" subtypeTag="none" category="Túlélő képzettségek" subCategory="Atlétikai képzettségek">
+    <skill type="percent" difficulty="3" subtypeTag="none" category="Túlélő képzettségek" subcategory="Atlétikai képzettségek">
       <name language="hu-HU">Esés</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -3536,7 +3536,7 @@
         <cost value="1" />
       </level>
     </skill>
-    <skill type="percent" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subCategory="Atlétikai képzettségek">
+    <skill type="percent" difficulty="1" subtypeTag="none" category="Túlélő képzettségek" subcategory="Atlétikai képzettségek">
       <name language="hu-HU">Ugrás</name>
       <name language="en-EN"></name>
       <level value="1" increment="3">
@@ -3560,7 +3560,7 @@
         <cost value="1" />
       </level>
     </skill>
-    <skill type="levels" difficulty="5" subtypeTag="none" category="Túlélő képzettségek" subCategory="Atlétikai képzettségek">
+    <skill type="levels" difficulty="5" subtypeTag="none" category="Túlélő képzettségek" subcategory="Atlétikai képzettségek">
       <name language="hu-HU">Szabadulómüvészet</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3594,7 +3594,7 @@
     <!-- -->   
     <!--   Közkeletü elméleti képzettségek -->   
     <!-- -->
-    <skill type="levels" difficulty="1" subtypeSkill="Élő nyelv" category="Elméleti lépzettségek" subCategory="Közkeletü elméleti képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Élő nyelv" category="Elméleti lépzettségek" subcategory="Közkeletü elméleti képzettségek">
       <name language="hu-HU">Írás/Olvasás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3623,7 +3623,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Kultúra" category="Elméleti lépzettségek" subCategory="Közkeletü elméleti képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Kultúra" category="Elméleti lépzettségek" subcategory="Közkeletü elméleti képzettségek">
       <name language="hu-HU">Legendaismeret</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3662,7 +3662,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Élő nyelv" category="Elméleti lépzettségek" subCategory="Közkeletü elméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Élő nyelv" category="Elméleti lépzettségek" subcategory="Közkeletü elméleti képzettségek">
       <name language="hu-HU">Térképészet</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3699,7 +3699,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Közkeletü elméleti képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Közkeletü elméleti képzettségek">
       <name language="hu-HU">Ásványtan</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3729,7 +3729,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Közkeletü elméleti képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Közkeletü elméleti képzettségek">
       <name language="hu-HU">Herbalizmus</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3758,7 +3758,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Közkeletü elméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Közkeletü elméleti képzettségek">
       <name language="hu-HU">Idöjóslás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3787,7 +3787,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Közkeletü elméleti képzettségek">
+    <skill type="levels" difficulty="4" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Közkeletü elméleti képzettségek">
       <name language="hu-HU">Jövendömondás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3820,7 +3820,7 @@
     <!-- -->   
     <!--   Szakértő élméleti képzettségek -->   
     <!-- -->
-    <skill type="levels" difficulty="3" subtypeTag="nyelv inaktív" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="nyelv inaktív" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Holt nyelv</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3845,7 +3845,7 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeSkill="Élő nyelv" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="1" subtypeSkill="Élő nyelv" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Történelem</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3877,7 +3877,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Kultúra" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Kultúra" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Jog</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3908,7 +3908,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="1" subtypeTag="vallás" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="1" subtypeTag="vallás" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Vallásismeret</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3939,7 +3939,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Kriptográfia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -3971,7 +3971,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeSkill="Ékesszólás" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="2" subtypeSkill="Ékesszólás" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Politika/Diplomácia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4005,7 +4005,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Antissjárás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4034,7 +4034,7 @@
         <cost value="32" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Számtan</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4064,7 +4064,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Mértan</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4095,7 +4095,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Mechanika</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4133,7 +4133,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Építészet</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4166,7 +4166,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="5" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="5" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Alkímia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4205,7 +4205,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="2" subtypeTag="élőlény" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="2" subtypeTag="élőlény" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Anatómia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4239,7 +4239,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Anatómia" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Anatómia" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Orvoslás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4279,7 +4279,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Anatómia" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Anatómia" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Balzsamozás</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4318,7 +4318,7 @@
         <cost value="25" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="4" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Méregkeverés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4363,7 +4363,7 @@
         <cost value="30" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Anatómia" category="Elméleti lépzettségek" subCategory="Szakértő élméleti képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Anatómia" category="Elméleti lépzettségek" subcategory="Szakértő élméleti képzettségek">
       <name language="hu-HU">Pszi</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4389,7 +4389,7 @@
     <!-- -->
     <!--   Titkos elméleti képzettségek -->
     <!-- -->
-    <skill type="levels" difficulty="3" subtypeTag="tapasztalati_mágia" category="Elméleti lépzettségek" subCategory="Titkos elméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="tapasztalati_mágia" category="Elméleti lépzettségek" subcategory="Titkos elméleti képzettségek">
       <name language="hu-HU">Vulgármágia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4434,7 +4434,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Vallásismeret" category="Elméleti lépzettségek" subCategory="Titkos elméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Vallásismeret" category="Elméleti lépzettségek" subcategory="Titkos elméleti képzettségek">
       <name language="hu-HU">Szakrális mágia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4471,7 +4471,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="mágikus_iskolaforma" category="Elméleti lépzettségek" subCategory="Titkos elméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="mágikus_iskolaforma" category="Elméleti lépzettségek" subcategory="Titkos elméleti képzettségek">
       <name language="hu-HU">Magasmágia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4504,7 +4504,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Titkos elméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Titkos elméleti képzettségek">
       <name language="hu-HU">Szimbólummágia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4556,7 +4556,7 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeSkill="Iparűzés" category="Elméleti lépzettségek" subCategory="Titkos elméleti képzettségek">
+    <skill type="levels" difficulty="4" subtypeSkill="Iparűzés" category="Elméleti lépzettségek" subcategory="Titkos elméleti képzettségek">
       <name language="hu-HU">Mestermágia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4596,7 +4596,7 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeSkill="Iparűzés" category="Elméleti lépzettségek" subCategory="Titkos elméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeSkill="Iparűzés" category="Elméleti lépzettségek" subcategory="Titkos elméleti képzettségek">
       <name language="hu-HU">Drágakömágia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4637,7 +4637,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="5" subtypeSkill="Anatómia" category="Elméleti lépzettségek" subCategory="Titkos elméleti képzettségek">
+    <skill type="levels" difficulty="5" subtypeSkill="Anatómia" category="Elméleti lépzettségek" subcategory="Titkos elméleti képzettségek">
       <name language="hu-HU">Élettan</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4678,7 +4678,7 @@
         <cost value="35" />
       </level>
     </skill>
-    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Titkos elméleti képzettségek">
+    <skill type="levels" difficulty="3" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Titkos elméleti képzettségek">
       <name language="hu-HU">Auraelemzés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4708,7 +4708,7 @@
         <cost value="40" />
       </level>
     </skill>
-    <skill type="levels" difficulty="5" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Titkos elméleti képzettségek">
+    <skill type="levels" difficulty="5" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Titkos elméleti képzettségek">
       <name language="hu-HU">Démonológia</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4766,7 +4766,7 @@
     <!-- -->
     <!--   Titkos szervezeti hagyományok -->
     <!-- -->
-    <skill type="levels" difficulty="4" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Titkos szervezeti hagyományok">
+    <skill type="levels" difficulty="4" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Titkos szervezeti hagyományok">
       <name language="hu-HU">Auraleplezés</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4803,7 +4803,7 @@
         <cost value="45" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Titkos szervezeti hagyományok">
+    <skill type="levels" difficulty="4" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Titkos szervezeti hagyományok">
       <name language="hu-HU">Mágiaismeret</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4839,7 +4839,7 @@
         <cost value="60" />
       </level>
     </skill>
-    <skill type="levels" difficulty="5" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Titkos szervezeti hagyományok">
+    <skill type="levels" difficulty="5" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Titkos szervezeti hagyományok">
       <name language="hu-HU">Mágiahasználat</name>
       <name language="en-EN"></name>
       <level value="1">
@@ -4876,7 +4876,7 @@
         <cost value="60" />
       </level>
     </skill>
-    <skill type="levels" difficulty="4" subtypeTag="none" category="Elméleti lépzettségek" subCategory="Titkos szervezeti hagyományok">
+    <skill type="levels" difficulty="4" subtypeTag="none" category="Elméleti lépzettségek" subcategory="Titkos szervezeti hagyományok">
       <name language="hu-HU">Titkos Pszi</name>
       <name language="en-EN"></name>
       <level value="1">

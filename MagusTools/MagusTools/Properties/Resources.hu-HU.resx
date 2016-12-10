@@ -117,83 +117,83 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ATTR_PrimaryAttributes_Agility" xml:space="preserve">
+  <data name="ATTR_Agility" xml:space="preserve">
     <value>Ügyesség</value>
     <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Agility</comment>
   </data>
-  <data name="ATTR_PrimaryAttributes_Astral" xml:space="preserve">
+  <data name="ATTR_Astral" xml:space="preserve">
     <value>Asztrál</value>
     <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Astral</comment>
   </data>
-  <data name="ATTR_PrimaryAttributes_Charisma" xml:space="preserve">
+  <data name="ATTR_Charisma" xml:space="preserve">
     <value>Szépség</value>
     <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Charisma</comment>
   </data>
-  <data name="ATTR_PrimaryAttributes_Endurance" xml:space="preserve">
+  <data name="ATTR_Endurance" xml:space="preserve">
     <value>Állóképesség</value>
     <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Endurance</comment>
   </data>
-  <data name="ATTR_PrimaryAttributes_Health" xml:space="preserve">
+  <data name="ATTR_Health" xml:space="preserve">
     <value>Életerő</value>
     <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Health</comment>
   </data>
-  <data name="ATTR_PrimaryAttributes_Intelligence" xml:space="preserve">
+  <data name="ATTR_Intelligence" xml:space="preserve">
     <value>Intelligencia</value>
     <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Intelligence</comment>
   </data>
-  <data name="ATTR_PrimaryAttributes_Perception" xml:space="preserve">
+  <data name="ATTR_Perception" xml:space="preserve">
     <value>Érzékelés</value>
     <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Perception</comment>
   </data>
-  <data name="ATTR_PrimaryAttributes_Speed" xml:space="preserve">
+  <data name="ATTR_Speed" xml:space="preserve">
     <value>Gyorsaság</value>
     <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Speed</comment>
   </data>
-  <data name="ATTR_PrimaryAttributes_Strength" xml:space="preserve">
+  <data name="ATTR_Strength" xml:space="preserve">
     <value>Erő</value>
     <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Strength</comment>
   </data>
-  <data name="ATTR_PrimaryAttributes_Willpower" xml:space="preserve">
+  <data name="ATTR_Willpower" xml:space="preserve">
     <value>Akaraterő</value>
     <comment>Text for Stat-tab PrimaryAttributes - Label - Attribute - Willpower</comment>
   </data>
-  <data name="ATTR_SecondaryAttributes_Aim" xml:space="preserve">
+  <data name="ATTR_Aim" xml:space="preserve">
     <value>CÉ</value>
     <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Aim</comment>
   </data>
-  <data name="ATTR_SecondaryAttributes_Attack" xml:space="preserve">
+  <data name="ATTR_Attack" xml:space="preserve">
     <value>TÉ</value>
     <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Attack</comment>
   </data>
-  <data name="ATTR_SecondaryAttributes_CMperLevel" xml:space="preserve">
+  <data name="ATTR_CMperLevel" xml:space="preserve">
     <value>HM / Szint</value>
     <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - CM / Level</comment>
   </data>
-  <data name="ATTR_SecondaryAttributes_Defense" xml:space="preserve">
+  <data name="ATTR_Defense" xml:space="preserve">
     <value>VÉ</value>
     <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Defence</comment>
   </data>
-  <data name="ATTR_SecondaryAttributes_HP" xml:space="preserve">
+  <data name="ATTR_HP" xml:space="preserve">
     <value>ÉP</value>
     <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Health Points</comment>
   </data>
-  <data name="ATTR_SecondaryAttributes_Initiative" xml:space="preserve">
+  <data name="ATTR_Initiative" xml:space="preserve">
     <value>KÉ</value>
     <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Initiative</comment>
   </data>
-  <data name="ATTR_SecondaryAttributes_KPperLevel" xml:space="preserve">
+  <data name="ATTR_KPperLevel" xml:space="preserve">
     <value>KP / Szint</value>
     <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Knowledge Points Gain / Level</comment>
   </data>
-  <data name="ATTR_SecondaryAttributes_KP" xml:space="preserve">
+  <data name="ATTR_KP" xml:space="preserve">
     <value>KP</value>
     <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Knowlege Points</comment>
   </data>
-  <data name="ATTR_SecondaryAttributes_PRperLevel" xml:space="preserve">
+  <data name="ATTR_PRperLevel" xml:space="preserve">
     <value>FP / Szint</value>
     <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Pain Resistance Gain / Level</comment>
   </data>
-  <data name="ATTR_SecondaryAttributes_PR" xml:space="preserve">
+  <data name="ATTR_PR" xml:space="preserve">
     <value>FP</value>
     <comment>Text for Stat-tab SecondaryAttributes - Label - Attribute - Pain Resistance</comment>
   </data>
