@@ -270,7 +270,7 @@
     <comment>Text for Main menu - Options</comment>
   </data>
   <data name="MM_Options_Language" xml:space="preserve">
-    <value>Languages</value>
+    <value>Váltás Magyarra</value>
     <comment>Text for Main menu - Options - Language</comment>
   </data>
   <data name="MM_Options_Specials" xml:space="preserve">

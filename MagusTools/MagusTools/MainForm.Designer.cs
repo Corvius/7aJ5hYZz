@@ -366,45 +366,45 @@
             // 
             this.mnuFileNew.Image = global::MagusTools.Icons.MENU_NewChar;
             this.mnuFileNew.Name = "mnuFileNew";
-            this.mnuFileNew.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileNew.Size = new System.Drawing.Size(152, 22);
             this.mnuFileNew.Text = "New";
             // 
             // mnuFileOpen
             // 
             this.mnuFileOpen.Image = global::MagusTools.Icons.MENU_LoadChar;
             this.mnuFileOpen.Name = "mnuFileOpen";
-            this.mnuFileOpen.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileOpen.Size = new System.Drawing.Size(152, 22);
             this.mnuFileOpen.Text = "Open";
             // 
             // mnuFileSeparator1
             // 
             this.mnuFileSeparator1.Name = "mnuFileSeparator1";
-            this.mnuFileSeparator1.Size = new System.Drawing.Size(120, 6);
+            this.mnuFileSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuFileSave
             // 
             this.mnuFileSave.Image = global::MagusTools.Icons.MENU_SaveChar;
             this.mnuFileSave.Name = "mnuFileSave";
-            this.mnuFileSave.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileSave.Size = new System.Drawing.Size(152, 22);
             this.mnuFileSave.Text = "Save";
             // 
             // mnuFileSaveAs
             // 
             this.mnuFileSaveAs.Image = global::MagusTools.Icons.MENU_SaveAsChar;
             this.mnuFileSaveAs.Name = "mnuFileSaveAs";
-            this.mnuFileSaveAs.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileSaveAs.Size = new System.Drawing.Size(152, 22);
             this.mnuFileSaveAs.Text = "Save As...";
             // 
             // mnuFileSeparator2
             // 
             this.mnuFileSeparator2.Name = "mnuFileSeparator2";
-            this.mnuFileSeparator2.Size = new System.Drawing.Size(120, 6);
+            this.mnuFileSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuFileQuit
             // 
             this.mnuFileQuit.Image = global::MagusTools.Icons.MENU_Exit;
             this.mnuFileQuit.Name = "mnuFileQuit";
-            this.mnuFileQuit.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileQuit.Size = new System.Drawing.Size(152, 22);
             this.mnuFileQuit.Text = "Quit";
             // 
             // mnuCharacter
@@ -421,14 +421,14 @@
             // 
             this.mnuCharacterExportAsText.Image = global::MagusTools.Icons.MENU_Text;
             this.mnuCharacterExportAsText.Name = "mnuCharacterExportAsText";
-            this.mnuCharacterExportAsText.Size = new System.Drawing.Size(145, 22);
+            this.mnuCharacterExportAsText.Size = new System.Drawing.Size(152, 22);
             this.mnuCharacterExportAsText.Text = "Export as Text";
             // 
             // mnuCharacterGenerate
             // 
             this.mnuCharacterGenerate.Image = global::MagusTools.Icons.MENU_Generate;
             this.mnuCharacterGenerate.Name = "mnuCharacterGenerate";
-            this.mnuCharacterGenerate.Size = new System.Drawing.Size(145, 22);
+            this.mnuCharacterGenerate.Size = new System.Drawing.Size(152, 22);
             this.mnuCharacterGenerate.Text = "Generate";
             // 
             // mnuOptions
@@ -445,21 +445,22 @@
             // mnuOptionsSettings
             // 
             this.mnuOptionsSettings.Name = "mnuOptionsSettings";
-            this.mnuOptionsSettings.Size = new System.Drawing.Size(126, 22);
+            this.mnuOptionsSettings.Size = new System.Drawing.Size(152, 22);
             this.mnuOptionsSettings.Text = "Settings";
             // 
             // mnuOptionsLanguage
             // 
             this.mnuOptionsLanguage.Name = "mnuOptionsLanguage";
-            this.mnuOptionsLanguage.Size = new System.Drawing.Size(126, 22);
+            this.mnuOptionsLanguage.Size = new System.Drawing.Size(152, 22);
             this.mnuOptionsLanguage.Text = "Language";
+            this.mnuOptionsLanguage.Click += new System.EventHandler(this.mnuOptionsLanguage_Click);
             // 
             // mnuOptionsTools
             // 
             this.mnuOptionsTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuOptionsToolsDiceroller});
             this.mnuOptionsTools.Name = "mnuOptionsTools";
-            this.mnuOptionsTools.Size = new System.Drawing.Size(126, 22);
+            this.mnuOptionsTools.Size = new System.Drawing.Size(152, 22);
             this.mnuOptionsTools.Text = "Tools";
             // 
             // mnuOptionsToolsDiceroller

@@ -48,19 +48,19 @@ namespace MagusTools
                 //nodes.RemoveAll();
                 nodes = XElement.Load(xmlPath);
 
-                Program.eventLogger.Log(new object[] { "Loaded ", Color.Cyan, nodes.Descendants().Count(), Color.Black, " nodes" } );
+                Program.eventLogger.Log(new object[] { "Loaded ", Color.Cyan, nodes.Descendants().Count(), Color.Black, " nodes" });
                 return true;
             }
             catch
             {
-                Program.eventLogger.Log(new object[] { "Could not load ", Color.IndianRed, xmlPath, Color.Black, "!" } );
+                Program.eventLogger.Log(new object[] { "Could not load ", Color.IndianRed, xmlPath, Color.Black, "!" });
                 return false;
             }
         }
 
         public System.Windows.Forms.TreeNode[] GetSkillTree()
         {
-            Program.eventLogger.Log(new object[] { "Fetching Skill Tree" } );
+            Program.eventLogger.Log(new object[] { "Fetching Skill Tree" });
 
             var categories =
                 from data in xmlDefaults.Elements("skills").Elements("skill")

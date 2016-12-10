@@ -439,7 +439,7 @@ namespace MagusTools.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Languages.
+        ///   Looks up a localized string similar to Váltás Magyarra.
         /// </summary>
         internal static string MM_Options_Language {
             get {

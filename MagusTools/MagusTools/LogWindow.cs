@@ -1,6 +1,4 @@
-﻿// Only include this module in the project when debugging
-
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace LogWindow
@@ -38,15 +36,17 @@ namespace LogWindow
 
         private void LogWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel =
-                e.CloseReason != CloseReason.FormOwnerClosing
-                &&
-                MessageBox.Show
-                    ("Do you really want to close the debug window?",
-                    "Closing debugform",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question,
-                    MessageBoxDefaultButton.Button2) == DialogResult.No;
+            e.Cancel = e.CloseReason != CloseReason.FormOwnerClosing;
+
+            //e.Cancel =
+            //    e.CloseReason != CloseReason.FormOwnerClosing
+            //    &&
+            //    MessageBox.Show
+            //        ("Do you really want to close the debug window?",
+            //        "Closing debugform",
+            //        MessageBoxButtons.YesNo,
+            //        MessageBoxIcon.Question,
+            //        MessageBoxDefaultButton.Button2) == DialogResult.No;
         }
 
         private void LogWindow_Load(object sender, System.EventArgs e)

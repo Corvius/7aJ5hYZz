@@ -204,7 +204,8 @@ namespace MagusTools
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Unable to load localized strings from resource. " + ex.Message);
+                Program.eventLogger.Log(new object[] { Color.Red, "Unable to load localized strings from resource." });
+                Program.eventLogger.Log(new object[] { Color.Red, ex.Message });
                 throw;
             }
         }
@@ -548,6 +549,7 @@ namespace MagusTools
         }
         #endregion
 
+        #region UpDown Eventhandler Implementations
         private void updCharLevel_ValueChanged(object sender, EventArgs e)
         {
             character.SetStat(Character.Stats.Level, (int)((NumericUpDownExt)sender).Value);
@@ -730,5 +732,19 @@ namespace MagusTools
         private void updM03_ValueChanged(object sender, EventArgs e)
         {
         }
+        #endregion
+
+        #region Menu Event Handlers
+        // Menu Event Handlers
+        private void mnuOptionsLanguage_Click(object sender, EventArgs e)
+        {
+            if (CultureInfo.CurrentCulture.Name == "hu-HU")
+                ChangeLanguage("en-US");
+            else
+                ChangeLanguage("hu-HU");
+
+            LoadLocalizedStrings();
+        }
+        #endregion
     }
 }
