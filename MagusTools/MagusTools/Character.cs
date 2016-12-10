@@ -10,7 +10,6 @@ namespace MagusTools
         private HashSet<Options> OptionFlags = new HashSet<Options>();
         private string charClass = "";
 
-
         public enum Stats
         {
             Strength, Speed, Agility, Endurance, Health, Charisma, Intelligence, Willpower, Astral, Perception, 
@@ -251,6 +250,15 @@ namespace MagusTools
             return 0;
         }
 
+        public List<object> GetSelectedSkills()
+        {
+            return null;
+        }
+        public void AddSelectedSkill(Skill newSkill)
+        {
+           
+        }
+
         public bool IsSkillLearned(string skillName, int level)
         {
             return false;
@@ -267,6 +275,15 @@ namespace MagusTools
         {
             public int Actual { get; set; }
             public int Base { get; set; }
+        }
+
+        public class Skill
+        {
+            public string Name { get; set; }
+            public string SubType { get; set; }
+            public int Level { get; set; }
+            public int Cost { get; set; }
+            public bool IsPurchasedWithCCP { get; set; }
         }
     }
 }

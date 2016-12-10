@@ -560,10 +560,15 @@ namespace MagusTools
                 TreeNode draggedNode = (TreeNode)e.Data.GetData("System.Windows.Forms.TreeNode");
                 DataGridView dragTarget = (DataGridView)sender;
 
-                // TODO: Call skill adding logic here
-                Console.WriteLine("Dragged " + draggedNode.Text + " to " + dragTarget.Name);
+                Program.eventLogger.Log(new object[] { "Dragged ", Color.Blue, draggedNode.Text, Color.Black, " to ", Color.Blue, dragTarget.Name });
+
                 SkillWindow sw = new SkillWindow(draggedNode.Text);
-                sw.ShowDialog();
+
+                if (sw.ShowDialog() == DialogResult.OK)
+                {
+                    character.AddSelectedSkill(sw.userResult);
+                    dgSelectedSkills.DataSource = character.GetSelectedSkills();
+                }
             }
         }
         #endregion

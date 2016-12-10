@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MagusTools.Character">
+    <Position X="8.25" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Enum Name="MagusTools.Character.Options" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Character.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="MagusTools.Character.Stats" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Character.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="MagusTools.Character.Stat" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Character.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAiAAAAAAAAABAAAAgEAQIAACAAgAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogWindow.LogExtension">
+    <Position X="5.75" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogWindow.LogWindow">
+    <Position X="3" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAQACAAgAABAAAAAAAABAAQA=</HashCode>
+      <FileName>LogWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogWindow.RichTextBoxExt">
+    <Position X="5.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagusTools.mainForm">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>DTo4nobjAzEaECTjqp+vf8IToZx2699/FtjR6vj5X/g=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagusTools.NumericUpDownExt">
+    <Position X="5.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAABACAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NumericUpDownExt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagusTools.SkillWindow">
+    <Position X="10.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAFAAAABAGIhEACCIgAAADAAAAAAAAAAAA=</HashCode>
+      <FileName>SkillWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagusTools.XMLHandler">
+    <Position X="10.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAgAAAAAIAAAAAAAAACAAAAAAAAAABgAAAA=</HashCode>
+      <FileName>XMLHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

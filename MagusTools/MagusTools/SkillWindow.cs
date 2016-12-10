@@ -20,10 +20,21 @@ namespace MagusTools
         private Button btOk;
         private Button btCancel;
 
+        public Character.Skill userResult = null;
+
         public SkillWindow(string skillName)
         {
             StartPosition = FormStartPosition.CenterParent;
             InitializeComponent();
+            this.btOk.Click += SkillWindow_btOkClick;
+            this.lblSkillName.Text = skillName;
+        }
+
+        public void SkillWindow_btOkClick(object sender, System.EventArgs e)
+        {
+            // TODO: Update result with user's choice
+
+            this.DialogResult = DialogResult.OK;
         }
 
         /// <summary>
@@ -242,6 +253,7 @@ namespace MagusTools
             this.btOk.TabIndex = 7;
             this.btOk.Text = "OK";
             this.btOk.UseVisualStyleBackColor = true;
+            this.btOk.Enabled = false;
             // 
             // frmSelectSkill
             // 

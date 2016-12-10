@@ -136,6 +136,8 @@ namespace MagusTools
 
         public string GetRealms(string deityName)
         {
+            Program.eventLogger.Log(new object[] { "Getting realms" });
+
             var xmlQuery =
                 from data in xmlDefaults.Elements("religions").Elements("religion")
                 where data.Element("name").Attribute("language").Value == System.Threading.Thread.CurrentThread.CurrentCulture.Name
