@@ -79,7 +79,7 @@ namespace LogWindow
         }
 
         [System.Diagnostics.Conditional("DEBUG")]
-        public void Log(object[] args)
+        public void Log(object[] args, bool newLine = true)
         {
             Color textColor = Color.Black;
 
@@ -93,7 +93,10 @@ namespace LogWindow
                     rtb.AppendText(item.ToString(), textColor);
             }
 
-            rtb.AppendText("\n");
+            if (newLine)
+                rtb.AppendText("\n");
+
+            rtb.ScrollToCaret();
         }
 
     }

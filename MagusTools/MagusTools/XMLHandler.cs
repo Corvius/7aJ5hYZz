@@ -107,6 +107,28 @@ namespace MagusTools
 
             return result.ToArray();
         }
+
+        public string[] GetComboBoxValues(string groupName, string element, string tag = "")
+        {
+            Program.eventLogger.Log(new object[] { "Getting ComboBox values for <", Color.Blue, groupName, Color.Black, ">" });
+        
+            var xmlQuery =
+                from data in xmlDefaults.Elements(groupName).Elements(element)
+                where data.Element("name").Attribute("language").Value == System.Threading.Thread.CurrentThread.CurrentCulture.Name
+                select data.Element("name").Value;
+
+            if (tag == "teszt")
+            {
+                var testQuery =
+                    from data in xmlDefaults.Elements(groupName).Elements(element)
+                    where data.Element("name").Attribute("language").Value == System.Threading.Thread.CurrentThread.CurrentCulture.Name &&
+                          data.Element("tag").Value == "játszható"
+                    select data;
+            }
+
+            return xmlQuery.ToArray();
+        }
+
     }
 }
 

@@ -24,7 +24,7 @@ namespace MagusTools
         public Character character;
 
         // Main skill-handling object
-        public XMLHandler skillHandler;
+        public XMLHandler xmlHandler;
 
         // MainForm's Constructor
         public mainForm()
@@ -38,7 +38,7 @@ namespace MagusTools
         {
             // Initailize objects
             character = new Character();
-            skillHandler = new XMLHandler();
+            xmlHandler = new XMLHandler();
 
             // Set up elements of the UI
             PrepareUI();
@@ -48,6 +48,14 @@ namespace MagusTools
 
             // Refresh all strings with the selected language.
             LoadLocalizedStrings();
+
+            // Fill CombobBox values
+            cbCharGender.Items.AddRange(xmlHandler.GetComboBoxValues("genders", "gender"));
+            cbCharAlignment.Items.AddRange(xmlHandler.GetComboBoxValues("alignments", "alignment"));
+            cbCharRace.Items.AddRange(xmlHandler.GetComboBoxValues("creatures", "creature", "játszható"));
+            cbCharReligion.Items.AddRange(xmlHandler.GetComboBoxValues("religions", "religion"));
+            cbCharClass.Items.AddRange(xmlHandler.GetComboBoxValues("classes", "class"));
+            cbCharBirthplace.Items.AddRange(xmlHandler.GetComboBoxValues("languages", "language", "szülőföld"));
         }
 
         /// <summary>
@@ -80,7 +88,7 @@ namespace MagusTools
         /// </summary>
         private void LoadLocalizedStrings()
         {
-            Program.eventLogger.Log(new object[] { "Trying to load localized stings"} );
+            Program.eventLogger.Log(new object[] { "Trying to load localized stings... " }, false);
 
             try
             {
@@ -208,6 +216,8 @@ namespace MagusTools
                 Program.eventLogger.Log(new object[] { Color.Red, ex.Message });
                 throw;
             }
+
+            Program.eventLogger.Log(new object[] { Color.Blue, "Success" });
         }
 
         /// <summary>
@@ -498,7 +508,7 @@ namespace MagusTools
             #endregion
 
             // SkillTree setup
-            twSkillTree.Nodes.AddRange(skillHandler.GetSkillTree());
+            twSkillTree.Nodes.AddRange(xmlHandler.GetSkillTree());
             twSkillTree.ExpandAll();
         }
 
@@ -545,6 +555,8 @@ namespace MagusTools
 
                 // TODO: Call skill adding logic here
                 Console.WriteLine("Dragged " + draggedNode.Text + " to " + dragTarget.Name);
+                SkillWindow sw = new SkillWindow(draggedNode.Text);
+                sw.ShowDialog();
             }
         }
         #endregion
