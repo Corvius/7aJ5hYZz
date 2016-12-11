@@ -39,7 +39,7 @@ namespace MagusTools
 
         public void SetStat(Stats stat, int newValue)
         {
-            Program.eventLogger.Log(new object[] { "Changing ", Color.Blue, stat.ToString(), Color.Black, " to the value", Color.Cyan, newValue } );
+            Program.eventLogger.Log(new object[] { "Changing ", Color.Blue, stat.ToString(), Color.Black, " to the value ", Color.Cyan, newValue } );
 
             if (newValue < 0) return; // You Shall Not Pass!
 

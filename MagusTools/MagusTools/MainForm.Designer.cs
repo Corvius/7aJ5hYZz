@@ -366,7 +366,7 @@
             // 
             this.mnuFileNew.Image = global::MagusTools.Icons.MENU_NewChar;
             this.mnuFileNew.Name = "mnuFileNew";
-            this.mnuFileNew.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileNew.Size = new System.Drawing.Size(152, 22);
             this.mnuFileNew.Text = "New";
             this.mnuFileNew.Click += new System.EventHandler(this.mnuFileNew_Click);
             // 
@@ -374,20 +374,20 @@
             // 
             this.mnuFileOpen.Image = global::MagusTools.Icons.MENU_LoadChar;
             this.mnuFileOpen.Name = "mnuFileOpen";
-            this.mnuFileOpen.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileOpen.Size = new System.Drawing.Size(152, 22);
             this.mnuFileOpen.Text = "Open";
             this.mnuFileOpen.Click += new System.EventHandler(this.mnuFileOpen_Click);
             // 
             // mnuFileSeparator1
             // 
             this.mnuFileSeparator1.Name = "mnuFileSeparator1";
-            this.mnuFileSeparator1.Size = new System.Drawing.Size(120, 6);
+            this.mnuFileSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuFileSave
             // 
             this.mnuFileSave.Image = global::MagusTools.Icons.MENU_SaveChar;
             this.mnuFileSave.Name = "mnuFileSave";
-            this.mnuFileSave.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileSave.Size = new System.Drawing.Size(152, 22);
             this.mnuFileSave.Text = "Save";
             this.mnuFileSave.Click += new System.EventHandler(this.mnuFileSave_Click);
             // 
@@ -395,20 +395,20 @@
             // 
             this.mnuFileSaveAs.Image = global::MagusTools.Icons.MENU_SaveAsChar;
             this.mnuFileSaveAs.Name = "mnuFileSaveAs";
-            this.mnuFileSaveAs.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileSaveAs.Size = new System.Drawing.Size(152, 22);
             this.mnuFileSaveAs.Text = "Save As...";
             this.mnuFileSaveAs.Click += new System.EventHandler(this.mnuFileSaveAs_Click);
             // 
             // mnuFileSeparator2
             // 
             this.mnuFileSeparator2.Name = "mnuFileSeparator2";
-            this.mnuFileSeparator2.Size = new System.Drawing.Size(120, 6);
+            this.mnuFileSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuFileQuit
             // 
             this.mnuFileQuit.Image = global::MagusTools.Icons.MENU_Exit;
             this.mnuFileQuit.Name = "mnuFileQuit";
-            this.mnuFileQuit.Size = new System.Drawing.Size(123, 22);
+            this.mnuFileQuit.Size = new System.Drawing.Size(152, 22);
             this.mnuFileQuit.Text = "Quit";
             this.mnuFileQuit.Click += new System.EventHandler(this.mnuFileQuit_Click);
             // 
@@ -426,7 +426,7 @@
             // 
             this.mnuCharacterExportAsText.Image = global::MagusTools.Icons.MENU_Text;
             this.mnuCharacterExportAsText.Name = "mnuCharacterExportAsText";
-            this.mnuCharacterExportAsText.Size = new System.Drawing.Size(145, 22);
+            this.mnuCharacterExportAsText.Size = new System.Drawing.Size(152, 22);
             this.mnuCharacterExportAsText.Text = "Export as Text";
             this.mnuCharacterExportAsText.Click += new System.EventHandler(this.mnuCharacterExportAsText_Click);
             // 
@@ -434,7 +434,7 @@
             // 
             this.mnuCharacterGenerate.Image = global::MagusTools.Icons.MENU_Generate;
             this.mnuCharacterGenerate.Name = "mnuCharacterGenerate";
-            this.mnuCharacterGenerate.Size = new System.Drawing.Size(145, 22);
+            this.mnuCharacterGenerate.Size = new System.Drawing.Size(152, 22);
             this.mnuCharacterGenerate.Text = "Generate";
             this.mnuCharacterGenerate.Click += new System.EventHandler(this.mnuCharacterGenerate_Click);
             // 
@@ -491,14 +491,14 @@
             // mnuHelpViewhelp
             // 
             this.mnuHelpViewhelp.Name = "mnuHelpViewhelp";
-            this.mnuHelpViewhelp.Size = new System.Drawing.Size(174, 22);
+            this.mnuHelpViewhelp.Size = new System.Drawing.Size(175, 22);
             this.mnuHelpViewhelp.Text = "View Help";
             this.mnuHelpViewhelp.Click += new System.EventHandler(this.mnuHelpViewhelp_Click);
             // 
             // mnuHelpAbout
             // 
             this.mnuHelpAbout.Name = "mnuHelpAbout";
-            this.mnuHelpAbout.Size = new System.Drawing.Size(174, 22);
+            this.mnuHelpAbout.Size = new System.Drawing.Size(175, 22);
             this.mnuHelpAbout.Text = "About MagusTools";
             this.mnuHelpAbout.Click += new System.EventHandler(this.mnuHelpAbout_Click);
             // 
@@ -506,7 +506,7 @@
             // 
             this.mainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stlblFileName});
-            this.mainStatusStrip.Location = new System.Drawing.Point(0, 740);
+            this.mainStatusStrip.Location = new System.Drawing.Point(0, 724);
             this.mainStatusStrip.Name = "mainStatusStrip";
             this.mainStatusStrip.Size = new System.Drawing.Size(684, 22);
             this.mainStatusStrip.SizingGrip = false;
@@ -524,7 +524,7 @@
             this.tabSkills.Location = new System.Drawing.Point(4, 24);
             this.tabSkills.Name = "tabSkills";
             this.tabSkills.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSkills.Size = new System.Drawing.Size(676, 688);
+            this.tabSkills.Size = new System.Drawing.Size(676, 672);
             this.tabSkills.TabIndex = 3;
             this.tabSkills.Text = "Skills";
             this.tabSkills.UseVisualStyleBackColor = true;
@@ -557,7 +557,7 @@
             this.tlpSkills.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpSkills.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tlpSkills.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tlpSkills.Size = new System.Drawing.Size(670, 682);
+            this.tlpSkills.Size = new System.Drawing.Size(670, 666);
             this.tlpSkills.TabIndex = 0;
             // 
             // btSkillsExpand
@@ -602,7 +602,7 @@
             this.twSkillTree.Location = new System.Drawing.Point(24, 24);
             this.twSkillTree.Margin = new System.Windows.Forms.Padding(0);
             this.twSkillTree.Name = "twSkillTree";
-            this.twSkillTree.Size = new System.Drawing.Size(271, 626);
+            this.twSkillTree.Size = new System.Drawing.Size(271, 610);
             this.twSkillTree.TabIndex = 0;
             this.twSkillTree.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.twSkillTree_ItemDrag);
             // 
@@ -612,7 +612,7 @@
             this.tlpSkills.SetColumnSpan(this.lblAD00, 6);
             this.lblAD00.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAD00.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblAD00.Location = new System.Drawing.Point(27, 650);
+            this.lblAD00.Location = new System.Drawing.Point(27, 634);
             this.lblAD00.Name = "lblAD00";
             this.lblAD00.Size = new System.Drawing.Size(614, 16);
             this.lblAD00.TabIndex = 1;
@@ -624,7 +624,7 @@
             this.tlpSkills.SetColumnSpan(this.lblAD01, 6);
             this.lblAD01.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAD01.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblAD01.Location = new System.Drawing.Point(27, 666);
+            this.lblAD01.Location = new System.Drawing.Point(27, 650);
             this.lblAD01.Name = "lblAD01";
             this.lblAD01.Size = new System.Drawing.Size(614, 16);
             this.lblAD01.TabIndex = 2;
@@ -663,7 +663,7 @@
             this.dgSelectedSkills.Name = "dgSelectedSkills";
             this.dgSelectedSkills.RowHeadersVisible = false;
             this.dgSelectedSkills.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgSelectedSkills.Size = new System.Drawing.Size(325, 626);
+            this.dgSelectedSkills.Size = new System.Drawing.Size(325, 610);
             this.dgSelectedSkills.TabIndex = 8;
             this.dgSelectedSkills.DragDrop += new System.Windows.Forms.DragEventHandler(this.dgSelectedSkills_DragDrop);
             this.dgSelectedSkills.DragEnter += new System.Windows.Forms.DragEventHandler(this.dgSelectedSkills_DragEnter);
@@ -705,7 +705,7 @@
             this.tabSecondaryAttributes.Location = new System.Drawing.Point(4, 24);
             this.tabSecondaryAttributes.Name = "tabSecondaryAttributes";
             this.tabSecondaryAttributes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSecondaryAttributes.Size = new System.Drawing.Size(676, 688);
+            this.tabSecondaryAttributes.Size = new System.Drawing.Size(676, 672);
             this.tabSecondaryAttributes.TabIndex = 7;
             this.tabSecondaryAttributes.Text = "Secondary Attributes";
             this.tabSecondaryAttributes.UseVisualStyleBackColor = true;
@@ -859,7 +859,7 @@
             this.tlpSecondaryAttributesOld.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tlpSecondaryAttributesOld.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tlpSecondaryAttributesOld.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpSecondaryAttributesOld.Size = new System.Drawing.Size(670, 682);
+            this.tlpSecondaryAttributesOld.Size = new System.Drawing.Size(670, 666);
             this.tlpSecondaryAttributesOld.TabIndex = 1;
             // 
             // lblCMT03
@@ -867,7 +867,7 @@
             this.lblCMT03.AutoSize = true;
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.lblCMT03, 2);
             this.lblCMT03.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCMT03.Location = new System.Drawing.Point(83, 480);
+            this.lblCMT03.Location = new System.Drawing.Point(83, 468);
             this.lblCMT03.Name = "lblCMT03";
             this.lblCMT03.Size = new System.Drawing.Size(90, 16);
             this.lblCMT03.TabIndex = 113;
@@ -879,7 +879,7 @@
             this.lblCMT02.AutoSize = true;
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.lblCMT02, 2);
             this.lblCMT02.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCMT02.Location = new System.Drawing.Point(83, 356);
+            this.lblCMT02.Location = new System.Drawing.Point(83, 348);
             this.lblCMT02.Name = "lblCMT02";
             this.lblCMT02.Size = new System.Drawing.Size(90, 16);
             this.lblCMT02.TabIndex = 112;
@@ -891,7 +891,7 @@
             this.lblCMT01.AutoSize = true;
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.lblCMT01, 2);
             this.lblCMT01.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCMT01.Location = new System.Drawing.Point(83, 232);
+            this.lblCMT01.Location = new System.Drawing.Point(83, 228);
             this.lblCMT01.Name = "lblCMT01";
             this.lblCMT01.Size = new System.Drawing.Size(90, 16);
             this.lblCMT01.TabIndex = 111;
@@ -914,7 +914,7 @@
             // 
             this.lblCT16.AutoSize = true;
             this.lblCT16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT16.Location = new System.Drawing.Point(592, 232);
+            this.lblCT16.Location = new System.Drawing.Point(592, 228);
             this.lblCT16.Name = "lblCT16";
             this.lblCT16.Size = new System.Drawing.Size(58, 16);
             this.lblCT16.TabIndex = 102;
@@ -925,7 +925,7 @@
             // 
             this.lblCT19.AutoSize = true;
             this.lblCT19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT19.Location = new System.Drawing.Point(592, 604);
+            this.lblCT19.Location = new System.Drawing.Point(592, 588);
             this.lblCT19.Name = "lblCT19";
             this.lblCT19.Size = new System.Drawing.Size(58, 16);
             this.lblCT19.TabIndex = 101;
@@ -936,7 +936,7 @@
             // 
             this.lblCT18.AutoSize = true;
             this.lblCT18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT18.Location = new System.Drawing.Point(592, 480);
+            this.lblCT18.Location = new System.Drawing.Point(592, 468);
             this.lblCT18.Name = "lblCT18";
             this.lblCT18.Size = new System.Drawing.Size(58, 16);
             this.lblCT18.TabIndex = 100;
@@ -947,7 +947,7 @@
             // 
             this.lblCT17.AutoSize = true;
             this.lblCT17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT17.Location = new System.Drawing.Point(592, 356);
+            this.lblCT17.Location = new System.Drawing.Point(592, 348);
             this.lblCT17.Name = "lblCT17";
             this.lblCT17.Size = new System.Drawing.Size(58, 16);
             this.lblCT17.TabIndex = 99;
@@ -969,7 +969,7 @@
             // 
             this.lblCT14.AutoSize = true;
             this.lblCT14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT14.Location = new System.Drawing.Point(209, 604);
+            this.lblCT14.Location = new System.Drawing.Point(209, 588);
             this.lblCT14.Name = "lblCT14";
             this.lblCT14.Size = new System.Drawing.Size(58, 16);
             this.lblCT14.TabIndex = 97;
@@ -980,7 +980,7 @@
             // 
             this.lblCT13.AutoSize = true;
             this.lblCT13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT13.Location = new System.Drawing.Point(209, 480);
+            this.lblCT13.Location = new System.Drawing.Point(209, 468);
             this.lblCT13.Name = "lblCT13";
             this.lblCT13.Size = new System.Drawing.Size(58, 16);
             this.lblCT13.TabIndex = 96;
@@ -991,7 +991,7 @@
             // 
             this.lblCT12.AutoSize = true;
             this.lblCT12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT12.Location = new System.Drawing.Point(209, 356);
+            this.lblCT12.Location = new System.Drawing.Point(209, 348);
             this.lblCT12.Name = "lblCT12";
             this.lblCT12.Size = new System.Drawing.Size(58, 16);
             this.lblCT12.TabIndex = 95;
@@ -1002,7 +1002,7 @@
             // 
             this.lblCT11.AutoSize = true;
             this.lblCT11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT11.Location = new System.Drawing.Point(209, 232);
+            this.lblCT11.Location = new System.Drawing.Point(209, 228);
             this.lblCT11.Name = "lblCT11";
             this.lblCT11.Size = new System.Drawing.Size(58, 16);
             this.lblCT11.TabIndex = 94;
@@ -1028,7 +1028,7 @@
             this.pbD01.Margin = new System.Windows.Forms.Padding(0);
             this.pbD01.Name = "pbD01";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.pbD01, 40);
-            this.pbD01.Size = new System.Drawing.Size(31, 652);
+            this.pbD01.Size = new System.Drawing.Size(31, 636);
             this.pbD01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbD01.TabIndex = 92;
             this.pbD01.TabStop = false;
@@ -1039,7 +1039,7 @@
             this.lblMCV01.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMCV01.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMCV01.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMCV01.Location = new System.Drawing.Point(209, 644);
+            this.lblMCV01.Location = new System.Drawing.Point(209, 628);
             this.lblMCV01.Name = "lblMCV01";
             this.lblMCV01.Size = new System.Drawing.Size(58, 24);
             this.lblMCV01.TabIndex = 91;
@@ -1053,7 +1053,7 @@
             this.lblMCV02.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMCV02.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMCV02.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMCV02.Location = new System.Drawing.Point(592, 644);
+            this.lblMCV02.Location = new System.Drawing.Point(592, 628);
             this.lblMCV02.Name = "lblMCV02";
             this.lblMCV02.Size = new System.Drawing.Size(58, 24);
             this.lblMCV02.TabIndex = 90;
@@ -1067,7 +1067,7 @@
             this.lblMCT02.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMCT02.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMCT02.Font = new System.Drawing.Font("Bookman Old Style", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMCT02.Location = new System.Drawing.Point(399, 644);
+            this.lblMCT02.Location = new System.Drawing.Point(399, 628);
             this.lblMCT02.Margin = new System.Windows.Forms.Padding(0);
             this.lblMCT02.Name = "lblMCT02";
             this.lblMCT02.Size = new System.Drawing.Size(190, 24);
@@ -1081,7 +1081,7 @@
             this.lblAV18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV18.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV18.Location = new System.Drawing.Point(592, 416);
+            this.lblAV18.Location = new System.Drawing.Point(592, 404);
             this.lblAV18.Name = "lblAV18";
             this.lblAV18.Size = new System.Drawing.Size(58, 28);
             this.lblAV18.TabIndex = 88;
@@ -1095,7 +1095,7 @@
             this.lblCV18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV18.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV18.Location = new System.Drawing.Point(592, 452);
+            this.lblCV18.Location = new System.Drawing.Point(592, 440);
             this.lblCV18.Name = "lblCV18";
             this.lblCV18.Size = new System.Drawing.Size(58, 28);
             this.lblCV18.TabIndex = 87;
@@ -1109,7 +1109,7 @@
             this.lblAV19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV19.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV19.Location = new System.Drawing.Point(592, 540);
+            this.lblAV19.Location = new System.Drawing.Point(592, 524);
             this.lblAV19.Name = "lblAV19";
             this.lblAV19.Size = new System.Drawing.Size(58, 28);
             this.lblAV19.TabIndex = 86;
@@ -1123,7 +1123,7 @@
             this.lblCV19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV19.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV19.Location = new System.Drawing.Point(592, 576);
+            this.lblCV19.Location = new System.Drawing.Point(592, 560);
             this.lblCV19.Name = "lblCV19";
             this.lblCV19.Size = new System.Drawing.Size(58, 28);
             this.lblCV19.TabIndex = 85;
@@ -1165,7 +1165,7 @@
             this.lblAV16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV16.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV16.Location = new System.Drawing.Point(592, 168);
+            this.lblAV16.Location = new System.Drawing.Point(592, 164);
             this.lblAV16.Name = "lblAV16";
             this.lblAV16.Size = new System.Drawing.Size(58, 28);
             this.lblAV16.TabIndex = 82;
@@ -1179,7 +1179,7 @@
             this.lblCV16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV16.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV16.Location = new System.Drawing.Point(592, 204);
+            this.lblCV16.Location = new System.Drawing.Point(592, 200);
             this.lblCV16.Name = "lblCV16";
             this.lblCV16.Size = new System.Drawing.Size(58, 28);
             this.lblCV16.TabIndex = 81;
@@ -1193,7 +1193,7 @@
             this.lblAV17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV17.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV17.Location = new System.Drawing.Point(592, 292);
+            this.lblAV17.Location = new System.Drawing.Point(592, 284);
             this.lblAV17.Name = "lblAV17";
             this.lblAV17.Size = new System.Drawing.Size(58, 28);
             this.lblAV17.TabIndex = 80;
@@ -1207,7 +1207,7 @@
             this.lblCV17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV17.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV17.Location = new System.Drawing.Point(592, 328);
+            this.lblCV17.Location = new System.Drawing.Point(592, 320);
             this.lblCV17.Name = "lblCV17";
             this.lblCV17.Size = new System.Drawing.Size(58, 28);
             this.lblCV17.TabIndex = 79;
@@ -1221,7 +1221,7 @@
             this.lblAV14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV14.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV14.Location = new System.Drawing.Point(209, 540);
+            this.lblAV14.Location = new System.Drawing.Point(209, 524);
             this.lblAV14.Name = "lblAV14";
             this.lblAV14.Size = new System.Drawing.Size(58, 28);
             this.lblAV14.TabIndex = 78;
@@ -1235,7 +1235,7 @@
             this.lblCV14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV14.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV14.Location = new System.Drawing.Point(209, 576);
+            this.lblCV14.Location = new System.Drawing.Point(209, 560);
             this.lblCV14.Name = "lblCV14";
             this.lblCV14.Size = new System.Drawing.Size(58, 28);
             this.lblCV14.TabIndex = 77;
@@ -1249,7 +1249,7 @@
             this.lblAV13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV13.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV13.Location = new System.Drawing.Point(209, 416);
+            this.lblAV13.Location = new System.Drawing.Point(209, 404);
             this.lblAV13.Name = "lblAV13";
             this.lblAV13.Size = new System.Drawing.Size(58, 28);
             this.lblAV13.TabIndex = 76;
@@ -1263,7 +1263,7 @@
             this.lblCV13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV13.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV13.Location = new System.Drawing.Point(209, 452);
+            this.lblCV13.Location = new System.Drawing.Point(209, 440);
             this.lblCV13.Name = "lblCV13";
             this.lblCV13.Size = new System.Drawing.Size(58, 28);
             this.lblCV13.TabIndex = 75;
@@ -1277,7 +1277,7 @@
             this.lblAV12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV12.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV12.Location = new System.Drawing.Point(209, 292);
+            this.lblAV12.Location = new System.Drawing.Point(209, 284);
             this.lblAV12.Name = "lblAV12";
             this.lblAV12.Size = new System.Drawing.Size(58, 28);
             this.lblAV12.TabIndex = 74;
@@ -1291,7 +1291,7 @@
             this.lblCV12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV12.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV12.Location = new System.Drawing.Point(209, 328);
+            this.lblCV12.Location = new System.Drawing.Point(209, 320);
             this.lblCV12.Name = "lblCV12";
             this.lblCV12.Size = new System.Drawing.Size(58, 28);
             this.lblCV12.TabIndex = 73;
@@ -1303,7 +1303,7 @@
             // 
             this.lblAT16.AutoSize = true;
             this.lblAT16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT16.Location = new System.Drawing.Point(592, 152);
+            this.lblAT16.Location = new System.Drawing.Point(592, 148);
             this.lblAT16.Name = "lblAT16";
             this.lblAT16.Size = new System.Drawing.Size(58, 16);
             this.lblAT16.TabIndex = 72;
@@ -1314,7 +1314,7 @@
             // 
             this.lblAT11.AutoSize = true;
             this.lblAT11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT11.Location = new System.Drawing.Point(209, 152);
+            this.lblAT11.Location = new System.Drawing.Point(209, 148);
             this.lblAT11.Name = "lblAT11";
             this.lblAT11.Size = new System.Drawing.Size(58, 16);
             this.lblAT11.TabIndex = 71;
@@ -1327,7 +1327,7 @@
             this.lblAV11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV11.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV11.Location = new System.Drawing.Point(209, 168);
+            this.lblAV11.Location = new System.Drawing.Point(209, 164);
             this.lblAV11.Name = "lblAV11";
             this.lblAV11.Size = new System.Drawing.Size(58, 28);
             this.lblAV11.TabIndex = 70;
@@ -1341,7 +1341,7 @@
             this.lblCV11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV11.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV11.Location = new System.Drawing.Point(209, 204);
+            this.lblCV11.Location = new System.Drawing.Point(209, 200);
             this.lblCV11.Name = "lblCV11";
             this.lblCV11.Size = new System.Drawing.Size(58, 28);
             this.lblCV11.TabIndex = 69;
@@ -1367,7 +1367,7 @@
             // 
             this.lblAT17.AutoSize = true;
             this.lblAT17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT17.Location = new System.Drawing.Point(592, 276);
+            this.lblAT17.Location = new System.Drawing.Point(592, 268);
             this.lblAT17.Name = "lblAT17";
             this.lblAT17.Size = new System.Drawing.Size(58, 16);
             this.lblAT17.TabIndex = 66;
@@ -1378,7 +1378,7 @@
             // 
             this.lblAT18.AutoSize = true;
             this.lblAT18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT18.Location = new System.Drawing.Point(592, 400);
+            this.lblAT18.Location = new System.Drawing.Point(592, 388);
             this.lblAT18.Name = "lblAT18";
             this.lblAT18.Size = new System.Drawing.Size(58, 16);
             this.lblAT18.TabIndex = 64;
@@ -1389,7 +1389,7 @@
             // 
             this.lblAT19.AutoSize = true;
             this.lblAT19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT19.Location = new System.Drawing.Point(592, 524);
+            this.lblAT19.Location = new System.Drawing.Point(592, 508);
             this.lblAT19.Name = "lblAT19";
             this.lblAT19.Size = new System.Drawing.Size(58, 16);
             this.lblAT19.TabIndex = 63;
@@ -1411,7 +1411,7 @@
             // 
             this.lblAT14.AutoSize = true;
             this.lblAT14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT14.Location = new System.Drawing.Point(206, 524);
+            this.lblAT14.Location = new System.Drawing.Point(206, 508);
             this.lblAT14.Margin = new System.Windows.Forms.Padding(0);
             this.lblAT14.Name = "lblAT14";
             this.lblAT14.Size = new System.Drawing.Size(64, 16);
@@ -1423,7 +1423,7 @@
             // 
             this.lblAT12.AutoSize = true;
             this.lblAT12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT12.Location = new System.Drawing.Point(209, 276);
+            this.lblAT12.Location = new System.Drawing.Point(209, 268);
             this.lblAT12.Name = "lblAT12";
             this.lblAT12.Size = new System.Drawing.Size(58, 16);
             this.lblAT12.TabIndex = 60;
@@ -1434,7 +1434,7 @@
             // 
             this.lblAT13.AutoSize = true;
             this.lblAT13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT13.Location = new System.Drawing.Point(209, 400);
+            this.lblAT13.Location = new System.Drawing.Point(209, 388);
             this.lblAT13.Name = "lblAT13";
             this.lblAT13.Size = new System.Drawing.Size(58, 16);
             this.lblAT13.TabIndex = 59;
@@ -1445,7 +1445,7 @@
             // 
             this.pbM19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM19.Image = global::MagusTools.Icons.ICON_ATTR_KPperLevel;
-            this.pbM19.Location = new System.Drawing.Point(399, 540);
+            this.pbM19.Location = new System.Drawing.Point(399, 524);
             this.pbM19.Margin = new System.Windows.Forms.Padding(0);
             this.pbM19.Name = "pbM19";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.pbM19, 3);
@@ -1457,7 +1457,7 @@
             // 
             this.pbM18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM18.Image = global::MagusTools.Icons.ICON_ATTR_KP;
-            this.pbM18.Location = new System.Drawing.Point(399, 416);
+            this.pbM18.Location = new System.Drawing.Point(399, 404);
             this.pbM18.Margin = new System.Windows.Forms.Padding(0);
             this.pbM18.Name = "pbM18";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.pbM18, 3);
@@ -1469,7 +1469,7 @@
             // 
             this.pbM16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM16.Image = global::MagusTools.Icons.ICON_ATTR_PR;
-            this.pbM16.Location = new System.Drawing.Point(399, 168);
+            this.pbM16.Location = new System.Drawing.Point(399, 164);
             this.pbM16.Margin = new System.Windows.Forms.Padding(0);
             this.pbM16.Name = "pbM16";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.pbM16, 3);
@@ -1481,7 +1481,7 @@
             // 
             this.pbM17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM17.Image = global::MagusTools.Icons.ICON_ATTR_PRperLevel;
-            this.pbM17.Location = new System.Drawing.Point(399, 292);
+            this.pbM17.Location = new System.Drawing.Point(399, 284);
             this.pbM17.Margin = new System.Windows.Forms.Padding(0);
             this.pbM17.Name = "pbM17";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.pbM17, 3);
@@ -1505,7 +1505,7 @@
             // 
             this.pbM14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM14.Image = global::MagusTools.Icons.ICON_ATTR_CMperLevel;
-            this.pbM14.Location = new System.Drawing.Point(16, 540);
+            this.pbM14.Location = new System.Drawing.Point(16, 524);
             this.pbM14.Margin = new System.Windows.Forms.Padding(0);
             this.pbM14.Name = "pbM14";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.pbM14, 3);
@@ -1517,7 +1517,7 @@
             // 
             this.pbM13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM13.Image = global::MagusTools.Icons.ICON_ATTR_Aim;
-            this.pbM13.Location = new System.Drawing.Point(16, 416);
+            this.pbM13.Location = new System.Drawing.Point(16, 404);
             this.pbM13.Margin = new System.Windows.Forms.Padding(0);
             this.pbM13.Name = "pbM13";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.pbM13, 3);
@@ -1529,7 +1529,7 @@
             // 
             this.pbM12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM12.Image = global::MagusTools.Icons.ICON_ATTR_Defense;
-            this.pbM12.Location = new System.Drawing.Point(16, 292);
+            this.pbM12.Location = new System.Drawing.Point(16, 284);
             this.pbM12.Margin = new System.Windows.Forms.Padding(0);
             this.pbM12.Name = "pbM12";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.pbM12, 3);
@@ -1541,7 +1541,7 @@
             // 
             this.pbM11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM11.Image = global::MagusTools.Icons.ICON_ATTR_Attack;
-            this.pbM11.Location = new System.Drawing.Point(16, 168);
+            this.pbM11.Location = new System.Drawing.Point(16, 164);
             this.pbM11.Margin = new System.Windows.Forms.Padding(0);
             this.pbM11.Name = "pbM11";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.pbM11, 3);
@@ -1555,7 +1555,7 @@
             this.lblMAT19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT19.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT19.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT19.Location = new System.Drawing.Point(402, 512);
+            this.lblMAT19.Location = new System.Drawing.Point(402, 496);
             this.lblMAT19.Name = "lblMAT19";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.lblMAT19, 2);
             this.lblMAT19.Size = new System.Drawing.Size(154, 28);
@@ -1569,7 +1569,7 @@
             this.lblMAT18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT18.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT18.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT18.Location = new System.Drawing.Point(402, 388);
+            this.lblMAT18.Location = new System.Drawing.Point(402, 376);
             this.lblMAT18.Name = "lblMAT18";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.lblMAT18, 2);
             this.lblMAT18.Size = new System.Drawing.Size(154, 28);
@@ -1583,7 +1583,7 @@
             this.lblMAT17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT17.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT17.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT17.Location = new System.Drawing.Point(402, 264);
+            this.lblMAT17.Location = new System.Drawing.Point(402, 256);
             this.lblMAT17.Name = "lblMAT17";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.lblMAT17, 2);
             this.lblMAT17.Size = new System.Drawing.Size(154, 28);
@@ -1597,7 +1597,7 @@
             this.lblMAT16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT16.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT16.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT16.Location = new System.Drawing.Point(402, 140);
+            this.lblMAT16.Location = new System.Drawing.Point(402, 136);
             this.lblMAT16.Name = "lblMAT16";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.lblMAT16, 2);
             this.lblMAT16.Size = new System.Drawing.Size(154, 28);
@@ -1625,7 +1625,7 @@
             this.lblMCT01.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMCT01.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMCT01.Font = new System.Drawing.Font("Bookman Old Style", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMCT01.Location = new System.Drawing.Point(16, 644);
+            this.lblMCT01.Location = new System.Drawing.Point(16, 628);
             this.lblMCT01.Margin = new System.Windows.Forms.Padding(0);
             this.lblMCT01.Name = "lblMCT01";
             this.lblMCT01.Size = new System.Drawing.Size(190, 24);
@@ -1639,7 +1639,7 @@
             this.lblMAT14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT14.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT14.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT14.Location = new System.Drawing.Point(19, 512);
+            this.lblMAT14.Location = new System.Drawing.Point(19, 496);
             this.lblMAT14.Name = "lblMAT14";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.lblMAT14, 2);
             this.lblMAT14.Size = new System.Drawing.Size(154, 28);
@@ -1653,7 +1653,7 @@
             this.lblMAT13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT13.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT13.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT13.Location = new System.Drawing.Point(19, 388);
+            this.lblMAT13.Location = new System.Drawing.Point(19, 376);
             this.lblMAT13.Name = "lblMAT13";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.lblMAT13, 2);
             this.lblMAT13.Size = new System.Drawing.Size(154, 28);
@@ -1667,7 +1667,7 @@
             this.lblMAT12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT12.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT12.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT12.Location = new System.Drawing.Point(19, 264);
+            this.lblMAT12.Location = new System.Drawing.Point(19, 256);
             this.lblMAT12.Name = "lblMAT12";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.lblMAT12, 2);
             this.lblMAT12.Size = new System.Drawing.Size(154, 28);
@@ -1681,7 +1681,7 @@
             this.lblMAT11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT11.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT11.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT11.Location = new System.Drawing.Point(19, 140);
+            this.lblMAT11.Location = new System.Drawing.Point(19, 136);
             this.lblMAT11.Name = "lblMAT11";
             this.tlpSecondaryAttributesOld.SetRowSpan(this.lblMAT11, 2);
             this.lblMAT11.Size = new System.Drawing.Size(154, 28);
@@ -1747,7 +1747,7 @@
             this.tabPrimaryAttributes.Location = new System.Drawing.Point(4, 24);
             this.tabPrimaryAttributes.Name = "tabPrimaryAttributes";
             this.tabPrimaryAttributes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPrimaryAttributes.Size = new System.Drawing.Size(676, 688);
+            this.tabPrimaryAttributes.Size = new System.Drawing.Size(676, 672);
             this.tabPrimaryAttributes.TabIndex = 10;
             this.tabPrimaryAttributes.Text = "Primary Attributes";
             this.tabPrimaryAttributes.UseVisualStyleBackColor = true;
@@ -1892,14 +1892,14 @@
             this.tlpPrimaryAttributesOld.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tlpPrimaryAttributesOld.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tlpPrimaryAttributesOld.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tlpPrimaryAttributesOld.Size = new System.Drawing.Size(670, 682);
+            this.tlpPrimaryAttributesOld.Size = new System.Drawing.Size(670, 666);
             this.tlpPrimaryAttributesOld.TabIndex = 2;
             // 
             // lblCT06
             // 
             this.lblCT06.AutoSize = true;
             this.lblCT06.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT06.Location = new System.Drawing.Point(592, 232);
+            this.lblCT06.Location = new System.Drawing.Point(592, 228);
             this.lblCT06.Name = "lblCT06";
             this.lblCT06.Size = new System.Drawing.Size(58, 16);
             this.lblCT06.TabIndex = 102;
@@ -1910,7 +1910,7 @@
             // 
             this.lblCT09.AutoSize = true;
             this.lblCT09.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT09.Location = new System.Drawing.Point(592, 604);
+            this.lblCT09.Location = new System.Drawing.Point(592, 588);
             this.lblCT09.Name = "lblCT09";
             this.lblCT09.Size = new System.Drawing.Size(58, 16);
             this.lblCT09.TabIndex = 101;
@@ -1921,7 +1921,7 @@
             // 
             this.lblCT08.AutoSize = true;
             this.lblCT08.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT08.Location = new System.Drawing.Point(592, 480);
+            this.lblCT08.Location = new System.Drawing.Point(592, 468);
             this.lblCT08.Name = "lblCT08";
             this.lblCT08.Size = new System.Drawing.Size(58, 16);
             this.lblCT08.TabIndex = 100;
@@ -1932,7 +1932,7 @@
             // 
             this.lblCT07.AutoSize = true;
             this.lblCT07.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT07.Location = new System.Drawing.Point(592, 356);
+            this.lblCT07.Location = new System.Drawing.Point(592, 348);
             this.lblCT07.Name = "lblCT07";
             this.lblCT07.Size = new System.Drawing.Size(58, 16);
             this.lblCT07.TabIndex = 99;
@@ -1954,7 +1954,7 @@
             // 
             this.lblCT04.AutoSize = true;
             this.lblCT04.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT04.Location = new System.Drawing.Point(209, 604);
+            this.lblCT04.Location = new System.Drawing.Point(209, 588);
             this.lblCT04.Name = "lblCT04";
             this.lblCT04.Size = new System.Drawing.Size(58, 16);
             this.lblCT04.TabIndex = 97;
@@ -1965,7 +1965,7 @@
             // 
             this.lblCT03.AutoSize = true;
             this.lblCT03.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT03.Location = new System.Drawing.Point(209, 480);
+            this.lblCT03.Location = new System.Drawing.Point(209, 468);
             this.lblCT03.Name = "lblCT03";
             this.lblCT03.Size = new System.Drawing.Size(58, 16);
             this.lblCT03.TabIndex = 96;
@@ -1976,7 +1976,7 @@
             // 
             this.lblCT02.AutoSize = true;
             this.lblCT02.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT02.Location = new System.Drawing.Point(209, 356);
+            this.lblCT02.Location = new System.Drawing.Point(209, 348);
             this.lblCT02.Name = "lblCT02";
             this.lblCT02.Size = new System.Drawing.Size(58, 16);
             this.lblCT02.TabIndex = 95;
@@ -1987,7 +1987,7 @@
             // 
             this.lblCT01.AutoSize = true;
             this.lblCT01.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCT01.Location = new System.Drawing.Point(209, 232);
+            this.lblCT01.Location = new System.Drawing.Point(209, 228);
             this.lblCT01.Name = "lblCT01";
             this.lblCT01.Size = new System.Drawing.Size(58, 16);
             this.lblCT01.TabIndex = 94;
@@ -2013,7 +2013,7 @@
             this.pbD00.Margin = new System.Windows.Forms.Padding(0);
             this.pbD00.Name = "pbD00";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.pbD00, 40);
-            this.pbD00.Size = new System.Drawing.Size(31, 652);
+            this.pbD00.Size = new System.Drawing.Size(31, 636);
             this.pbD00.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbD00.TabIndex = 92;
             this.pbD00.TabStop = false;
@@ -2024,7 +2024,7 @@
             this.lblMSV00.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMSV00.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMSV00.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMSV00.Location = new System.Drawing.Point(209, 644);
+            this.lblMSV00.Location = new System.Drawing.Point(209, 628);
             this.lblMSV00.Name = "lblMSV00";
             this.lblMSV00.Size = new System.Drawing.Size(58, 24);
             this.lblMSV00.TabIndex = 91;
@@ -2038,7 +2038,7 @@
             this.lblMCV00.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMCV00.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMCV00.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMCV00.Location = new System.Drawing.Point(592, 644);
+            this.lblMCV00.Location = new System.Drawing.Point(592, 628);
             this.lblMCV00.Name = "lblMCV00";
             this.lblMCV00.Size = new System.Drawing.Size(58, 24);
             this.lblMCV00.TabIndex = 90;
@@ -2052,7 +2052,7 @@
             this.lblMCT00.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMCT00.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMCT00.Font = new System.Drawing.Font("Bookman Old Style", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMCT00.Location = new System.Drawing.Point(399, 644);
+            this.lblMCT00.Location = new System.Drawing.Point(399, 628);
             this.lblMCT00.Margin = new System.Windows.Forms.Padding(0);
             this.lblMCT00.Name = "lblMCT00";
             this.lblMCT00.Size = new System.Drawing.Size(190, 24);
@@ -2066,7 +2066,7 @@
             this.lblAV08.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV08.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV08.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV08.Location = new System.Drawing.Point(592, 416);
+            this.lblAV08.Location = new System.Drawing.Point(592, 404);
             this.lblAV08.Name = "lblAV08";
             this.lblAV08.Size = new System.Drawing.Size(58, 28);
             this.lblAV08.TabIndex = 88;
@@ -2080,7 +2080,7 @@
             this.lblCV08.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV08.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV08.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV08.Location = new System.Drawing.Point(592, 452);
+            this.lblCV08.Location = new System.Drawing.Point(592, 440);
             this.lblCV08.Name = "lblCV08";
             this.lblCV08.Size = new System.Drawing.Size(58, 28);
             this.lblCV08.TabIndex = 87;
@@ -2094,7 +2094,7 @@
             this.lblAV09.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV09.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV09.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV09.Location = new System.Drawing.Point(592, 540);
+            this.lblAV09.Location = new System.Drawing.Point(592, 524);
             this.lblAV09.Name = "lblAV09";
             this.lblAV09.Size = new System.Drawing.Size(58, 28);
             this.lblAV09.TabIndex = 86;
@@ -2108,7 +2108,7 @@
             this.lblCV09.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV09.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV09.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV09.Location = new System.Drawing.Point(592, 576);
+            this.lblCV09.Location = new System.Drawing.Point(592, 560);
             this.lblCV09.Name = "lblCV09";
             this.lblCV09.Size = new System.Drawing.Size(58, 28);
             this.lblCV09.TabIndex = 85;
@@ -2150,7 +2150,7 @@
             this.lblAV06.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV06.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV06.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV06.Location = new System.Drawing.Point(592, 168);
+            this.lblAV06.Location = new System.Drawing.Point(592, 164);
             this.lblAV06.Name = "lblAV06";
             this.lblAV06.Size = new System.Drawing.Size(58, 28);
             this.lblAV06.TabIndex = 82;
@@ -2164,7 +2164,7 @@
             this.lblCV06.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV06.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV06.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV06.Location = new System.Drawing.Point(592, 204);
+            this.lblCV06.Location = new System.Drawing.Point(592, 200);
             this.lblCV06.Name = "lblCV06";
             this.lblCV06.Size = new System.Drawing.Size(58, 28);
             this.lblCV06.TabIndex = 81;
@@ -2178,7 +2178,7 @@
             this.lblAV07.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV07.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV07.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV07.Location = new System.Drawing.Point(592, 292);
+            this.lblAV07.Location = new System.Drawing.Point(592, 284);
             this.lblAV07.Name = "lblAV07";
             this.lblAV07.Size = new System.Drawing.Size(58, 28);
             this.lblAV07.TabIndex = 80;
@@ -2192,7 +2192,7 @@
             this.lblCV07.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV07.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV07.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV07.Location = new System.Drawing.Point(592, 328);
+            this.lblCV07.Location = new System.Drawing.Point(592, 320);
             this.lblCV07.Name = "lblCV07";
             this.lblCV07.Size = new System.Drawing.Size(58, 28);
             this.lblCV07.TabIndex = 79;
@@ -2206,7 +2206,7 @@
             this.lblAV04.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV04.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV04.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV04.Location = new System.Drawing.Point(209, 540);
+            this.lblAV04.Location = new System.Drawing.Point(209, 524);
             this.lblAV04.Name = "lblAV04";
             this.lblAV04.Size = new System.Drawing.Size(58, 28);
             this.lblAV04.TabIndex = 78;
@@ -2220,7 +2220,7 @@
             this.lblCV04.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV04.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV04.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV04.Location = new System.Drawing.Point(209, 576);
+            this.lblCV04.Location = new System.Drawing.Point(209, 560);
             this.lblCV04.Name = "lblCV04";
             this.lblCV04.Size = new System.Drawing.Size(58, 28);
             this.lblCV04.TabIndex = 77;
@@ -2234,7 +2234,7 @@
             this.lblAV03.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV03.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV03.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV03.Location = new System.Drawing.Point(209, 416);
+            this.lblAV03.Location = new System.Drawing.Point(209, 404);
             this.lblAV03.Name = "lblAV03";
             this.lblAV03.Size = new System.Drawing.Size(58, 28);
             this.lblAV03.TabIndex = 76;
@@ -2248,7 +2248,7 @@
             this.lblCV03.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV03.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV03.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV03.Location = new System.Drawing.Point(209, 452);
+            this.lblCV03.Location = new System.Drawing.Point(209, 440);
             this.lblCV03.Name = "lblCV03";
             this.lblCV03.Size = new System.Drawing.Size(58, 28);
             this.lblCV03.TabIndex = 75;
@@ -2262,7 +2262,7 @@
             this.lblAV02.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV02.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV02.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV02.Location = new System.Drawing.Point(209, 292);
+            this.lblAV02.Location = new System.Drawing.Point(209, 284);
             this.lblAV02.Name = "lblAV02";
             this.lblAV02.Size = new System.Drawing.Size(58, 28);
             this.lblAV02.TabIndex = 74;
@@ -2276,7 +2276,7 @@
             this.lblCV02.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV02.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV02.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV02.Location = new System.Drawing.Point(209, 328);
+            this.lblCV02.Location = new System.Drawing.Point(209, 320);
             this.lblCV02.Name = "lblCV02";
             this.lblCV02.Size = new System.Drawing.Size(58, 28);
             this.lblCV02.TabIndex = 73;
@@ -2288,7 +2288,7 @@
             // 
             this.lblAT06.AutoSize = true;
             this.lblAT06.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT06.Location = new System.Drawing.Point(592, 152);
+            this.lblAT06.Location = new System.Drawing.Point(592, 148);
             this.lblAT06.Name = "lblAT06";
             this.lblAT06.Size = new System.Drawing.Size(58, 16);
             this.lblAT06.TabIndex = 72;
@@ -2299,7 +2299,7 @@
             // 
             this.lblAT01.AutoSize = true;
             this.lblAT01.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT01.Location = new System.Drawing.Point(209, 152);
+            this.lblAT01.Location = new System.Drawing.Point(209, 148);
             this.lblAT01.Name = "lblAT01";
             this.lblAT01.Size = new System.Drawing.Size(58, 16);
             this.lblAT01.TabIndex = 71;
@@ -2312,7 +2312,7 @@
             this.lblAV01.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAV01.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAV01.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAV01.Location = new System.Drawing.Point(209, 168);
+            this.lblAV01.Location = new System.Drawing.Point(209, 164);
             this.lblAV01.Name = "lblAV01";
             this.lblAV01.Size = new System.Drawing.Size(58, 28);
             this.lblAV01.TabIndex = 70;
@@ -2326,7 +2326,7 @@
             this.lblCV01.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCV01.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCV01.Font = new System.Drawing.Font("Harrington", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCV01.Location = new System.Drawing.Point(209, 204);
+            this.lblCV01.Location = new System.Drawing.Point(209, 200);
             this.lblCV01.Name = "lblCV01";
             this.lblCV01.Size = new System.Drawing.Size(58, 28);
             this.lblCV01.TabIndex = 69;
@@ -2352,7 +2352,7 @@
             // 
             this.lblAT07.AutoSize = true;
             this.lblAT07.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT07.Location = new System.Drawing.Point(592, 276);
+            this.lblAT07.Location = new System.Drawing.Point(592, 268);
             this.lblAT07.Name = "lblAT07";
             this.lblAT07.Size = new System.Drawing.Size(58, 16);
             this.lblAT07.TabIndex = 66;
@@ -2363,7 +2363,7 @@
             // 
             this.lblAT08.AutoSize = true;
             this.lblAT08.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT08.Location = new System.Drawing.Point(592, 400);
+            this.lblAT08.Location = new System.Drawing.Point(592, 388);
             this.lblAT08.Name = "lblAT08";
             this.lblAT08.Size = new System.Drawing.Size(58, 16);
             this.lblAT08.TabIndex = 64;
@@ -2374,7 +2374,7 @@
             // 
             this.lblAT09.AutoSize = true;
             this.lblAT09.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT09.Location = new System.Drawing.Point(592, 524);
+            this.lblAT09.Location = new System.Drawing.Point(592, 508);
             this.lblAT09.Name = "lblAT09";
             this.lblAT09.Size = new System.Drawing.Size(58, 16);
             this.lblAT09.TabIndex = 63;
@@ -2396,7 +2396,7 @@
             // 
             this.lblAT04.AutoSize = true;
             this.lblAT04.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT04.Location = new System.Drawing.Point(209, 524);
+            this.lblAT04.Location = new System.Drawing.Point(209, 508);
             this.lblAT04.Name = "lblAT04";
             this.lblAT04.Size = new System.Drawing.Size(58, 16);
             this.lblAT04.TabIndex = 61;
@@ -2407,7 +2407,7 @@
             // 
             this.lblAT02.AutoSize = true;
             this.lblAT02.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT02.Location = new System.Drawing.Point(209, 276);
+            this.lblAT02.Location = new System.Drawing.Point(209, 268);
             this.lblAT02.Name = "lblAT02";
             this.lblAT02.Size = new System.Drawing.Size(58, 16);
             this.lblAT02.TabIndex = 60;
@@ -2418,7 +2418,7 @@
             // 
             this.lblAT03.AutoSize = true;
             this.lblAT03.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAT03.Location = new System.Drawing.Point(209, 400);
+            this.lblAT03.Location = new System.Drawing.Point(209, 388);
             this.lblAT03.Name = "lblAT03";
             this.lblAT03.Size = new System.Drawing.Size(58, 16);
             this.lblAT03.TabIndex = 59;
@@ -2429,7 +2429,7 @@
             // 
             this.pbM09.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM09.Image = global::MagusTools.Icons.ICON_ATTR_Perception;
-            this.pbM09.Location = new System.Drawing.Point(399, 540);
+            this.pbM09.Location = new System.Drawing.Point(399, 524);
             this.pbM09.Margin = new System.Windows.Forms.Padding(0);
             this.pbM09.Name = "pbM09";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.pbM09, 3);
@@ -2441,7 +2441,7 @@
             // 
             this.pbM08.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM08.Image = global::MagusTools.Icons.ICON_ATTR_Astral;
-            this.pbM08.Location = new System.Drawing.Point(399, 416);
+            this.pbM08.Location = new System.Drawing.Point(399, 404);
             this.pbM08.Margin = new System.Windows.Forms.Padding(0);
             this.pbM08.Name = "pbM08";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.pbM08, 3);
@@ -2453,7 +2453,7 @@
             // 
             this.pbM06.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM06.Image = global::MagusTools.Icons.ICON_ATTR_Intelligence;
-            this.pbM06.Location = new System.Drawing.Point(399, 168);
+            this.pbM06.Location = new System.Drawing.Point(399, 164);
             this.pbM06.Margin = new System.Windows.Forms.Padding(0);
             this.pbM06.Name = "pbM06";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.pbM06, 3);
@@ -2465,7 +2465,7 @@
             // 
             this.pbM07.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM07.Image = global::MagusTools.Icons.ICON_ATTR_Willpower;
-            this.pbM07.Location = new System.Drawing.Point(399, 292);
+            this.pbM07.Location = new System.Drawing.Point(399, 284);
             this.pbM07.Margin = new System.Windows.Forms.Padding(0);
             this.pbM07.Name = "pbM07";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.pbM07, 3);
@@ -2489,7 +2489,7 @@
             // 
             this.pbM04.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM04.Image = global::MagusTools.Icons.ICON_ATTR_Health;
-            this.pbM04.Location = new System.Drawing.Point(16, 540);
+            this.pbM04.Location = new System.Drawing.Point(16, 524);
             this.pbM04.Margin = new System.Windows.Forms.Padding(0);
             this.pbM04.Name = "pbM04";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.pbM04, 3);
@@ -2501,7 +2501,7 @@
             // 
             this.pbM03.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM03.Image = global::MagusTools.Icons.ICON_ATTR_Endurance;
-            this.pbM03.Location = new System.Drawing.Point(16, 416);
+            this.pbM03.Location = new System.Drawing.Point(16, 404);
             this.pbM03.Margin = new System.Windows.Forms.Padding(0);
             this.pbM03.Name = "pbM03";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.pbM03, 3);
@@ -2513,7 +2513,7 @@
             // 
             this.pbM02.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM02.Image = global::MagusTools.Icons.ICON_ATTR_Agility;
-            this.pbM02.Location = new System.Drawing.Point(16, 292);
+            this.pbM02.Location = new System.Drawing.Point(16, 284);
             this.pbM02.Margin = new System.Windows.Forms.Padding(0);
             this.pbM02.Name = "pbM02";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.pbM02, 3);
@@ -2525,7 +2525,7 @@
             // 
             this.pbM01.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbM01.Image = global::MagusTools.Icons.ICON_ATTR_Speed;
-            this.pbM01.Location = new System.Drawing.Point(16, 168);
+            this.pbM01.Location = new System.Drawing.Point(16, 164);
             this.pbM01.Margin = new System.Windows.Forms.Padding(0);
             this.pbM01.Name = "pbM01";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.pbM01, 3);
@@ -2539,7 +2539,7 @@
             this.lblMAT09.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT09.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT09.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT09.Location = new System.Drawing.Point(402, 512);
+            this.lblMAT09.Location = new System.Drawing.Point(402, 496);
             this.lblMAT09.Name = "lblMAT09";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.lblMAT09, 2);
             this.lblMAT09.Size = new System.Drawing.Size(154, 28);
@@ -2553,7 +2553,7 @@
             this.lblMAT08.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT08.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT08.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT08.Location = new System.Drawing.Point(402, 388);
+            this.lblMAT08.Location = new System.Drawing.Point(402, 376);
             this.lblMAT08.Name = "lblMAT08";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.lblMAT08, 2);
             this.lblMAT08.Size = new System.Drawing.Size(154, 28);
@@ -2567,7 +2567,7 @@
             this.lblMAT07.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT07.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT07.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT07.Location = new System.Drawing.Point(402, 264);
+            this.lblMAT07.Location = new System.Drawing.Point(402, 256);
             this.lblMAT07.Name = "lblMAT07";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.lblMAT07, 2);
             this.lblMAT07.Size = new System.Drawing.Size(154, 28);
@@ -2581,7 +2581,7 @@
             this.lblMAT06.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT06.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT06.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT06.Location = new System.Drawing.Point(402, 140);
+            this.lblMAT06.Location = new System.Drawing.Point(402, 136);
             this.lblMAT06.Name = "lblMAT06";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.lblMAT06, 2);
             this.lblMAT06.Size = new System.Drawing.Size(154, 28);
@@ -2609,7 +2609,7 @@
             this.lblMST00.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMST00.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMST00.Font = new System.Drawing.Font("Bookman Old Style", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMST00.Location = new System.Drawing.Point(16, 644);
+            this.lblMST00.Location = new System.Drawing.Point(16, 628);
             this.lblMST00.Margin = new System.Windows.Forms.Padding(0);
             this.lblMST00.Name = "lblMST00";
             this.lblMST00.Size = new System.Drawing.Size(190, 24);
@@ -2623,7 +2623,7 @@
             this.lblMAT04.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT04.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT04.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT04.Location = new System.Drawing.Point(19, 512);
+            this.lblMAT04.Location = new System.Drawing.Point(19, 496);
             this.lblMAT04.Name = "lblMAT04";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.lblMAT04, 2);
             this.lblMAT04.Size = new System.Drawing.Size(154, 28);
@@ -2637,7 +2637,7 @@
             this.lblMAT03.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT03.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT03.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT03.Location = new System.Drawing.Point(19, 388);
+            this.lblMAT03.Location = new System.Drawing.Point(19, 376);
             this.lblMAT03.Name = "lblMAT03";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.lblMAT03, 2);
             this.lblMAT03.Size = new System.Drawing.Size(154, 28);
@@ -2651,7 +2651,7 @@
             this.lblMAT02.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT02.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT02.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT02.Location = new System.Drawing.Point(19, 264);
+            this.lblMAT02.Location = new System.Drawing.Point(19, 256);
             this.lblMAT02.Name = "lblMAT02";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.lblMAT02, 2);
             this.lblMAT02.Size = new System.Drawing.Size(154, 28);
@@ -2665,7 +2665,7 @@
             this.lblMAT01.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMAT01.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMAT01.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMAT01.Location = new System.Drawing.Point(19, 140);
+            this.lblMAT01.Location = new System.Drawing.Point(19, 136);
             this.lblMAT01.Name = "lblMAT01";
             this.tlpPrimaryAttributesOld.SetRowSpan(this.lblMAT01, 2);
             this.lblMAT01.Size = new System.Drawing.Size(154, 28);
@@ -2732,7 +2732,7 @@
             this.tabBasicInfo.Location = new System.Drawing.Point(4, 24);
             this.tabBasicInfo.Name = "tabBasicInfo";
             this.tabBasicInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBasicInfo.Size = new System.Drawing.Size(676, 688);
+            this.tabBasicInfo.Size = new System.Drawing.Size(676, 672);
             this.tabBasicInfo.TabIndex = 0;
             this.tabBasicInfo.Text = "BasicInformation";
             this.tabBasicInfo.UseVisualStyleBackColor = true;
@@ -2801,7 +2801,7 @@
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlpBasicInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBasicInfo.Size = new System.Drawing.Size(670, 682);
+            this.tlpBasicInfo.Size = new System.Drawing.Size(670, 666);
             this.tlpBasicInfo.TabIndex = 0;
             // 
             // lblCharName
@@ -3335,7 +3335,7 @@
             this.mainTabControl.Location = new System.Drawing.Point(0, 24);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(684, 716);
+            this.mainTabControl.Size = new System.Drawing.Size(684, 700);
             this.mainTabControl.TabIndex = 0;
             // 
             // updCharLevel
@@ -3412,7 +3412,7 @@
             this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB01, 2);
             this.updB01.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB01.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB01.Location = new System.Drawing.Point(88, 168);
+            this.updB01.Location = new System.Drawing.Point(88, 164);
             this.updB01.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB01.Maximum = new decimal(new int[] {
             20,
@@ -3439,7 +3439,7 @@
             this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB02, 2);
             this.updB02.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB02.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB02.Location = new System.Drawing.Point(88, 292);
+            this.updB02.Location = new System.Drawing.Point(88, 284);
             this.updB02.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB02.Maximum = new decimal(new int[] {
             20,
@@ -3466,7 +3466,7 @@
             this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB03, 2);
             this.updB03.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB03.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB03.Location = new System.Drawing.Point(88, 416);
+            this.updB03.Location = new System.Drawing.Point(88, 404);
             this.updB03.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB03.Maximum = new decimal(new int[] {
             20,
@@ -3493,7 +3493,7 @@
             this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB09, 2);
             this.updB09.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB09.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB09.Location = new System.Drawing.Point(471, 540);
+            this.updB09.Location = new System.Drawing.Point(471, 524);
             this.updB09.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB09.Maximum = new decimal(new int[] {
             20,
@@ -3520,7 +3520,7 @@
             this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB08, 2);
             this.updB08.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB08.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB08.Location = new System.Drawing.Point(471, 416);
+            this.updB08.Location = new System.Drawing.Point(471, 404);
             this.updB08.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB08.Maximum = new decimal(new int[] {
             20,
@@ -3547,7 +3547,7 @@
             this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB06, 2);
             this.updB06.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB06.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB06.Location = new System.Drawing.Point(471, 168);
+            this.updB06.Location = new System.Drawing.Point(471, 164);
             this.updB06.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB06.Maximum = new decimal(new int[] {
             20,
@@ -3603,7 +3603,7 @@
             this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB07, 2);
             this.updB07.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB07.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB07.Location = new System.Drawing.Point(471, 292);
+            this.updB07.Location = new System.Drawing.Point(471, 284);
             this.updB07.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB07.Maximum = new decimal(new int[] {
             20,
@@ -3630,7 +3630,7 @@
             this.tlpPrimaryAttributesOld.SetColumnSpan(this.updB04, 2);
             this.updB04.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB04.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB04.Location = new System.Drawing.Point(88, 540);
+            this.updB04.Location = new System.Drawing.Point(88, 524);
             this.updB04.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB04.Maximum = new decimal(new int[] {
             20,
@@ -3657,7 +3657,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM03, 2);
             this.updM03.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updM03.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updM03.Location = new System.Drawing.Point(88, 452);
+            this.updM03.Location = new System.Drawing.Point(88, 440);
             this.updM03.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updM03.Maximum = new decimal(new int[] {
             20,
@@ -3685,7 +3685,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB13, 2);
             this.updB13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB13.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB13.Location = new System.Drawing.Point(88, 416);
+            this.updB13.Location = new System.Drawing.Point(88, 404);
             this.updB13.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB13.Maximum = new decimal(new int[] {
             20,
@@ -3713,7 +3713,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM02, 2);
             this.updM02.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updM02.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updM02.Location = new System.Drawing.Point(88, 328);
+            this.updM02.Location = new System.Drawing.Point(88, 320);
             this.updM02.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updM02.Maximum = new decimal(new int[] {
             20,
@@ -3741,7 +3741,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB12, 2);
             this.updB12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB12.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB12.Location = new System.Drawing.Point(88, 292);
+            this.updB12.Location = new System.Drawing.Point(88, 284);
             this.updB12.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB12.Maximum = new decimal(new int[] {
             20,
@@ -3769,7 +3769,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updM01, 2);
             this.updM01.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updM01.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updM01.Location = new System.Drawing.Point(88, 204);
+            this.updM01.Location = new System.Drawing.Point(88, 200);
             this.updM01.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updM01.Maximum = new decimal(new int[] {
             20,
@@ -3797,7 +3797,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB11, 2);
             this.updB11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB11.Font = new System.Drawing.Font("Harrington", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB11.Location = new System.Drawing.Point(88, 168);
+            this.updB11.Location = new System.Drawing.Point(88, 164);
             this.updB11.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB11.Maximum = new decimal(new int[] {
             20,
@@ -3853,7 +3853,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB19, 2);
             this.updB19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB19.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB19.Location = new System.Drawing.Point(471, 540);
+            this.updB19.Location = new System.Drawing.Point(471, 524);
             this.updB19.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB19.Maximum = new decimal(new int[] {
             20,
@@ -3880,7 +3880,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB18, 2);
             this.updB18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB18.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB18.Location = new System.Drawing.Point(471, 416);
+            this.updB18.Location = new System.Drawing.Point(471, 404);
             this.updB18.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB18.Maximum = new decimal(new int[] {
             20,
@@ -3907,7 +3907,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB16, 2);
             this.updB16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB16.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB16.Location = new System.Drawing.Point(471, 168);
+            this.updB16.Location = new System.Drawing.Point(471, 164);
             this.updB16.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB16.Maximum = new decimal(new int[] {
             20,
@@ -3963,7 +3963,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB17, 2);
             this.updB17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB17.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB17.Location = new System.Drawing.Point(471, 292);
+            this.updB17.Location = new System.Drawing.Point(471, 284);
             this.updB17.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB17.Maximum = new decimal(new int[] {
             20,
@@ -3990,7 +3990,7 @@
             this.tlpSecondaryAttributesOld.SetColumnSpan(this.updB14, 2);
             this.updB14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.updB14.Font = new System.Drawing.Font("Harrington", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updB14.Location = new System.Drawing.Point(88, 540);
+            this.updB14.Location = new System.Drawing.Point(88, 524);
             this.updB14.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.updB14.Maximum = new decimal(new int[] {
             20,
@@ -4044,7 +4044,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 762);
+            this.ClientSize = new System.Drawing.Size(684, 746);
             this.Controls.Add(this.mainTabControl);
             this.Controls.Add(this.mainStatusStrip);
             this.Controls.Add(this.mainMenuStrip);

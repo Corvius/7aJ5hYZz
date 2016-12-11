@@ -590,6 +590,7 @@ namespace MagusTools
             ((Label)valueLabels["StrengthActual"]).Text = character.GetStat(Character.Stats.Strength).ToString();
             ((Label)valueLabels["AttackActual"]).Text = character.GetStat(Character.Stats.Attack).ToString();
             ((Label)valueLabels["DamageBonus"]).Text = character.GetStat(Character.Stats.DamageBonus).ToString();
+            ((Label)valueLabels["StrengthCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Strength)).ToString();
         }
 
         private void updB01_ValueChanged(object sender, EventArgs e)
@@ -600,6 +601,7 @@ namespace MagusTools
             ((Label)valueLabels["InitiativeActual"]).Text = character.GetStat(Character.Stats.Initiative).ToString();
             ((Label)valueLabels["AttackActual"]).Text = character.GetStat(Character.Stats.Attack).ToString();
             ((Label)valueLabels["DefenseActual"]).Text = character.GetStat(Character.Stats.Defense).ToString();
+            ((Label)valueLabels["SpeedCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Speed)).ToString();
         }
 
         private void updB02_ValueChanged(object sender, EventArgs e)
@@ -611,6 +613,7 @@ namespace MagusTools
             ((Label)valueLabels["AttackActual"]).Text = character.GetStat(Character.Stats.Attack).ToString();
             ((Label)valueLabels["DefenseActual"]).Text = character.GetStat(Character.Stats.Defense).ToString();
             ((Label)valueLabels["AimActual"]).Text = character.GetStat(Character.Stats.Aim).ToString();
+            ((Label)valueLabels["AgilityCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Agility)).ToString();
         }
 
         private void updB03_ValueChanged(object sender, EventArgs e)
@@ -619,6 +622,7 @@ namespace MagusTools
 
             ((Label)valueLabels["EnduranceActual"]).Text = character.GetStat(Character.Stats.Endurance).ToString();
             ((Label)valueLabels["PRActual"]).Text = character.GetStat(Character.Stats.PR).ToString();
+            ((Label)valueLabels["EnduranceCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Endurance)).ToString();
         }
 
         private void updB04_ValueChanged(object sender, EventArgs e)
@@ -627,6 +631,7 @@ namespace MagusTools
 
             ((Label)valueLabels["HealthActual"]).Text = character.GetStat(Character.Stats.Health).ToString();
             ((Label)valueLabels["HPActual"]).Text = character.GetStat(Character.Stats.HP).ToString();
+            ((Label)valueLabels["HealthCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Health)).ToString();
         }
 
         private void updB05_ValueChanged(object sender, EventArgs e)
@@ -634,6 +639,7 @@ namespace MagusTools
             character.SetStat(Character.Stats.Charisma, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["CharismaActual"]).Text = character.GetStat(Character.Stats.Charisma).ToString();
+            ((Label)valueLabels["CharismaCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Charisma)).ToString();
         }
 
         private void updB06_ValueChanged(object sender, EventArgs e)
@@ -643,6 +649,7 @@ namespace MagusTools
             ((Label)valueLabels["IntelligenceActual"]).Text = character.GetStat(Character.Stats.Intelligence).ToString();
             ((Label)valueLabels["Mana"]).Text = character.GetStat(Character.Stats.MP).ToString();
             ((Label)valueLabels["Psy"]).Text = character.GetStat(Character.Stats.Psy).ToString();
+            ((Label)valueLabels["IntelligenceCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Intelligence)).ToString();
         }
 
         private void updB07_ValueChanged(object sender, EventArgs e)
@@ -652,6 +659,7 @@ namespace MagusTools
             ((Label)valueLabels["WillpowerActual"]).Text = character.GetStat(Character.Stats.Willpower).ToString();
             ((Label)valueLabels["PRActual"]).Text = character.GetStat(Character.Stats.PR).ToString();
             ((Label)valueLabels["MMR"]).Text = character.GetStat(Character.Stats.MMR).ToString();
+            ((Label)valueLabels["WillpowerCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Willpower)).ToString();
         }
 
         private void updB08_ValueChanged(object sender, EventArgs e)
@@ -660,6 +668,7 @@ namespace MagusTools
 
             ((Label)valueLabels["AstralActual"]).Text = character.GetStat(Character.Stats.Astral).ToString();
             ((Label)valueLabels["AMR"]).Text = character.GetStat(Character.Stats.AMR).ToString();
+            ((Label)valueLabels["AstralCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Astral)).ToString();
         }
 
         private void updB09_ValueChanged(object sender, EventArgs e)
@@ -667,6 +676,7 @@ namespace MagusTools
             character.SetStat(Character.Stats.Perception, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["PerceptionActual"]).Text = character.GetStat(Character.Stats.Perception).ToString();
+            ((Label)valueLabels["PerceptionCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Perception)).ToString();
         }
 
         private void updB10_ValueChanged(object sender, EventArgs e)
@@ -674,6 +684,7 @@ namespace MagusTools
             character.SetStat(Character.Stats.Initiative, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["InitiativeActual"]).Text = character.GetStat(Character.Stats.Initiative).ToString();
+            ((Label)valueLabels["InitiativeCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Initiative)).ToString();
         }
 
         private void updB11_ValueChanged(object sender, EventArgs e)
@@ -681,6 +692,7 @@ namespace MagusTools
             character.SetStat(Character.Stats.Attack, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["AttackActual"]).Text = character.GetStat(Character.Stats.Attack).ToString();
+            ((Label)valueLabels["AttackCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Attack)).ToString();
         }
 
         private void updB12_ValueChanged(object sender, EventArgs e)
@@ -688,6 +700,7 @@ namespace MagusTools
             character.SetStat(Character.Stats.Defense, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["DefenseActual"]).Text = character.GetStat(Character.Stats.Defense).ToString();
+            ((Label)valueLabels["DefenseCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Defense)).ToString();
         }
 
         private void updB13_ValueChanged(object sender, EventArgs e)
@@ -695,13 +708,15 @@ namespace MagusTools
             character.SetStat(Character.Stats.Aim, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["AimActual"]).Text = character.GetStat(Character.Stats.Aim).ToString();
+            ((Label)valueLabels["AimCcp"]).Text = GetCCP(character.GetStat(Character.Stats.Aim)).ToString();
         }
-
+        
         private void updB14_ValueChanged(object sender, EventArgs e)
         {
             character.SetStat(Character.Stats.CMperLevel, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["CMperLevelActual"]).Text = character.GetStat(Character.Stats.CMperLevel).ToString();
+            ((Label)valueLabels["CMperLevelCcp"]).Text = GetCCP(character.GetStat(Character.Stats.CMperLevel)).ToString();
         }
 
         private void updB15_ValueChanged(object sender, EventArgs e)
@@ -709,6 +724,7 @@ namespace MagusTools
             character.SetStat(Character.Stats.HP, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["HPActual"]).Text = character.GetStat(Character.Stats.HP).ToString();
+            ((Label)valueLabels["HPCcp"]).Text = GetCCP(character.GetStat(Character.Stats.HP)).ToString();
         }
 
         private void updB16_ValueChanged(object sender, EventArgs e)
@@ -716,6 +732,7 @@ namespace MagusTools
             character.SetStat(Character.Stats.PR, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["PRActual"]).Text = character.GetStat(Character.Stats.PR).ToString();
+            ((Label)valueLabels["PRCcp"]).Text = GetCCP(character.GetStat(Character.Stats.PR)).ToString();
         }
 
         private void updB17_ValueChanged(object sender, EventArgs e)
@@ -724,6 +741,7 @@ namespace MagusTools
 
             ((Label)valueLabels["PRActual"]).Text = character.GetStat(Character.Stats.PR).ToString();
             ((Label)valueLabels["PRperLevelActual"]).Text = character.GetStat(Character.Stats.PRperLevel).ToString();
+            ((Label)valueLabels["PRperLevelCcp"]).Text = GetCCP(character.GetStat(Character.Stats.PRperLevel)).ToString();
         }
 
         private void updB18_ValueChanged(object sender, EventArgs e)
@@ -731,6 +749,7 @@ namespace MagusTools
             character.SetStat(Character.Stats.KP, (int)((NumericUpDownExt)sender).Value);
 
             ((Label)valueLabels["KPActual"]).Text = character.GetStat(Character.Stats.KP).ToString();
+            ((Label)valueLabels["KPCcp"]).Text = GetCCP(character.GetStat(Character.Stats.KP)).ToString();
         }
 
         private void updB19_ValueChanged(object sender, EventArgs e)
@@ -739,6 +758,7 @@ namespace MagusTools
 
             ((Label)valueLabels["KPActual"]).Text = character.GetStat(Character.Stats.KP).ToString();
             ((Label)valueLabels["KPperLevelActual"]).Text = character.GetStat(Character.Stats.KPperLevel).ToString();
+            ((Label)valueLabels["KPperLevelCcp"]).Text = GetCCP(character.GetStat(Character.Stats.KPperLevel)).ToString();
         }
 
         private void updM00_ValueChanged(object sender, EventArgs e)
@@ -762,7 +782,7 @@ namespace MagusTools
         // Menu Event Handlers
         private void mnuFileNew_Click(object sender, EventArgs e)
         {
-
+            ResetComponents();
         }
 
         private void mnuFileOpen_Click(object sender, EventArgs e)
@@ -840,6 +860,42 @@ namespace MagusTools
         private void cbCharRace_SelectionChangeCommitted(object sender, EventArgs e)
         {
             character.ChangeRace(cbCharRace.SelectedItem.ToString());
+        }
+
+        // Other methods
+        private void ResetComponents()
+        {
+            foreach (var upd in updControls)
+            {
+                ((NumericUpDownExt)upd.Key).Value = ((NumericUpDownExt)upd.Key).Minimum;
+            }
+
+            this.txtCharName.Text = String.Empty;
+
+            cbCharGender.SelectedIndex = 0;
+            cbCharAlignment.SelectedIndex = 0;
+            cbCharRace.SelectedIndex = 0;
+            cbCharReligion.SelectedIndex = 0;
+            cbCharClass.SelectedIndex = 0;
+            cbCharBirthplace.SelectedIndex = 0;
+        }
+        
+        private int GetCCP(int statValue)
+        {
+            switch (statValue)
+            {
+                case 16:
+                case 17:
+                case 18:
+                    return 15 + ((statValue - 15) * 2);
+                    
+                case 19:
+                case 20:
+                    return 21 + ((statValue - 18) * 4);
+
+                default:
+                    return statValue;
+            }
         }
     }
 }
