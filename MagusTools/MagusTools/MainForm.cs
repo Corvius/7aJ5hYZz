@@ -865,6 +865,7 @@ namespace MagusTools
         // Other methods
         private void ResetComponents()
         {
+            // TODO: Add DEFAULT values to rest to
             foreach (var upd in updControls)
             {
                 ((NumericUpDownExt)upd.Key).Value = ((NumericUpDownExt)upd.Key).Minimum;
@@ -880,6 +881,8 @@ namespace MagusTools
             cbCharBirthplace.SelectedIndex = 0;
         }
         
+        // TODO: Complete this to handle CMperLevel, PRperLevel properly
+        //       Relocate the procedure to Character module
         private int GetCCP(int statValue)
         {
             switch (statValue)

@@ -45,7 +45,9 @@ namespace MagusTools
         {
             try
             {
-                //nodes.RemoveAll();
+                if (nodes.HasElements)
+                    nodes.RemoveAll();
+
                 nodes = XElement.Load(xmlPath);
 
                 Program.eventLogger.Log(new object[] { "Loaded ", Color.Cyan, nodes.Descendants().Count(), Color.Black, " nodes" });
@@ -136,7 +138,7 @@ namespace MagusTools
 
         public string GetRealms(string deityName)
         {
-            Program.eventLogger.Log(new object[] { "Getting realms" });
+            Program.eventLogger.Log(new object[] { "Getting realms for ", Color.Blue, deityName });
 
             var xmlQuery =
                 from data in xmlDefaults.Elements("religions").Elements("religion")
@@ -150,14 +152,3 @@ namespace MagusTools
 
     }
 }
-
-/*
- * 
-     <creature>
-      <name language="hu-HU">Ember</name>
-      <name language="en-EN"></name>      
-      <tag>élőlény</tag>
-      <tag>humanoid</tag>
-      <tag>faj</tag>
-      <tag>játszható</tag>* 
-*/

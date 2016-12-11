@@ -152,7 +152,7 @@ namespace MagusTools
             this.updLevel.TabIndex = 3;
             this.updLevel.TextAlign = HorizontalAlignment.Center;
             this.updLevel.Value = new decimal(new int[] {
-            0, // TODO: Add min/max here!
+            0, // TODO: Add min/max here based on SkillType
             0,
             0,
             0});

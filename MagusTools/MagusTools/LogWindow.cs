@@ -3,6 +3,9 @@ using System.Windows.Forms;
 
 namespace LogWindow
 {
+    // TODO: Finish LogExtension, so all Control types can call
+    //       .Log() instead of maintaining separate, global objects
+    //       Make Logger a static class, figure out if multi-threading is neccesary
     public static class LogExtension
     {
         public static void Log(this Control source, string message)

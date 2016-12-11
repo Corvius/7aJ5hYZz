@@ -172,7 +172,7 @@ namespace MagusTools
                 case Stats.KP:
                     statList[(int)stat].Actual += 
                         statList[(int)Stats.KPperLevel].Base * statList[(int)Stats.Level].Base;
-                    statList[(int)stat].Actual -= GetSpentCcp();
+                    statList[(int)stat].Actual -= GetSpentKP();
                     break;
                 case Stats.KPperLevel:
                     statList[(int)Stats.KP].Actual =
@@ -214,19 +214,6 @@ namespace MagusTools
                 default:
                     break;
             }
-
-            //Program.charLogger.Clear();
-            //for (int counter = 0; counter < statList.Count; counter++)
-            //{
-            //    Program.charLogger.Log(new object[] {
-            //        System.Enum.GetName(typeof(Stats), counter),
-            //        " : ",
-            //        Color.Cyan,
-            //        statList[counter].Base,
-            //        Color.Black,
-            //        " | ",
-            //        statList[counter].Actual });
-            //}
         }
 
         public string GetClass()
@@ -242,31 +229,39 @@ namespace MagusTools
 
         public void ChangeRace(string newRace)
         {
-
+            // TODO: Update stats based on race's modifiers
         }
 
-        public int GetSpentCcp()
+        public int GetSpentKP()
         {
+            // TODO: Get the KP value of all Learned Skills
             return 0;
         }
 
         public List<object> GetSelectedSkills()
         {
+            // TODO: Return a list of Learned Skills
             return null;
         }
         public void AddSelectedSkill(Skill newSkill)
         {
-           
+            // TODO: Add a new skill to Learned Skills list and
+            //       update any stats if neccesary
         }
+
+        // TODO: Add skill removing logic
 
         public bool IsSkillLearned(string skillName, int level)
         {
+            // TODO: Check for existing skill by name and level
             return false;
             //return true;
         }
 
         public bool IsSkillLearned(int level, string subTypeReq)
         {
+            // TODO: Check for existing skill by level and subtype requirement
+            //       (this method is for determining weapon bonuses with certain skills)
             return false;
             //return true;
         }
@@ -277,6 +272,8 @@ namespace MagusTools
             public int Base { get; set; }
         }
 
+        // TODO: Get a better Skill class,
+        //       Figure out a way to keep this private
         public class Skill
         {
             public string Name { get; set; }

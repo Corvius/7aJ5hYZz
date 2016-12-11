@@ -5,11 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagusTools", "MagusTools\MagusTools.csproj", "{12B98BE1-6D2D-4EAB-810D-4BE196BA96BA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A210EB00-2068-49FF-BED8-D4B7AA476501}"
-	ProjectSection(SolutionItems) = preProject
-		SkillData.xml = SkillData.xml
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{641883B6-0B60-4336-A3C3-95AC59192A3D}"
 	ProjectSection(SolutionItems) = preProject
 		Feature Requirement List.docx = Feature Requirement List.docx
